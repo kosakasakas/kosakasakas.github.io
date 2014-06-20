@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[UNICORN WORKS]]></title>
+  <link href="http://ykosakasakas.github.io/atom.xml" rel="self"/>
+  <link href="http://ykosakasakas.github.io/"/>
+  <updated>2014-06-21T01:50:43+09:00</updated>
+  <id>http://ykosakasakas.github.io/</id>
+  <author>
+    <name><![CDATA[kosakasakas]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Sample]]></title>
+    <link href="http://ykosakasakas.github.io/blog/2014/06/14/tesuto/"/>
+    <updated>2014-06-14T13:10:15+09:00</updated>
+    <id>http://ykosakasakas.github.io/blog/2014/06/14/tesuto</id>
+    <content type="html"><![CDATA[<p><img src="http://ykosakasakas.github.io/images/unicorn/unicorn.jpg" alt="lemonade" /></p>
+
+<p>くぽぽぽぽ!!</p>
+
+<p>LEMONADE WORKSついに立ち上げました。</p>
+]]></content>
+  </entry>
+  
+</feed>
