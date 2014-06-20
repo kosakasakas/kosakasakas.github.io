@@ -4,7 +4,7 @@
   <title><![CDATA[UNICORN WORKS]]></title>
   <link href="http://kosakasakas.github.io/atom.xml" rel="self"/>
   <link href="http://kosakasakas.github.io/"/>
-  <updated>2014-06-21T02:30:13+09:00</updated>
+  <updated>2014-06-21T03:01:30+09:00</updated>
   <id>http://kosakasakas.github.io/</id>
   <author>
     <name><![CDATA[kosakasakas]]></name>
@@ -14,15 +14,15 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Sample]]></title>
-    <link href="http://kosakasakas.github.io/blog/2014/06/14/tesuto/"/>
-    <updated>2014-06-14T13:10:15+09:00</updated>
-    <id>http://kosakasakas.github.io/blog/2014/06/14/tesuto</id>
+    <title type="html"><![CDATA[Hello Unicorn World!]]></title>
+    <link href="http://kosakasakas.github.io/blog/2014/06/21/tesuto/"/>
+    <updated>2014-06-21T13:10:15+09:00</updated>
+    <id>http://kosakasakas.github.io/blog/2014/06/21/tesuto</id>
     <content type="html"><![CDATA[<p><img src="http://kosakasakas.github.io/images/unicorn/unicorn.jpg" alt="lemonade" /></p>
 
 <p>くぽぽぽぽ!!</p>
 
-<p>LEMONADE WORKSついに立ち上げました。</p>
+<p>UNICORN WORKSついに立ち上げました。</p>
 ]]></content>
   </entry>
   
