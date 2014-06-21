@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[UNICORN WORKS]]></title>
+  <title><![CDATA[UNICORN STUDIO GARDEN]]></title>
   <link href="http://kosakasakas.github.io/atom.xml" rel="self"/>
   <link href="http://kosakasakas.github.io/"/>
-  <updated>2014-06-21T03:03:20+09:00</updated>
+  <updated>2014-06-21T23:34:48+09:00</updated>
   <id>http://kosakasakas.github.io/</id>
   <author>
     <name><![CDATA[kosakasakas]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[写真のレタッチしてみた]]></title>
+    <link href="http://kosakasakas.github.io/blog/2014/06/21/xie-zhen-falseretatuti/"/>
+    <updated>2014-06-21T23:28:51+09:00</updated>
+    <id>http://kosakasakas.github.io/blog/2014/06/21/xie-zhen-falseretatuti</id>
+    <content type="html"><![CDATA[<p>Photoshopのフィルタレイヤーでいろいろやってみた結果。<br/>
+編集前のオリジナルの画像がこれ</p>
+
+<p><img src="http://kosakasakas.github.io/images/unicorn/bluegirl.jpg" alt="bluegirl" /></p>
+
+<p>空を強調して前景の赤を強くしたのがこれ
+<img src="http://kosakasakas.github.io/images/unicorn/bluegirl_white.jpg" alt="bluegirl2" /></p>
+
+<p>空を個人的に好きな感じに調整したのがこれ
+<img src="http://kosakasakas.github.io/images/unicorn/bluegirl_magenta.jpg" alt="bluegirl3" /></p>
+
+<p>どれがいいっすかね.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello Unicorn World!]]></title>
