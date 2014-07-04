@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[UNICORN STUDIO GARDEN]]></title>
-  <link href="http://kosakasakas.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: 未来を考える | UNICORN STUDIO GARDEN]]></title>
+  <link href="http://kosakasakas.github.io/blog/categories/wei-lai-wokao-eru/atom.xml" rel="self"/>
   <link href="http://kosakasakas.github.io/"/>
   <updated>2014-07-04T23:03:58+09:00</updated>
   <id>http://kosakasakas.github.io/</id>
@@ -18,7 +18,7 @@
     <link href="http://kosakasakas.github.io/blog/2014/07/04/google/"/>
     <updated>2014-07-04T22:29:28+09:00</updated>
     <id>http://kosakasakas.github.io/blog/2014/07/04/google</id>
-    <content type="html"><![CDATA[<p><img src="http://kosakasakas.github.io/images/unicorn/google-self-driving-car.jpg" alt="google-car" /></p>
+    <content type="html"><![CDATA[<p><img src="/images/unicorn/google-self-driving-car.jpg" alt="google-car" /></p>
 
 <p>近頃IT企業が相次いで自動車搭載OSの開発に乗り出している。Appleは『CarPlay』と呼ばれるOSを3月に発表したばかりだ。</p>
 
@@ -35,7 +35,7 @@ iPhoneと連動してオーディオ再生される事はもちろん、Siriを�
 
 <p>一般的な自動運転技術は車載カメラがとらえた画像から、白線と標識を識別する事で実現する。当然、白線や標識が視覚的に遮蔽された場合に安全な走行を保証する事はできない。googleは街全体を3Dモデルとして提供し、より安全で完全な自動走行を実現しようというのだ。</p>
 
-<p><img src="http://kosakasakas.github.io/images/unicorn/google-self-driving-car-3d.jpg" alt="google-3d" /></p>
+<p><img src="/images/unicorn/google-self-driving-car-3d.jpg" alt="google-3d" /></p>
 
 <p>先日の基調講演ではカリフォルニア州の街の一部が3Dスキャンされている様子が、無人運転する車の様子と共に公開された。この三次元空間情報があれば、あらゆるロボットが街を自動で駆け巡る事ができるようになるだろう。</p>
 
@@ -44,42 +44,6 @@ iPhoneと連動してオーディオ再生される事はもちろん、Siriを�
 <p>（コラム担当：kosakasakas）</p>
 
 <p>参考：<a href="http://gigazine.net/news/20130502-google-self-driving-car/">http://gigazine.net/news/20130502-google-self-driving-car/</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[写真レタッチしてみた]]></title>
-    <link href="http://kosakasakas.github.io/blog/2014/06/21/xie-zhen-falseretatuti/"/>
-    <updated>2014-06-21T23:28:51+09:00</updated>
-    <id>http://kosakasakas.github.io/blog/2014/06/21/xie-zhen-falseretatuti</id>
-    <content type="html"><![CDATA[<p>Photoshopのフィルタレイヤーでいろいろやってみた結果。<br/>
-編集前のオリジナルの画像がこれ</p>
-
-<p><img src="http://kosakasakas.github.io/images/unicorn/bluegirl.JPG" alt="bluegirl" /></p>
-
-<p>空を強調して前景の赤を強くしたのがこれ
-<img src="http://kosakasakas.github.io/images/unicorn/bluegirl_white.jpg" alt="bluegirl2" /></p>
-
-<p>空を個人的に好きな感じに調整したのがこれ
-<img src="http://kosakasakas.github.io/images/unicorn/bluegirl_magenta.jpg" alt="bluegirl3" /></p>
-
-<p>青に振り切ったのがこれ
-<img src="http://kosakasakas.github.io/images/unicorn/bluegirl_magenta4.jpg" alt="bluegirl4" /></p>
-
-<p>どれがいいっすかね.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello Unicorn World!]]></title>
-    <link href="http://kosakasakas.github.io/blog/2014/06/21/tesuto/"/>
-    <updated>2014-06-21T13:10:15+09:00</updated>
-    <id>http://kosakasakas.github.io/blog/2014/06/21/tesuto</id>
-    <content type="html"><![CDATA[<p><img src="http://kosakasakas.github.io/images/unicorn/unicorn.jpg" alt="lemonade" /></p>
-
-<p>くぽぽぽぽ!!</p>
-
-<p>UNICORN WORKSついに立ち上げました。</p>
 ]]></content>
   </entry>
   
