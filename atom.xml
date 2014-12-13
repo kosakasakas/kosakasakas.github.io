@@ -4,7 +4,7 @@
   <title><![CDATA[UNICORN SQUARE GARDEN]]></title>
   <link href="http://kosakasakas.github.io/atom.xml" rel="self"/>
   <link href="http://kosakasakas.github.io/"/>
-  <updated>2014-10-19T17:35:53+09:00</updated>
+  <updated>2014-12-13T19:47:25+09:00</updated>
   <id>http://kosakasakas.github.io/</id>
   <author>
     <name><![CDATA[kosakasakas]]></name>
@@ -12,6 +12,352 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ユニティちゃんを超ARしたときの話]]></title>
+    <link href="http://kosakasakas.github.io/blog/2014/12/09/unity-chan-ar/"/>
+    <updated>2014-12-09T00:53:56+09:00</updated>
+    <id>http://kosakasakas.github.io/blog/2014/12/09/unity-chan-ar</id>
+    <content type="html"><![CDATA[<p><img src="http://kosakasakas.github.io/images/unicorn/super_ar/res0.jpg" alt="super_ar_top" /></p>
+
+<p>前回、<a href="http://kosakasakas.github.io/blog/2014/10/18/unity-realtime-ibl/">UnityでリアルタイムIBLしてみた</a>というエントリを書かせて頂きましたが、今回その応用バージョンで、IBL+AR=超ARしてみたのでその時のメモやら実装方法を残しておきます。</p>
+
+<p>動画は以下のリンクにうぷしてますので、先に見てもらうと、「あら、こんな感じの事できるのねー」と雰囲気理解してもらえると思います。</p>
+
+<ul>
+<li><a href="http://www.nicovideo.jp/watch/sm25072244">ニコニコ動画</a></li>
+<li><a href="https://vine.co/v/O6wpZr7lpMg">Vine</a></li>
+</ul>
+
+
+<!-- more -->
+
+
+<iframe class="vine-embed" src="https://vine.co/v/O6wpZr7lpMg/embed/simple" width="320" height="320" frameborder="0"></iframe>
+
+
+<script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+
+
+<p>微妙にマーカーズレてたり、解像度低かったりしたので今度取り直してYoutubeに再アップします。。</p>
+
+<h2>今回やった事</h2>
+
+<p>前回記事をベースに、実装面で進化しているのは大きくは以下の二点です。</p>
+
+<ul>
+<li>IBLで使うCubemapTextureを静止画から動画に対応</li>
+<li>WebCamからの映像をIBLに反映</li>
+<li>AR対応</li>
+</ul>
+
+
+<p>現実とのインタラクションをより感じさせるために今回ARを使っていますが、任意の動画環境下で動きます。
+Webcamだと解像度とかに限界を感じたので、インタラクションを無視できるなら、それっぽい動画を撮影して後でそれを流した方が雰囲気出るのかも知れないです。</p>
+
+<p>ちなみに技術的に新規性のある事とかアイデアのある事は一切やっておらず、CG屋さんが使いそうなテクニックをそのまんまUnity上で行ってARに載せているだけです。</p>
+
+<p>Youtubeでは本デモのようなImage-BasedなARは少なからずあって、海外の人がいくつか上げてるんですが、日本ではIBL+ARっていうのはあんまり見ないですね。</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=YxxCjV-2y_E">Image Based Lighting in Augmented Reality</a></li>
+</ul>
+
+
+<p>今回のデモではしっかりアンビエントとか焼いたり、シャドウを付けたり、細かい事しているので、演出面ではそこそこ雰囲気を出せたのではと思っています。</p>
+
+<p>なによりユニティちゃんのアセットのクオリティが高い！</p>
+
+<p>あと、先に言っておくと、ARについては特に特別な事はやっておらず、Unity ARでググったページを見ながらSDKインポートしたくらいしかしていません。</p>
+
+<p>なので、ここからはほぼほぼレンダリングの話になります。</p>
+
+<h2>環境とか</h2>
+
+<p>今回の動作環境は以下の通りです。</p>
+
+<ul>
+<li>Mac Book Rro Retina 15-inch 2013</li>
+<li>OS X 10.9.5</li>
+<li>Unity Pro 4.5.4f1</li>
+</ul>
+
+
+<p>今回は禁断のUnity proを使用しています！ドヤァ！</p>
+
+<p>ただこれは一ヶ月限定のイベントライセンスなので、来月には切れてノーマル無課金厨に戻ります。</p>
+
+<p>今回はたまたま「<a href="http://unity-chan.com/contents/event/director-cup/">ユニティちゃんディレクター杯</a>」というコンテストをUnityさんが主催されていましたので、参加登録してイベントライセンスを付与して頂きました。</p>
+
+<p>そして、今回の実装ではProでしかできない事をやっちゃってます。</p>
+
+<p>詳しくは&#8221;実装方法&#8221;のところで述べますが、シーンをCubemapに焼くAPIはPro限定っぽいです。</p>
+
+<p>ただ、今思えば別にこのAPI使わなくても実装できたんじゃね？と思っているので、今後暇だったらFree対応するかもしれません。</p>
+
+<h2>実装方法</h2>
+
+<h3>1. アセットを準備する</h3>
+
+<p>まずはUnityちゃんのきれいなテクスチャを作りましょう。
+ARにした時に、現実となるべくなじませるためには、アンビエントやシーンに非依存の環境光を焼く作業はほぼ必須だと思っています。</p>
+
+<p>前回の記事と同じようにBlenderのCyclesでユニティちゃんをレンダリングしてテクスチャを刷新して下さい。</p>
+
+<p>Cyclesでレンダリングするとたぶんこんな感じになります。</p>
+
+<p><img src="http://kosakasakas.github.io/images/unicorn/super_ar/cycles.jpg" alt="cycles" /></p>
+
+<p>ユニティちゃんはミクと違って法線マップを持っていたり、そもそもテクスチャにアンビエントっぽい陰が乗っていたりするので焼かなくてもそれなりにリアルになるかもしれません。</p>
+
+<p>ユニティちゃんは出来るコです。</p>
+
+<p>テクスチャを焼きおえたらUnity上でテクスチャを差し替えて、Luxのマテリアルを各パーツに設定してください。</p>
+
+<p>Luxについては<a href="http://kosakasakas.github.io/blog/2014/10/18/unity-realtime-ibl/">前回記事</a>を参照下さい。</p>
+
+<p>自分は肌系はLux/Bumped Diffuse、洋服系はLux/Bumped Speculaer、髪はLux/Human/Hairを設定しています。</p>
+
+<p>ここまでいくとこのくらいのクオリティまで出せます。</p>
+
+<p><img src="http://kosakasakas.github.io/images/unicorn/super_ar/ibl.jpg" alt="ibl" /></p>
+
+<h3>2. IBLを動画に対応させる</h3>
+
+<p>前回の実装ではIBLに使うDiffuse CubemapとSpecular Cubemapは事前に用意した静止画だったのですが、今回はこれらを動的に作成することで任意の動画をCubemapとして使えるようにします。</p>
+
+<p>まず毎フレームIBLのCubemapを変更する方法ですが、自分はSetupLuxクラスを継承して書き換えて実装しました。</p>
+
+<p>書き換えたCustomSetupLuxクラスはgistにのせときますので細かいところはこれを読んでください。</p>
+
+<ul>
+<li><a href="https://gist.github.com/kosakasakas/c664924756ecfb45d8f2#file-customsetuplux-cs">CustomSetupLux.cs</a></li>
+</ul>
+
+
+<p>(また、継承もとのSetupLux.csは<a href="https://github.com/larsbertram69/Lux">こちら</a>にあります。)</p>
+
+<p>CustomSetupLuxの中でCubemapを書き換えている部分は以下の部分。</p>
+
+<pre><code>spec = new Cubemap(cubemapSize, TextureFormat.ARGB32, true);
+diff = new Cubemap(cubemapSize, TextureFormat.ARGB32, true);
+
+Shader.SetGlobalTexture("_SpecCubeIBL", spec);
+Shader.SetGlobalTexture("_DiffCubeIBL", diff);
+</code></pre>
+
+<p>オリジナルのLuxのSetGlobalTexture後に、こちらで一回SetGlobalTextureしておけば、あとはspec, diffの中身を書き換えていくだけで勝手にLuxがよしなに処理してくれます。</p>
+
+<p>また、Cubemap型はイコールオペレーションではコピーされない点に注意です。
+以下のようにColor[] colorをセットします。</p>
+
+<pre><code>diff.SetPixels(color, face);
+diff.Apply();
+</code></pre>
+
+<p>あとはこのdiffとspecの更新処理をLastUpdate()内で呼んであげれば毎フレームShaderのテクスチャが更新されるようになると思います。</p>
+
+<p>また、SetupLux(というかMonoBehaviour)の関数をオーバーライドする際の注意点ですが、継承元の関数の指定子をpublic virtualに変更してからオーバーライドして下さい。じゃないと継承元が呼ばれません。</p>
+
+<pre><code>// SetupLux側
+public virtual void Update () {
+    hogehoge();
+}
+
+// CustomSetupLux側
+public override void Update () {
+    base.Update ();
+    fugafuga();
+}
+</code></pre>
+
+<h3>3. WebCamからの映像をIBLに反映させる</h3>
+
+<p>diffとspecがそれぞれリアルタイム更新されるようになったので、これに値を入れていきます。</p>
+
+<p>IBLを実現するためには、ざっくり言うとユニティちゃん視点から周囲を映したテクスチャを作り、そのテクスチャのピクセル値をdiffやらspecやらに詰めていけば良いわけです。</p>
+
+<p>そのためにはCameraクラスのRenderToCubemap()を使います。
+使い方は以下の要領で、faceで面を指定しながらコールします。</p>
+
+<pre><code>cam.transform.position = cameraPos;
+cam.RenderToCubemap ( spec, face);
+</code></pre>
+
+<p>CustomSetupLuxクラスではUpdate()内でユニティちゃんの移動に合わせてcameraPosを更新し、それを上記のようにcam（ユニティちゃんサイドからみた仮想視点）にセットしてRenderToCubemapしています。</p>
+
+<p>このような修正をすればユニティちゃんから見たシーンの映像がspecに格納されるようになります。</p>
+
+<p>ただ、これだと周囲になんにも置かない限り真っ青なシーンがレンダリングされるだけだと思うので、シーンに半球をおいてそこにwebcamの映像を投影し、それをcamに撮影させます。(なんてワークアラウンド)</p>
+
+<p><img src="http://kosakasakas.github.io/images/unicorn/super_ar/cam.jpg" alt="cam" /></p>
+
+<p>半球モデルは探しても無かったので自作しました。</p>
+
+<ul>
+<li><a href="https://gist.github.com/kosakasakas/c664924756ecfb45d8f2#file-semi_sphere-obj">semi_sphare.obj</a></li>
+</ul>
+
+
+<p>semi_sphare.objは映像投影用に法線方向を反転させて、半球内に描画されるようにモデリングしてあります。
+UVも透視投影で良い感じにマップしてあります。</p>
+
+<p>ちなみにBlenderで作ったのですが、OBJ以外Unityでうまく読んでくれなかったのでモデルをエクスポートする時はフォーマットに注意して下さい。</p>
+
+<p>この半球をシーンのどっかにおいて、その中をcamが動くように調節します。
+半球を二つ置いて閉じちゃう方が映像にムラが無くて良い感じです。</p>
+
+<p>この半球に対してWebCamの画像を映す方法ですが、以下のスクリプトを半球に設定すればOKです。</p>
+
+<ul>
+<li><a href="https://gist.github.com/kosakasakas/c664924756ecfb45d8f2#file-webcambehaviourscript-cs">WebCamBehaviourScript.cs</a></li>
+</ul>
+
+
+<p>中身はわりとシンプルなので、コード見てもらえば分かると思います。</p>
+
+<p>これでWebcam映像がspecに映るようになると思います!</p>
+
+<h3>4. いい感じにテクスチャをぼかす</h3>
+
+<p>環境光がキューブマップに焼けたのは良いのですが、specular用のCubemapとdiffuse用のCubemapは全然求められるものが違います。</p>
+
+<ul>
+<li>specular map</li>
+</ul>
+
+
+<p><img src="http://kosakasakas.github.io/images/unicorn/super_ar/spec.jpg" alt="spec_map" /></p>
+
+<ul>
+<li>diffuse map</li>
+</ul>
+
+
+<p><img src="http://kosakasakas.github.io/images/unicorn/super_ar/diff.jpg" alt="diff_map" /></p>
+
+<p>上図はちゃんと計算されたspecularテクスチャとdiffuseテクスチャの違いなのですが、diffuse用はむちゃくちゃぼけてるのが分かると思います。</p>
+
+<p>diffuseはオブジェクト表面でいろんな方向に拡散した光をシミュレートしたマップなので明るくぼけた印象のテクスチャになってます。</p>
+
+<p>これを再現するために、今回は超単純ですが線形ブラーを実装しました。</p>
+
+<p>しかも、GPUとか使わずに、めんどくさいので思いっきりC#で書いています。</p>
+
+<p>参考にしたのは<a href="http://forum.unity3d.com/threads/contribution-texture2d-blur-in-c.185694/">こちらのCommunity</a>で議論されているブラーです。</p>
+
+<p>ただこの実装だとキューブマップの境界でアーティファクトが発生してしまうので、実際には隣り合うマップの重なる部分もぼかしてスムーズにブラーがかかるようにしています。</p>
+
+<p>CustomSetupLuxクラスのFastBlur()が実装したものです。</p>
+
+<p>若干怪しい挙動しますが、まぁ許容範囲内です。。</p>
+
+<p>そして、Fastと言っていますが、ものすごく遅いです。</p>
+
+<p>遅すぎて毎フレやるとユニティちゃん動かないレベルです。</p>
+
+<p>ですので実際にブラー処理をするのは数フレに一回程度にしましょう。
+ついでにcubemapを書き直す事自体もそう頻繁にやる必要ないので、数フレに一回だけ書くようにします。</p>
+
+<p>また、SpecularマップもDiffuseマップも高い解像度はまったく必要有りません。
+雰囲気だけ合っていればよいし、映り込む領域も小さいので、Cubemapの解像度は16x16とかでOKです。</p>
+
+<p>今回のデモで言えば、specは16x16で作って、diffuseはそれに半径8のブラーをかけてる感じです。</p>
+
+<p>また、やってみると分かるのですが、こうして作ったdiffuseはとても暗いです。
+本来はもっと光が漏れだしてほしい部分が明るくなってくれません。</p>
+
+<p>かといって一律でoffsetを履かせると255を超えてしまう部分もあるので、サチらないように明るさを調整する必要があります。
+つまりガンマ補正をかけます。</p>
+
+<p>ガンマ補正は255諧調でいうと以下の感じで実装できます。たぶん。。</p>
+
+<pre><code>Color[] GammaCorrection(Color[] input, int width, int height, float gamma) {
+    Color[] output = new Color[width * height];
+    for (int w = 0; w &lt; width; ++w) {
+        for (int h = 0; h &lt; height; ++h) {
+            output[width * w + h].r = 255.0f * Mathf.Pow(1.0f / 255.0f * input[width * w + h].r, 1.0f / gamma);
+            output[width * w + h].g = 255.0f * Mathf.Pow(1.0f / 255.0f * input[width * w + h].g, 1.0f / gamma);
+            output[width * w + h].b = 255.0f * Mathf.Pow(1.0f / 255.0f * input[width * w + h].b, 1.0f / gamma);
+            output[width * w + h].a = 255.0f;
+        }
+    }
+    return output;
+}
+</code></pre>
+
+<p>これで明るさを調整できるので、程よい値を探しながらレンダリングしてみて下さい。</p>
+
+<h3>4. ARしてみる</h3>
+
+<p>AR自体は特別な事はしていません。
+以下のサイトを参考にして設定しました。</p>
+
+<ul>
+<li><a href="http://kawakawa2000.jugem.jp/?eid=56">irofさんとAR（拡張現実）で遊んでみよう♪</a></li>
+</ul>
+
+
+<p>ちなみに、どこのサイトでもTargetDimensionは100で設定していますが、たぶんこれはデマで、Unity上のアセットの大きさを1を基準にしている場合は普通に1で良いです。</p>
+
+<p>また、デモではキューブ形状のマーカーを置いていますが、実は前面のプレーンしか使っていません。</p>
+
+<p>キューブでもやりましたが、なんか方向が逆に定まらず、一面だけの方が安定しました。</p>
+
+<p>なので、キューブである必要は全くないのです。</p>
+
+<p>あと、本デモではシャドウについてはシャドウの部分だけしっかりマスクして、あたかも床に影が出ているかのように演出しています。</p>
+
+<p>床オブジェクトやマーカーキューブオブジェクトに以下のShaderをマテリアルを設定すれば、シャドウだけ表示する事が出来ますので参考にしてみてください。</p>
+
+<ul>
+<li><a href="https://gist.github.com/kosakasakas/c664924756ecfb45d8f2#file-shadowmask-shader">ShadowMask.shader</a></li>
+</ul>
+
+
+<h2>結果と考察</h2>
+
+<p><img src="http://kosakasakas.github.io/images/unicorn/super_ar/setup.jpg" alt="setup" /></p>
+
+<p>こんな感じでライトとステージを用意してライトをひたすら振りながらwebCamでユニティちゃんを追ってました。</p>
+
+<p><img src="http://kosakasakas.github.io/images/unicorn/super_ar/res1.jpg" alt="res1" />
+<img src="http://kosakasakas.github.io/images/unicorn/super_ar/res2.jpg" alt="res2" />
+<img src="http://kosakasakas.github.io/images/unicorn/super_ar/top.jpg" alt="res0" /></p>
+
+<p><a href="http://www.nicovideo.jp/watch/sm25072244">動画</a>を見てもらうと分かりますが、ライトが変化するとそれに合わせてユニティちゃんもライティングされるのが分かります。</p>
+
+<p>一応ユニティちゃんのポジションを追っているので、ライトに近づけば近づくほど色がつく（はず）</p>
+
+<p>ちなみにマーカーとシャドウが微妙にズレているのは完全な設定ミスです。</p>
+
+<p>本当はぴったり合いますが、血反吐を吐いていたので、このとき気づきませんでした。</p>
+
+<p>思ったよりシーンに馴染んだのと、シーン変えてもどこでも割といい感じにIBLできたので、個人的には満足いってます。</p>
+
+<p>あとは、シャドウが結構不自然なのでそれは直せたら直したいです。</p>
+
+<p>平行光源を手動で一点置いちゃってる(主にシャドウ用)のでそれもできれば自動推定or外したいです。</p>
+
+<p>でもシャドウをリアルにやるにはどうすれば良いのか。。</p>
+
+<h2>最後に</h2>
+
+<p>キャプチャするのに毎フレーム書き出していたんですが、それが激重で、そのまったりとした動きに合わせてカメラを動かすという作業は本当に骨が折れました。
+なんか手軽にリアルタイムキャプチャできる方法があればご教授いただきたいこのごろです。</p>
+
+<p>末筆になりますが、今回のデモは多くの方にTwitterやFacebook上で取り上げて頂き、制作者としてはとても嬉しく思っています。
+<a href="http://3dnchu.com/archives/unity-chan-superar-realtimeibl/">こんなすばらしい記事</a>になったりしてすごくモチベーションが上がりました。</p>
+
+<p>アドバイスや機材提供など、ご協力いただいた方々にもあらためて感謝したいと思います。
+ありがとうございました。</p>
+
+<h2>ライセンス表記</h2>
+
+<div><img src="http://unity-chan.com/images/imageLicenseLogo.png" alt="ユニティちゃんライセンス"><p>このコンテンツは、『<a href="http://unity-chan.com/contents/license_jp/" target="_blank">ユニティちゃんライセンス</a>』で提供されています</p></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[UnityでリアルタイムIBLしてみた]]></title>
@@ -30,6 +376,9 @@
 </ul>
 
 
+<!-- more -->
+
+
 <h2>どんな感じでやったか</h2>
 
 <p>とりあえず全部リアルタイムでやるのは無理なので、アンビエントは全部テクスチャベイク&amp;ライトマップして静的な物として扱います。
@@ -43,9 +392,6 @@
 <li>Unity 4.5.4f1 (free版)</li>
 <li>Blender 2.7.2a</li>
 </ul>
-
-
-<!-- more -->
 
 
 <h2>初音ミクを踊らせてみよう</h2>
@@ -340,6 +686,9 @@ githubのmasterブランチzipを使用しています。</p>
 
 <p>これなんかうまい事要約して少ない情報にまとめて、さらっと思い出のサムネイルとかにしてくれないかなーと思ったので、動画像を一枚の画像に圧縮するプログラム書いてみました。</p>
 
+<!-- more -->
+
+
 <p>具体的には画像とか動画とかを適度にサンプリングして数ピクセルに無理矢理圧縮して、時系列に並べたサムネイル画像を作るだけです。</p>
 
 <p>インプットの映像ごとにユニークな出力出るし、ある意味プロシージャルなテクスチャ生成が出来る訳です。</p>
@@ -347,9 +696,6 @@ githubのmasterブランチzipを使用しています。</p>
 <p>実装はopenFrameworks v0.8.2、iOS用のアプリケーションで作ってます。GUIとかは何もしていないので、oFのサンプルと同程度の作りですが、一応GitHubあがってます。</p>
 
 <p><a href="https://github.com/kosakasakas/MemoryCompressor">GitHub &ndash; MemoryCompressor</a></p>
-
-<!-- more -->
-
 
 <p>このtop画像はこのプログラムで出力した<strong>アナと雪の女王</strong>の全編の圧縮画像です。<br/>
 それっぽい！!</p>

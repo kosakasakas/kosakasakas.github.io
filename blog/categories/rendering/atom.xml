@@ -4,7 +4,7 @@
   <title><![CDATA[Category: rendering | UNICORN SQUARE GARDEN]]></title>
   <link href="http://kosakasakas.github.io/blog/categories/rendering/atom.xml" rel="self"/>
   <link href="http://kosakasakas.github.io/"/>
-  <updated>2014-10-19T17:35:53+09:00</updated>
+  <updated>2014-12-13T19:47:25+09:00</updated>
   <id>http://kosakasakas.github.io/</id>
   <author>
     <name><![CDATA[kosakasakas]]></name>
@@ -30,6 +30,9 @@
 </ul>
 
 
+<!-- more -->
+
+
 <h2>どんな感じでやったか</h2>
 
 <p>とりあえず全部リアルタイムでやるのは無理なので、アンビエントは全部テクスチャベイク&amp;ライトマップして静的な物として扱います。
@@ -43,9 +46,6 @@
 <li>Unity 4.5.4f1 (free版)</li>
 <li>Blender 2.7.2a</li>
 </ul>
-
-
-<!-- more -->
 
 
 <h2>初音ミクを踊らせてみよう</h2>
