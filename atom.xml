@@ -4,7 +4,7 @@
   <title><![CDATA[UNICORN SQUARE GARDEN]]></title>
   <link href="http://kosakasakas.github.io/atom.xml" rel="self"/>
   <link href="http://kosakasakas.github.io/"/>
-  <updated>2015-03-08T23:18:53+09:00</updated>
+  <updated>2015-03-09T00:46:19+09:00</updated>
   <id>http://kosakasakas.github.io/</id>
   <author>
     <name><![CDATA[kosakasakas]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Unity5に対応してみた]]></title>
+    <link href="http://kosakasakas.github.io/blog/2015/03/09/unity5/"/>
+    <updated>2015-03-09T00:04:03+09:00</updated>
+    <id>http://kosakasakas.github.io/blog/2015/03/09/unity5</id>
+    <content type="html"><![CDATA[<p><img src="http://kosakasakas.github.io/images/unicorn/miku_webplayer/miku_GCan_cap_web.jpg" alt="miku_gc" /></p>
+
+<p>Unity5がリリースされ、Personal版で無料でなんでも出来るようになったので<a href="http://kosakasakas.github.io/blog/2014/10/18/unity-realtime-ibl/">前の記事</a>で作ったImage Based LightingのプロジェクトをUnity5対応させてみました。</p>
+
+<p>こちらのリンクでリアルタイムにWebPlayer上で動く初音ミクを再生できます。</p>
+
+<ul>
+<li><a href="http://kosakasakas.github.io/static/Miku_GCanyon.html">Miku on Grand Canyon</a></li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>特にコードで修正した点とかはありませんでしたが、MMD4Mecanim_Beta_20150308_2が早速Unity5に対応していたので使っています。<a href="http://stereoarts.jp/">MMD4Mecanim (Beta)</a></p>
+
+<p>あとYosemiteでビルドするとクラッシュする問題があったので最終的にMavericksのMacでbuildを吐き出しました。</p>
+
+<p>WebCam対応版の方も近いうちにUnity5に対応させたいと思います。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ユニティちゃんを超ARしたときの話]]></title>
