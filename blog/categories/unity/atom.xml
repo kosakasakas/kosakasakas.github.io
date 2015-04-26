@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Unity | UNICORN SQUARE GARDEN]]></title>
   <link href="http://kosakasakas.github.io/blog/categories/unity/atom.xml" rel="self"/>
   <link href="http://kosakasakas.github.io/"/>
-  <updated>2015-03-09T00:46:19+09:00</updated>
+  <updated>2015-04-26T11:25:30+09:00</updated>
   <id>http://kosakasakas.github.io/</id>
   <author>
     <name><![CDATA[kosakasakas]]></name>
@@ -12,6 +12,131 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[続・ユニティちゃんを超ARしたときの話]]></title>
+    <link href="http://kosakasakas.github.io/blog/2015/04/26/superar2/"/>
+    <updated>2015-04-26T10:24:56+09:00</updated>
+    <id>http://kosakasakas.github.io/blog/2015/04/26/superar2</id>
+    <content type="html"><![CDATA[<p><img src="/images/unicorn/super_ar2/miku.png" alt="miku" /></p>
+
+<p><a href="http://niconicogakkai.tumblr.com/post/115894678356/6th-more">第8回ニコニコ学会βシンポジウム「研究してみたマッドネス」</a>にて超ARについて発表する機会をいただいたので、話題のUnity5で実装してみることにしました。</p>
+
+<!-- more -->
+
+
+<p>（超ARとはWebカメラを使ったMovie-Based Lighting技術で、実空間の光の情報をキャラクタに反映できる新しいタイプのARです。普通のARでは味わえない「こっち出てきた感」を演出することができます。詳細は<a href="http://kosakasakas.github.io/blog/2014/12/09/unity-chan-ar/">こちら</a>。）</p>
+
+<p>Unity5版は動画だとこんな感じです。</p>
+
+<ul>
+<li><a href="http://www.nicovideo.jp/watch/sm26111726">初音ミクをこっちの世界に召喚してみた</a></li>
+</ul>
+
+
+<p>前書いた超ARはUnity 4.6 proを使っていたので、有料ライセンスがないと動かせませんでしたが、Unity5対応により無料で動かせるようになります！</p>
+
+<p>また、単純に移植したのではなく、Unity5で使えるようになったイメージベースドライティング(IBL)やグローバルイルミネーション(GI)の機能を利用した事で、簡潔に組めるようになり、スピードも絵のクオリティも上がっています。</p>
+
+<h2>実装環境</h2>
+
+<ul>
+<li>Qualcomm Vufolia Unity Extention v4.0.105</li>
+<li>Unity 5.0.1 Personal</li>
+<li>MacBook Pro Retina 2012</li>
+</ul>
+
+
+<p>VuforiaのUnity5のmac 64bit版がリリースされたのはほんとつい最近です。
+リリースされて速攻でこれを作りました。
+超会議に間に合ってよかった。。</p>
+
+<h2>前回との違い</h2>
+
+<p>最大の変更点としては、前回はLuxというIBL用の無料ライブラリを使っていましたが、今回はこれは使わずStandard Shaderだけで動かします。</p>
+
+<p>デフォルトのStandard Shader自体にIBLの機能が備わったのでこれで代用可能です。
+自前でブラー処理とかやらなくて済むのはかなり大きい</p>
+
+<p>また、Unity5ではリアルタイムGI機能としてReflection Probesという機能が追加されており、これを使うと前回自前実装した部分の大半をまんま代用できるっぽいので代用します。</p>
+
+<p>Refrection Probesとは何かというと、ざっくりいうと、スペキュラ成分専用のLight Probeです。
+これをシーンのどっかに置くと、そこから見たシーンのスペキュラ反射を他のオブジェクトに反映させることができる優れものです。</p>
+
+<p>ということで、これらを使うと、前回の実装フローでは</p>
+
+<ul>
+<li>A1. 仮装視点をどこかに設置して、そこにWebカメラの映像を写して、そこからCubeMapを作る（要実装）</li>
+<li>A2. 作ったCubeMapをDiffuse用CubeMapとSpecular用CubeMapにブラー加工する（要実装）</li>
+<li>A3. Luxに渡してレンダリングする（要実装）</li>
+</ul>
+
+
+<p>という工程だったのに対し、Unity5版では</p>
+
+<ul>
+<li>B1. ReflectionProbeをどこかに設置して、そこにWebカメラの映像を写して、そこからCubeMapも作る（要実装）</li>
+<li>B2. 作ったCubeMapをライトが参照しているSkyboxに渡す（デフォルトでOK）</li>
+</ul>
+
+
+<p>というように、実装工数をかなり簡略化させることができます。</p>
+
+<h2>CubeMapにレンダリング結果を書き込む方法</h2>
+
+<p>今回追加で実装したのは、B2の「ReflectionProbeをどこかに設置して、そこにWebカメラの映像を写して、そこからCubeMapを作る」にあたる部分ですが、その際に問題になるのが、"CubeMapをScriptに渡して、レンダリング結果を反映させて、他のObjectでもそのCubeMapを使い回す方法"です。（任意の視点で周囲のシーンをテクスチャに書き込み、CubeMapにセットする方法については前に述べたので、それについては今回はスコープから外します。）</p>
+
+<p>これを実現するためにscriptに渡すPublic引数は以下の2点です。</p>
+
+<pre><code>public Cubemap targetCubemap;
+public Material targetMaterial;
+</code></pre>
+
+<p>targetCubemapには空のCubeMapを渡し、これにレンダリング結果を書き込みます。
+この際に、レンダリングするためのメッシュとマテリアルが無いとレンダリング出来ないため、Materialが必要になります。
+また、このtargetMaterialには周囲のシーンを映り込ませるため、反射するシェーダを持たせる必要があります。
+今回は「Legacy Shader/Reflective/Diffuse」シェーダをもたせてscriptに渡しました。</p>
+
+<p>そして、以下のようにtargetMaterialにtargetCubemapを設定させる処理をUpdate関数内で呼んでやります。</p>
+
+<pre><code>void Update() { 
+    if (isUpdate) { // 毎フレ描画は重いので、良い感じに間引く
+        renderCubeMap(); // 周囲のシーンをテクスチャに書き込む処理
+        targetMaterial.SetTexture("_Cube", targetCubemap);
+        GetComponent&lt;Renderer&gt;().material = targetMaterial;
+    }
+}
+</code></pre>
+
+<p>スクリプト側で変更するのはこれらの一連の処理のみです。</p>
+
+<p>あとはメッシュの情報が無いとエラーが出ると思うので、このscriptを持たせるGameObjectには必ずMesh Rendererコンポーネントを追加して、ElementにtargetMaterialを設定しておいてください。</p>
+
+<p><img src="/images/unicorn/super_ar2/script.png" alt="script" /></p>
+
+<p>自分は以下の図のように、シーンのどこかにWEBカメラの映像を投影したReflectionDomeオブジェクトを設定しているので、この仮装視点の位置にReflection Probeを置き、そのReflection ProbeにこのScriptを貼っています。</p>
+
+<p><img src="/images/unicorn/super_ar/cam.jpg" alt="cam" /></p>
+
+<p>あとは、適当にDirectional　Lightをセットして、targetCubemapから作ったSkyBoxを設定すれば、動画のような環境光が反映されたMovie-Based Lightingが実現できます。</p>
+
+<h2>所感</h2>
+
+<p>前回の実装はブラーが汚かったし、CPU実装で重かったので、デフォルトで任せられるようになったのでパフォーマンスもクオリティも上がった気がします。</p>
+
+<p>あと、Unity5をいじって思ったことなんですが、StandardShaderに慣れていないだけかもしれないですが、なんかラップライティングっぽい輪郭が出ちゃってるのは気のせいでしょうか。
+パラメータもよくわかんなくて、ライト切っててもアンビエント強すぎたりするし、ちゃんとshaderのコードみないとかもですね。</p>
+
+<p>最後に、こんなのも作りました。</p>
+
+<p><img src="/images/unicorn/super_ar2/coil.png" alt="coil" /></p>
+
+<ul>
+<li><a href="http://www.nicovideo.jp/watch/sm26111795">超ARで電脳コイルの世界を作ってみた</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ユニティちゃんを超ARしたときの話]]></title>

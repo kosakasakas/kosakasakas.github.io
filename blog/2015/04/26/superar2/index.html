@@ -1,0 +1,324 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>続・ユニティちゃんを超ARしたときの話  | UNICORN SQUARE GARDEN</title>
+
+<meta name="author" content="kosakasakas"> 
+
+<meta name="description" content="第8回ニコニコ学会βシンポジウム「研究してみたマッドネス」にて超ARについて発表する機会をいただいたので、話題のUnity5で実装してみることにしました。 （超ARとはWebカメラを使ったMovie-Based Lighting技術で、 &hellip;"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="UNICORN SQUARE GARDEN" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.fancybox.pack.js"></script>
+
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script>
+
+	
+</head>
+
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">UNICORN SQUARE GARDEN</a></h1>
+<h4>design and application portfolio.</h4>
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/archives">Archive</a></li>
+	<li><a href="/about">About</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/archives">Archive</a></li>
+	<li><a href="/about">About</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="https://www.google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:kosakasakas.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">続・ユニティちゃんを超ARしたときの話</h2>
+	<div class="entry-content"><p><img src="/images/unicorn/super_ar2/miku.png" alt="miku" /></p>
+
+<p><a href="http://niconicogakkai.tumblr.com/post/115894678356/6th-more">第8回ニコニコ学会βシンポジウム「研究してみたマッドネス」</a>にて超ARについて発表する機会をいただいたので、話題のUnity5で実装してみることにしました。</p>
+
+<!-- more -->
+
+
+<p>（超ARとはWebカメラを使ったMovie-Based Lighting技術で、実空間の光の情報をキャラクタに反映できる新しいタイプのARです。普通のARでは味わえない「こっち出てきた感」を演出することができます。詳細は<a href="http://kosakasakas.github.io/blog/2014/12/09/unity-chan-ar/">こちら</a>。）</p>
+
+<p>Unity5版は動画だとこんな感じです。</p>
+
+<ul>
+<li><a href="http://www.nicovideo.jp/watch/sm26111726">初音ミクをこっちの世界に召喚してみた</a></li>
+</ul>
+
+
+<p>前書いた超ARはUnity 4.6 proを使っていたので、有料ライセンスがないと動かせませんでしたが、Unity5対応により無料で動かせるようになります！</p>
+
+<p>また、単純に移植したのではなく、Unity5で使えるようになったイメージベースドライティング(IBL)やグローバルイルミネーション(GI)の機能を利用した事で、簡潔に組めるようになり、スピードも絵のクオリティも上がっています。</p>
+
+<h2>実装環境</h2>
+
+<ul>
+<li>Qualcomm Vufolia Unity Extention v4.0.105</li>
+<li>Unity 5.0.1 Personal</li>
+<li>MacBook Pro Retina 2012</li>
+</ul>
+
+
+<p>VuforiaのUnity5のmac 64bit版がリリースされたのはほんとつい最近です。
+リリースされて速攻でこれを作りました。
+超会議に間に合ってよかった。。</p>
+
+<h2>前回との違い</h2>
+
+<p>最大の変更点としては、前回はLuxというIBL用の無料ライブラリを使っていましたが、今回はこれは使わずStandard Shaderだけで動かします。</p>
+
+<p>デフォルトのStandard Shader自体にIBLの機能が備わったのでこれで代用可能です。
+自前でブラー処理とかやらなくて済むのはかなり大きい</p>
+
+<p>また、Unity5ではリアルタイムGI機能としてReflection Probesという機能が追加されており、これを使うと前回自前実装した部分の大半をまんま代用できるっぽいので代用します。</p>
+
+<p>Refrection Probesとは何かというと、ざっくりいうと、スペキュラ成分専用のLight Probeです。
+これをシーンのどっかに置くと、そこから見たシーンのスペキュラ反射を他のオブジェクトに反映させることができる優れものです。</p>
+
+<p>ということで、これらを使うと、前回の実装フローでは</p>
+
+<ul>
+<li>A1. 仮装視点をどこかに設置して、そこにWebカメラの映像を写して、そこからCubeMapを作る（要実装）</li>
+<li>A2. 作ったCubeMapをDiffuse用CubeMapとSpecular用CubeMapにブラー加工する（要実装）</li>
+<li>A3. Luxに渡してレンダリングする（要実装）</li>
+</ul>
+
+
+<p>という工程だったのに対し、Unity5版では</p>
+
+<ul>
+<li>B1. ReflectionProbeをどこかに設置して、そこにWebカメラの映像を写して、そこからCubeMapも作る（要実装）</li>
+<li>B2. 作ったCubeMapをライトが参照しているSkyboxに渡す（デフォルトでOK）</li>
+</ul>
+
+
+<p>というように、実装工数をかなり簡略化させることができます。</p>
+
+<h2>CubeMapにレンダリング結果を書き込む方法</h2>
+
+<p>今回追加で実装したのは、B2の「ReflectionProbeをどこかに設置して、そこにWebカメラの映像を写して、そこからCubeMapを作る」にあたる部分ですが、その際に問題になるのが、&#8221;CubeMapをScriptに渡して、レンダリング結果を反映させて、他のObjectでもそのCubeMapを使い回す方法&#8221;です。（任意の視点で周囲のシーンをテクスチャに書き込み、CubeMapにセットする方法については前に述べたので、それについては今回はスコープから外します。）</p>
+
+<p>これを実現するためにscriptに渡すPublic引数は以下の2点です。</p>
+
+<pre><code>public Cubemap targetCubemap;
+public Material targetMaterial;
+</code></pre>
+
+<p>targetCubemapには空のCubeMapを渡し、これにレンダリング結果を書き込みます。
+この際に、レンダリングするためのメッシュとマテリアルが無いとレンダリング出来ないため、Materialが必要になります。
+また、このtargetMaterialには周囲のシーンを映り込ませるため、反射するシェーダを持たせる必要があります。
+今回は「Legacy Shader/Reflective/Diffuse」シェーダをもたせてscriptに渡しました。</p>
+
+<p>そして、以下のようにtargetMaterialにtargetCubemapを設定させる処理をUpdate関数内で呼んでやります。</p>
+
+<pre><code>void Update() { 
+    if (isUpdate) { // 毎フレ描画は重いので、良い感じに間引く
+        renderCubeMap(); // 周囲のシーンをテクスチャに書き込む処理
+        targetMaterial.SetTexture("_Cube", targetCubemap);
+        GetComponent&lt;Renderer&gt;().material = targetMaterial;
+    }
+}
+</code></pre>
+
+<p>スクリプト側で変更するのはこれらの一連の処理のみです。</p>
+
+<p>あとはメッシュの情報が無いとエラーが出ると思うので、このscriptを持たせるGameObjectには必ずMesh Rendererコンポーネントを追加して、ElementにtargetMaterialを設定しておいてください。</p>
+
+<p><img src="/images/unicorn/super_ar2/script.png" alt="script" /></p>
+
+<p>自分は以下の図のように、シーンのどこかにWEBカメラの映像を投影したReflectionDomeオブジェクトを設定しているので、この仮装視点の位置にReflection Probeを置き、そのReflection ProbeにこのScriptを貼っています。</p>
+
+<p><img src="/images/unicorn/super_ar/cam.jpg" alt="cam" /></p>
+
+<p>あとは、適当にDirectional　Lightをセットして、targetCubemapから作ったSkyBoxを設定すれば、動画のような環境光が反映されたMovie-Based Lightingが実現できます。</p>
+
+<h2>所感</h2>
+
+<p>前回の実装はブラーが汚かったし、CPU実装で重かったので、デフォルトで任せられるようになったのでパフォーマンスもクオリティも上がった気がします。</p>
+
+<p>あと、Unity5をいじって思ったことなんですが、StandardShaderに慣れていないだけかもしれないですが、なんかラップライティングっぽい輪郭が出ちゃってるのは気のせいでしょうか。
+パラメータもよくわかんなくて、ライト切っててもアンビエント強すぎたりするし、ちゃんとshaderのコードみないとかもですね。</p>
+
+<p>最後に、こんなのも作りました。</p>
+
+<p><img src="/images/unicorn/super_ar2/coil.png" alt="coil" /></p>
+
+<ul>
+<li><a href="http://www.nicovideo.jp/watch/sm26111795">超ARで電脳コイルの世界を作ってみた</a></li>
+</ul>
+
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-04-26T10:24:56+09:00" pubdate data-updated="true">Apr 26<span>th</span>, 2015</time></div>
+	
+
+<div class="tags">
+
+	<a class='category' href='/blog/categories/ar/'>AR</a>, <a class='category' href='/blog/categories/unity/'>Unity</a>
+
+</div>
+
+
+	
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
+    
+    <!--add はてなブックマーク button-->
+	
+      <a href="http://b.hatena.ne.jp/entry/http://kosakasakas.github.io/blog/2015/04/26/superar2/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+      
+    
+    </div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2015
+
+    kosakasakas
+
+<br>
+Powered by Octopress.
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'unicorngardensquare';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://kosakasakas.github.io/blog/2015/04/26/superar2/';
+        var disqus_url = 'http://kosakasakas.github.io/blog/2015/04/26/superar2/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-55875834-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+</body>
+</html>
