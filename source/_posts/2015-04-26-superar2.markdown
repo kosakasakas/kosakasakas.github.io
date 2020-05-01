@@ -1,0 +1,9 @@
+---
+layout: post
+title: "続・ユニティちゃんを超ARしたときの話"
+date: 2015-04-26 10:24:56 +0900
+comments: true
+categories: [Unity, AR]
+---
+
+[こちらの記事はリンク先の新サイトに移転しました](http://www.kosakasakas.com/2020/05/01/superar2/)

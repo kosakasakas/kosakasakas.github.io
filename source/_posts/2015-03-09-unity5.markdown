@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Unity5に対応してみた"
+date: 2015-03-09 00:04:03 +0900
+comments: true
+categories: 
+---
+
+[こちらの記事はリンク先の新サイトに移転しました](http://www.kosakasakas.com/2020/04/30/unity5/)
