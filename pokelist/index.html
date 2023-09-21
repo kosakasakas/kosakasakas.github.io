@@ -19,22 +19,19 @@
   crossorigin="anonymous"></script>
 
   
-  <title>Hexoの記事に画像埋め込む方法 | sakas blog</title>
+  <title>pokelist | sakas blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Hexoの記事に画像埋め込むにはどうすればよいかのメモ 記事ごとのローカルアセット以下をまず_config.ymlに書き込みます _config.yml1post_asset_folder: true  そうするとsource&#x2F;_posts内に記事名と同じディレクトリができます（以下ローカルアセットパス）これが各ポストのアセットディレクトリになるので、ここに画像を投入して以下のようにタグをつけると">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexoの記事に画像埋め込む方法">
-<meta property="og:url" content="https://www.kosakasakas.com/2023/09/21/post-images/index.html">
+  <meta name="description" content="#あああ">
+<meta property="og:type" content="website">
+<meta property="og:title" content="pokelist">
+<meta property="og:url" content="https://www.kosakasakas.com/pokelist/index.html">
 <meta property="og:site_name" content="sakas blog">
-<meta property="og:description" content="Hexoの記事に画像埋め込むにはどうすればよいかのメモ 記事ごとのローカルアセット以下をまず_config.ymlに書き込みます _config.yml1post_asset_folder: true  そうするとsource&#x2F;_posts内に記事名と同じディレクトリができます（以下ローカルアセットパス）これが各ポストのアセットディレクトリになるので、ここに画像を投入して以下のようにタグをつけると">
+<meta property="og:description" content="#あああ">
 <meta property="og:locale">
-<meta property="og:image" content="https://www.kosakasakas.com/2023/09/21/post-images/onepiece06_chopper.png">
-<meta property="article:published_time" content="2023-09-21T05:42:40.000Z">
-<meta property="article:modified_time" content="2023-09-21T14:18:07.195Z">
+<meta property="article:published_time" content="2023-09-21T14:41:41.000Z">
+<meta property="article:modified_time" content="2023-09-21T15:02:36.985Z">
 <meta property="article:author" content="kosakasakas">
-<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.kosakasakas.com/2023/09/21/post-images/onepiece06_chopper.png">
 <meta name="twitter:creator" content="@sakas_poke">
   
     <link rel="alternate" href="/atom.xml" title="sakas blog" type="application/atom+xml">
@@ -94,16 +91,12 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-post-images" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2023/09/21/post-images/" class="article-date">
-  <time class="dt-published" datetime="2023-09-21T05:42:40.000Z" itemprop="datePublished">2023-09-21</time>
+    <a href="/pokelist/index.html" class="article-date">
+  <time class="dt-published" datetime="2023-09-21T14:41:41.000Z" itemprop="datePublished">2023-09-21</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -112,7 +105,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Hexoの記事に画像埋め込む方法
+      pokelist
     </h1>
   
 
@@ -120,62 +113,19 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>Hexoの記事に画像埋め込むにはどうすればよいかのメモ</p>
-<h1 id="記事ごとのローカルアセット"><a href="#記事ごとのローカルアセット" class="headerlink" title="記事ごとのローカルアセット"></a>記事ごとのローカルアセット</h1><p>以下をまず<code>_config.yml</code>に書き込みます</p>
-<figure class="highlight plaintext"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
-
-<p>そうすると<code>source/_posts</code>内に記事名と同じディレクトリができます（以下ローカルアセットパス）<br>これが各ポストのアセットディレクトリになるので、ここに画像を投入して以下のようにタグをつけると記事内に画像を埋め込むことができます</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img onepiece06_chopper.png 画像のタイトル %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>実際埋め込んだ例がこちら</p>
-<img src="/2023/09/21/post-images/onepiece06_chopper.png" class="" title="画像のタイトル">
-
-<span id="more"></span>
-<p>他にもパスを取得したり　→　/2023/09/21/post-images/onepiece06_chopper.png</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path onepiece06_chopper.png %&#125;</span><br></pre></td></tr></table></figure>
-
-<p>リンクだけ張ったりできます　→　<a href="/2023/09/21/post-images/onepiece06_chopper.png" title="onepiece06_chopper.png">onepiece06_chopper.png</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_link onepiece06_chopper.png %&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="グローバルアセット"><a href="#グローバルアセット" class="headerlink" title="グローバルアセット"></a>グローバルアセット</h1><p>全体で共通して使いまわして使うような画像は<code>source</code>以下におきましょう<br>タグ形式は記事への相対パスでしか有効にならないっぽいのでマークダウン形式でアクセスします</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![](/images/hoge.png).</span><br></pre></td></tr></table></figure>
-
-<p>また、各記事にはヘッダ画像を設定することができます<br>ヘッド部分に以下のプロパティを設定することで記事の頭に画像をセットすることができます</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// グローバルアセットパスで指定する場合</span><br><span class="line">photos: &quot;/images/hoge.png&quot;</span><br><span class="line">// ローカルアセットパスで指定する場合</span><br><span class="line">photos: &quot;/2023/09/21/post-images/onepiece06_chopper.png&quot;</span><br></pre></td></tr></table></figure>
-<p>ローカルアセットパスで指定する場合は<code>asset_path</code>タグで生成されるパスを指定してあげてください</p>
+        <p>#あああ</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/21/post-images/" data-id="clmsrrnzq0000swjy7d2n71bw" data-title="Hexoの記事に画像埋め込む方法" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/pokelist/index.html" data-id="clmtabyvs000014jy570ndb8b" data-title="pokelist" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
-
     </footer>
   </div>
   
     
-<nav id="article-nav">
-  
-    <a href="/2023/09/21/hexo-tagging/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          Hexoの記事で使えるタグとプラグイン
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2020/12/02/sanshinnumera/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">三神ヌメラのすすめ</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
