@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TT4ZRKRLZ2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TT4ZRKRLZ2');
+</script>
+<!-- End Google Analytics -->
+
+  <!-- Google Adsense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5645188269753703"
+  crossorigin="anonymous"></script>
+
+  
+  <title>続・ユニティちゃんを超ARしたときの話 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="(※こちらは過去の記事を移転したものです) 第8回ニコニコ学会βシンポジウム「研究してみたマッドネス」にて超ARについて発表する機会をいただいたので、話題のUnity5で実装してみることにしました。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="続・ユニティちゃんを超ARしたときの話">
+<meta property="og:url" content="https://www.kosakasakas.com/2020/05/01/superar2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="(※こちらは過去の記事を移転したものです) 第8回ニコニコ学会βシンポジウム「研究してみたマッドネス」にて超ARについて発表する機会をいただいたので、話題のUnity5で実装してみることにしました。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.kosakasakas.com/2020/05/01/superar2/images_old/images/unicorn/super_ar2_opt/miku.png">
+<meta property="article:published_time" content="2020-05-01T06:00:00.000Z">
+<meta property="article:modified_time" content="2023-09-21T14:02:12.287Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Unity">
+<meta property="article:tag" content="AR">
+<meta property="article:tag" content="レンダリング">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.kosakasakas.com/2020/05/01/superar2/images_old/images/unicorn/super_ar2_opt/miku.png">
+<meta name="twitter:creator" content="@sakas_poke">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.kosakasakas.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-superar2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/05/01/superar2/" class="article-date">
+  <time class="dt-published" datetime="2020-05-01T06:00:00.000Z" itemprop="datePublished">2020-05-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>►<a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/images_old/images/unicorn/super_ar2_opt/miku.png" rel="gallery_clmszoxdp000eysjy679i005d">
+        <img src="/images_old/images/unicorn/super_ar2_opt/miku.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      続・ユニティちゃんを超ARしたときの話
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>(※こちらは過去の記事を移転したものです)</p>
+<p><a target="_blank" rel="noopener" href="http://niconicogakkai.tumblr.com/post/115894678356/6th-more">第8回ニコニコ学会βシンポジウム「研究してみたマッドネス」</a>にて超ARについて発表する機会をいただいたので、話題のUnity5で実装してみることにしました。</p>
+<span id="more"></span>
+<p>（超ARとはWebカメラを使ったMovie-Based Lighting技術で、実空間の光の情報をキャラクタに反映できる新しいタイプのARです。普通のARでは味わえない「こっち出てきた感」を演出することができます。詳細は<a href="http://www.kosakasakas.com/2020/04/30/unity-super-ar/">こちら</a>。）</p>
+<p>Unity5版は動画だとこんな感じです。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.nicovideo.jp/watch/sm26111726">初音ミクをこっちの世界に召喚してみた</a></li>
+</ul>
+<p>前書いた超ARはUnity 4.6 proを使っていたので、有料ライセンスがないと動かせませんでしたが、Unity5対応により無料で動かせるようになります！</p>
+<p>また、単純に移植したのではなく、Unity5で使えるようになったイメージベースドライティング(IBL)やグローバルイルミネーション(GI)の機能を利用した事で、簡潔に組めるようになり、スピードも絵のクオリティも上がっています。</p>
+<h2 id="実装環境"><a href="#実装環境" class="headerlink" title="実装環境"></a>実装環境</h2><ul>
+<li>Qualcomm Vufolia Unity Extention v4.0.105</li>
+<li>Unity 5.0.1 Personal</li>
+<li>MacBook Pro Retina 2012</li>
+</ul>
+<p>VuforiaのUnity5のmac 64bit版がリリースされたのはほんとつい最近です。<br>リリースされて速攻でこれを作りました。<br>超会議に間に合ってよかった。。</p>
+<h2 id="前回との違い"><a href="#前回との違い" class="headerlink" title="前回との違い"></a>前回との違い</h2><p>最大の変更点としては、前回はLuxというIBL用の無料ライブラリを使っていましたが、今回はこれは使わずStandard Shaderだけで動かします。</p>
+<p>デフォルトのStandard Shader自体にIBLの機能が備わったのでこれで代用可能です。<br>自前でブラー処理とかやらなくて済むのはかなり大きい</p>
+<p>また、Unity5ではリアルタイムGI機能としてReflection Probesという機能が追加されており、これを使うと前回自前実装した部分の大半をまんま代用できるっぽいので代用します。</p>
+<p>Refrection Probesとは何かというと、ざっくりいうと、スペキュラ成分専用のLight Probeです。<br>これをシーンのどっかに置くと、そこから見たシーンのスペキュラ反射を他のオブジェクトに反映させることができる優れものです。</p>
+<p>ということで、これらを使うと、前回の実装フローでは</p>
+<ul>
+<li>A1. 仮装視点をどこかに設置して、そこにWebカメラの映像を写して、そこからCubeMapを作る（要実装）</li>
+<li>A2. 作ったCubeMapをDiffuse用CubeMapとSpecular用CubeMapにブラー加工する（要実装）</li>
+<li>A3. Luxに渡してレンダリングする（要実装）</li>
+</ul>
+<p>という工程だったのに対し、Unity5版では</p>
+<ul>
+<li>B1. ReflectionProbeをどこかに設置して、そこにWebカメラの映像を写して、そこからCubeMapも作る（要実装）</li>
+<li>B2. 作ったCubeMapをライトが参照しているSkyboxに渡す（デフォルトでOK）</li>
+</ul>
+<p>というように、実装工数をかなり簡略化させることができます。</p>
+<h2 id="CubeMapにレンダリング結果を書き込む方法"><a href="#CubeMapにレンダリング結果を書き込む方法" class="headerlink" title="CubeMapにレンダリング結果を書き込む方法"></a>CubeMapにレンダリング結果を書き込む方法</h2><p>今回追加で実装したのは、B2の「ReflectionProbeをどこかに設置して、そこにWebカメラの映像を写して、そこからCubeMapを作る」にあたる部分ですが、その際に問題になるのが、”CubeMapをScriptに渡して、レンダリング結果を反映させて、他のObjectでもそのCubeMapを使い回す方法”です。（任意の視点で周囲のシーンをテクスチャに書き込み、CubeMapにセットする方法については前に述べたので、それについては今回はスコープから外します。）</p>
+<p>これを実現するためにscriptに渡すPublic引数は以下の2点です。</p>
+<pre><code>public Cubemap targetCubemap;
+public Material targetMaterial;
+</code></pre>
+<p>targetCubemapには空のCubeMapを渡し、これにレンダリング結果を書き込みます。<br>この際に、レンダリングするためのメッシュとマテリアルが無いとレンダリング出来ないため、Materialが必要になります。<br>また、このtargetMaterialには周囲のシーンを映り込ませるため、反射するシェーダを持たせる必要があります。<br>今回は「Legacy Shader&#x2F;Reflective&#x2F;Diffuse」シェーダをもたせてscriptに渡しました。</p>
+<p>そして、以下のようにtargetMaterialにtargetCubemapを設定させる処理をUpdate関数内で呼んでやります。</p>
+<pre><code>void Update() &#123; 
+    if (isUpdate) &#123; // 毎フレ描画は重いので、良い感じに間引く
+         renderCubeMap(); // 周囲のシーンをテクスチャに書き込む処理
+        targetMaterial.SetTexture(&quot;_Cube&quot;, targetCubemap);
+        GetComponent&lt;Renderer&gt;().material = targetMaterial;
+    &#125;
+&#125;
+</code></pre>
+<p>スクリプト側で変更するのはこれらの一連の処理のみです。</p>
+<p>あとはメッシュの情報が無いとエラーが出ると思うので、このscriptを持たせるGameObjectには必ずMesh Rendererコンポーネントを追加して、ElementにtargetMaterialを設定しておいてください。</p>
+<p><img src="/images_old/images/unicorn/super_ar2_opt/script.png" alt="script"></p>
+<p>自分は以下の図のように、シーンのどこかにWEBカメラの映像を投影したReflectionDomeオブジェクトを設定しているので、この仮装視点の位置にReflection Probeを置き、そのReflection ProbeにこのScriptを貼っています。</p>
+<p><img src="/images_old/images/unicorn/super_ar/cam.jpg" alt="cam"></p>
+<p>あとは、適当にDirectional　Lightをセットして、targetCubemapから作ったSkyBoxを設定すれば、動画のような環境光が反映されたMovie-Based Lightingが実現できます。</p>
+<h2 id="所感"><a href="#所感" class="headerlink" title="所感"></a>所感</h2><p>前回の実装はブラーが汚かったし、CPU実装で重かったので、デフォルトで任せられるようになったのでパフォーマンスもクオリティも上がった気がします。</p>
+<p>あと、Unity5をいじって思ったことなんですが、StandardShaderに慣れていないだけかもしれないですが、なんかラップライティングっぽい輪郭が出ちゃってるのは気のせいでしょうか。<br>パラメータもよくわかんなくて、ライト切っててもアンビエント強すぎたりするし、ちゃんとshaderのコードみないとかもですね。</p>
+<p>最後に、こんなのも作りました。</p>
+<p><img src="/images_old/images/unicorn/super_ar2_opt/coil.png" alt="coil"></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.nicovideo.jp/watch/sm26111795">超ARで電脳コイルの世界を作ってみた</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.kosakasakas.com/2020/05/01/superar2/" data-id="clmszoxdp000eysjy679i005d" data-title="続・ユニティちゃんを超ARしたときの話" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/12/02/sanshinnumera/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          三神ヌメラのすすめ
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/30/unity5/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Unity5に対応してみた</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/">ポケモン</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%AB%E3%83%BC%E3%83%89/">カード</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-Search-Console/" rel="tag">Google Search Console</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heroku/" rel="tag">Heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hugo/" rel="tag">Hugo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tips/" rel="tag">Tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" rel="tag">インターネット大会</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" rel="tag">デッキ構築</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" rel="tag">内定リスト</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A3%E7%9B%BE/" rel="tag">剣盾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" rel="tag">画像圧縮</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AR/" style="font-size: 16.67px;">AR</a> <a href="/tags/Google-Search-Console/" style="font-size: 10px;">Google Search Console</a> <a href="/tags/Heroku/" style="font-size: 16.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hugo/" style="font-size: 13.33px;">Hugo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" style="font-size: 10px;">インターネット大会</a> <a href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" style="font-size: 10px;">デッキ構築</a> <a href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" style="font-size: 20px;">レンダリング</a> <a href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" style="font-size: 10px;">内定リスト</a> <a href="/tags/%E5%89%A3%E7%9B%BE/" style="font-size: 13.33px;">剣盾</a> <a href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" style="font-size: 13.33px;">画像圧縮</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/21/hexo-tagging/">Hexoの記事で使えるタグとプラグイン</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/21/post-images/">Hexoの記事に画像埋め込む方法</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/02/sanshinnumera/">三神ヌメラのすすめ</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/01/superar2/">続・ユニティちゃんを超ARしたときの話</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/30/unity5/">Unity5に対応してみた</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

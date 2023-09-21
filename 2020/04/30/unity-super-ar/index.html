@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TT4ZRKRLZ2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TT4ZRKRLZ2');
+</script>
+<!-- End Google Analytics -->
+
+  <!-- Google Adsense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5645188269753703"
+  crossorigin="anonymous"></script>
+
+  
+  <title>ユニティちゃんを超ARしたときの話 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="(※こちらは過去の記事を移転したものです) 前回、UnityでリアルタイムIBLしてみたというエントリを書かせて頂きましたが、今回その応用バージョンで、IBL+AR&#x3D;超ARしてみたのでその時のメモやら実装方法を残しておきます。 動画は以下のリンクにうぷしてますので、先に見てもらうと、「あら、こんな感じの事できるのねー」と雰囲気理解してもらえると思います。  ニコニコ動画 Vine">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ユニティちゃんを超ARしたときの話">
+<meta property="og:url" content="https://www.kosakasakas.com/2020/04/30/unity-super-ar/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="(※こちらは過去の記事を移転したものです) 前回、UnityでリアルタイムIBLしてみたというエントリを書かせて頂きましたが、今回その応用バージョンで、IBL+AR&#x3D;超ARしてみたのでその時のメモやら実装方法を残しておきます。 動画は以下のリンクにうぷしてますので、先に見てもらうと、「あら、こんな感じの事できるのねー」と雰囲気理解してもらえると思います。  ニコニコ動画 Vine">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.kosakasakas.com/2020/04/30/unity-super-ar/images_old/images/unicorn/super_ar_opt/res0.jpg">
+<meta property="article:published_time" content="2020-04-30T02:57:17.000Z">
+<meta property="article:modified_time" content="2023-09-21T14:15:18.371Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Unity">
+<meta property="article:tag" content="AR">
+<meta property="article:tag" content="レンダリング">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.kosakasakas.com/2020/04/30/unity-super-ar/images_old/images/unicorn/super_ar_opt/res0.jpg">
+<meta name="twitter:creator" content="@sakas_poke">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.kosakasakas.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-unity-super-ar" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/04/30/unity-super-ar/" class="article-date">
+  <time class="dt-published" datetime="2020-04-30T02:57:17.000Z" itemprop="datePublished">2020-04-30</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>►<a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/images_old/images/unicorn/super_ar_opt/res0.jpg" rel="gallery_clmszoxdr000jysjycyi0e668">
+        <img src="/images_old/images/unicorn/super_ar_opt/res0.jpg" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      ユニティちゃんを超ARしたときの話
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>(※こちらは過去の記事を移転したものです)</p>
+<p>前回、<a href="http://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/">UnityでリアルタイムIBLしてみた</a>というエントリを書かせて頂きましたが、今回その応用バージョンで、IBL+AR&#x3D;超ARしてみたのでその時のメモやら実装方法を残しておきます。</p>
+<p>動画は以下のリンクにうぷしてますので、先に見てもらうと、「あら、こんな感じの事できるのねー」と雰囲気理解してもらえると思います。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://www.nicovideo.jp/watch/sm25072244">ニコニコ動画</a></li>
+<li><a target="_blank" rel="noopener" href="https://vine.co/v/O6wpZr7lpMg">Vine</a></li>
+</ul>
+<span id="more"></span>
+<iframe class="vine-embed" src="https://vine.co/v/O6wpZr7lpMg/embed/simple" width="320" height="320" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+
+<p>微妙にマーカーズレてたり、解像度低かったりしたので今度取り直してYoutubeに再アップします。。</p>
+<p>##今回やった事<br>前回記事をベースに、実装面で進化しているのは大きくは以下の点です。</p>
+<ul>
+<li>IBLで使うCubemapTextureを静止画から動画に対応</li>
+<li>WebCamからの映像をIBLに反映</li>
+<li>AR対応</li>
+</ul>
+<p>現実とのインタラクションをより感じさせるために今回ARを使っていますが、任意の動画環境下で動きます。<br>Webcamだと解像度とかに限界を感じたので、インタラクションを無視できるなら、それっぽい動画を撮影して後でそれを流した方が雰囲気出るのかも知れないです。</p>
+<p>ちなみに技術的に新規性のある事とかアイデアのある事は一切やっておらず、CG屋さんが使いそうなテクニックをそのまんまUnity上で行ってARに載せているだけです。</p>
+<p>Youtubeでは本デモのようなImage-BasedなARは少なからずあって、海外の人がいくつか上げてるんですが、日本ではIBL+ARっていうのはあんまり見ないですね。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=YxxCjV-2y_E">Image Based Lighting in Augmented Reality</a></li>
+</ul>
+<p>今回のデモではしっかりアンビエントとか焼いたり、シャドウを付けたり、細かい事しているので、演出面ではそこそこ雰囲気を出せたのではと思っています。</p>
+<p>なによりユニティちゃんのアセットのクオリティが高い！</p>
+<p>あと、先に言っておくと、ARについては特に特別な事はやっておらず、Unity ARでググったページを見ながらSDKインポートしたくらいしかしていません。</p>
+<p>なので、ここからはほぼほぼレンダリングの話になります。</p>
+<h2 id="環境とか"><a href="#環境とか" class="headerlink" title="環境とか"></a>環境とか</h2><p>今回の動作環境は以下の通りです。</p>
+<ul>
+<li>Mac Book Rro Retina 15-inch 2013</li>
+<li>OS X 10.9.5</li>
+<li>Unity Pro 4.5.4f1</li>
+</ul>
+<p>今回は禁断のUnity proを使用しています！ドヤァ！</p>
+<p>ただこれは一ヶ月限定のイベントライセンスなので、来月には切れてノーマル無課金厨に戻ります。</p>
+<p>今回はたまたま「<a target="_blank" rel="noopener" href="http://unity-chan.com/contents/event/director-cup/">ユニティちゃんディレクター杯</a>」というコンテストをUnityさんが主催されていましたので、参加登録してイベントライセンスを付与して頂きました。</p>
+<p>そして、今回の実装ではProでしかできない事をやっちゃってます。</p>
+<p>詳しくは”実装方法”のところで述べますが、シーンをCubemapに焼くAPIはPro限定っぽいです。</p>
+<p>ただ、今思えば別にこのAPI使わなくても実装できたんじゃね？と思っているので、今後暇だったらFree対応するかもしれません。</p>
+<h2 id="実装方法"><a href="#実装方法" class="headerlink" title="実装方法"></a>実装方法</h2><h3 id="1-アセットを準備する"><a href="#1-アセットを準備する" class="headerlink" title="1. アセットを準備する"></a>1. アセットを準備する</h3><p>まずはUnityちゃんのきれいなテクスチャを作りましょう。<br>ARにした時に、現実となるべくなじませるためには、アンビエントやシーンに非依存の環境光を焼く作業はほぼ必須だと思っています。</p>
+<p>前回の記事と同じようにBlenderのCyclesでユニティちゃんをレンダリングしてテクスチャを刷新して下さい。</p>
+<p>Cyclesでレンダリングするとたぶんこんな感じになります。</p>
+<p><img src="/images_old/images/unicorn/super_ar_opt/cycles.jpg" alt="cycles"></p>
+<p>ユニティちゃんはミクと違って法線マップを持っていたり、そもそもテクスチャにアンビエントっぽい陰が乗っていたりするので焼かなくてもそれなりにリアルになるかもしれません。</p>
+<p>ユニティちゃんは出来るコです。</p>
+<p>テクスチャを焼きおえたらUnity上でテクスチャを差し替えて、Luxのマテリアルを各パーツに設定してください。</p>
+<p>Luxについては<a target="_blank" rel="noopener" href="http://kosakasakas.github.io/blog/2014/10/18/unity-realtime-ibl/">前回記事</a>を参照下さい。</p>
+<p>自分は肌系はLux&#x2F;Bumped Diffuse、洋服系はLux&#x2F;Bumped Speculaer、髪はLux&#x2F;Human&#x2F;Hairを設定しています。</p>
+<p>ここまでいくとこのくらいのクオリティまで出せます。</p>
+<p><img src="/images_old/images/unicorn/super_ar_opt/ibl.jpg" alt="ibl"></p>
+<h3 id="2-IBLを動画に対応させる"><a href="#2-IBLを動画に対応させる" class="headerlink" title="2. IBLを動画に対応させる"></a>2. IBLを動画に対応させる</h3><p>前回の実装ではIBLに使うDiffuse CubemapとSpecular Cubemapは事前に用意した静止画だったのですが、今回はこれらを動的に作成することで任意の動画をCubemapとして使えるようにします。</p>
+<p>まず毎フレームIBLのCubemapを変更する方法ですが、自分はSetupLuxクラスを継承して書き換えて実装しました。</p>
+<p>書き換えたCustomSetupLuxクラスはgistにのせときますので細かいところはこれを読んでください。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://gist.github.com/kosakasakas/c664924756ecfb45d8f2#file-customsetuplux-cs">CustomSetupLux.cs</a></li>
+</ul>
+<p>(また、継承もとのSetupLux.csは<a target="_blank" rel="noopener" href="https://github.com/larsbertram69/Lux">こちら</a>にあります。)</p>
+<p>CustomSetupLuxの中でCubemapを書き換えている部分は以下の部分。</p>
+<pre><code>spec = new Cubemap(cubemapSize, TextureFormat.ARGB32, true);
+diff = new Cubemap(cubemapSize, TextureFormat.ARGB32, true);
+
+Shader.SetGlobalTexture(&quot;_SpecCubeIBL&quot;, spec);
+Shader.SetGlobalTexture(&quot;_DiffCubeIBL&quot;, diff);
+</code></pre>
+<p>オリジナルのLuxのSetGlobalTexture後に、こちらで一回SetGlobalTextureしておけば、あとはspec, diffの中身を書き換えていくだけで勝手にLuxがよしなに処理してくれます。</p>
+<p>また、Cubemap型はイコールオペレーションではコピーされない点に注意です。<br>以下のようにColor[] colorをセットします。</p>
+<pre><code>diff.SetPixels(color, face);
+diff.Apply();
+</code></pre>
+<p>あとはこのdiffとspecの更新処理をLastUpdate()内で呼んであげれば毎フレームShaderのテクスチャが更新されるようになると思います。</p>
+<p>また、SetupLux(というかMonoBehaviour)の関数をオーバーライドする際の注意点ですが、継承元の関数の指定子をpublic virtualに変更してからオーバーライドして下さい。じゃないと継承元が呼ばれません。</p>
+<pre><code>// SetupLux側
+public virtual void Update () &#123;
+    hogehoge();
+&#125;
+
+// CustomSetupLux側
+public override void Update () &#123;
+    base.Update ();
+    fugafuga();
+&#125;
+</code></pre>
+<h3 id="3-WebCamからの映像をIBLに反映させる"><a href="#3-WebCamからの映像をIBLに反映させる" class="headerlink" title="3. WebCamからの映像をIBLに反映させる"></a>3. WebCamからの映像をIBLに反映させる</h3><p>diffとspecがそれぞれリアルタイム更新されるようになったので、これに値を入れていきます。</p>
+<p>IBLを実現するためには、ざっくり言うとユニティちゃん視点から周囲を映したテクスチャを作り、そのテクスチャのピクセル値をdiffやらspecやらに詰めていけば良いわけです。</p>
+<p>そのためにはCameraクラスのRenderToCubemap()を使います。<br>使い方は以下の要領で、faceで面を指定しながらコールします。</p>
+<pre><code>cam.transform.position = cameraPos;
+cam.RenderToCubemap ( spec, face);
+</code></pre>
+<p>CustomSetupLuxクラスではUpdate()内でユニティちゃんの移動に合わせてcameraPosを更新し、それを上記のようにcam（ユニティちゃんサイドからみた仮想視点）にセットしてRenderToCubemapしています。</p>
+<p>このような修正をすればユニティちゃんから見たシーンの映像がspecに格納されるようになります。</p>
+<p>ただ、これだと周囲になんにも置かない限り真っ青なシーンがレンダリングされるだけだと思うので、シーンに半球をおいてそこにwebcamの映像を投影し、それをcamに撮影させます。(なんてワークアラウンド)</p>
+<p><img src="/images_old/images/unicorn/super_ar_opt/cam.jpg" alt="cam"></p>
+<p>半球モデルは探しても無かったので自作しました。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://gist.github.com/kosakasakas/c664924756ecfb45d8f2#file-semi_sphere-obj">semi_sphare.obj</a></li>
+</ul>
+<p>semi_sphare.objは映像投影用に法線方向を反転させて、半球内に描画されるようにモデリングしてあります。<br>UVも透視投影で良い感じにマップしてあります。</p>
+<p>ちなみにBlenderで作ったのですが、OBJ以外Unityでうまく読んでくれなかったのでモデルをエクスポートする時はフォーマットに注意して下さい。</p>
+<p>この半球をシーンのどっかにおいて、その中をcamが動くように調節します。<br>半球を二つ置いて閉じちゃう方が映像にムラが無くて良い感じです。</p>
+<p>この半球に対してWebCamの画像を映す方法ですが、以下のスクリプトを半球に設定すればOKです。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://gist.github.com/kosakasakas/c664924756ecfb45d8f2#file-webcambehaviourscript-cs">WebCamBehaviourScript.cs</a></li>
+</ul>
+<p>中身はわりとシンプルなので、コード見てもらえば分かると思います。</p>
+<p>これでWebcam映像がspecに映るようになると思います!</p>
+<h3 id="4-いい感じにテクスチャをぼかす"><a href="#4-いい感じにテクスチャをぼかす" class="headerlink" title="4. いい感じにテクスチャをぼかす"></a>4. いい感じにテクスチャをぼかす</h3><p>環境光がキューブマップに焼けたのは良いのですが、specular用のCubemapとdiffuse用のCubemapは全然求められるものが違います。</p>
+<ul>
+<li>specular map</li>
+</ul>
+<p><img src="/images_old/images/unicorn/super_ar_opt/spec.jpg" alt="spec_map"></p>
+<ul>
+<li>diffuse map</li>
+</ul>
+<p><img src="/images_old/images/unicorn/super_ar_opt/diff.jpg" alt="diff_map"></p>
+<p>上図はちゃんと計算されたspecularテクスチャとdiffuseテクスチャの違いなのですが、diffuse用はむちゃくちゃぼけてるのが分かると思います。</p>
+<p>diffuseはオブジェクト表面でいろんな方向に拡散した光をシミュレートしたマップなので明るくぼけた印象のテクスチャになってます。</p>
+<p>これを再現するために、今回は超単純ですが線形ブラーを実装しました。</p>
+<p>しかも、GPUとか使わずに、めんどくさいので思いっきりC#で書いています。</p>
+<p>参考にしたのは<a target="_blank" rel="noopener" href="http://forum.unity3d.com/threads/contribution-texture2d-blur-in-c.185694/">こちらのCommunity</a>で議論されているブラーです。</p>
+<p>ただこの実装だとキューブマップの境界でアーティファクトが発生してしまうので、実際には隣り合うマップの重なる部分もぼかしてスムーズにブラーがかかるようにしています。</p>
+<p>CustomSetupLuxクラスのFastBlur()が実装したものです。</p>
+<p>若干怪しい挙動しますが、まぁ許容範囲内です。。</p>
+<p>そして、Fastと言っていますが、ものすごく遅いです。</p>
+<p>遅すぎて毎フレやるとユニティちゃん動かないレベルです。</p>
+<p>ですので実際にブラー処理をするのは数フレに一回程度にしましょう。<br>ついでにcubemapを書き直す事自体もそう頻繁にやる必要ないので、数フレに一回だけ書くようにします。</p>
+<p>また、SpecularマップもDiffuseマップも高い解像度はまったく必要有りません。<br>雰囲気だけ合っていればよいし、映り込む領域も小さいので、Cubemapの解像度は16x16とかでOKです。</p>
+<p>今回のデモで言えば、specは16x16で作って、diffuseはそれに半径8のブラーをかけてる感じです。</p>
+<p>また、やってみると分かるのですが、こうして作ったdiffuseはとても暗いです。<br>本来はもっと光が漏れだしてほしい部分が明るくなってくれません。</p>
+<p>かといって一律でoffsetを履かせると255を超えてしまう部分もあるので、サチらないように明るさを調整する必要があります。<br>つまりガンマ補正をかけます。</p>
+<p>ガンマ補正は255諧調でいうと以下の感じで実装できます。たぶん。。</p>
+<pre><code>Color[] GammaCorrection(Color[] input, int width, int height, float gamma) &#123;
+    Color[] output = new Color[width * height];
+    for (int w = 0; w &lt; width; ++w) &#123;
+        for (int h = 0; h &lt; height; ++h) &#123;
+            output[width * w + h].r = 255.0f * Mathf.Pow(1.0f / 255.0f * input[width * w + h].r, 1.0f / gamma);
+            output[width * w + h].g = 255.0f * Mathf.Pow(1.0f / 255.0f * input[width * w + h].g, 1.0f / gamma);
+            output[width * w + h].b = 255.0f * Mathf.Pow(1.0f / 255.0f * input[width * w + h].b, 1.0f / gamma);
+            output[width * w + h].a = 255.0f;
+        &#125;
+    &#125;
+    return output;
+&#125;
+</code></pre>
+<p>これで明るさを調整できるので、程よい値を探しながらレンダリングしてみて下さい。</p>
+<h3 id="4-ARしてみる"><a href="#4-ARしてみる" class="headerlink" title="4. ARしてみる"></a>4. ARしてみる</h3><p>AR自体は特別な事はしていません。<br>以下のサイトを参考にして設定しました。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://kawakawa2000.jugem.jp/?eid=56">irofさんとAR（拡張現実）で遊んでみよう♪</a></li>
+</ul>
+<p>ちなみに、どこのサイトでもTargetDimensionは100で設定していますが、たぶんこれはデマで、Unity上のアセットの大きさを1を基準にしている場合は普通に1で良いです。</p>
+<p>また、デモではキューブ形状のマーカーを置いていますが、実は前面のプレーンしか使っていません。</p>
+<p>キューブでもやりましたが、なんか方向が逆に定まらず、一面だけの方が安定しました。</p>
+<p>なので、キューブである必要は全くないのです。</p>
+<p>あと、本デモではシャドウについてはシャドウの部分だけしっかりマスクして、あたかも床に影が出ているかのように演出しています。</p>
+<p>床オブジェクトやマーカーキューブオブジェクトに以下のShaderをマテリアルを設定すれば、シャドウだけ表示する事が出来ますので参考にしてみてください。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://gist.github.com/kosakasakas/c664924756ecfb45d8f2#file-shadowmask-shader">ShadowMask.shader</a></li>
+</ul>
+<h2 id="結果と考察"><a href="#結果と考察" class="headerlink" title="結果と考察"></a>結果と考察</h2><p><img src="/images_old/images/unicorn/super_ar_opt/setup.jpg" alt="setup"></p>
+<p>こんな感じでライトとステージを用意してライトをひたすら振りながらwebCamでユニティちゃんを追ってました。</p>
+<p><img src="/images_old/images/unicorn/super_ar_opt/res1.jpg" alt="res1"><br><img src="/images_old/images/unicorn/super_ar_opt/res2.jpg" alt="res2"><br><img src="/images_old/images/unicorn/super_ar_opt/top.jpg" alt="res0"></p>
+<p><a target="_blank" rel="noopener" href="http://www.nicovideo.jp/watch/sm25072244">動画</a>を見てもらうと分かりますが、ライトが変化するとそれに合わせてユニティちゃんもライティングされるのが分かります。</p>
+<p>一応ユニティちゃんのポジションを追っているので、ライトに近づけば近づくほど色がつく（はず）</p>
+<p>ちなみにマーカーとシャドウが微妙にズレているのは完全な設定ミスです。</p>
+<p>本当はぴったり合いますが、血反吐を吐いていたので、このとき気づきませんでした。</p>
+<p>思ったよりシーンに馴染んだのと、シーン変えてもどこでも割といい感じにIBLできたので、個人的には満足いってます。</p>
+<p>あとは、シャドウが結構不自然なのでそれは直せたら直したいです。</p>
+<p>平行光源を手動で一点置いちゃってる(主にシャドウ用)のでそれもできれば自動推定or外したいです。</p>
+<p>でもシャドウをリアルにやるにはどうすれば良いのか。。</p>
+<h2 id="最後に"><a href="#最後に" class="headerlink" title="最後に"></a>最後に</h2><p>キャプチャするのに毎フレーム書き出していたんですが、それが激重で、そのまったりとした動きに合わせてカメラを動かすという作業は本当に骨が折れました。<br>なんか手軽にリアルタイムキャプチャできる方法があればご教授いただきたいこのごろです。</p>
+<p>末筆になりますが、今回のデモは多くの方にTwitterやFacebook上で取り上げて頂き、制作者としてはとても嬉しく思っています。<br><a target="_blank" rel="noopener" href="http://3dnchu.com/archives/unity-chan-superar-realtimeibl/">こんなすばらしい記事</a>になったりしてすごくモチベーションが上がりました。</p>
+<p>アドバイスや機材提供など、ご協力いただいた方々にもあらためて感謝したいと思います。<br>ありがとうございました。</p>
+<p>##ライセンス表記</p>
+<div><img src="http://unity-chan.com/images/imageLicenseLogo.png" alt="ユニティちゃんライセンス"><p>このコンテンツは、『<a href="http://unity-chan.com/contents/license_jp/" target="_blank">ユニティちゃんライセンス</a>』で提供されています</p></div>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.kosakasakas.com/2020/04/30/unity-super-ar/" data-id="clmszoxdr000jysjycyi0e668" data-title="ユニティちゃんを超ARしたときの話" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/04/30/unity5/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Unity5に対応してみた
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/29/unity-realtime-ibl/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">UnityでリアルタイムIBLしてみた</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/">ポケモン</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%AB%E3%83%BC%E3%83%89/">カード</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-Search-Console/" rel="tag">Google Search Console</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heroku/" rel="tag">Heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hugo/" rel="tag">Hugo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tips/" rel="tag">Tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" rel="tag">インターネット大会</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" rel="tag">デッキ構築</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" rel="tag">内定リスト</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A3%E7%9B%BE/" rel="tag">剣盾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" rel="tag">画像圧縮</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AR/" style="font-size: 16.67px;">AR</a> <a href="/tags/Google-Search-Console/" style="font-size: 10px;">Google Search Console</a> <a href="/tags/Heroku/" style="font-size: 16.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hugo/" style="font-size: 13.33px;">Hugo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" style="font-size: 10px;">インターネット大会</a> <a href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" style="font-size: 10px;">デッキ構築</a> <a href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" style="font-size: 20px;">レンダリング</a> <a href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" style="font-size: 10px;">内定リスト</a> <a href="/tags/%E5%89%A3%E7%9B%BE/" style="font-size: 13.33px;">剣盾</a> <a href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" style="font-size: 13.33px;">画像圧縮</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/21/hexo-tagging/">Hexoの記事で使えるタグとプラグイン</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/21/post-images/">Hexoの記事に画像埋め込む方法</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/02/sanshinnumera/">三神ヌメラのすすめ</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/01/superar2/">続・ユニティちゃんを超ARしたときの話</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/30/unity5/">Unity5に対応してみた</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TT4ZRKRLZ2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TT4ZRKRLZ2');
+</script>
+<!-- End Google Analytics -->
+
+  <!-- Google Adsense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5645188269753703"
+  crossorigin="anonymous"></script>
+
+  
+  <title>HerokuとHugoでブログ運用してみる話 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="こちらの記事は昔の記事で、現在当サイトはgithub pages+Hexoに移行しています備忘録として残しています まず、このサイトはHerokuとHugoで構築されてます.   今までgithub pagesでブログ運用してたんですが、リポジトリが丸見えだったり色々問題があったので前から興味があったherokuに切り替えて運用してみることにしました.   その時の手順とか色々まとめておきます.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HerokuとHugoでブログ運用してみる話">
+<meta property="og:url" content="https://www.kosakasakas.com/2016/10/19/heroku-hugo-blog/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="こちらの記事は昔の記事で、現在当サイトはgithub pages+Hexoに移行しています備忘録として残しています まず、このサイトはHerokuとHugoで構築されてます.   今までgithub pagesでブログ運用してたんですが、リポジトリが丸見えだったり色々問題があったので前から興味があったherokuに切り替えて運用してみることにしました.   その時の手順とか色々まとめておきます.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.kosakasakas.com/2016/10/19/heroku-hugo-blog/images_old/banners/banner_hugo.png">
+<meta property="article:published_time" content="2016-10-19T13:59:01.000Z">
+<meta property="article:modified_time" content="2023-09-21T13:50:51.124Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Hugo">
+<meta property="article:tag" content="Heroku">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.kosakasakas.com/2016/10/19/heroku-hugo-blog/images_old/banners/banner_hugo.png">
+<meta name="twitter:creator" content="@sakas_poke">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.kosakasakas.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-heroku-hugo-blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2016/10/19/heroku-hugo-blog/" class="article-date">
+  <time class="dt-published" datetime="2016-10-19T13:59:01.000Z" itemprop="datePublished">2016-10-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>►<a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/images_old/banners/banner_hugo.png" rel="gallery_clmszoxdn0009ysjy4uepewnh">
+        <img src="/images_old/banners/banner_hugo.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      HerokuとHugoでブログ運用してみる話
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>こちらの記事は昔の記事で、現在当サイトはgithub pages+Hexoに移行しています<br>備忘録として残しています</p>
+<p>まず、このサイトはHerokuとHugoで構築されてます.  </p>
+<p>今までgithub pagesでブログ運用してたんですが、リポジトリが丸見えだったり色々問題があったので前から興味があったherokuに切り替えて運用してみることにしました.  </p>
+<p>その時の手順とか色々まとめておきます.  </p>
+<span id="more"></span>
+
+<h1 id="必要なもの"><a href="#必要なもの" class="headerlink" title="必要なもの"></a>必要なもの</h1><ul>
+<li>Mac</li>
+<li>Hugoのコマンドラインツール</li>
+<li>Herokuのコマンドラインツール</li>
+<li>git</li>
+</ul>
+<p>無料で全部作ります.</p>
+<h1 id="Hugoって"><a href="#Hugoって" class="headerlink" title="Hugoって?"></a>Hugoって?</h1><p>まず<a target="_blank" rel="noopener" href="https://gohugo.io/">Hugo</a>とは何かというとGo言語で構成された静的サイトジェネレータです.  </p>
+<p>静的とは何かと言うと、HTMLとかすでに生成したものを配置してあるだけということです.</p>
+<p>自分はブログ用のテキストを書くだけで、Hugoが勝手にテンプレートを元にindex.htmlやらstaticファイルを作ってくれるのであとはそれをサーバに配置するだけというようなものです.  </p>
+<p>静的がゆえに高速にレスポンスでき、かつ動的にコードを埋め込まれたりしないので、セキュリティリスクも低いというのが売りみたいですね.  </p>
+<p>そして、サイトのテンプレートテーマもたくさんあっておしゃれです！ &lt;- デザイン力がない自分のようなエンジニアにはこれが結構大事.</p>
+<p>公式のデモサイトがあるので、見てみてください.物色してるだけで面白いです.  </p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://themes.gohugo.io/">http://themes.gohugo.io/</a></li>
+</ul>
+<p><img src="/images_old/articles/hugo_theme.png" alt="hugoテーマ"></p>
+<p>hugoは言語はgoでできています.<br>ただ、実際はほとんどgoをいじることはなくて、事前知識は全くなくても問題なく扱えます.</p>
+<p>もしテーマを改造しようと思ったりすると、その辺の知識も必要になるかもしれませんが、いじらなくてもテンプレートは優秀なので大丈夫です.<br>デフォルトで以下のようなツールはサポートしています.  </p>
+<ul>
+<li>GoogleAnalytics</li>
+<li>Disqus</li>
+</ul>
+<h1 id="Herokuって？"><a href="#Herokuって？" class="headerlink" title="Herokuって？"></a>Herokuって？</h1><p><a target="_blank" rel="noopener" href="https://dashboard.heroku.com/">Heroku</a>はAWS上で動いてるクラウドプラットフォーム?です.<br>よくわかないですけど、webアプリケーションをおけるやつです.  </p>
+<p>最近よく聞くので色々と熱いみたいですよね.<br>以前LineBotをこの上で作ったことがあるので、その延長線としてHerokuを採用しました.</p>
+<p>当然ブログもwebアプリなわけで、Heroku上で動かすことができます.</p>
+<p>無料である程度運用も可能なので、まぁ趣味でブログやるくらいならFreeプランで十分でしょう.</p>
+<h1 id="手順"><a href="#手順" class="headerlink" title="手順"></a>手順</h1><p>まず、Hugoを動かします.<br>持ってない人はインストールしましょう.</p>
+<pre><code>brew install hugo
+</code></pre>
+<p>任意のディレクトリでhugoのアプリを作成します.<br>ここではhogeという名前で作ります.  </p>
+<pre><code>hugo new site hoge
+</code></pre>
+<p>早速記事を適当に生成してみましょう.  </p>
+<pre><code>cd hoge
+hugo new post/first.md
+</code></pre>
+<p>これでfirst.mdが生成されました。これが記事のテンプレートです.<br>vimやらなんやらでfirst.mdを編集しましょう.</p>
+<pre><code>+++
+date = &quot;2016-02-14T16:11:58+05:30&quot;
+draft = true
+title = &quot;Good to Great Book Review&quot;
+
++++
+Hellow!!!!
+</code></pre>
+<p>ここで、draft&#x3D;trueになっている部分があると思いますが、ドラフトモードだと確認しづらいのでこの一行は消してしまってOKです.<br>詳しくは<a target="_blank" rel="noopener" href="https://gohugo.io/overview/quickstart/">ドキュメント</a>をどぞ</p>
+<p>herokuに配置するためにgitリポジトリが必要なので設定します.<br>まずはhoge直下に移動して、以下のコマンドを打ってください.</p>
+<pre><code>git init
+</code></pre>
+<p>hugoのファイルを全部addしてコミットしちゃいます.  </p>
+<pre><code>git add -A
+git commit -m ‘最初のコミットだぁ’
+</code></pre>
+<p>さて、ここでhugoのテーマをなんかしら設定しましょう.<br>設定しないとなんも表示されないです…</p>
+<p>ここでは公式のhugo_theme_robustを使うとしましょう.<br>hoge直下に移動します.</p>
+<p>そして以下のコマンドでサブモジュールを追加してください.</p>
+<pre><code>git submodule add https://github.com/dim0627/hugo_theme_robust.git themes/hugo_theme_robust
+</code></pre>
+<p>これでサブモジュールが追加されました.<br>サブモジュールにした理由はHeroku上でよしなに取り込んでもらうためです.  </p>
+<p>ここで注意なのですが、サブモジュールの登録時にhttsじゃなくてsshで登録してしまうと、Heroku上からpullできなくなっちゃうので、必ずhttpsで登録してください.</p>
+<p>一回、ブラウザで起動確認してみましょうか.</p>
+<pre><code>hugo server --theme=hugo_theme_robust
+</code></pre>
+<p>と打ってみてください.</p>
+<pre><code>1 of 1 draft rendered
+0 future content
+1 pages created
+2 paginator pages created
+0 tags created
+0 categories created
+in 10 ms
+Watching for changes in /Users/shekhargulati/bookshelf/&#123;data,content,layouts,static,themes&#125;
+Serving pages from memory
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+<p>という感じのログが出たと思います.<br>書いてある通り、localhostに接続します.</p>
+<pre><code>open http://localhost:1313/
+</code></pre>
+<p>ブラウザが起動して以下のようなサイトっぽいものが表示されたでしょうか?</p>
+<p><img src="https://gohugo.io/img/quickstart/bookshelf-robust-theme.png" alt="▲ブラウザ画面"></p>
+<p>自分の書いた記事が出ない人はドラフトモードがonになってるからだと思います.  </p>
+<pre><code>hugo server --theme=hugo_theme_robust --buildDrafts
+</code></pre>
+<p>と打ってみる、もしくは記事のdraft &#x3D; trueを消しましょう.</p>
+<p>万事動いてたらOK!<br>ここまできたらいよいよHerokuに突っ込みます.</p>
+<p>まずは<a target="_blank" rel="noopener" href="https://dashboard.heroku.com/">Heroku</a>にアカウントを作ってログインしてください.  </p>
+<p>そしてコマンドラインツールをインストールします.  </p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://devcenter.heroku.com/articles/heroku-command-line">Download and install</a></li>
+</ul>
+<p>自分のOSのものをダウンロードしてインストールしてください.</p>
+<p>インストールできたら、またターミナルの処理に戻ります.  </p>
+<p>先ほどのhugoアプリのディレクトリで作業してると思ってください.  </p>
+<p>まずコマンドライン上で以下のコマンドでログインします.</p>
+<pre><code>heroku login
+</code></pre>
+<p>すると、アドレスとパスを要求されるので、それにしたがってサイトで登録したものを入力します.</p>
+<p>続いて、Herokuのアプリを作成します.  </p>
+<p>ここではHerokuのHugo用buildpackを製作している人がいるのでそれを利用することにします.  </p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/roperzh/heroku-buildpack-hugo">Heroku buildpack: Hugo</a></li>
+</ul>
+<p>と言ってもやることは簡単で、以下のコマンドを打つだけです.</p>
+<pre><code>heroku create --buildpack https://github.com/roperzh/heroku-buildpack-hugo.git
+</code></pre>
+<p>これでherokuサーバ上にアプリが作成されました.  </p>
+<p>いよいよ、最後にデプロイです.<br>今作業しているgitリポジトリをherokuにpushします.</p>
+<pre><code>git push heroku master
+</code></pre>
+<p>これでエラーが出なければ完了です.<br>以下のコマンドでブラウザが立ち上がり、HerokuのアプリURLにアクセスできます.</p>
+<pre><code>heroku open
+</code></pre>
+<p>ここで注意点として、デプロイが実際に反映されるには時差があります.<br>もし表示されなくても焦らずしばらく待ってみましょう.  </p>
+<p>それでもダメな場合は、ちゃんとアプリが生成できているか確認してください.<br>Herokuのwebサイト側でも確認できますが、プロセスをコマンドツールで確認もできます.  </p>
+<pre><code>heroku ps
+</code></pre>
+<p>webプロセスが生きていれば成功しています.  </p>
+<p>あとは記事をたくさん書いてgit add してデプロイしていけばブログを更新することができます!<br>なかなか簡単でしたね.  </p>
+<h1 id="関連書籍"><a href="#関連書籍" class="headerlink" title="関連書籍"></a>関連書籍</h1><p>今回取り扱った技術についてもっと知りたい方は、本がやっぱり一番手っ取り早いです.<br>Hugoに関する本って出回ってないんですよね..<br>Herokuに関しては良さげなのがあるので上げておきます.  </p>
+<ul>
+<li><a  target="_blank" rel="noopener" href="https://www.amazon.co.jp/gp/product/4048915134/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=4048915134&linkCode=as2&tag=kosakasakas-22">プロフェッショナルのための 実践Heroku入門 プラットフォーム・クラウドを活用したアプリケーション開発と運用 (書籍)</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=kosakasakas-22&l=as2&o=9&a=4048915134" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+</ul>
+<a  target="_blank" rel="noopener" href="https://www.amazon.co.jp/gp/product/4048915134/ref=as_li_qf_sp_asin_il?ie=UTF8&camp=247&creative=1211&creativeASIN=4048915134&linkCode=as2&tag=kosakasakas-22">
+<img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4048915134&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=kosakasakas-22" >
+</a>
+<img src="http://ir-jp.amazon-adsystem.com/e/ir?t=kosakasakas-22&l=as2&o=9&a=4048915134" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+<p>ガチ勢のみなさまはやっぱりオライリー本でしょう.<br>Kindle版も出てて安くていいですね.</p>
+<p><a  target="_blank" rel="noopener" href="https://www.amazon.co.jp/gp/product/B00GK5SRG8/ref=as_li_tf_il?ie=UTF8&camp=247&creative=1211&creativeASIN=B00GK5SRG8&linkCode=as2&tag=kosakasakas-22"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00GK5SRG8&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=kosakasakas-22" ></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=kosakasakas-22&l=as2&o=9&a=B00GK5SRG8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></p>
+<ul>
+<li><a  target="_blank" rel="noopener" href="https://www.amazon.co.jp/gp/product/B00GK5SRG8/ref=as_li_tf_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=B00GK5SRG8&linkCode=as2&tag=kosakasakas-22">Heroku: Up and Running</a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=kosakasakas-22&l=as2&o=9&a=B00GK5SRG8" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+</ul>
+<p>話全然変わりますけど、Safari Books Onlineのオライリー本読み放題かなり気になるんですけどどうなんですかね？<br>契約してみようかな.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.kosakasakas.com/2016/10/19/heroku-hugo-blog/" data-id="clmszoxdn0009ysjy4uepewnh" data-title="HerokuとHugoでブログ運用してみる話" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Heroku/" rel="tag">Heroku</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hugo/" rel="tag">Hugo</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/10/20/get-domain/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Heroku上のブログに独自ドメインを設定する方法
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/">ポケモン</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%AB%E3%83%BC%E3%83%89/">カード</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-Search-Console/" rel="tag">Google Search Console</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heroku/" rel="tag">Heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hugo/" rel="tag">Hugo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tips/" rel="tag">Tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" rel="tag">インターネット大会</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" rel="tag">デッキ構築</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" rel="tag">内定リスト</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A3%E7%9B%BE/" rel="tag">剣盾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" rel="tag">画像圧縮</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AR/" style="font-size: 16.67px;">AR</a> <a href="/tags/Google-Search-Console/" style="font-size: 10px;">Google Search Console</a> <a href="/tags/Heroku/" style="font-size: 16.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hugo/" style="font-size: 13.33px;">Hugo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" style="font-size: 10px;">インターネット大会</a> <a href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" style="font-size: 10px;">デッキ構築</a> <a href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" style="font-size: 20px;">レンダリング</a> <a href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" style="font-size: 10px;">内定リスト</a> <a href="/tags/%E5%89%A3%E7%9B%BE/" style="font-size: 13.33px;">剣盾</a> <a href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" style="font-size: 13.33px;">画像圧縮</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/21/hexo-tagging/">Hexoの記事で使えるタグとプラグイン</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/21/post-images/">Hexoの記事に画像埋め込む方法</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/02/sanshinnumera/">三神ヌメラのすすめ</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/01/superar2/">続・ユニティちゃんを超ARしたときの話</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/30/unity5/">Unity5に対応してみた</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

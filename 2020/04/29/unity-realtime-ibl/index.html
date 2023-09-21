@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TT4ZRKRLZ2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TT4ZRKRLZ2');
+</script>
+<!-- End Google Analytics -->
+
+  <!-- Google Adsense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5645188269753703"
+  crossorigin="anonymous"></script>
+
+  
+  <title>UnityでリアルタイムIBLしてみた | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="(※こちらは過去の記事を移転したものです) Unityでリアルタイムにイメージベースドライティング(割と疑似ですが。)してみたのでそのときのメモです。 Unityのゲーム画面キャプチャはYoutubeとニコ動の方にアップしてあるのでぜひ見てください。  Youtube ニコニコ動画">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UnityでリアルタイムIBLしてみた">
+<meta property="og:url" content="https://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="(※こちらは過去の記事を移転したものです) Unityでリアルタイムにイメージベースドライティング(割と疑似ですが。)してみたのでそのときのメモです。 Unityのゲーム画面キャプチャはYoutubeとニコ動の方にアップしてあるのでぜひ見てください。  Youtube ニコニコ動画">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/images_old/images/unicorn/miku_opt/res1.jpg">
+<meta property="article:published_time" content="2020-04-29T02:57:17.000Z">
+<meta property="article:modified_time" content="2023-09-21T14:14:14.899Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Unity">
+<meta property="article:tag" content="レンダリング">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/images_old/images/unicorn/miku_opt/res1.jpg">
+<meta name="twitter:creator" content="@sakas_poke">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.kosakasakas.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-unity-realtime-ibl" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/04/29/unity-realtime-ibl/" class="article-date">
+  <time class="dt-published" datetime="2020-04-29T02:57:17.000Z" itemprop="datePublished">2020-04-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>►<a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/images_old/images/unicorn/miku_opt/res1.jpg" rel="gallery_clmszoxdw000mysjy1a110ck6">
+        <img src="/images_old/images/unicorn/miku_opt/res1.jpg" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      UnityでリアルタイムIBLしてみた
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>(※こちらは過去の記事を移転したものです)</p>
+<p>Unityでリアルタイムにイメージベースドライティング(割と疑似ですが。)してみたのでそのときのメモです。</p>
+<p>Unityのゲーム画面キャプチャはYoutubeとニコ動の方にアップしてあるのでぜひ見てください。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://youtu.be/s_aLvJGbGII">Youtube</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.nicovideo.jp/watch/sm24722663">ニコニコ動画</a></li>
+</ul>
+<span id="more"></span>
+
+<h2 id="どんな感じでやったか"><a href="#どんな感じでやったか" class="headerlink" title="どんな感じでやったか"></a>どんな感じでやったか</h2><p>とりあえず全部リアルタイムでやるのは無理なので、アンビエントは全部テクスチャベイク&amp;ライトマップして静的な物として扱います。<br>リアルタイムでやったのは今回はディフューズとスペキュラとシャドウにしぼってやりました。</p>
+<p>すごく分かりやすい記事がたくさんあったので、参考にした記事とハマったところとかのメモをのせます。</p>
+<p>環境とかは以下の物を使っています。</p>
+<ul>
+<li>Unity 4.5.4f1 (free版)</li>
+<li>Blender 2.7.2a</li>
+</ul>
+<h2 id="初音ミクを踊らせてみよう"><a href="#初音ミクを踊らせてみよう" class="headerlink" title="初音ミクを踊らせてみよう"></a>初音ミクを踊らせてみよう</h2><p>これはMMDforMecanimを使いました。<br><a target="_blank" rel="noopener" href="http://stereoarts.jp/">http://stereoarts.jp/</a></p>
+<p>こちらのドキュメントは非常に分かりやすいので、そのままチュートリアルを実行すれば、特にハマることなくUnityで初音ミクを動かす事は出来ると思います。</p>
+<p>自分が今回使ったモデルとモーションは以下の物です。ありがとうございます。</p>
+<p>モデル：Tda式Appendミク &#x2F; Tdaさん</p>
+<p><a target="_blank" rel="noopener" href="https://bowlroll.net/file/4576">https://bowlroll.net/file/4576</a></p>
+<p>音源：WAVEFILE&#x2F;初音ミク fullver. &#x2F; 名無しさん</p>
+<p><a target="_blank" rel="noopener" href="http://www.nicovideo.jp/watch/sm14257396">http://www.nicovideo.jp/watch/sm14257396</a></p>
+<p>モーション：WAVEFILE fullver.モーション &#x2F; hinoさん</p>
+<p><a target="_blank" rel="noopener" href="http://bowlroll.net/up/dl5983">http://bowlroll.net/up/dl5983</a></p>
+<p>ちなみに、いろいろモデルを使ってみてTda式ミクに着地しました。</p>
+<p>理由はトゥーンシェードを外した時に一番しっくりくる事、装備品とかがスペキュラとかをつけた時に映える事、他のモデルだとシェーディングした時のフェイスパーツのつなぎ目がアーティファクトとして目立つ事などです。</p>
+<p>頂点数なんかも少なすぎず、いい感じでした。</p>
+<h2 id="Unityのライトマップでクオリティをあげよう"><a href="#Unityのライトマップでクオリティをあげよう" class="headerlink" title="Unityのライトマップでクオリティをあげよう"></a>Unityのライトマップでクオリティをあげよう</h2><p><img src="/images_old/images/unicorn/miku_opt/robo_lightmap.jpg" alt="miku_lightmap"></p>
+<p>Unityのfree版でも時間をかけてライトマップを作れば上図のようなかなりきれいな絵が出せます。</p>
+<p>ただ、ライトマップを焼く場合はstaticなオブジェクトである事が前提なので、対象物はステージとかterrainみたいな固定されたものである必要があります。</p>
+<p>もちろん、初音ミクみたいなごりごりに動くオブジェクトをリアルタイムレンダリングしたい場合はシャドウとか陰影が常に動くので特定のシーンに依存するようなライトマップを焼いてしまうと動かした時になんか変な感じになってしまう訳です。</p>
+<p>今回は動かないステージ部分のライティングと、ミクのシャドウ意外のアンビエントはライトマップやらプリレンダリングやらで先にテクスチャに焼き付ける方法を取ります。</p>
+<p>ライトマップに関してはこちらの記事が非常に参考になるので一読して見てください。<br>一気にクオリティの高い絵が出せるようになると思います。</p>
+<p><a target="_blank" rel="noopener" href="http://tsubakit1.hateblo.jp/entry/2014/09/14/170753">http://tsubakit1.hateblo.jp/entry/2014/09/14/170753</a></p>
+<p>ハマりポイントとしてはライトマップの解像度を適切に設定しないとかなり荒っぽくなるので気をつけてください。</p>
+<p>で、試しに初音ミクをライトマップでレンダリングしてみます。</p>
+<p><img src="/images_old/images/unicorn/miku_opt/miku_lightmap.jpg" alt="miku_lightmap"></p>
+<p>なんかすっごい微妙な感じになってます。</p>
+<p>どんなにがんばってもこんな感じになってしまいます。<br>これは表示されていないポリゴンが遮蔽されてたり、本来離れたオブジェクトの陰が乗っちゃってたりしてこんな感じになってるんじゃないかなーと推測してます。</p>
+<p>ポリゴン同士を離したり、パーツを分解してライトマップを作り直せればたぶん改善するんでしょうけど、MMDforMecanimで読み込んだ時点でUnity上ではパーツが分解できないみたいなので、Unity上での処理はあきらめました。</p>
+<h2 id="Blenderでアンビエントオクルージョンをテクスチャに焼こう"><a href="#Blenderでアンビエントオクルージョンをテクスチャに焼こう" class="headerlink" title="Blenderでアンビエントオクルージョンをテクスチャに焼こう"></a>Blenderでアンビエントオクルージョンをテクスチャに焼こう</h2><p>直接光やシーンに依存しない、間接光による陰影をアンビエントオクルージョンと言ったりするんですが、まじめにやると計算時間がすごくかかるので今回は先に述べたように、あらかじめ計算してテクスチャに焼いておく方法をとります。</p>
+<p>Unity proではSSAOなどのリアルタイムアンビエントオクルージョン手法がデフォで入っているのですが、free版ではポストエフェクト処理全般が使えないので、自力で実装するか、テクスチャに焼いちゃうかしかないと思います。</p>
+<p>Unity freeでSSAO実装できるんですかね？</p>
+<p>で、オクルージョンを焼くんですが、当初はライトマップがいい感じなのでUnity上で焼いてしまおうと思ったんですが、さっきの図みたいにUnity上のミクだとアーティファクト乗りまくりなので、あきらめてBlenderでレンダリングする事にしました。</p>
+<p>最近のBlenderには<a target="_blank" rel="noopener" href="http://www.blenderguru.com/tutorials/introduction-to-cycles/">Cycles</a>というレンダラーが付いていて、かなり本格的なレンダリングができちゃいます。</p>
+<p>しかもリアルタイムでプレビューが出来るので、調整もすごい楽。</p>
+<p>Cyclesの使い方は以下のページを参考にしました。</p>
+<p><a target="_blank" rel="noopener" href="http://www.kitotan.com/944">http://www.kitotan.com/944</a><br><a target="_blank" rel="noopener" href="http://seiga.nicovideo.jp/seiga/im2951328">http://seiga.nicovideo.jp/seiga/im2951328</a></p>
+<p>解説通りに行くと以下のような絵が出せると思います。</p>
+<p><img src="/images_old/images/unicorn/miku_opt/miku_cycles.jpg" alt="cycles"></p>
+<p>ポイントとしては、アンビエントオクルージョンを描きたいので、光源は消す事。<br>光源を消してもCyclesは環境光をいい感じに醸し出してくれます。<br>その分暗いので、環境光は強めに設定してください。</p>
+<p>環境光の強度はこんな感じで設定します。</p>
+<p><a target="_blank" rel="noopener" href="http://silverspirecg.blog119.fc2.com/blog-entry-36.html">http://silverspirecg.blog119.fc2.com/blog-entry-36.html</a></p>
+<p>このレンダリング結果をミクのテクスチャにベイクします。</p>
+<pre><code>【レンダータブ＞ベイク】
+</code></pre>
+<p>でベイクできます。<br>パーツごとに選択してベイクしてください。<br>ここで、クリアチェックボックは外しておかないとテクスチャに上書きされていかないので、気をつけてください。</p>
+<p>ベイクしたテクスチャは口の中とか遮蔽で真っ暗になっているので適宜手書きで最終調整して出来上がりです。</p>
+<p>出来上がったテクスチャはGitHubに上げたので、参考にしてください。</p>
+<h2 id="UnityでIBLをしよう"><a href="#UnityでIBLをしよう" class="headerlink" title="UnityでIBLをしよう"></a>UnityでIBLをしよう</h2><p>クオリティの高いアルベド＋アンビエントテクスチャが焼けたので、いよいよイメージベースドレンダリングをしていきます。</p>
+<p>UnityのIBLはSkyshopというマテリアル群が有名で、AssetStoreから購入する事ができます。<br>しかし、結構高いので、今回は無料で手に入るマテリアルでがんばる事にします。</p>
+<p>Luxというマテリアルシェーダを使用しました。<br>使用方法はこちらの記事を参考にしました。<br>githubのmasterブランチzipを使用しています。</p>
+<p><a target="_blank" rel="noopener" href="http://qiita.com/yasei_no_otoko/items/18bd1e4ed9abc6da8357">http://qiita.com/yasei_no_otoko/items/18bd1e4ed9abc6da8357</a></p>
+<p>基本は上記の記事通りにセッティングすれば動きます。<br>ただ、デフォルトではディフューズ環境マップとスペキュラ環境マップが1種類しかなく、バックグラウンドの画像解像度も低いので、自作します。</p>
+<p>画像のソースはこちらから頂きました。</p>
+<p><a target="_blank" rel="noopener" href="http://www.hdrlabs.com/sibl/archive.html">http://www.hdrlabs.com/sibl/archive.html</a></p>
+<p>このサイトからHDR画像を落としてくると、ディフューズ画像も付いてくるのですが、試してみるとちょっとぼかしが足りなくて、ディフューズ感が足りないので手動でもっとぼかします。</p>
+<p>カウスブラー40pxくらいぼかすとちょうどいい感じがしました。めっちゃ適当ですね。。</p>
+<p>で、ハマったのが、HDR画像だと環境マップ化する時に緑色になっちゃって変な色合いになります。<br>たぶん設定をちゃんとやれば取り込めると思うんですが、思考停止してjpgに変換してUnityで環境マップを作りました。</p>
+<p>TextureTypeはRefrection、MappingはCylindricalでマップを作成します。</p>
+<p>最終的な環境マップはgithubに上げておきました。</p>
+<h2 id="リアルタイムソフトシャドウを出そう"><a href="#リアルタイムソフトシャドウを出そう" class="headerlink" title="リアルタイムソフトシャドウを出そう"></a>リアルタイムソフトシャドウを出そう</h2><p>Unity free版のシャドウはほんとひどいです。</p>
+<p>ハードシャドウしか出せない上に、初期設定のシャドウマップ解像度が低すぎてめっちゃジャギってます。</p>
+<p>これもproならちゃんとソフトシャドウをリアルタイムに出してくれるのに、ほんとずるい。</p>
+<p>てなわけで、ソフトシャドウはがんばって実装します。<br>参考文献はこちら</p>
+<p><a target="_blank" rel="noopener" href="http://unitycoder.com/blog/2014/07/15/unity-indie-soft-shadows-directional-light/">http://unitycoder.com/blog/2014/07/15/unity-indie-soft-shadows-directional-light/</a></p>
+<p>コードはGitHubに上がってます。</p>
+<p>簡単に言うと、Percentage Closer Filteringの簡易版見たいな感じで、AutoLightを改造して四方にサンプリングしたものになります。<br>デフォルトのクラスを改造しているのでフォルダを丸ごとぶっ込んで使ってください。</p>
+<p>また、このシェーダはUnityでベイクしたライトマップの結果と互換性を持たせてあります。<br>なので、今回の初音ミク動画のシーンの静的オブジェクトに関しては、ライトマップをかけたあと、ミクのソフトシャドウが乗っているって感じです。</p>
+<p><img src="/images_old/images/unicorn/miku_opt/res3.jpg" alt="miku_res3"></p>
+<p>ゆーてカーペットしかレンダリングされてないんですけどね笑<br>ソフトシャドウがちゃんと出ている事を確認できると思います。</p>
+<h2 id="結果と課題"><a href="#結果と課題" class="headerlink" title="結果と課題"></a>結果と課題</h2><p><img src="/images_old/images/unicorn/miku_opt/res2.jpg" alt="miku_res2"></p>
+<p>動画の方が分かりやすいかと思いますが、シーンによってミクの陰影がほんのり色づいているのが分かるかと思います。</p>
+<p>目とか髪の毛のスペキュラも環境の映り込みがばっちり移ってます。</p>
+<p>これがIBLの効果であり、60FPSで動きます。</p>
+<p>そんな重い処理していないので当たり前ですが。。</p>
+<p>カメラの動きとか光源の動きにも対応できるので、色々応用は出来るのではないかと思います。任意の写真で対応できるので、ARとか面白いかも。</p>
+<p>今回は手抜きでSSSとか実装していないので、手が空いたらやってみます。<br>被写界深度とかモーションブラーとか、ポストエフェクト系もやりたい。</p>
+<h2 id="今回のアセット"><a href="#今回のアセット" class="headerlink" title="今回のアセット"></a>今回のアセット</h2><p>使用したアセットは以下から入手可能です。<br>適当にZIPダウンロードしてください。</p>
+<p>また、利用する場合は各種READMEをご覧ください。<br>よろしくお願いします。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/kosakasakas/UnityIBLAssets">GitHub - UnityIBLAssets</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/" data-id="clmszoxdw000mysjy1a110ck6" data-title="UnityでリアルタイムIBLしてみた" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/04/30/unity-super-ar/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          ユニティちゃんを超ARしたときの話
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/03/22/shinsoku/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"> 【しんそくシングルバトル】滅びの歌ニンフィア【最終1858 4位】</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/">ポケモン</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%AB%E3%83%BC%E3%83%89/">カード</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-Search-Console/" rel="tag">Google Search Console</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heroku/" rel="tag">Heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hugo/" rel="tag">Hugo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tips/" rel="tag">Tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" rel="tag">インターネット大会</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" rel="tag">デッキ構築</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" rel="tag">内定リスト</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A3%E7%9B%BE/" rel="tag">剣盾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" rel="tag">画像圧縮</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AR/" style="font-size: 16.67px;">AR</a> <a href="/tags/Google-Search-Console/" style="font-size: 10px;">Google Search Console</a> <a href="/tags/Heroku/" style="font-size: 16.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hugo/" style="font-size: 13.33px;">Hugo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" style="font-size: 10px;">インターネット大会</a> <a href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" style="font-size: 10px;">デッキ構築</a> <a href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" style="font-size: 20px;">レンダリング</a> <a href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" style="font-size: 10px;">内定リスト</a> <a href="/tags/%E5%89%A3%E7%9B%BE/" style="font-size: 13.33px;">剣盾</a> <a href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" style="font-size: 13.33px;">画像圧縮</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/21/hexo-tagging/">Hexoの記事で使えるタグとプラグイン</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/21/post-images/">Hexoの記事に画像埋め込む方法</a>
+          </li>
+        
+          <li>
+            <a href="/2020/12/02/sanshinnumera/">三神ヌメラのすすめ</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/01/superar2/">続・ユニティちゃんを超ARしたときの話</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/30/unity5/">Unity5に対応してみた</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
