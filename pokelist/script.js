@@ -235,7 +235,8 @@ function UpdateSpeedList()
       const pokeStat = s[2];
       const pokeName = s[3];
       const pokeAbility = s[4];
-      const pokeIcon = s[5];  
+      const pokeIcon = s[5];
+      const pokeIconName = s[16];
       const pokeRank = parseInt(s[6]);
       var prefix = pokeRaising + pokeStat + "族";
       prefix += (pokeRank > 0) ? (" (" + ((pokeRank == 1) ? "スカーフ" : pokeAbility) + "+" + pokeRank + ") ") : "";
@@ -259,9 +260,12 @@ function UpdateSpeedList()
         tdPoke.setAttribute("id", "speed-" + pokeVal);
         tdPoke.textContent = prefix;
         
-        var img = document.createElement("img");
-        img.setAttribute("class", "poke-icon");
-        img.src = 'https://drive.google.com/uc?export=download&id=' + pokeIcon;
+        //var img = document.createElement("img");
+        //img.setAttribute("class", "poke-icon");
+        //img.src = 'https://drive.google.com/uc?export=download&id=' + pokeIcon;
+        var img = document.createElement("div");
+        img.setAttribute("class", "icon-"+pokeIconName);
+        img.setAttribute("style", "display: inline-block;");
         tdPoke.appendChild(img);
 
         tr.appendChild(th);
