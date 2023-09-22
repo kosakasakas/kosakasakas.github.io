@@ -150,12 +150,27 @@ function UpdateAbailablePokemons()
 
     const p = pokemon[pokeIndex];
     const iconID = p[27];
+    const iconName = p[28];
     const gen = p[4];
     const idtex = "list-available-" + gen;
     var parent = document.getElementById(idtex);
+    /*
     var img = document.createElement("img");
     img.setAttribute("class", "poke-icon");
     img.src = 'https://drive.google.com/uc?export=download&id=' + iconID;
+    */
+    var holder = document.createElement("div");
+    holder.setAttribute("class", "iconholder");
+    var icon = document.createElement("div");
+    icon.setAttribute("class", "icon");
+    var img = document.createElement("div");
+    img.setAttribute("class", "icon-"+iconName);
+    img.setAttribute("style", "display: inline-block;");
+    
+    icon.appendChild(img);
+    holder.appendChild(icon);
+    //img.setAttribute("style", "display: inline-block;");
+    //img.src = 'https://drive.google.com/uc?export=download&id=' + iconID;
     parent.appendChild(img);
   }
 }
