@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://www.kosakasakas.com/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+    </url>
+
+
+    <url>
+        <loc>https://www.kosakasakas.com/2023/09/25/gascsv/</loc>
+        <lastmod>2023-09-24T17:36:13.080Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/2023/09/25/gascsv/spreadsheet.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2023/09/21/hexo-tagging/</loc>
+        <lastmod>2023-09-24T16:50:59.947Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/2023/09/21/hexo-tagging/hexo_pic.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2023/09/24/spritepack/</loc>
+        <lastmod>2023-09-24T15:08:29.754Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/2023/09/24/spritepack/icon_sprite_banner.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2023/09/22/gitignore/</loc>
+        <lastmod>2023-09-22T05:11:33.729Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2023/09/21/post-images/</loc>
+        <lastmod>2023-09-21T14:18:07.195Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2020/04/30/unity-super-ar/</loc>
+        <lastmod>2023-09-21T14:15:18.371Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/images/unicorn/super_ar_opt/res0.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/</loc>
+        <lastmod>2023-09-21T14:14:14.899Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/images/unicorn/miku_opt/res1.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2020/04/30/unity5/</loc>
+        <lastmod>2023-09-21T14:09:43.733Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/images/unicorn/miku_webplayer_opt/miku_GCan_cap_web.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2019/08/14/swsh-informals/</loc>
+        <lastmod>2023-09-21T14:06:25.827Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/banners/thumb-news13.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2020/05/01/superar2/</loc>
+        <lastmod>2023-09-21T14:02:12.287Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/images/unicorn/super_ar2_opt/miku.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2020/03/22/shinsoku/</loc>
+        <lastmod>2023-09-21T13:59:11.135Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/banners/banner_shinsoku.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2016/10/20/get-domain/</loc>
+        <lastmod>2023-09-21T13:52:43.144Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/banners/banner_heroku.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2016/10/19/heroku-hugo-blog/</loc>
+        <lastmod>2023-09-21T13:50:51.124Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/banners/banner_hugo.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2016/11/14/google-search-console/</loc>
+        <lastmod>2023-09-21T13:45:54.527Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/banners/banner_googlesearchlogo.jpg</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2016/10/24/fix-buildpack/</loc>
+        <lastmod>2023-09-21T13:39:21.192Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/banners/banner_hugo.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2016/10/23/bitflag/</loc>
+        <lastmod>2023-09-21T13:39:08.370Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2016/10/20/compress-images-1/</loc>
+        <lastmod>2023-09-21T13:38:52.516Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/banners/banner_pngsample.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2016/10/21/compress-image-2/</loc>
+        <lastmod>2023-09-21T13:38:41.795Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/banners/banner_OptiPNG.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2020/12/02/sanshinnumera/</loc>
+        <lastmod>2023-09-21T13:16:42.657Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/images_old/banners/sannume_low.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+</urlset>
+<!-- XML Sitemap generated by Hexo SEO Friendly Sitemap Generator -->
