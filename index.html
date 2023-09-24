@@ -77,10 +77,10 @@
         
           <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
         
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.kosakasakas.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.kosakasakas.com"></form>
       </div>
     </div>
   </div>
@@ -88,6 +88,71 @@
 
       <div class="outer">
         <section id="main">
+  
+    <article id="post-gascsv" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/25/gascsv/" class="article-date">
+  <time class="dt-published" datetime="2023-09-24T15:11:25.000Z" itemprop="datePublished">2023-09-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>►<a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/2023/09/25/gascsv/spreadsheet.png" rel="gallery_clmxor25h0000j8jy2b5x5inc">
+        <img src="/2023/09/25/gascsv/spreadsheet.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/09/25/gascsv/">GASのスプレットシート読み込みをjavascriptで置き換えたい</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>GASアプリを作ってる時によく<code>spreadsheet</code>を読む実装をすると思います<br>例えば以下のような関数を<code>.gs</code>側生やして、</p>
+<figure class="highlight plaintext"><figcaption><span>main.gs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function getCSVData()</span><br><span class="line">&#123;</span><br><span class="line">  return SpreadsheetApp.openById(SPREAD_ID).getSheetByName(SHEET_NAME).getRange(&quot;A2:M&quot;).getValues();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>.js側で以下の感じで使う。みたいな</p>
+<figure class="highlight plaintext"><figcaption><span>script.gs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">google.script.run.withSuccessHandler(OnParseCSVData).withFailureHandler(OnParseFailed).getCSVData();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>これを全部js実装に置き換えてwebアプリで動くようにします</p>
+        
+          <p class="article-more-link">
+            <a href="/2023/09/25/gascsv/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.kosakasakas.com/2023/09/25/gascsv/" data-id="clmxor25h0000j8jy2b5x5inc" data-title="GASのスプレットシート読み込みをjavascriptで置き換えたい" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GAS/" rel="tag">GAS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-spritepack" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -105,8 +170,8 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/2023/09/24/2023_09_24_spritepack/icon_sprite.png" rel="gallery_clmxiqdxq0000kwjy97js9heg">
-        <img src="/2023/09/24/2023_09_24_spritepack/icon_sprite.png" itemprop="image">
+      <a class="article-gallery-img fancybox" href="/2023/09/24/spritepack/icon_sprite_banner.jpg" rel="gallery_clmxiqdxq0000kwjy97js9heg">
+        <img src="/2023/09/24/spritepack/icon_sprite_banner.jpg" itemprop="image">
       </a>
     
   </div>
@@ -125,11 +190,17 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <span id="more"></span>
+        <h1 id="はじめに"><a href="#はじめに" class="headerlink" title="はじめに"></a>はじめに</h1><p>大量のアイコンをすべて別々にurlでリンクを張るとリソース読み込みにかなりの時間がかかります</p>
+<p>そこですべてのアイコンをまとめたスプライト画像をひとつ作り、それをダウンロードしてcssで必要なアイコンのUV位置を変えることでページ読み込みを高速化する方法がよくとられます</p>
+        
+          <p class="article-more-link">
+            <a href="/2023/09/24/spritepack/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/24/spritepack/" data-id="clmxiqdxq0000kwjy97js9heg" data-title="スプライトにアイコンをパックしてWEBを高速化しよう" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/24/spritepack/" data-id="clmxiqdxq0000kwjy97js9heg" data-title="スプライトにアイコンをパックしてWEBを高速化しよう" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -180,7 +251,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/22/gitignore/" data-id="clmu4ycpa0000a0jy4kcm553x" data-title="gitignoreで一部のフォルダ以外を無視したい場合" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/22/gitignore/" data-id="clmu4ycpa0000a0jy4kcm553x" data-title="gitignoreで一部のフォルダ以外を無視したい場合" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -207,6 +278,16 @@
   </div>
   <div class="article-inner">
     
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/2023/09/21/hexo-tagging/hexo_pic.png" rel="gallery_clmst7mkg0000dkjyelov4f9q">
+        <img src="/2023/09/21/hexo-tagging/hexo_pic.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
     
       <header class="article-header">
         
@@ -231,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/21/hexo-tagging/" data-id="clmst7mkg0000dkjyelov4f9q" data-title="Hexoの記事で使えるタグとプラグイン" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/21/hexo-tagging/" data-id="clmst7mkg0000dkjyelov4f9q" data-title="Hexoの記事で使えるタグとプラグイン" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -288,7 +369,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/21/post-images/" data-id="clmsrrnzq0000swjy7d2n71bw" data-title="Hexoの記事に画像埋め込む方法" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/21/post-images/" data-id="clmsrrnzq0000swjy7d2n71bw" data-title="Hexoの記事に画像埋め込む方法" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -351,7 +432,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/12/02/sanshinnumera/" data-id="clmszoxdp000fysjy9zth4czx" data-title="三神ヌメラのすすめ" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://www.kosakasakas.com/2020/12/02/sanshinnumera/" data-id="clmszoxdp000fysjy9zth4czx" data-title="三神ヌメラのすすめ" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -411,7 +492,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/05/01/superar2/" data-id="clmszoxdp000eysjy679i005d" data-title="続・ユニティちゃんを超ARしたときの話" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://www.kosakasakas.com/2020/05/01/superar2/" data-id="clmszoxdp000eysjy679i005d" data-title="続・ユニティちゃんを超ARしたときの話" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -475,7 +556,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/04/30/unity5/" data-id="clmszoxdw000lysjy0q8r5752" data-title="Unity5に対応してみた" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://www.kosakasakas.com/2020/04/30/unity5/" data-id="clmszoxdw000lysjy0q8r5752" data-title="Unity5に対応してみた" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -540,7 +621,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/04/30/unity-super-ar/" data-id="clmszoxdr000jysjycyi0e668" data-title="ユニティちゃんを超ARしたときの話" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://www.kosakasakas.com/2020/04/30/unity-super-ar/" data-id="clmszoxdr000jysjycyi0e668" data-title="ユニティちゃんを超ARしたときの話" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -605,7 +686,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/" data-id="clmszoxdw000mysjy1a110ck6" data-title="UnityでリアルタイムIBLしてみた" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/" data-id="clmszoxdw000mysjy1a110ck6" data-title="UnityでリアルタイムIBLしてみた" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
@@ -619,71 +700,11 @@
 
 
   
-    <article id="post-shinsoku" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/03/22/shinsoku/" class="article-date">
-  <time class="dt-published" datetime="2020-03-22T02:57:17.000Z" itemprop="datePublished">2020-03-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/">ポケモン</a>►<a class="article-category-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-<div class="article-gallery">
-  <div class="article-gallery-photos">
-    
-      <a class="article-gallery-img fancybox" href="/images_old/banners/banner_shinsoku.jpg" rel="gallery_clmszoxdq000gysjy8ymo8g4m">
-        <img src="/images_old/banners/banner_shinsoku.jpg" itemprop="image">
-      </a>
-    
-  </div>
-</div>
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/03/22/shinsoku/"> 【しんそくシングルバトル】滅びの歌ニンフィア【最終1858 4位】</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="はじめに"><a href="#はじめに" class="headerlink" title="はじめに"></a>はじめに</h1><p>この記事はインターネット大会「しんそく！シングルバトル！！」で、35勝7敗最終レート1858、最終順位4位を達成する事ができたニンフィアの紹介記事になります。  </p>
-<p>まず、本大会ルールは以下の通りです。  </p>
-        
-          <p class="article-more-link">
-            <a href="/2020/03/22/shinsoku/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/03/22/shinsoku/" data-id="clmszoxdq000gysjy8ymo8g4m" data-title=" 【しんそくシングルバトル】滅びの歌ニンフィア【最終1858 4位】" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" rel="tag">インターネット大会</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%A3%E7%9B%BE/" rel="tag">剣盾</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">weiter &raquo;</a>
   </nav>
 
 </section>
@@ -692,7 +713,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Kategorien</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/">ポケモン</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%AB%E3%83%BC%E3%83%89/">カード</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a></li></ul></li></ul>
     </div>
@@ -704,7 +725,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-Search-Console/" rel="tag">Google Search Console</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heroku/" rel="tag">Heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hugo/" rel="tag">Hugo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tips/" rel="tag">Tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/" rel="tag">gulp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" rel="tag">インターネット大会</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" rel="tag">デッキ構築</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" rel="tag">内定リスト</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A3%E7%9B%BE/" rel="tag">剣盾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" rel="tag">画像圧縮</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GAS/" rel="tag">GAS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-Search-Console/" rel="tag">Google Search Console</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heroku/" rel="tag">Heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hugo/" rel="tag">Hugo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tips/" rel="tag">Tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/" rel="tag">gulp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" rel="tag">インターネット大会</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" rel="tag">デッキ構築</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" rel="tag">内定リスト</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A3%E7%9B%BE/" rel="tag">剣盾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" rel="tag">画像圧縮</a></li></ul>
     </div>
   </div>
 
@@ -714,14 +735,14 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AR/" style="font-size: 16.67px;">AR</a> <a href="/tags/Google-Search-Console/" style="font-size: 10px;">Google Search Console</a> <a href="/tags/Heroku/" style="font-size: 16.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Hugo/" style="font-size: 13.33px;">Hugo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" style="font-size: 10px;">インターネット大会</a> <a href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" style="font-size: 10px;">デッキ構築</a> <a href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" style="font-size: 20px;">レンダリング</a> <a href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" style="font-size: 10px;">内定リスト</a> <a href="/tags/%E5%89%A3%E7%9B%BE/" style="font-size: 13.33px;">剣盾</a> <a href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" style="font-size: 13.33px;">画像圧縮</a>
+      <a href="/tags/AR/" style="font-size: 16.67px;">AR</a> <a href="/tags/GAS/" style="font-size: 10px;">GAS</a> <a href="/tags/Google-Search-Console/" style="font-size: 10px;">Google Search Console</a> <a href="/tags/Heroku/" style="font-size: 16.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 16.67px;">Hexo</a> <a href="/tags/Hugo/" style="font-size: 13.33px;">Hugo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" style="font-size: 10px;">インターネット大会</a> <a href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" style="font-size: 10px;">デッキ構築</a> <a href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" style="font-size: 20px;">レンダリング</a> <a href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" style="font-size: 10px;">内定リスト</a> <a href="/tags/%E5%89%A3%E7%9B%BE/" style="font-size: 13.33px;">剣盾</a> <a href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" style="font-size: 13.33px;">画像圧縮</a>
     </div>
   </div>
 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
     </div>
@@ -731,9 +752,13 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/09/25/gascsv/">GASのスプレットシート読み込みをjavascriptで置き換えたい</a>
+          </li>
         
           <li>
             <a href="/2023/09/24/spritepack/">スプライトにアイコンをパックしてWEBを高速化しよう</a>
@@ -749,10 +774,6 @@
         
           <li>
             <a href="/2023/09/21/post-images/">Hexoの記事に画像埋め込む方法</a>
-          </li>
-        
-          <li>
-            <a href="/2020/12/02/sanshinnumera/">三神ヌメラのすすめ</a>
           </li>
         
       </ul>

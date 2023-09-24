@@ -19,22 +19,23 @@
   crossorigin="anonymous"></script>
 
   
-  <title>Google Search Consoleへの登録方法 | sakas blog</title>
+  <title>GASのスプレットシート読み込みをjavascriptで置き換えたい | sakas blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="ブログをサーバーに自作したのはいいんですが、検索にも引っかからないわ、PVも0だわで記事書いた意味無いやんと思って調べたところ、どうやら自分で登録しないといけないみたいですね. ということで、Google Search ConsoleにHerokuで動かしている自分のブログを登録して申請してみたのでそのメモです.">
+  <meta name="description" content="GASアプリを作ってる時によくspreadsheetを読む実装をすると思います例えば以下のような関数を.gs側生やして、 main.gs1234function getCSVData()&amp;#123;  return SpreadsheetApp.openById(SPREAD_ID).getSheetByName(SHEET_NAME).getRange(&quot;A2:M&quot;).get">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Google Search Consoleへの登録方法">
-<meta property="og:url" content="https://www.kosakasakas.com/2016/11/14/google-search-console/index.html">
+<meta property="og:title" content="GASのスプレットシート読み込みをjavascriptで置き換えたい">
+<meta property="og:url" content="https://www.kosakasakas.com/2023/09/25/gascsv/index.html">
 <meta property="og:site_name" content="sakas blog">
-<meta property="og:description" content="ブログをサーバーに自作したのはいいんですが、検索にも引っかからないわ、PVも0だわで記事書いた意味無いやんと思って調べたところ、どうやら自分で登録しないといけないみたいですね. ということで、Google Search ConsoleにHerokuで動かしている自分のブログを登録して申請してみたのでそのメモです.">
+<meta property="og:description" content="GASアプリを作ってる時によくspreadsheetを読む実装をすると思います例えば以下のような関数を.gs側生やして、 main.gs1234function getCSVData()&amp;#123;  return SpreadsheetApp.openById(SPREAD_ID).getSheetByName(SHEET_NAME).getRange(&quot;A2:M&quot;).get">
 <meta property="og:locale">
-<meta property="og:image" content="https://www.kosakasakas.com/2016/11/14/google-search-console/images_old/banners/banner_googlesearchlogo.jpg">
-<meta property="article:published_time" content="2016-11-14T11:57:17.000Z">
-<meta property="article:modified_time" content="2023-09-21T13:45:54.527Z">
+<meta property="og:image" content="https://www.kosakasakas.com/2023/09/25/gascsv/2023/09/25/gascsv/spreadsheet.png">
+<meta property="article:published_time" content="2023-09-24T15:11:25.000Z">
+<meta property="article:modified_time" content="2023-09-24T17:36:13.080Z">
 <meta property="article:author" content="kosakasakas">
-<meta property="article:tag" content="Google Search Console">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="GAS">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.kosakasakas.com/2016/11/14/google-search-console/images_old/banners/banner_googlesearchlogo.jpg">
+<meta name="twitter:image" content="https://www.kosakasakas.com/2023/09/25/gascsv/2023/09/25/gascsv/spreadsheet.png">
 <meta name="twitter:creator" content="@sakas_poke">
   
     <link rel="alternate" href="/atom.xml" title="sakas blog" type="application/atom+xml">
@@ -94,10 +95,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-google-search-console" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-gascsv" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2016/11/14/google-search-console/" class="article-date">
-  <time class="dt-published" datetime="2016-11-14T11:57:17.000Z" itemprop="datePublished">2016-11-14</time>
+    <a href="/2023/09/25/gascsv/" class="article-date">
+  <time class="dt-published" datetime="2023-09-24T15:11:25.000Z" itemprop="datePublished">2023-09-25</time>
 </a>
     
   <div class="article-category">
@@ -110,8 +111,8 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/images_old/banners/banner_googlesearchlogo.jpg" rel="gallery_clmszoxdo000cysjydapv7i6j">
-        <img src="/images_old/banners/banner_googlesearchlogo.jpg" itemprop="image">
+      <a class="article-gallery-img fancybox" href="/2023/09/25/gascsv/spreadsheet.png" rel="gallery_clmxor25h0000j8jy2b5x5inc">
+        <img src="/2023/09/25/gascsv/spreadsheet.png" itemprop="image">
       </a>
     
   </div>
@@ -122,7 +123,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Google Search Consoleへの登録方法
+      GASのスプレットシート読み込みをjavascriptで置き換えたい
     </h1>
   
 
@@ -130,65 +131,38 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>ブログをサーバーに自作したのはいいんですが、検索にも引っかからないわ、PVも0だわで記事書いた意味無いやんと思って調べたところ、どうやら自分で登録しないといけないみたいですね.</p>
-<p>ということで、Google Search ConsoleにHerokuで動かしている自分のブログを登録して申請してみたのでそのメモです.</p>
+        <p>GASアプリを作ってる時によく<code>spreadsheet</code>を読む実装をすると思います<br>例えば以下のような関数を<code>.gs</code>側生やして、</p>
+<figure class="highlight plaintext"><figcaption><span>main.gs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function getCSVData()</span><br><span class="line">&#123;</span><br><span class="line">  return SpreadsheetApp.openById(SPREAD_ID).getSheetByName(SHEET_NAME).getRange(&quot;A2:M&quot;).getValues();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>.js側で以下の感じで使う。みたいな</p>
+<figure class="highlight plaintext"><figcaption><span>script.gs</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">google.script.run.withSuccessHandler(OnParseCSVData).withFailureHandler(OnParseFailed).getCSVData();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>これを全部js実装に置き換えてwebアプリで動くようにします</p>
 <span id="more"></span>
 
-<h2 id="まずはじめに"><a href="#まずはじめに" class="headerlink" title="まずはじめに"></a>まずはじめに</h2><p>自分のサイトのインデックスが登録されているかどうか確認してみましょう.  </p>
-<p>それは非常に簡単で、googleで以下のように打ってみます.</p>
-<pre><code>site:http://www.hogehogehogehoge.com
-</code></pre>
-<p>以下のように、”「サイトURL」に一致する情報は見つかりませんでした. “  </p>
-<p><img src="/images_old/articles/googlesearch15.png" alt="インデックス確認"></p>
-<p>となってしまった場合は残念ながらインデックスが乗っていないので、検索結果に表示させることができません.  </p>
-<p>ではどうすれば検索結果が表示されるようになるのでしょうか.<br>この画像の中に答えがあります.<br>そう、Google Search Consoleというものに登録すれば良いのです.</p>
-<h2 id="Google-Search-Consoleに登録してみよう"><a href="#Google-Search-Consoleに登録してみよう" class="headerlink" title="Google Search Consoleに登録してみよう"></a>Google Search Consoleに登録してみよう</h2><p>まずはgoogleアカウントで<a target="_blank" rel="noopener" href="https://www.google.com/webmasters/tools/home?hl=ja">Google Setach Console</a>にアクセスしてください.  </p>
-<p>アクセスするとわかりやすいところに「プロパティの追加」というボタンがあるので、それを押して、以下のフォームに自分のサイトのURLを記載します.<br>  (画像では既にサイトが登録されていますがお気になさらずに。)</p>
-<p><img src="/images_old/articles/googlesearch10.png" alt="プロパティの追加"></p>
-<p>すると、以下のように所有権の確認画面に遷移します.  </p>
-<p><img src="/images_old/articles/googlesearch.png" alt="所有権の確認"></p>
-<p>「ドメイン レジストラまたはプロバイダを選択」の部分は「その他」を選択してください.  </p>
-<p>ここで表示されているTXTレコードという謎のコードを自分のサイトに登録すれば完了です.</p>
-<h2 id="お名前-comにTXTレコードを登録"><a href="#お名前-comにTXTレコードを登録" class="headerlink" title="お名前.comにTXTレコードを登録"></a>お名前.comにTXTレコードを登録</h2><p>自分はお名前.comでドメインを取得してこのブログを管理しています.  </p>
-<ul>
-<li><a href="http://www.kosakasakas.com/2016/10/20/get-domain/">Heroku上のブログに独自ドメインを設定する方法</a></li>
-</ul>
-<p>なので、ここではお名前.comにこのTXTレコードを登録する方法についてご説明します.  </p>
-<p>まず、お名前.comにアクセスして、画面上部 [ドメイン設定] タブを選択します.  </p>
-<p>「DNS関連機能の設定」の中に「DNSレコード設定を利用する」というのがあるので設定するボタンを押します.</p>
-<p><img src="/images_old/articles/domain1.png" alt="DNSレコード設定を利用する"></p>
-<p>そして、以下のようにホスト名が空の状態で、「TYPE」TXTとして「VALUE」の項目に先ほど取得したTXTレコードをまるまるコピペして貼り付けます.<br>このトークンは、google-site-verification で始まり、後ろに 43 文字が続く 68 文字の文字列です。  </p>
-<p><img src="/images_old/articles/googlesearch4.png" alt="TXTレコードの記入"></p>
-<p>「有効」を選択し、「追加」ボタンをクリックします.  </p>
-<p>レコードとして上記の設定が表示されていることを確認したら、DNS レコード設定用ネームサーバー変更確認: [転送用のネームサーバー(01.dnsv.jp &#x2F; 02.dnsv.jp &#x2F; 03.dnsv.jp &#x2F; 04.dnsv.jp)に変更する] にチェックします.</p>
-<p><img src="/images_old/articles/googlesearch5.png" alt="ネームサーバー変更確認"></p>
-<p>「確認画面へ進む」ボタンを押し、「設定する」ボタンをクリックします.  </p>
-<p>これで設定が完了です.<br>Google Search Consoleに戻り、「確認」ボタンをクリックしましょう.  </p>
-<p>ここで、失敗しても大丈夫、設定が反映されるにはしばらく時間がかかります.<br>自分も失敗し、5分ほどかかってからもう一度確認したところでようやくOKになりました.</p>
-<p><img src="/images_old/articles/googlesearch6.png" alt="所有権確認"></p>
-<h2 id="Googleにインデックス登録してみよう"><a href="#Googleにインデックス登録してみよう" class="headerlink" title="Googleにインデックス登録してみよう"></a>Googleにインデックス登録してみよう</h2><p>ここからが本題で、自分のサイトを登録していきます.  </p>
-<p>Google Search Consoleの一覧から自分の登録したサイトの画像をクリックします.  </p>
-<p><img src="/images_old/articles/googlesearch10.png" alt="サイトを選択"></p>
-<p>左のダッシュボードから「クロール」→「Fetch as Google」を選択し、URLを打ち込みます.  </p>
-<p><img src="/images_old/articles/googlesearch11.png" alt="Fetch as Google"></p>
-<p>クローラは基本的に「PC」を選択していれば良いでしょう.<br>「取得」ボタンを押して、正常に働けば、以下のように「インデックスに送信」ボタンが表示されるので送信します.  </p>
-<p><img src="/images_old/articles/googlesearch12.png" alt="インデックスに送信"></p>
-<p>すると、以下のようなフォーム画面が出力されます.  </p>
-<p><img src="/images_old/articles/googlesearch13.png" alt="フォーム"></p>
-<p>「このURLのみをクロールする」については、指定したURLのみがクロールされます。月間で500回まで使用可能なので、基本はこちらを選択してください.  </p>
-<p>「このURLと直接リンクをクロールする」については、指定したURLとそのページに設置されている内部リンク先のページがクロールされます.<br>月間で10回までしか使えません.<br>回数が少ないので、サイトを大規模に変更した場合などに利用して下さい.  </p>
-<p>最後に自分の登録したURLが検索結果に乗ってるかどうか確認してみましょう.  </p>
-<p><img src="/images_old/articles/googlesearch14.png" alt="結果"></p>
-<p>検索結果に反映されればOKです.</p>
+<h1 id="CSVデータの配置"><a href="#CSVデータの配置" class="headerlink" title="CSVデータの配置"></a>CSVデータの配置</h1><p>これはもうシンプルに.csvデータをダウンロードして適切な位置に配置します<br>該当のspreadsheetを開いて以下の方法でダウンロードします</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ファイル -&gt; ダウンロード -&gt; カンマ区切り形式（.CSV）</span><br></pre></td></tr></table></figure>
+
+<p>本サイトは<code>Hexo</code>で実装しているので以下のような位置に配置しておきます</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// ローカルアセット</span><br><span class="line">ブログルートフォルダ\source\_posts\記事のフォルダ\data.csv</span><br><span class="line"></span><br><span class="line">// グローバルアセット</span><br><span class="line">ブログルートフォルダ\source\data\data.csv</span><br></pre></td></tr></table></figure>
+
+<p>アセットの配置については以下の記事をご覧ください</p>
+<a href="/2023/09/21/post-images/" title="Hexoの記事に画像埋め込む方法">Hexoの記事に画像埋め込む方法</a>
+
+<h1 id="js側の実装"><a href="#js側の実装" class="headerlink" title="js側の実装"></a>js側の実装</h1><p><code>jquery-csv</code>を使います</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// jquery-csv</span></span><br><span class="line">&lt;script src=<span class="string">&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 実装</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">readCSVData</span>(<span class="params">filePath, successCallback, failCallback</span>)</span><br><span class="line">&#123;</span><br><span class="line">  $.<span class="title function_">get</span>( filePath, <span class="keyword">function</span>(<span class="params">data</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> csv = $.csv.<span class="title function_">toArrays</span>(data, &#123; <span class="attr">separator</span>:<span class="string">&#x27;,&#x27;</span>, <span class="attr">delimiter</span>:<span class="string">&#x27;\n&#x27;</span> &#125;);</span><br><span class="line">    <span class="comment">// 先頭行は不要なので破棄</span></span><br><span class="line">    csv.<span class="title function_">shift</span>();</span><br><span class="line">    <span class="title function_">successCallback</span>(csv);</span><br><span class="line">  &#125;, <span class="string">&#x27;text&#x27;</span>)</span><br><span class="line">  .<span class="title function_">done</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">//alert( &quot;second success&quot; );</span></span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">fail</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">//alert( &quot;error&quot; );</span></span><br><span class="line">    <span class="title function_">failCallback</span>();</span><br><span class="line">  &#125;)</span><br><span class="line">  .<span class="title function_">always</span>(<span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="comment">//alert( &quot;finished&quot; );</span></span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 呼び出し側</span></span><br><span class="line"><span class="title function_">readCSVData</span>(<span class="string">&#x27;/data/data.csv&#x27;</span>, <span class="title class_">OnParseCSVData</span>, <span class="title class_">OnParseFailed</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>コールバックは適宜必要な部分を有効化してください</p>
+<p>非同期処理が必要な場合は<code>async</code>も使えます</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2016/11/14/google-search-console/" data-id="clmszoxdo000cysjydapv7i6j" data-title="Google Search Consoleへの登録方法" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/25/gascsv/" data-id="clmxor25h0000j8jy2b5x5inc" data-title="GASのスプレットシート読み込みをjavascriptで置き換えたい" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Google-Search-Console/" rel="tag">Google Search Console</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GAS/" rel="tag">GAS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li></ul>
 
     </footer>
   </div>
@@ -196,19 +170,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/08/14/swsh-informals/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          【剣盾】ガラル図鑑内定ポケモン一覧
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/10/24/fix-buildpack/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/09/24/spritepack/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">Hugoのビルドが急に通らなくなった話</div>
+      <div class="article-nav-title">スプライトにアイコンをパックしてWEBを高速化しよう</div>
     </a>
   
 </nav>
