@@ -150,6 +150,7 @@ function UpdateAbailablePokemons()
     const iconID = p[27];
     const iconName = p[28];
     const gen = p[4];
+
     const idtex = "list-available-" + gen;
     var parent = document.getElementById(idtex);
     /*
@@ -161,15 +162,22 @@ function UpdateAbailablePokemons()
     holder.setAttribute("class", "iconholder");
     var icon = document.createElement("div");
     icon.setAttribute("class", "icon");
+    
+    let regexp = /Pokémon-Icon_(\d+)(\w*)/;
+    let dexID = parseInt(regexp.exec(iconName)[1]);
+    let formID = regexp.exec(iconName)[2];
+    var link = document.createElement("a");
+    link.href = 'https://yakkun.com/sv/zukan/n'+dexID+formID;
     var img = document.createElement("div");
     img.setAttribute("class", "icon-"+iconName);
     img.setAttribute("style", "display: inline-block;");
+    link.appendChild(img)
     
-    icon.appendChild(img);
-    holder.appendChild(icon);
+    //icon.appendChild(img);
+    //holder.appendChild(icon);
     //img.setAttribute("style", "display: inline-block;");
     //img.src = 'https://drive.google.com/uc?export=download&id=' + iconID;
-    parent.appendChild(img);
+    parent.appendChild(link);
   }
 }
 
@@ -235,8 +243,11 @@ function UpdateSpeedList()
       const pokeStat = s[4];
       const pokeRank = parseInt(s[5]);
       const pokeVal = parseInt(s[6]);
+      let regexp = /Pokémon-Icon_(\d+)(\w*)/;
+      let dexID = parseInt(regexp.exec(pokeIconName)[1]);
+      let formID = regexp.exec(pokeIconName)[2];
       var prefix = pokeWarming + pokeStat + "族";
-      prefix += (pokeRank > 0) ? " (+" + pokeRank +  pokeBoost + ") " : "";
+      prefix += (pokeRank > 0) ? " (" +  pokeBoost + "+" + pokeRank + ") " : "";
       prefix += (pokeBoost == "スカーフ" || pokeBoost == "鉄球") ? "（" + pokeBoost + "）" : "";
       if (pokeVal < lastVal)
       {
@@ -249,10 +260,13 @@ function UpdateSpeedList()
         tdPoke.setAttribute("id", "speed-" + pokeVal);
         tdPoke.textContent = prefix;
         
+        var link = document.createElement("a");
+        link.href = 'https://yakkun.com/sv/zukan/n'+dexID+formID;
         var img = document.createElement("div");
         img.setAttribute("class", "icon-"+pokeIconName);
         img.setAttribute("style", "display: inline-block;");
-        tdPoke.appendChild(img);
+        link.appendChild(img)
+        tdPoke.appendChild(link);
 
         tr.appendChild(th);
         tr.appendChild(tdPoke);
@@ -270,10 +284,13 @@ function UpdateSpeedList()
           lastTd.appendChild(tex);
           lastPrefix = prefix;
         }
+        var link = document.createElement("a");
+        link.href = 'https://yakkun.com/sv/zukan/n'+dexID+formID;
         var img = document.createElement("div");
         img.setAttribute("class", "icon-"+pokeIconName);
         img.setAttribute("style", "display: inline-block;");
-        lastTd.appendChild(img);
+        link.appendChild(img)
+        lastTd.appendChild(link);
       }
     }
 
