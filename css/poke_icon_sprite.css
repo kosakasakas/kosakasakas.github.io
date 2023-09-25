@@ -36,7 +36,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_004 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: 0px -762px;
+  background-position: -443px -740px;
   width: 21px;
   height: 19px;
 }
@@ -54,7 +54,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_007 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -216px -783px;
+  background-position: -216px -782px;
   width: 21px;
   height: 17px;
 }
@@ -72,7 +72,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_010 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -632px -783px;
+  background-position: -632px -782px;
   width: 14px;
   height: 16px;
 }
@@ -138,7 +138,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_021 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -471px -783px;
+  background-position: -471px -782px;
   width: 19px;
   height: 16px;
 }
@@ -174,7 +174,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_027 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -84px -783px;
+  background-position: -84px -782px;
   width: 20px;
   height: 18px;
 }
@@ -312,7 +312,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_050 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -636px -762px;
+  background-position: -648px -782px;
   width: 15px;
   height: 14px;
 }
@@ -360,7 +360,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_058 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -467px -687px;
+  background-position: -532px -687px;
   width: 21px;
   height: 22px;
 }
@@ -372,13 +372,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_060 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -353px -762px;
+  background-position: -215px -762px;
   width: 20px;
   height: 15px;
 }
 .icon-Pokémon-Icon_061 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -548px -715px;
+  background-position: -299px -740px;
   width: 22px;
   height: 19px;
 }
@@ -426,7 +426,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_069 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -375px -762px;
+  background-position: -237px -762px;
   width: 20px;
   height: 15px;
 }
@@ -456,7 +456,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_074 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -277px -762px;
+  background-position: -139px -762px;
   width: 24px;
   height: 15px;
 }
@@ -498,7 +498,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_081 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -303px -762px;
+  background-position: -165px -762px;
   width: 23px;
   height: 15px;
 }
@@ -516,7 +516,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_084 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -717px -715px;
+  background-position: -697px -687px;
   width: 21px;
   height: 18px;
 }
@@ -540,7 +540,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_088 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -138px -762px;
+  background-position: 0px -762px;
   width: 21px;
   height: 18px;
 }
@@ -552,7 +552,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_090 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: 0px -804px;
+  background-position: 0px -803px;
   width: 19px;
   height: 18px;
 }
@@ -612,7 +612,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_100 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -663px -783px;
+  background-position: -411px -803px;
   width: 14px;
   height: 14px;
 }
@@ -730,6 +730,24 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   width: 20px;
   height: 26px;
 }
+.icon-Pokémon-Icon_1017a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -699px -112px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1017b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -699px -140px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1017c {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -396px -358px;
+  width: 19px;
+  height: 26px;
+}
 .icon-Pokémon-Icon_1018 {
   background-image: url(/css/images/poke_icon_sprite.png);
   background-position: 0px -470px;
@@ -744,13 +762,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_102 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -632px -687px;
+  background-position: -548px -715px;
   width: 24px;
   height: 18px;
 }
 .icon-Pokémon-Icon_1020 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -396px -358px;
+  background-position: -110px -687px;
   width: 19px;
   height: 26px;
 }
@@ -792,7 +810,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_108 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -684px -687px;
+  background-position: -600px -715px;
   width: 23px;
   height: 18px;
 }
@@ -828,7 +846,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_114 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -21px -804px;
+  background-position: -21px -803px;
   width: 19px;
   height: 18px;
 }
@@ -936,7 +954,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_132 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -687px -762px;
+  background-position: -699px -782px;
   width: 16px;
   height: 13px;
 }
@@ -966,7 +984,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_137 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -42px -804px;
+  background-position: -42px -803px;
   width: 19px;
   height: 18px;
 }
@@ -984,7 +1002,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_140 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -705px -762px;
+  background-position: -717px -782px;
   width: 16px;
   height: 13px;
 }
@@ -1026,7 +1044,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_147 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -106px -783px;
+  background-position: -106px -782px;
   width: 20px;
   height: 18px;
 }
@@ -1044,7 +1062,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_150 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -112px;
+  background-position: -699px -168px;
   width: 20px;
   height: 26px;
 }
@@ -1074,7 +1092,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_155 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -128px -783px;
+  background-position: -128px -782px;
   width: 20px;
   height: 18px;
 }
@@ -1146,7 +1164,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_167 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -558px -762px;
+  background-position: -420px -762px;
   width: 18px;
   height: 14px;
 }
@@ -1164,7 +1182,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_170 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -572px -715px;
+  background-position: -323px -740px;
   width: 22px;
   height: 19px;
 }
@@ -1212,7 +1230,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_178 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -66px -687px;
+  background-position: -131px -687px;
   width: 19px;
   height: 26px;
 }
@@ -1224,7 +1242,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_180 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -490px -687px;
+  background-position: -555px -687px;
   width: 21px;
   height: 22px;
 }
@@ -1242,7 +1260,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_183 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -325px -740px;
+  background-position: -676px -715px;
   width: 23px;
   height: 17px;
 }
@@ -1260,7 +1278,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_186 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -87px -687px;
+  background-position: -152px -687px;
   width: 19px;
   height: 26px;
 }
@@ -1272,7 +1290,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_188 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -278px -804px;
+  background-position: -278px -803px;
   width: 19px;
   height: 17px;
 }
@@ -1308,7 +1326,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_194 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -168px -804px;
+  background-position: -168px -803px;
   width: 20px;
   height: 17px;
 }
@@ -1356,7 +1374,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_202 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -140px;
+  background-position: -699px -196px;
   width: 20px;
   height: 26px;
 }
@@ -1374,7 +1392,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_205 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -692px -715px;
+  background-position: -625px -715px;
   width: 23px;
   height: 18px;
 }
@@ -1458,7 +1476,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_219 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -513px -687px;
+  background-position: -578px -687px;
   width: 21px;
   height: 22px;
 }
@@ -1482,7 +1500,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_223 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -575px -783px;
+  background-position: -575px -782px;
   width: 17px;
   height: 16px;
 }
@@ -1530,7 +1548,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_231 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -405px -783px;
+  background-position: -405px -782px;
   width: 20px;
   height: 16px;
 }
@@ -1692,7 +1710,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_258 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -63px -804px;
+  background-position: -63px -803px;
   width: 19px;
   height: 18px;
 }
@@ -1710,7 +1728,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_261 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -161px -762px;
+  background-position: -23px -762px;
   width: 21px;
   height: 18px;
 }
@@ -1722,7 +1740,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_263 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -262px -783px;
+  background-position: -262px -782px;
   width: 22px;
   height: 16px;
 }
@@ -1740,7 +1758,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_266 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -184px -762px;
+  background-position: -46px -762px;
   width: 21px;
   height: 18px;
 }
@@ -1752,7 +1770,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_268 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -207px -762px;
+  background-position: -69px -762px;
   width: 21px;
   height: 18px;
 }
@@ -1764,7 +1782,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_270 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -520px -762px;
+  background-position: -382px -762px;
   width: 17px;
   height: 15px;
 }
@@ -1800,7 +1818,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_276 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -440px -762px;
+  background-position: -302px -762px;
   width: 18px;
   height: 15px;
 }
@@ -1812,7 +1830,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_278 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -427px -740px;
+  background-position: -633px -740px;
   width: 26px;
   height: 14px;
 }
@@ -1836,7 +1854,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_282 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -108px -687px;
+  background-position: -173px -687px;
   width: 19px;
   height: 26px;
 }
@@ -1854,7 +1872,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_285 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -460px -762px;
+  background-position: -322px -762px;
   width: 18px;
   height: 15px;
 }
@@ -1884,7 +1902,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_290 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -481px -740px;
+  background-position: -687px -740px;
   width: 23px;
   height: 14px;
 }
@@ -1902,7 +1920,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_293 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -594px -783px;
+  background-position: -594px -782px;
   width: 17px;
   height: 16px;
 }
@@ -1968,13 +1986,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_304 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -842px -810px;
+  background-position: -781px -748px;
   width: 16px;
   height: 12px;
 }
 .icon-Pokémon-Icon_305 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -350px -740px;
+  background-position: -701px -715px;
   width: 23px;
   height: 17px;
 }
@@ -1998,7 +2016,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_309 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -419px -762px;
+  background-position: -281px -762px;
   width: 19px;
   height: 15px;
 }
@@ -2046,13 +2064,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_317 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -150px -783px;
+  background-position: -150px -782px;
   width: 20px;
   height: 18px;
 }
 .icon-Pokémon-Icon_318 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: 0px -783px;
+  background-position: 0px -782px;
   width: 19px;
   height: 19px;
 }
@@ -2076,7 +2094,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_322 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -84px -804px;
+  background-position: -84px -803px;
   width: 19px;
   height: 18px;
 }
@@ -2112,7 +2130,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_328 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -21px -783px;
+  background-position: -21px -782px;
   width: 19px;
   height: 19px;
 }
@@ -2130,7 +2148,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_331 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -253px -762px;
+  background-position: -115px -762px;
   width: 22px;
   height: 17px;
 }
@@ -2142,7 +2160,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_333 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -492px -783px;
+  background-position: -492px -782px;
   width: 19px;
   height: 16px;
 }
@@ -2178,7 +2196,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_339 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -529px -740px;
+  background-position: -735px -740px;
   width: 21px;
   height: 13px;
 }
@@ -2190,7 +2208,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_341 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -23px -762px;
+  background-position: -466px -740px;
   width: 21px;
   height: 19px;
 }
@@ -2268,7 +2286,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_354 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -596px -715px;
+  background-position: -347px -740px;
   width: 22px;
   height: 19px;
 }
@@ -2322,7 +2340,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_363 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -513px -783px;
+  background-position: -513px -782px;
   width: 19px;
   height: 16px;
 }
@@ -2340,7 +2358,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_366 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -42px -783px;
+  background-position: -42px -782px;
   width: 19px;
   height: 19px;
 }
@@ -2364,7 +2382,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_370 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -383px -804px;
+  background-position: -383px -803px;
   width: 12px;
   height: 17px;
 }
@@ -2388,7 +2406,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_374 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -299px -804px;
+  background-position: -299px -803px;
   width: 19px;
   height: 17px;
 }
@@ -2520,7 +2538,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_396 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -105px -804px;
+  background-position: -105px -803px;
   width: 19px;
   height: 18px;
 }
@@ -2538,7 +2556,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_399 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -427px -783px;
+  background-position: -427px -782px;
   width: 20px;
   height: 16px;
 }
@@ -2556,7 +2574,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_402 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -423px -687px;
+  background-position: -488px -687px;
   width: 20px;
   height: 24px;
 }
@@ -2592,7 +2610,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_408 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -46px -762px;
+  background-position: -489px -740px;
   width: 21px;
   height: 19px;
 }
@@ -2634,7 +2652,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_415 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -605px -687px;
+  background-position: -670px -687px;
   width: 25px;
   height: 18px;
 }
@@ -2760,7 +2778,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_436 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -648px -783px;
+  background-position: -726px -715px;
   width: 13px;
   height: 16px;
 }
@@ -2802,7 +2820,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_443 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -63px -783px;
+  background-position: -63px -782px;
   width: 19px;
   height: 19px;
 }
@@ -2838,7 +2856,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_449 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -658px -687px;
+  background-position: -574px -715px;
   width: 24px;
   height: 18px;
 }
@@ -2880,7 +2898,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_456 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -172px -783px;
+  background-position: -172px -782px;
   width: 20px;
   height: 18px;
 }
@@ -2892,7 +2910,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_458 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -190px -804px;
+  background-position: -190px -803px;
   width: 20px;
   height: 17px;
 }
@@ -2910,7 +2928,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_461 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -168px;
+  background-position: -699px -224px;
   width: 20px;
   height: 26px;
 }
@@ -2988,13 +3006,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_474 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -196px;
+  background-position: -699px -252px;
   width: 20px;
   height: 26px;
 }
 .icon-Pokémon-Icon_475 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -224px;
+  background-position: -699px -280px;
   width: 20px;
   height: 26px;
 }
@@ -3078,7 +3096,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_489 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -375px -740px;
+  background-position: -581px -740px;
   width: 23px;
   height: 17px;
 }
@@ -3096,7 +3114,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_492 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -555px -783px;
+  background-position: -555px -782px;
   width: 18px;
   height: 16px;
 }
@@ -3108,13 +3126,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_494 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -252px;
+  background-position: -699px -308px;
   width: 20px;
   height: 26px;
 }
 .icon-Pokémon-Icon_495 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -212px -804px;
+  background-position: -212px -803px;
   width: 20px;
   height: 17px;
 }
@@ -3168,7 +3186,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_504 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -194px -783px;
+  background-position: -194px -782px;
   width: 20px;
   height: 18px;
 }
@@ -3186,7 +3204,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_507 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -536px -687px;
+  background-position: -601px -687px;
   width: 21px;
   height: 22px;
 }
@@ -3198,7 +3216,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_509 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -559px -687px;
+  background-position: -624px -687px;
   width: 21px;
   height: 22px;
 }
@@ -3246,7 +3264,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_517 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -653px -762px;
+  background-position: -665px -782px;
   width: 15px;
   height: 14px;
 }
@@ -3288,7 +3306,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_524 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -14px -824px;
+  background-position: 0px -843px;
   width: 11px;
   height: 17px;
 }
@@ -3306,7 +3324,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_527 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -397px -762px;
+  background-position: -259px -762px;
   width: 20px;
   height: 15px;
 }
@@ -3318,7 +3336,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_529 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -239px -783px;
+  background-position: -239px -782px;
   width: 21px;
   height: 17px;
 }
@@ -3354,7 +3372,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_535 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -723px -762px;
+  background-position: -735px -782px;
   width: 14px;
   height: 13px;
 }
@@ -3390,7 +3408,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_541 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -449px -783px;
+  background-position: -449px -782px;
   width: 20px;
   height: 16px;
 }
@@ -3402,13 +3420,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_543 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -578px -762px;
+  background-position: -440px -762px;
   width: 18px;
   height: 14px;
 }
 .icon-Pokémon-Icon_544 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -286px -783px;
+  background-position: -286px -782px;
   width: 22px;
   height: 16px;
 }
@@ -3420,7 +3438,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_546 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -506px -740px;
+  background-position: -712px -740px;
   width: 21px;
   height: 14px;
 }
@@ -3432,7 +3450,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_548 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: 0px -824px;
+  background-position: 0px -823px;
   width: 12px;
   height: 18px;
 }
@@ -3450,7 +3468,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_551 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -310px -783px;
+  background-position: -310px -782px;
   width: 22px;
   height: 16px;
 }
@@ -3468,7 +3486,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_554 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -539px -762px;
+  background-position: -401px -762px;
   width: 17px;
   height: 15px;
 }
@@ -3486,7 +3504,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_557 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -320px -804px;
+  background-position: -320px -803px;
   width: 19px;
   height: 17px;
 }
@@ -3516,7 +3534,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_562 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -334px -783px;
+  background-position: -334px -782px;
   width: 22px;
   height: 16px;
 }
@@ -3528,7 +3546,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_564 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -328px -762px;
+  background-position: -190px -762px;
   width: 23px;
   height: 15px;
 }
@@ -3552,7 +3570,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_568 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -230px -762px;
+  background-position: -92px -762px;
   width: 21px;
   height: 18px;
 }
@@ -3576,7 +3594,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_572 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -620px -715px;
+  background-position: -371px -740px;
   width: 22px;
   height: 19px;
 }
@@ -3606,7 +3624,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_577 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -670px -762px;
+  background-position: -682px -782px;
   width: 15px;
   height: 14px;
 }
@@ -3636,7 +3654,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_582 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -411px -804px;
+  background-position: -14px -823px;
   width: 12px;
   height: 16px;
 }
@@ -3672,7 +3690,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_588 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -397px -804px;
+  background-position: -397px -803px;
   width: 12px;
   height: 17px;
 }
@@ -3714,7 +3732,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_595 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -382px -783px;
+  background-position: -382px -782px;
   width: 21px;
   height: 16px;
 }
@@ -3738,7 +3756,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_599 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -358px -783px;
+  background-position: -358px -782px;
   width: 22px;
   height: 16px;
 }
@@ -3756,13 +3774,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_602 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -803px -769px;
+  background-position: -842px -810px;
   width: 14px;
   height: 11px;
 }
 .icon-Pokémon-Icon_603 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -69px -762px;
+  background-position: -512px -740px;
   width: 21px;
   height: 19px;
 }
@@ -3792,7 +3810,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_608 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -126px -804px;
+  background-position: -126px -803px;
   width: 19px;
   height: 18px;
 }
@@ -3840,7 +3858,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_616 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -480px -762px;
+  background-position: -342px -762px;
   width: 18px;
   height: 15px;
 }
@@ -3918,13 +3936,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_629 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -644px -715px;
+  background-position: -395px -740px;
   width: 22px;
   height: 19px;
 }
 .icon-Pokémon-Icon_630 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -129px -687px;
+  background-position: -194px -687px;
   width: 19px;
   height: 26px;
 }
@@ -3972,7 +3990,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_638 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -280px;
+  background-position: -699px -336px;
   width: 20px;
   height: 26px;
 }
@@ -3984,7 +4002,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_640 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -308px;
+  background-position: -699px -364px;
   width: 20px;
   height: 26px;
 }
@@ -4050,7 +4068,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_651 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -582px -687px;
+  background-position: -647px -687px;
   width: 21px;
   height: 22px;
 }
@@ -4110,7 +4128,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_661 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -500px -762px;
+  background-position: -362px -762px;
   width: 18px;
   height: 15px;
 }
@@ -4242,13 +4260,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_683 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -150px -687px;
+  background-position: -215px -687px;
   width: 19px;
   height: 26px;
 }
 .icon-Pokémon-Icon_684 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -613px -783px;
+  background-position: -613px -782px;
   width: 17px;
   height: 16px;
 }
@@ -4320,7 +4338,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_696 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -234px -804px;
+  background-position: -234px -803px;
   width: 20px;
   height: 17px;
 }
@@ -4362,13 +4380,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_703 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -739px -762px;
+  background-position: -751px -782px;
   width: 14px;
   height: 13px;
 }
 .icon-Pokémon-Icon_704 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -679px -783px;
+  background-position: -427px -803px;
   width: 12px;
   height: 14px;
 }
@@ -4464,7 +4482,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_720 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -92px -762px;
+  background-position: -535px -740px;
   width: 21px;
   height: 19px;
 }
@@ -4554,13 +4572,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_735 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -445px -687px;
+  background-position: -510px -687px;
   width: 20px;
   height: 24px;
 }
 .icon-Pokémon-Icon_736 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -572px -740px;
+  background-position: -518px -762px;
   width: 17px;
   height: 13px;
 }
@@ -4620,7 +4638,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_746 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -552px -740px;
+  background-position: -498px -762px;
   width: 18px;
   height: 13px;
 }
@@ -4686,7 +4704,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_757 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -147px -804px;
+  background-position: -147px -803px;
   width: 19px;
   height: 18px;
 }
@@ -4746,7 +4764,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_767 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -455px -740px;
+  background-position: -661px -740px;
   width: 24px;
   height: 14px;
 }
@@ -4782,7 +4800,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_773 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -171px -687px;
+  background-position: -236px -687px;
   width: 19px;
   height: 26px;
 }
@@ -4812,7 +4830,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_778 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -336px;
+  background-position: -699px -392px;
   width: 20px;
   height: 26px;
 }
@@ -4842,7 +4860,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_783 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -364px;
+  background-position: -699px -420px;
   width: 20px;
   height: 26px;
 }
@@ -4860,7 +4878,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_786 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -192px -687px;
+  background-position: -257px -687px;
   width: 19px;
   height: 26px;
 }
@@ -4872,7 +4890,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_788 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -213px -687px;
+  background-position: -278px -687px;
   width: 19px;
   height: 26px;
 }
@@ -4884,7 +4902,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_790 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -115px -762px;
+  background-position: -558px -740px;
   width: 21px;
   height: 19px;
 }
@@ -4950,7 +4968,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_801 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -234px -687px;
+  background-position: -299px -687px;
   width: 19px;
   height: 26px;
 }
@@ -5028,7 +5046,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_814 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -392px;
+  background-position: -699px -448px;
   width: 20px;
   height: 26px;
 }
@@ -5070,13 +5088,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_821 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -534px -783px;
+  background-position: -534px -782px;
   width: 19px;
   height: 16px;
 }
 .icon-Pokémon-Icon_822 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -668px -715px;
+  background-position: -419px -740px;
   width: 22px;
   height: 19px;
 }
@@ -5166,7 +5184,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_837 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -256px -804px;
+  background-position: -256px -803px;
   width: 20px;
   height: 17px;
 }
@@ -5178,7 +5196,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_839 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -420px;
+  background-position: -699px -476px;
   width: 20px;
   height: 26px;
 }
@@ -5220,7 +5238,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_846 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -400px -740px;
+  background-position: -606px -740px;
   width: 25px;
   height: 15px;
 }
@@ -5244,7 +5262,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_850 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -591px -740px;
+  background-position: -537px -762px;
   width: 21px;
   height: 10px;
 }
@@ -5256,7 +5274,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_852 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -341px -804px;
+  background-position: -341px -803px;
   width: 19px;
   height: 17px;
 }
@@ -5268,7 +5286,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_854 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -598px -762px;
+  background-position: -460px -762px;
   width: 17px;
   height: 14px;
 }
@@ -5334,7 +5352,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_865 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -255px -687px;
+  background-position: -320px -687px;
   width: 19px;
   height: 26px;
 }
@@ -5358,7 +5376,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_869 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -448px;
+  background-position: -699px -504px;
   width: 20px;
   height: 26px;
 }
@@ -5370,13 +5388,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_871 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -362px -804px;
+  background-position: -362px -803px;
   width: 19px;
   height: 17px;
 }
 .icon-Pokémon-Icon_872 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -617px -762px;
+  background-position: -479px -762px;
   width: 17px;
   height: 14px;
 }
@@ -5400,7 +5418,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_876 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -476px;
+  background-position: -699px -532px;
   width: 20px;
   height: 26px;
 }
@@ -5430,7 +5448,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_881 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -276px -687px;
+  background-position: -341px -687px;
   width: 19px;
   height: 26px;
 }
@@ -5454,7 +5472,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_885 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -299px -740px;
+  background-position: -650px -715px;
   width: 24px;
   height: 17px;
 }
@@ -5580,7 +5598,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_906 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -504px;
+  background-position: -699px -560px;
   width: 20px;
   height: 26px;
 }
@@ -5592,7 +5610,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_908 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -532px;
+  background-position: -699px -588px;
   width: 20px;
   height: 26px;
 }
@@ -5670,19 +5688,19 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_921 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -560px;
+  background-position: -699px -616px;
   width: 20px;
   height: 26px;
 }
 .icon-Pokémon-Icon_922 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -588px;
+  background-position: -699px -644px;
   width: 20px;
   height: 26px;
 }
 .icon-Pokémon-Icon_923 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -297px -687px;
+  background-position: -362px -687px;
   width: 19px;
   height: 26px;
 }
@@ -5730,7 +5748,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_931 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -318px -687px;
+  background-position: -383px -687px;
   width: 19px;
   height: 26px;
 }
@@ -5766,7 +5784,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_937 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -339px -687px;
+  background-position: -404px -687px;
   width: 19px;
   height: 26px;
 }
@@ -5784,7 +5802,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_940 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -360px -687px;
+  background-position: -425px -687px;
   width: 19px;
   height: 26px;
 }
@@ -5850,7 +5868,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_951 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -381px -687px;
+  background-position: -446px -687px;
   width: 19px;
   height: 26px;
 }
@@ -5880,7 +5898,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_956 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -616px;
+  background-position: 0px -687px;
   width: 20px;
   height: 26px;
 }
@@ -5952,7 +5970,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_968 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -699px -644px;
+  background-position: -22px -687px;
   width: 20px;
   height: 26px;
 }
@@ -5970,7 +5988,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_971 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: 0px -687px;
+  background-position: -44px -687px;
   width: 20px;
   height: 26px;
 }
@@ -6072,7 +6090,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_988 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -402px -687px;
+  background-position: -467px -687px;
   width: 19px;
   height: 26px;
 }
@@ -6132,13 +6150,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-Pokémon-Icon_998 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -22px -687px;
+  background-position: -66px -687px;
   width: 20px;
   height: 26px;
 }
 .icon-Pokémon-Icon_999 {
   background-image: url(/css/images/poke_icon_sprite.png);
-  background-position: -44px -687px;
+  background-position: -88px -687px;
   width: 20px;
   height: 26px;
 }

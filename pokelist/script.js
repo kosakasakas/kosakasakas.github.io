@@ -1,8 +1,8 @@
 var pokemon;
 var dex;
 var speed;
-var regulation = "D";
-var regulationText = "レギュレーションD";
+var regulation = "TEAL";
+var regulationText = "キタカミ図鑑";
 var listType = "available";
 
 document.getElementById("main-display-area").style.display ="none";
@@ -10,7 +10,7 @@ document.getElementById("main-display-area").style.display ="none";
 //readCSVData('/pokelist/db/def_pokemon2.csv', Result, Result);
 readCSVData('/pokelist/db/def_pokemon2.csv', OnParsePokemonData, OnGaDataFailed);
 readCSVData('/pokelist/db/def_dex_paldea.csv', OnParseDexData, OnGaDataFailed);
-readCSVData('/pokelist/db/speed_paldea.csv', OnParseSpeedData, OnGaDataFailed);
+readCSVData('/pokelist/db/speed_list_paldea.csv', OnParseSpeedData, OnGaDataFailed);
 
 //google.script.run.withSuccessHandler(OnParsePokemonData).withFailureHandler(OnGaDataFailed).getPokemonData();
 //google.script.run.withSuccessHandler(OnParseDexData).withFailureHandler(OnGaDataFailed).getDexData();
@@ -136,10 +136,8 @@ function UpdateAbailablePokemons()
               : (regulation == "C") ? 5
               : (regulation == "B") ? 6
               : (regulation == "A") ? 7
-              : (regulation == "EV") ? 8
-              : (regulation == "DLC") ? 9
               : (regulation == "INDIGO") ? 10
-              : (regulation == "TEAL") ? 11
+              : (regulation == "TEAL") ? 12
               : 4;
   for (const d of dex)
   {
@@ -222,24 +220,24 @@ function UpdateSpeedList()
                 : (regulation == "C") ? 8
                 : (regulation == "B") ? 9
                 : (regulation == "A") ? 10
-                : (regulation == "EV") ? 11
-                : (regulation == "DLC") ? 12
-                : 4;
+                : (regulation == "INDIGO") ? 13
+                : (regulation == "TEAL") ? 15
+                : 7;
     for (const s of speed)
     {
       const pokeAvailable = s[regID];
       if (pokeAvailable == "X") continue;
 
-      const pokeVal = s[0];
-      const pokeRaising = s[1];
-      const pokeStat = s[2];
-      const pokeName = s[3];
-      const pokeAbility = s[4];
-      const pokeIcon = s[5];
-      const pokeIconName = s[16];
-      const pokeRank = parseInt(s[6]);
-      var prefix = pokeRaising + pokeStat + "族";
-      prefix += (pokeRank > 0) ? (" (" + ((pokeRank == 1) ? "スカーフ" : pokeAbility) + "+" + pokeRank + ") ") : "";
+      const pokeName = s[0];
+      const pokeIconName = s[1];
+      const pokeWarming = s[2];
+      const pokeBoost = s[3];
+      const pokeStat = s[4];
+      const pokeRank = parseInt(s[5]);
+      const pokeVal = parseInt(s[6]);
+      var prefix = pokeWarming + pokeStat + "族";
+      prefix += (pokeRank > 0) ? " (+" + pokeRank +  pokeBoost + ") " : "";
+      prefix += (pokeBoost == "スカーフ" || pokeBoost == "鉄球") ? "（" + pokeBoost + "）" : "";
       if (pokeVal < lastVal)
       {
         var tr = document.createElement("tr");
@@ -247,30 +245,16 @@ function UpdateSpeedList()
         th.setAttribute("scope", "row");
         th.textContent = pokeVal;
 
-/*
-        var tdRasing = document.createElement("td");
-        tdRasing.textContent = pokeRaising;
-
-        var tdStat = document.createElement("td");
-        tdStat.textContent = pokeStat;
-        */
-
         var tdPoke = document.createElement("td");
-        //tdPoke.setAttribute("colspan", 6)
         tdPoke.setAttribute("id", "speed-" + pokeVal);
         tdPoke.textContent = prefix;
         
-        //var img = document.createElement("img");
-        //img.setAttribute("class", "poke-icon");
-        //img.src = 'https://drive.google.com/uc?export=download&id=' + pokeIcon;
         var img = document.createElement("div");
         img.setAttribute("class", "icon-"+pokeIconName);
         img.setAttribute("style", "display: inline-block;");
         tdPoke.appendChild(img);
 
         tr.appendChild(th);
-        //tr.appendChild(tdRasing);
-        //tr.appendChild(tdStat);
         tr.appendChild(tdPoke);
         tbody.appendChild(tr);
         lastVal = pokeVal;
@@ -286,9 +270,9 @@ function UpdateSpeedList()
           lastTd.appendChild(tex);
           lastPrefix = prefix;
         }
-        var img = document.createElement("img");
-        img.setAttribute("class", "poke-icon");
-        img.src = 'https://drive.google.com/uc?export=download&id=' + pokeIcon;
+        var img = document.createElement("div");
+        img.setAttribute("class", "icon-"+pokeIconName);
+        img.setAttribute("style", "display: inline-block;");
         lastTd.appendChild(img);
       }
     }
