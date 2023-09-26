@@ -7,8 +7,7 @@ var listType = "available";
 
 document.getElementById("main-display-area").style.display ="none";
 
-//readCSVData('/pokelist/db/def_pokemon2.csv', Result, Result);
-readCSVData('/pokelist/db/def_pokemon2.csv', OnParsePokemonData, OnGaDataFailed);
+readCSVData('/pokelist/db/def_pokemon.csv', OnParsePokemonData, OnGaDataFailed);
 readCSVData('/pokelist/db/def_dex_paldea.csv', OnParseDexData, OnGaDataFailed);
 readCSVData('/pokelist/db/speed_list_paldea.csv', OnParseSpeedData, OnGaDataFailed);
 
@@ -132,23 +131,24 @@ function SetupTable()
 
 function UpdateAbailablePokemons()
 {
-  const regID = (regulation == "D") ? 4
-              : (regulation == "C") ? 5
-              : (regulation == "B") ? 6
-              : (regulation == "A") ? 7
-              : (regulation == "INDIGO") ? 10
-              : (regulation == "TEAL") ? 12
-              : 4;
+  const regID = (regulation == "D") ? 2
+              : (regulation == "C") ? 3
+              : (regulation == "B") ? 4
+              : (regulation == "A") ? 5
+              : (regulation == "INDIGO") ? 8
+              : (regulation == "TEAL") ? 10
+              : 2;
   for (const d of dex)
   {
     const pokeName = d[0];
-    const pokeIndex = d[3];
+    const pokeIndex = d[1];
     const pokeAvailable = d[regID];
     if (pokeAvailable == "X") continue;
 
     const p = pokemon[pokeIndex];
     const iconID = p[27];
-    const iconName = p[28];
+    const iconName = p[26];
+    const tetteiID = p[28];
     const gen = p[4];
 
     const idtex = "list-available-" + gen;
@@ -163,11 +163,8 @@ function UpdateAbailablePokemons()
     var icon = document.createElement("div");
     icon.setAttribute("class", "icon");
     
-    let regexp = /Pokémon-Icon_(\d+)(\w*)/;
-    let dexID = parseInt(regexp.exec(iconName)[1]);
-    let formID = regexp.exec(iconName)[2];
     var link = document.createElement("a");
-    link.href = 'https://yakkun.com/sv/zukan/n'+dexID+formID;
+    link.href = 'https://yakkun.com/sv/zukan/'+tetteiID;
     var img = document.createElement("div");
     img.setAttribute("class", "icon-"+iconName);
     img.setAttribute("style", "display: inline-block;");
@@ -197,20 +194,6 @@ function UpdateSpeedList()
         th.textContent = "実数値";
         tr.appendChild(th);
       }
-      /*
-      {
-        var th = document.createElement("th");
-        th.setAttribute("scope", "col");
-        th.textContent = "育て方";
-        tr.appendChild(th);
-      }
-      {
-        var th = document.createElement("th");
-        th.setAttribute("scope", "col");
-        th.textContent = "種族値";
-        tr.appendChild(th);
-      }
-      */
       {
         var th = document.createElement("th");
         th.setAttribute("scope", "col");
@@ -224,31 +207,35 @@ function UpdateSpeedList()
     var lastTd;
     var lastPrefix;
     var tbody = document.createElement("tbody");
-    const regID = (regulation == "D") ? 7
-                : (regulation == "C") ? 8
-                : (regulation == "B") ? 9
-                : (regulation == "A") ? 10
-                : (regulation == "INDIGO") ? 13
-                : (regulation == "TEAL") ? 15
-                : 7;
+    const regID = (regulation == "D") ? 2
+                : (regulation == "C") ? 3
+                : (regulation == "B") ? 4
+                : (regulation == "A") ? 5
+                : (regulation == "INDIGO") ? 8
+                : (regulation == "TEAL") ? 10
+                : 2;
     for (const s of speed)
     {
       const pokeAvailable = s[regID];
       if (pokeAvailable == "X") continue;
 
+      const pokeIndex = s[1];
+      const p = pokemon[pokeIndex];
+      const iconID = p[27];
+      const iconName = p[26];
+      const tetteiID = p[28];
+      const gen = p[4];
+
       const pokeName = s[0];
-      const pokeIconName = s[1];
       const pokeWarming = s[2];
       const pokeBoost = s[3];
       const pokeStat = s[4];
       const pokeRank = parseInt(s[5]);
       const pokeVal = parseInt(s[6]);
-      let regexp = /Pokémon-Icon_(\d+)(\w*)/;
-      let dexID = parseInt(regexp.exec(pokeIconName)[1]);
-      let formID = regexp.exec(pokeIconName)[2];
+
       var prefix = pokeWarming + pokeStat + "族";
-      prefix += (pokeRank > 0) ? " (" +  pokeBoost + "+" + pokeRank + ") " : "";
-      prefix += (pokeBoost == "スカーフ" || pokeBoost == "鉄球") ? "（" + pokeBoost + "）" : "";
+      prefix += (pokeRank > 0) ? "(" +  pokeBoost + "+" + pokeRank + ")" : "";
+      prefix += (pokeBoost == "スカーフ" || pokeBoost == "鉄球") ? "(" + pokeBoost + ")" : "";
       if (pokeVal < lastVal)
       {
         var tr = document.createElement("tr");
@@ -261,9 +248,9 @@ function UpdateSpeedList()
         tdPoke.textContent = prefix;
         
         var link = document.createElement("a");
-        link.href = 'https://yakkun.com/sv/zukan/n'+dexID+formID;
+        link.href = 'https://yakkun.com/sv/zukan/'+tetteiID;
         var img = document.createElement("div");
-        img.setAttribute("class", "icon-"+pokeIconName);
+        img.setAttribute("class", "icon-"+iconName);
         img.setAttribute("style", "display: inline-block;");
         link.appendChild(img)
         tdPoke.appendChild(link);
@@ -285,9 +272,9 @@ function UpdateSpeedList()
           lastPrefix = prefix;
         }
         var link = document.createElement("a");
-        link.href = 'https://yakkun.com/sv/zukan/n'+dexID+formID;
+        link.href = 'https://yakkun.com/sv/zukan/'+tetteiID;
         var img = document.createElement("div");
-        img.setAttribute("class", "icon-"+pokeIconName);
+        img.setAttribute("class", "icon-"+iconName);
         img.setAttribute("style", "display: inline-block;");
         link.appendChild(img)
         lastTd.appendChild(link);
