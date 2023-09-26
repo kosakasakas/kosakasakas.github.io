@@ -18,6 +18,7 @@ readCSVData('/pokelist/db/speed_list_paldea.csv', OnParseSpeedData, OnGaDataFail
 var pokeDataLoaded = false;
 var dexDataLoaded = false;
 var speedDataLoaded = false;
+var searchword = "nothing"
 
 function Result(data)
 {
@@ -315,6 +316,7 @@ function HilightPokemon()
 {
   const word = document.getElementById("poke-search").value;
   if (word == "") return;
+
   {
     const classID = "pm-" + searchword;
     let targets = document.querySelectorAll(`[id^=`+classID+`]`);
