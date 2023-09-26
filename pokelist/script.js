@@ -129,6 +129,18 @@ function SetupTable()
   }
 }
 
+function getPokeIconElement(pokeName, iconName, tetteiID)
+{
+  var link = document.createElement("a");
+  link.href = 'https://yakkun.com/sv/zukan/'+tetteiID;
+  var img = document.createElement("div");
+  img.setAttribute("class", "icon-"+iconName);
+  img.setAttribute("style", "display: inline-block;");
+  img.setAttribute("id", "pm-" + pokeName);
+  link.appendChild(img);
+  return link;
+}
+
 function UpdateAbailablePokemons()
 {
   const regID = (regulation == "D") ? 2
@@ -153,28 +165,10 @@ function UpdateAbailablePokemons()
 
     const idtex = "list-available-" + gen;
     var parent = document.getElementById(idtex);
-    /*
-    var img = document.createElement("img");
-    img.setAttribute("class", "poke-icon");
-    img.src = 'https://drive.google.com/uc?export=download&id=' + iconID;
-    */
-    var holder = document.createElement("div");
-    holder.setAttribute("class", "iconholder");
-    var icon = document.createElement("div");
-    icon.setAttribute("class", "icon");
-    
-    var link = document.createElement("a");
-    link.href = 'https://yakkun.com/sv/zukan/'+tetteiID;
-    var img = document.createElement("div");
-    img.setAttribute("class", "icon-"+iconName);
-    img.setAttribute("style", "display: inline-block;");
-    link.appendChild(img)
-    
-    //icon.appendChild(img);
-    //holder.appendChild(icon);
-    //img.setAttribute("style", "display: inline-block;");
-    //img.src = 'https://drive.google.com/uc?export=download&id=' + iconID;
-    parent.appendChild(link);
+
+    var icon = getPokeIconElement(pokeName, iconName, tetteiID);
+
+    parent.appendChild(icon);
   }
 }
 
@@ -247,13 +241,8 @@ function UpdateSpeedList()
         tdPoke.setAttribute("id", "speed-" + pokeVal);
         tdPoke.textContent = prefix;
         
-        var link = document.createElement("a");
-        link.href = 'https://yakkun.com/sv/zukan/'+tetteiID;
-        var img = document.createElement("div");
-        img.setAttribute("class", "icon-"+iconName);
-        img.setAttribute("style", "display: inline-block;");
-        link.appendChild(img)
-        tdPoke.appendChild(link);
+        var icon = getPokeIconElement(pokeName, iconName, tetteiID);
+        tdPoke.appendChild(icon);
 
         tr.appendChild(th);
         tr.appendChild(tdPoke);
@@ -271,13 +260,9 @@ function UpdateSpeedList()
           lastTd.appendChild(tex);
           lastPrefix = prefix;
         }
-        var link = document.createElement("a");
-        link.href = 'https://yakkun.com/sv/zukan/'+tetteiID;
-        var img = document.createElement("div");
-        img.setAttribute("class", "icon-"+iconName);
-        img.setAttribute("style", "display: inline-block;");
-        link.appendChild(img)
-        lastTd.appendChild(link);
+
+        var icon = getPokeIconElement(pokeName, iconName, tetteiID);
+        lastTd.appendChild(icon);
       }
     }
 
@@ -315,6 +300,7 @@ function OnClickShowAvailableList()
   if (listType == "available") return;
   listType = "available";
   UpdateTable();
+  HilightPokemon();
 }
 
 function OnClickShowSpeedList()
@@ -322,4 +308,34 @@ function OnClickShowSpeedList()
   if (listType == "speed") return;
   listType = "speed";
   UpdateTable();
+  HilightPokemon();
+}
+
+function HilightPokemon()
+{
+  const word = document.getElementById("poke-search").value;
+  if (word == "") return;
+  {
+    const classID = "pm-" + searchword;
+    let targets = document.querySelectorAll(`[id^=`+classID+`]`);
+    for (var t of targets)
+    {
+      t.classList.remove("searched");
+    }
+  }
+  {
+    const classID = "pm-" + word;
+    let targets = document.querySelectorAll(`[id^=`+classID+`]`);
+    for (var t of targets)
+    {
+      t.classList.add("searched");
+    }
+    targets[0].scrollIntoView();
+  }
+  searchword = word;
+}
+
+function OnSearchPokemon()
+{
+  HilightPokemon();
 }

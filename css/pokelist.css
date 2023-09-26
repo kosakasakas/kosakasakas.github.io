@@ -3,8 +3,6 @@
   width: auto;
   margin: 2px;
 }
-.poke-list {
-}
 .indigo {
   background-color: #0666cc;
   color: #ffffff;
@@ -12,4 +10,7 @@
 .teal {
   background-color: #00b3b3;
   color: #ffffff;
+}
+.searched {
+  background-color: #eeff00;
 }
