@@ -35,6 +35,15 @@ function OnParseDexData(data)
 {
   dex = data;
   dexDataLoaded = true;
+  /*
+  var dataList = document.getElementById('pokenames');
+  for (const d of dex)
+  {
+    var option = document.createElement('option');
+    option.value = d[0];
+    dataList.appendChild(option);
+  }
+  */
   CheckDisplay();
 }
 
@@ -45,6 +54,11 @@ function OnParseSpeedData(data)
   CheckDisplay();
 }
 
+function Initialize()
+{
+  UpdateTable();
+}
+
 function CheckDisplay()
 {
     var initialized = pokeDataLoaded && dexDataLoaded && speedDataLoaded;
@@ -52,7 +66,7 @@ function CheckDisplay()
     {
       document.getElementById("main-display-area").style.display ="block";
       document.getElementById("loading-area").style.display ="none";
-      UpdateTable();
+      Initialize();
     }
 }
 
