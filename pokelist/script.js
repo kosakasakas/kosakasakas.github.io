@@ -207,12 +207,12 @@ function UpdateSpeedList()
     var lastTd;
     var lastPrefix;
     var tbody = document.createElement("tbody");
-    const regID = (regulation == "D") ? 2
-                : (regulation == "C") ? 3
-                : (regulation == "B") ? 4
-                : (regulation == "A") ? 5
-                : (regulation == "INDIGO") ? 8
-                : (regulation == "TEAL") ? 10
+    const regID = (regulation == "D") ? 7
+                : (regulation == "C") ? 8
+                : (regulation == "B") ? 9
+                : (regulation == "A") ? 10
+                : (regulation == "INDIGO") ? 13
+                : (regulation == "TEAL") ? 15
                 : 2;
     for (const s of speed)
     {
