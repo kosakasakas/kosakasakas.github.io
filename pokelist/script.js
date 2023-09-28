@@ -1,6 +1,8 @@
 var pokemon;
 var dex;
 var speed;
+var ability2poke;
+var move2poke;
 var regulation = "TEAL";
 var regulationText = "キタカミ図鑑";
 var listType = "available";
@@ -9,7 +11,9 @@ document.getElementById("main-display-area").style.display ="none";
 
 readCSVData('/pokelist/db/def_pokemon.csv', OnParsePokemonData, OnGaDataFailed);
 readCSVData('/pokelist/db/def_dex_paldea.csv', OnParseDexData, OnGaDataFailed);
-readCSVData('/pokelist/db/speed_list_paldea.csv', OnParseSpeedData, OnGaDataFailed);
+readCSVData('/pokelist/db/list_speed.csv', OnParseSpeedData, OnGaDataFailed);
+readCSVData('/pokelist/db/list_ability2poke.csv', OnParseAbility2PokeData, OnGaDataFailed);
+readCSVData('/pokelist/db/list_move2poke.csv', OnParseMove2PokeData, OnGaDataFailed);
 
 //google.script.run.withSuccessHandler(OnParsePokemonData).withFailureHandler(OnGaDataFailed).getPokemonData();
 //google.script.run.withSuccessHandler(OnParseDexData).withFailureHandler(OnGaDataFailed).getDexData();
@@ -18,11 +22,26 @@ readCSVData('/pokelist/db/speed_list_paldea.csv', OnParseSpeedData, OnGaDataFail
 var pokeDataLoaded = false;
 var dexDataLoaded = false;
 var speedDataLoaded = false;
+var ability2pokeLoaded = false;
+var move2pokeLoaded = false;
 var searchword = "nothing"
+var pokeID2dexID = [];
 
 function Result(data)
 {
   alert( "callbacked" );
+}
+function OnParseAbility2PokeData(data)
+{
+  ability2poke = data;
+  ability2pokeLoaded = true;
+  CheckDisplay();
+}
+function OnParseMove2PokeData(data)
+{
+  move2poke = data;
+  move2pokeLoaded = true;
+  CheckDisplay();
 }
 function OnParsePokemonData(data)
 {
@@ -56,12 +75,24 @@ function OnParseSpeedData(data)
 
 function Initialize()
 {
+  for (const p of pokemon)
+  {
+    const pokeID = p[0];
+    for (const d of dex)
+    {
+      const dexPokeID = d[2];
+      if (pokeID == dexPokeID)
+      {
+        pokeID2dexID[pokeID] = d[0];
+      }
+    }
+  }
   UpdateTable();
 }
 
 function CheckDisplay()
 {
-    var initialized = pokeDataLoaded && dexDataLoaded && speedDataLoaded;
+    var initialized = pokeDataLoaded && dexDataLoaded && speedDataLoaded && ability2pokeLoaded && move2pokeLoaded;
     if (initialized)
     {
       document.getElementById("main-display-area").style.display ="block";
@@ -73,6 +104,72 @@ function CheckDisplay()
 function OnGaDataFailed()
 {
   alert("GAの読み込みに失敗しました.");
+}
+
+function InnerSetupSearchList(searchword, listData)
+{
+  var search = document.getElementById("poke-search");
+  search.setAttribute("placeholder", searchword + "名で検索");
+
+  var parent = document.getElementById("main-content-area");
+
+  var table = document.createElement("table");
+  table.setAttribute("class", "table table-hover");
+  {
+    var thead = document.createElement("thead");
+    {
+      var tr = document.createElement("tr");
+      {
+        var th = document.createElement("th");
+        th.setAttribute("scope", "col");
+        th.textContent = searchword;
+        tr.appendChild(th);
+      }
+      {
+        var th = document.createElement("th");
+        th.setAttribute("scope", "col");
+        th.textContent = "ポケモン";
+        tr.appendChild(th);
+      }
+      thead.appendChild(tr);
+    }
+    table.appendChild(thead);
+
+    var tbody = document.createElement("tbody");
+    tbody.setAttribute("id", "poke-list-body");
+
+    for (const data of listData)
+    {
+      const text = data[1];
+      const pokeIDsStr = data[2];
+      if (pokeIDsStr == "") continue;
+  
+      var tr = document.createElement("tr");
+      var th = document.createElement("th");
+      th.setAttribute("scope", "row");
+      th.textContent = text;
+      th.setAttribute("id", "row-" + text);
+      tr.appendChild(th);
+  
+      var tdPoke = document.createElement("td");
+  
+      const pokeIDs = pokeIDsStr.split(',');
+      for (const pokeID of pokeIDs)
+      {
+        const dexID = pokeID2dexID[pokeID];
+        if (!CheckAvailable(dexID)) continue;
+  
+        const poke = GetPokemon(pokeID);
+        const icon = getPokeIconElement(poke);
+        tdPoke.appendChild(icon);
+      }
+      tr.appendChild(tdPoke);
+      tbody.appendChild(tr);
+    }
+
+    table.appendChild(tbody);
+  }
+  parent.appendChild(table);
 }
 
 function SetupTable()
@@ -142,46 +239,70 @@ function SetupTable()
   {
     
   }
+  else if (listType == "ability")
+  {
+    InnerSetupSearchList("とくせい", ability2poke);
+  }
+  else if (listType == "move")
+  {
+    InnerSetupSearchList("わざ", move2poke);
+  }
 }
 
-function getPokeIconElement(pokeName, iconName, tetteiID)
+function getPokeIconElement(poke)
 {
   var link = document.createElement("a");
-  link.href = 'https://yakkun.com/sv/zukan/'+tetteiID;
+  link.href = 'https://yakkun.com/sv/zukan/' + poke.tetteiID;
   var img = document.createElement("div");
-  img.setAttribute("class", "icon-"+iconName);
+  img.setAttribute("class", "icon-" + poke.iconName);
   img.setAttribute("style", "display: inline-block;");
-  img.setAttribute("id", "pm-" + pokeName);
+  img.setAttribute("id", "pm-" + poke.name);
   link.appendChild(img);
   return link;
 }
 
+function CheckAvailable(dexID)
+{
+  const d = dex[dexID];
+  if (!d) return false;
+  const regID = (regulation == "D") ? 3
+              : (regulation == "C") ? 4
+              : (regulation == "B") ? 5
+              : (regulation == "A") ? 6
+              : (regulation == "INDIGO") ? 8
+              : (regulation == "TEAL") ? 9
+              : 3;
+  return (d[regID] == "X") ? false : true;
+}
+
+function GetPokemon(pokeID)
+{
+  const p = pokemon[pokeID];
+  const poke = {
+    pokeID: pokeID,
+    name: p[11],
+    gen: p[4],
+    iconName: p[27],
+    iconID: p[28],
+    tetteiID: p[29]
+  }
+  return poke;
+}
+
 function UpdateAbailablePokemons()
 {
-  const regID = (regulation == "D") ? 2
-              : (regulation == "C") ? 3
-              : (regulation == "B") ? 4
-              : (regulation == "A") ? 5
-              : (regulation == "INDIGO") ? 8
-              : (regulation == "TEAL") ? 10
-              : 2;
   for (const d of dex)
   {
-    const pokeName = d[0];
-    const pokeIndex = d[1];
-    const pokeAvailable = d[regID];
-    if (pokeAvailable == "X") continue;
+    const dexID = d[0];
+    const pokeID = d[2];
+    if (!CheckAvailable(dexID)) continue;
 
-    const p = pokemon[pokeIndex];
-    const iconID = p[27];
-    const iconName = p[26];
-    const tetteiID = p[28];
-    const gen = p[4];
+    const p = GetPokemon(pokeID);
 
-    const idtex = "list-available-" + gen;
+    const idtex = "list-available-" + p.gen;
     var parent = document.getElementById(idtex);
 
-    var icon = getPokeIconElement(pokeName, iconName, tetteiID);
+    var icon = getPokeIconElement(p);
 
     parent.appendChild(icon);
   }
@@ -216,31 +337,19 @@ function UpdateSpeedList()
     var lastTd;
     var lastPrefix;
     var tbody = document.createElement("tbody");
-    const regID = (regulation == "D") ? 7
-                : (regulation == "C") ? 8
-                : (regulation == "B") ? 9
-                : (regulation == "A") ? 10
-                : (regulation == "INDIGO") ? 13
-                : (regulation == "TEAL") ? 15
-                : 2;
     for (const s of speed)
     {
-      const pokeAvailable = s[regID];
-      if (pokeAvailable == "X") continue;
+      const pokeID = s[1];
+      const dexID = s[2];
+      if (!CheckAvailable(dexID)) continue;
 
-      const pokeIndex = s[1];
-      const p = pokemon[pokeIndex];
-      const iconID = p[27];
-      const iconName = p[26];
-      const tetteiID = p[28];
-      const gen = p[4];
+      const poke = GetPokemon(pokeID);
 
-      const pokeName = s[0];
-      const pokeWarming = s[2];
-      const pokeBoost = s[3];
-      const pokeStat = s[4];
-      const pokeRank = parseInt(s[5]);
-      const pokeVal = parseInt(s[6]);
+      const pokeWarming = s[3];
+      const pokeBoost = s[4];
+      const pokeStat = s[5];
+      const pokeRank = parseInt(s[6]);
+      const pokeVal = parseInt(s[7]);
 
       var prefix = pokeWarming + pokeStat + "族";
       prefix += (pokeRank > 0) ? "(" +  pokeBoost + "+" + pokeRank + ")" : "";
@@ -256,7 +365,7 @@ function UpdateSpeedList()
         tdPoke.setAttribute("id", "speed-" + pokeVal);
         tdPoke.textContent = prefix;
         
-        var icon = getPokeIconElement(pokeName, iconName, tetteiID);
+        var icon = getPokeIconElement(poke);
         tdPoke.appendChild(icon);
 
         tr.appendChild(th);
@@ -276,7 +385,7 @@ function UpdateSpeedList()
           lastPrefix = prefix;
         }
 
-        var icon = getPokeIconElement(pokeName, iconName, tetteiID);
+        var icon = getPokeIconElement(poke);
         lastTd.appendChild(icon);
       }
     }
@@ -315,7 +424,7 @@ function OnClickShowAvailableList()
   if (listType == "available") return;
   listType = "available";
   UpdateTable();
-  HilightPokemon();
+  Hilight();
 }
 
 function OnClickShowSpeedList()
@@ -323,24 +432,52 @@ function OnClickShowSpeedList()
   if (listType == "speed") return;
   listType = "speed";
   UpdateTable();
-  HilightPokemon();
+  Hilight();
 }
 
-function HilightPokemon()
+function OnClickShowMoveList()
 {
+  if (listType == "move") return;
+  listType = "move";
+  UpdateTable();
+  Hilight();
+}
+
+function OnClickShowAbilityList()
+{
+  if (listType == "ability") return;
+  listType = "ability";
+  UpdateTable();
+  Hilight();
+}
+
+function Hilight()
+{
+  var searchIDPrefix ="";
+  switch (listType)
+  {
+    case "ability":
+    case "move":
+      searchIDPrefix = "row-"
+      break;
+
+    default:
+      searchIDPrefix = "pm-";
+      break;
+  }
+
   const word = document.getElementById("poke-search").value;
   if (word == "") return;
 
   {
-    const classID = "pm-" + searchword;
-    let targets = document.querySelectorAll(`[id^=`+classID+`]`);
+    let targets = document.querySelectorAll(`[id^=`+searchword+`]`);
     for (var t of targets)
     {
       t.classList.remove("searched");
     }
   }
   {
-    const classID = "pm-" + word;
+    const classID = searchIDPrefix + word;
     let targets = document.querySelectorAll(`[id^=`+classID+`]`);
     for (var t of targets)
     {
@@ -348,10 +485,10 @@ function HilightPokemon()
     }
     targets[0].scrollIntoView();
   }
-  searchword = word;
+  searchword = classID;
 }
 
-function OnSearchPokemon()
+function OnSearch()
 {
-  HilightPokemon();
+  Hilight();
 }

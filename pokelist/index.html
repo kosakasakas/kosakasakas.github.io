@@ -93,11 +93,15 @@
                   <label class="btn btn-outline-primary" for="btnradio1" onclick="OnClickShowAvailableList();">使用可能ポケモン</label>
                   <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
                   <label class="btn btn-outline-primary" for="btnradio2" onclick="OnClickShowSpeedList();">すばやさリスト</label>
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio3" onclick="OnClickShowAbilityList();">とくせいリスト</label>
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio4" onclick="OnClickShowMoveList();">わざリスト</label>
                 </div>
               </li>
             </ul>
             <div class="d-flex">
-              <input class="form-control" placeholder="ポケモン名で検索" id="poke-search" onchange="OnSearchPokemon()">
+              <input class="form-control" placeholder="ポケモン名で検索" id="poke-search" onchange="OnSearch()">
             </div>
           </div>
         </div>

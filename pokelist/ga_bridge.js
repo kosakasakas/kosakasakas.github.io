@@ -2,7 +2,7 @@
 function readCSVData(filePath, successCallback, failCallback)
 {
   $.get( filePath, function(data) {
-    var csv = $.csv.toArrays(data, { separator:',', delimiter:'\n' });
+    var csv = $.csv.toArrays(data, { });
     csv.shift();
     successCallback(csv);
   }, 'text')
