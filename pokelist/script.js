@@ -183,6 +183,9 @@ function SetupTable()
 
   if (listType == "available")
   {
+    var search = document.getElementById("poke-search");
+    search.setAttribute("placeholder", "ポケモン名で検索");
+    
     var table = document.createElement("table");
     table.setAttribute("class", "table table-hover");
     table.setAttribute("id", "speed-table");
@@ -237,7 +240,8 @@ function SetupTable()
   }
   else if (listType == "speed")
   {
-    
+    var search = document.getElementById("poke-search");
+    search.setAttribute("placeholder", "ポケモン名で検索");
   }
   else if (listType == "ability")
   {
