@@ -185,7 +185,7 @@ function SetupTable()
   {
     var search = document.getElementById("poke-search");
     search.setAttribute("placeholder", "ポケモン名で検索");
-    
+
     var table = document.createElement("table");
     table.setAttribute("class", "table table-hover");
     table.setAttribute("id", "speed-table");
@@ -489,6 +489,7 @@ function Hilight()
     }
     targets[0].scrollIntoView();
   }
+  document.getElementById("poke-search").value = "";
   searchword = classID;
 }
 
