@@ -75,6 +75,7 @@ function OnParseSpeedData(data)
 
 function Initialize()
 {
+  /*
   for (const p of pokemon)
   {
     const pokeID = p[0];
@@ -87,6 +88,7 @@ function Initialize()
       }
     }
   }
+  */
   UpdateTable();
 }
 
@@ -106,6 +108,18 @@ function OnGaDataFailed()
   alert("GAの読み込みに失敗しました.");
 }
 
+function getRegulationIndex()
+{
+  const regID = (regulation == "E") ? 7
+  : (regulation == "D") ? 0
+  : (regulation == "C") ? 1
+  : (regulation == "B") ? 2
+  : (regulation == "A") ? 3
+  : (regulation == "INDIGO") ? 5
+  : (regulation == "TEAL") ? 6
+  : 7;
+  return regID;
+}
 function InnerSetupSearchList(searchword, listData)
 {
   var search = document.getElementById("poke-search");
@@ -141,7 +155,7 @@ function InnerSetupSearchList(searchword, listData)
     for (const data of listData)
     {
       const text = data[1];
-      const pokeIDsStr = data[2];
+      const pokeIDsStr = data[3 + getRegulationIndex()];
       if (pokeIDsStr == "") continue;
   
       var tr = document.createElement("tr");
@@ -156,8 +170,8 @@ function InnerSetupSearchList(searchword, listData)
       const pokeIDs = pokeIDsStr.split(',');
       for (const pokeID of pokeIDs)
       {
-        const dexID = pokeID2dexID[pokeID];
-        if (!CheckAvailable(dexID)) continue;
+        //const dexID = pokeID2dexID[pokeID];
+        //if (!CheckAvailable(dexID)) continue;
   
         const poke = GetPokemon(pokeID);
         const icon = getPokeIconElement(poke);
