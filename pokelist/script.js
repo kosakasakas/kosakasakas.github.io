@@ -3,8 +3,8 @@ var dex;
 var speed;
 var ability2poke;
 var move2poke;
-var regulation = "TEAL";
-var regulationText = "キタカミ図鑑";
+var regulation = "E";
+var regulationText = "レギュレーションE";
 var listType = "available";
 
 document.getElementById("main-display-area").style.display ="none";
@@ -269,7 +269,8 @@ function CheckAvailable(dexID)
 {
   const d = dex[dexID];
   if (!d) return false;
-  const regID = (regulation == "D") ? 3
+  const regID = (regulation == "E") ? 10
+              : (regulation == "D") ? 3
               : (regulation == "C") ? 4
               : (regulation == "B") ? 5
               : (regulation == "A") ? 6
