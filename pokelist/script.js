@@ -3,8 +3,8 @@ var dex;
 var speed;
 var ability2poke;
 var move2poke;
-var regulation = "E";
-var regulationText = "レギュレーションE";
+var regulation = "TEAL";
+var regulationText = "キタカミ図鑑";
 var listType = "available";
 
 document.getElementById("main-display-area").style.display ="none";
@@ -167,15 +167,30 @@ function InnerSetupSearchList(searchword, listData)
   
       var tdPoke = document.createElement("td");
   
-      const pokeIDs = pokeIDsStr.split(',');
-      for (const pokeID of pokeIDs)
+      if (text == "まもる" || text == "テラバースト")
       {
-        //const dexID = pokeID2dexID[pokeID];
-        //if (!CheckAvailable(dexID)) continue;
-  
-        const poke = GetPokemon(pokeID);
-        const icon = getPokeIconElement(poke);
-        tdPoke.appendChild(icon);
+        const koiking = GetPokemon(161);
+        const metamon = GetPokemon(164);
+        const iconKoiking = getPokeIconElement(koiking);
+        const iconMetamon = getPokeIconElement(metamon);
+        tdPoke.appendChild(iconKoiking);
+        tdPoke.appendChild(iconMetamon);
+        var postText = document.createElement("a");
+        postText.textContent = "以外";
+        tdPoke.appendChild(postText);
+      }
+      else
+      {
+        const pokeIDs = pokeIDsStr.split(',');
+        for (const pokeID of pokeIDs)
+        {
+          //const dexID = pokeID2dexID[pokeID];
+          //if (!CheckAvailable(dexID)) continue;
+    
+          const poke = GetPokemon(pokeID);
+          const icon = getPokeIconElement(poke);
+          tdPoke.appendChild(icon);
+        }
       }
       tr.appendChild(tdPoke);
       tbody.appendChild(tr);
