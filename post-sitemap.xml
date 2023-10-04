@@ -9,6 +9,34 @@
 
 
     <url>
+        <loc>https://www.kosakasakas.com/2023/10/02/gas-tips-1/</loc>
+        <lastmod>2023-10-02T09:55:38.292Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/2023/09/25/gascsv/spreadsheet.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2023/10/02/gas-tips/</loc>
+        <lastmod>2023-10-02T09:52:08.386Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/2023/09/25/gascsv/spreadsheet.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
         <loc>https://www.kosakasakas.com/2023/09/25/gascsv/</loc>
         <lastmod>2023-09-24T17:36:13.080Z</lastmod>
         <changefreq>weekly</changefreq>

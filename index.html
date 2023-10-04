@@ -75,12 +75,12 @@
       <nav id="sub-nav">
         
         
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+          <a class="nav-icon" href="/atom.xml" title="RSS"><span class="fa fa-rss"></span></a>
         
-        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
+        <a class="nav-icon nav-search-btn" title="Buscar"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.kosakasakas.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Buscar"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.kosakasakas.com"></form>
       </div>
     </div>
   </div>
@@ -88,6 +88,121 @@
 
       <div class="outer">
         <section id="main">
+  
+    <article id="post-gas-tips-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/10/02/gas-tips-1/" class="article-date">
+  <time class="dt-published" datetime="2023-10-02T09:52:19.000Z" itemprop="datePublished">2023-10-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>►<a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/2023/09/25/gascsv/spreadsheet.png" rel="gallery_cln8pu1u800000ojy9nwicmab">
+        <img src="/2023/09/25/gascsv/spreadsheet.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/10/02/gas-tips-1/">GoogleAppScript(GAS)でspreadsheetに書き込むデータをソートする</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>GASで<code>spreadsheet</code>に値を書き込むときにソートして表示したい場合があります。</p>
+<p>こういう場合は以下のようにソートするColumn番号と並び方をセットすれば解決します。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var range = listMove2PokeSheet.getRange(2, 1, rowNum, columnNum);</span><br><span class="line">range.sort(&#123;column:3, ascending:false&#125;); // 降順</span><br></pre></td></tr></table></figure>
+
+<p><code>getRange</code>でソート範囲を絞るのがポイントです。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.kosakasakas.com/2023/10/02/gas-tips-1/" data-id="cln8pu1u800000ojy9nwicmab" data-title="GoogleAppScript(GAS)でspreadsheetに書き込むデータをソートする" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GAS/" rel="tag">GAS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-gas-tips" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/10/02/gas-tips/" class="article-date">
+  <time class="dt-published" datetime="2023-10-02T09:40:50.000Z" itemprop="datePublished">2023-10-02</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>►<a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/2023/09/25/gascsv/spreadsheet.png" rel="gallery_cln8pm79b0000oojycwm5975d">
+        <img src="/2023/09/25/gascsv/spreadsheet.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/10/02/gas-tips/">GoogleAppScript(GAS)で数字をテキストとしてspreadsheetに書き込む</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>例えば<code>100,001,002,003,004,005,006</code>みたいなカンマ区切りの数字をテキストとしてspreadsheetに書き込んでしまうと数値として認識するためspreadsheet上でオーバーフローしてしまう場合があります。</p>
+<p>これをテキストとして認識してもらうためには以下のように<code>Format</code>をセットすれば解決します。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var range = listMove2PokeSheet.getRange(2, 1, rowNum, columnNum);</span><br><span class="line">range.setNumberFormat(&#x27;@&#x27;);</span><br><span class="line">range.setValues(data);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.kosakasakas.com/2023/10/02/gas-tips/" data-id="cln8pm79b0000oojycwm5975d" data-title="GoogleAppScript(GAS)で数字をテキストとしてspreadsheetに書き込む" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GAS/" rel="tag">GAS</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-gascsv" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -140,7 +255,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/25/gascsv/" data-id="clmxor25h0000j8jy2b5x5inc" data-title="GASのスプレットシート読み込みをjavascriptで置き換えたい" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/25/gascsv/" data-id="clmxor25h0000j8jy2b5x5inc" data-title="GASのスプレットシート読み込みをjavascriptで置き換えたい" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
@@ -200,7 +315,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/24/spritepack/" data-id="clmxiqdxq0000kwjy97js9heg" data-title="スプライトにアイコンをパックしてWEBを高速化しよう" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/24/spritepack/" data-id="clmxiqdxq0000kwjy97js9heg" data-title="スプライトにアイコンをパックしてWEBを高速化しよう" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
@@ -251,7 +366,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/22/gitignore/" data-id="clmu4ycpa0000a0jy4kcm553x" data-title="gitignoreで一部のフォルダ以外を無視したい場合" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/22/gitignore/" data-id="clmu4ycpa0000a0jy4kcm553x" data-title="gitignoreで一部のフォルダ以外を無視したい場合" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
@@ -312,7 +427,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/21/hexo-tagging/" data-id="clmst7mkg0000dkjyelov4f9q" data-title="Hexoの記事で使えるタグとプラグイン" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/21/hexo-tagging/" data-id="clmst7mkg0000dkjyelov4f9q" data-title="Hexoの記事で使えるタグとプラグイン" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
@@ -369,7 +484,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2023/09/21/post-images/" data-id="clmsrrnzq0000swjy7d2n71bw" data-title="Hexoの記事に画像埋め込む方法" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/09/21/post-images/" data-id="clmsrrnzq0000swjy7d2n71bw" data-title="Hexoの記事に画像埋め込む方法" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
@@ -432,7 +547,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/12/02/sanshinnumera/" data-id="clmszoxdp000fysjy9zth4czx" data-title="三神ヌメラのすすめ" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/2020/12/02/sanshinnumera/" data-id="clmszoxdp000fysjy9zth4czx" data-title="三神ヌメラのすすめ" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
@@ -492,7 +607,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/05/01/superar2/" data-id="clmszoxdp000eysjy679i005d" data-title="続・ユニティちゃんを超ARしたときの話" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/2020/05/01/superar2/" data-id="clmszoxdp000eysjy679i005d" data-title="続・ユニティちゃんを超ARしたときの話" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
@@ -556,141 +671,11 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/04/30/unity5/" data-id="clmszoxdw000lysjy0q8r5752" data-title="Unity5に対応してみた" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://www.kosakasakas.com/2020/04/30/unity5/" data-id="clmszoxdw000lysjy0q8r5752" data-title="Unity5に対応してみた" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-unity-super-ar" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/04/30/unity-super-ar/" class="article-date">
-  <time class="dt-published" datetime="2020-04-30T02:57:17.000Z" itemprop="datePublished">2020-04-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>►<a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-<div class="article-gallery">
-  <div class="article-gallery-photos">
-    
-      <a class="article-gallery-img fancybox" href="/images_old/images/unicorn/super_ar_opt/res0.jpg" rel="gallery_clmszoxdr000jysjycyi0e668">
-        <img src="/images_old/images/unicorn/super_ar_opt/res0.jpg" itemprop="image">
-      </a>
-    
-  </div>
-</div>
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/04/30/unity-super-ar/">ユニティちゃんを超ARしたときの話</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>(※こちらは過去の記事を移転したものです)</p>
-<p>前回、<a href="http://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/">UnityでリアルタイムIBLしてみた</a>というエントリを書かせて頂きましたが、今回その応用バージョンで、IBL+AR&#x3D;超ARしてみたのでその時のメモやら実装方法を残しておきます。</p>
-<p>動画は以下のリンクにうぷしてますので、先に見てもらうと、「あら、こんな感じの事できるのねー」と雰囲気理解してもらえると思います。</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="http://www.nicovideo.jp/watch/sm25072244">ニコニコ動画</a></li>
-<li><a target="_blank" rel="noopener" href="https://vine.co/v/O6wpZr7lpMg">Vine</a></li>
-</ul>
-        
-          <p class="article-more-link">
-            <a href="/2020/04/30/unity-super-ar/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/04/30/unity-super-ar/" data-id="clmszoxdr000jysjycyi0e668" data-title="ユニティちゃんを超ARしたときの話" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-unity-realtime-ibl" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2020/04/29/unity-realtime-ibl/" class="article-date">
-  <time class="dt-published" datetime="2020-04-29T02:57:17.000Z" itemprop="datePublished">2020-04-29</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>►<a class="article-category-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-<div class="article-gallery">
-  <div class="article-gallery-photos">
-    
-      <a class="article-gallery-img fancybox" href="/images_old/images/unicorn/miku_opt/res1.jpg" rel="gallery_clmszoxdw000mysjy1a110ck6">
-        <img src="/images_old/images/unicorn/miku_opt/res1.jpg" itemprop="image">
-      </a>
-    
-  </div>
-</div>
-
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2020/04/29/unity-realtime-ibl/">UnityでリアルタイムIBLしてみた</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>(※こちらは過去の記事を移転したものです)</p>
-<p>Unityでリアルタイムにイメージベースドライティング(割と疑似ですが。)してみたのでそのときのメモです。</p>
-<p>Unityのゲーム画面キャプチャはYoutubeとニコ動の方にアップしてあるのでぜひ見てください。</p>
-<ul>
-<li><a target="_blank" rel="noopener" href="http://youtu.be/s_aLvJGbGII">Youtube</a></li>
-<li><a target="_blank" rel="noopener" href="http://www.nicovideo.jp/watch/sm24722663">ニコニコ動画</a></li>
-</ul>
-        
-          <p class="article-more-link">
-            <a href="/2020/04/29/unity-realtime-ibl/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2020/04/29/unity-realtime-ibl/" data-id="clmszoxdw000mysjy1a110ck6" data-title="UnityでリアルタイムIBLしてみた" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li></ul>
 
     </footer>
   </div>
@@ -704,7 +689,7 @@
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">weiter &raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Siguiente &raquo;</a>
   </nav>
 
 </section>
@@ -713,7 +698,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Kategorien</h3>
+    <h3 class="widget-title">Categorías</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/">ポケモン</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%AB%E3%83%BC%E3%83%89/">カード</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a></li></ul></li></ul>
     </div>
@@ -733,18 +718,18 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nube de Tags</h3>
     <div class="widget tagcloud">
-      <a href="/tags/AR/" style="font-size: 16.67px;">AR</a> <a href="/tags/GAS/" style="font-size: 10px;">GAS</a> <a href="/tags/Google-Search-Console/" style="font-size: 10px;">Google Search Console</a> <a href="/tags/Heroku/" style="font-size: 16.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 16.67px;">Hexo</a> <a href="/tags/Hugo/" style="font-size: 13.33px;">Hugo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" style="font-size: 10px;">インターネット大会</a> <a href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" style="font-size: 10px;">デッキ構築</a> <a href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" style="font-size: 20px;">レンダリング</a> <a href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" style="font-size: 10px;">内定リスト</a> <a href="/tags/%E5%89%A3%E7%9B%BE/" style="font-size: 13.33px;">剣盾</a> <a href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" style="font-size: 13.33px;">画像圧縮</a>
+      <a href="/tags/AR/" style="font-size: 16.67px;">AR</a> <a href="/tags/GAS/" style="font-size: 16.67px;">GAS</a> <a href="/tags/Google-Search-Console/" style="font-size: 10px;">Google Search Console</a> <a href="/tags/Heroku/" style="font-size: 16.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 16.67px;">Hexo</a> <a href="/tags/Hugo/" style="font-size: 13.33px;">Hugo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" style="font-size: 10px;">インターネット大会</a> <a href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" style="font-size: 10px;">デッキ構築</a> <a href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" style="font-size: 20px;">レンダリング</a> <a href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" style="font-size: 10px;">内定リスト</a> <a href="/tags/%E5%89%A3%E7%9B%BE/" style="font-size: 13.33px;">剣盾</a> <a href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" style="font-size: 13.33px;">画像圧縮</a>
     </div>
   </div>
 
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archivos</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
     </div>
   </div>
 
@@ -752,9 +737,17 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Posts recientes</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/10/02/gas-tips-1/">GoogleAppScript(GAS)でspreadsheetに書き込むデータをソートする</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/02/gas-tips/">GoogleAppScript(GAS)で数字をテキストとしてspreadsheetに書き込む</a>
+          </li>
         
           <li>
             <a href="/2023/09/25/gascsv/">GASのスプレットシート読み込みをjavascriptで置き換えたい</a>
@@ -766,14 +759,6 @@
         
           <li>
             <a href="/2023/09/22/gitignore/">gitignoreで一部のフォルダ以外を無視したい場合</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/21/hexo-tagging/">Hexoの記事で使えるタグとプラグイン</a>
-          </li>
-        
-          <li>
-            <a href="/2023/09/21/post-images/">Hexoの記事に画像埋め込む方法</a>
           </li>
         
       </ul>
@@ -790,7 +775,7 @@
     <div id="footer-info" class="inner">
       
       &copy; 2023 kosakasakas<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+      Construido por <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>

@@ -19,22 +19,22 @@
   crossorigin="anonymous"></script>
 
   
-  <title>Heroku上のブログに独自ドメインを設定する方法 | sakas blog</title>
+  <title>GoogleAppScript(GAS)で数字をテキストとしてspreadsheetに書き込む | sakas blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="自分のブログに独自ドメインを設定した時のお話です.   まず前提としてこのサイトはHeroku上で運営されています.デフォルトのURLはHerokuのアプリケーション名が含まれているので、独自ドメインを取得して好きなURLでアクセスできるようにしましょう.">
+  <meta name="description" content="例えば100,001,002,003,004,005,006みたいなカンマ区切りの数字をテキストとしてspreadsheetに書き込んでしまうと数値として認識するためspreadsheet上でオーバーフローしてしまう場合があります。 これをテキストとして認識してもらうためには以下のようにFormatをセットすれば解決します。 123var range &#x3D; listMove2PokeSheet.ge">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Heroku上のブログに独自ドメインを設定する方法">
-<meta property="og:url" content="https://www.kosakasakas.com/2016/10/20/get-domain/index.html">
+<meta property="og:title" content="GoogleAppScript(GAS)で数字をテキストとしてspreadsheetに書き込む">
+<meta property="og:url" content="https://www.kosakasakas.com/2023/10/02/gas-tips/index.html">
 <meta property="og:site_name" content="sakas blog">
-<meta property="og:description" content="自分のブログに独自ドメインを設定した時のお話です.   まず前提としてこのサイトはHeroku上で運営されています.デフォルトのURLはHerokuのアプリケーション名が含まれているので、独自ドメインを取得して好きなURLでアクセスできるようにしましょう.">
+<meta property="og:description" content="例えば100,001,002,003,004,005,006みたいなカンマ区切りの数字をテキストとしてspreadsheetに書き込んでしまうと数値として認識するためspreadsheet上でオーバーフローしてしまう場合があります。 これをテキストとして認識してもらうためには以下のようにFormatをセットすれば解決します。 123var range &#x3D; listMove2PokeSheet.ge">
 <meta property="og:locale">
-<meta property="og:image" content="https://www.kosakasakas.com/2016/10/20/get-domain/images_old/banners/banner_heroku.png">
-<meta property="article:published_time" content="2016-10-20T01:46:15.000Z">
-<meta property="article:modified_time" content="2023-09-21T13:52:43.144Z">
+<meta property="og:image" content="https://www.kosakasakas.com/2023/10/02/gas-tips/2023/09/25/gascsv/spreadsheet.png">
+<meta property="article:published_time" content="2023-10-02T09:40:50.000Z">
+<meta property="article:modified_time" content="2023-10-02T09:52:08.386Z">
 <meta property="article:author" content="kosakasakas">
-<meta property="article:tag" content="Heroku">
+<meta property="article:tag" content="GAS">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.kosakasakas.com/2016/10/20/get-domain/images_old/banners/banner_heroku.png">
+<meta name="twitter:image" content="https://www.kosakasakas.com/2023/10/02/gas-tips/2023/09/25/gascsv/spreadsheet.png">
 <meta name="twitter:creator" content="@sakas_poke">
   
     <link rel="alternate" href="/atom.xml" title="sakas blog" type="application/atom+xml">
@@ -94,10 +94,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-get-domain" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-gas-tips" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2016/10/20/get-domain/" class="article-date">
-  <time class="dt-published" datetime="2016-10-20T01:46:15.000Z" itemprop="datePublished">2016-10-20</time>
+    <a href="/2023/10/02/gas-tips/" class="article-date">
+  <time class="dt-published" datetime="2023-10-02T09:40:50.000Z" itemprop="datePublished">2023-10-02</time>
 </a>
     
   <div class="article-category">
@@ -110,8 +110,8 @@
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="/images_old/banners/banner_heroku.png" rel="gallery_clmszoxdk0004ysjy5c5uedkt">
-        <img src="/images_old/banners/banner_heroku.png" itemprop="image">
+      <a class="article-gallery-img fancybox" href="/2023/09/25/gascsv/spreadsheet.png" rel="gallery_cln8pm79b0000oojycwm5975d">
+        <img src="/2023/09/25/gascsv/spreadsheet.png" itemprop="image">
       </a>
     
   </div>
@@ -122,7 +122,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Heroku上のブログに独自ドメインを設定する方法
+      GoogleAppScript(GAS)で数字をテキストとしてspreadsheetに書き込む
     </h1>
   
 
@@ -130,45 +130,17 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>自分のブログに独自ドメインを設定した時のお話です.  </p>
-<p>まず前提としてこのサイトはHeroku上で運営されています.<br>デフォルトのURLはHerokuのアプリケーション名が含まれているので、独自ドメインを取得して好きなURLでアクセスできるようにしましょう.</p>
-<span id="more"></span>
-
-<h1 id="必要なもの"><a href="#必要なもの" class="headerlink" title="必要なもの"></a>必要なもの</h1><ul>
-<li>HerokuのURL</li>
-<li>お名前.comで取得したドメイン</li>
-</ul>
-<p>今回は安くていいのでお名前.comでドメイン(kosakasakas.com)取得しました.</p>
-<p>これは登録して道なりにすすめばすぐに取得できるかと思います.</p>
-<h1 id="ドメインを取得"><a href="#ドメインを取得" class="headerlink" title="ドメインを取得"></a>ドメインを取得</h1><p>まず注意ですが、これを作成したのが2016&#x2F;10&#x2F;20の段階ですので、みなさんが見ている段階ではこのTipsはすでに陳腐化しているかもしれません.ご留意ください.</p>
-<p>そして、Herokuでお名前.comで取得したルートメインを使うのは結構めんどくさいみたいです.  </p>
-<p>自分的にはサブドメインで十分だったので、そこまで踏み込んでませんが、やりたい人は<a target="_blank" rel="noopener" href="http://dosukoikoi.sub.jp/blog/archives/204">この辺の記事</a>を参考にしてみてください.</p>
-<p>では早速サブドメインを設定していきましょう.</p>
-<p>まず、お名前.comにログインして取得したドメインを選択します.</p>
-<p><img src="/images_old/articles/domain0.png" alt="ドメイン選択"></p>
-<p>続いて、無料オプションの中に「DNSレコード設定を利用する」というのがあるので設定するボタンを押します.  </p>
-<p><img src="/images_old/articles/domain1.png" alt="DNSレコード設定を利用する"></p>
-<p>そしてCNAMEレコードを追加します.<br>画像のように値を設定してください.<br>VALUEはあなたのHerokuのアプリURLです. 値を入れたら「追加」ボタンを押しましょう.</p>
-<p><img src="/images_old/articles/domain3.png" alt="CNAMEレコード"></p>
-<p>ここで注意なのですが、サブドメインを登録する場合、hoge.example.comみたいなサブドメインを登録してしまうと、google Adsenceなどでサイトを登録する場合に弾かれます.  </p>
-<p>これはgoogle Adsenceがサブドメインを禁止しているためで、回避するにはwwwなどのホスト名に変更する必要があります.<br>つまり、<a target="_blank" rel="noopener" href="http://www.example.comみたいなのを登録しておけばokと言うことです/">www.example.comみたいなのを登録しておけばOKと言うことです</a>.<br>なんでwwwはOKなのかいまいちよくわかんないですが…   </p>
-<p>以上でお名前.com側の設定は完了です!</p>
-<h1 id="Heroku側の設定"><a href="#Heroku側の設定" class="headerlink" title="Heroku側の設定"></a>Heroku側の設定</h1><p>これはめっちゃシンプルです.<br>自分のHerokuのローカルリポジトリ上で、以下のコマンドを打つだけです.</p>
-<pre><code>heroku domains:add www.example.com
-</code></pre>
-<p>これで設定完了です.<br>一応、ちゃんと登録されているか、以下のコマンドで確認しましょう.</p>
-<pre><code>heroku domains
-</code></pre>
-<p>自分のドメインが書いてあればOKです.<br>反映までしばらくかかることもあるので、気長に待って、<a target="_blank" rel="noopener" href="http://www.example.comにアクセスしてみましょう/">www.example.comにアクセスしてみましょう</a>!</p>
-
+        <p>例えば<code>100,001,002,003,004,005,006</code>みたいなカンマ区切りの数字をテキストとしてspreadsheetに書き込んでしまうと数値として認識するためspreadsheet上でオーバーフローしてしまう場合があります。</p>
+<p>これをテキストとして認識してもらうためには以下のように<code>Format</code>をセットすれば解決します。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var range = listMove2PokeSheet.getRange(2, 1, rowNum, columnNum);</span><br><span class="line">range.setNumberFormat(&#x27;@&#x27;);</span><br><span class="line">range.setValues(data);</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://www.kosakasakas.com/2016/10/20/get-domain/" data-id="clmszoxdk0004ysjy5c5uedkt" data-title="Heroku上のブログに独自ドメインを設定する方法" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
+      <a data-url="https://www.kosakasakas.com/2023/10/02/gas-tips/" data-id="cln8pm79b0000oojycwm5975d" data-title="GoogleAppScript(GAS)で数字をテキストとしてspreadsheetに書き込む" class="article-share-link"><span class="fa fa-share">Compartir</span></a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Heroku/" rel="tag">Heroku</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GAS/" rel="tag">GAS</a></li></ul>
 
     </footer>
   </div>
@@ -176,19 +148,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/10/20/compress-images-1/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2023/10/02/gas-tips-1/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Nuevo</strong>
       <div class="article-nav-title">
         
-          WEB用の画像を手軽に圧縮する方法 その1
+          GoogleAppScript(GAS)でspreadsheetに書き込むデータをソートする
         
       </div>
     </a>
   
   
-    <a href="/2016/10/19/heroku-hugo-blog/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2023/09/25/gascsv/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Viejo</strong>
-      <div class="article-nav-title">HerokuとHugoでブログ運用してみる話</div>
+      <div class="article-nav-title">GASのスプレットシート読み込みをjavascriptで置き換えたい</div>
     </a>
   
 </nav>
