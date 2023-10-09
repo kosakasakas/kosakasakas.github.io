@@ -3,8 +3,8 @@ var dex;
 var speed;
 var ability2poke;
 var move2poke;
-var regulation = "TEAL";
-var regulationText = "キタカミ図鑑";
+var regulation = "E";
+var regulationText = "レギュレーションE";
 var listType = "available";
 
 document.getElementById("main-display-area").style.display ="none";
@@ -125,7 +125,8 @@ function InnerSetupSearchList(searchword, listData)
   var search = document.getElementById("poke-search");
   search.setAttribute("placeholder", searchword + "名で検索");
 
-  var parent = document.getElementById("main-content-area");
+  //var parent = document.getElementById("main-content-area");
+  var parent = document.getElementById("pokelist");
 
   var table = document.createElement("table");
   table.setAttribute("class", "table table-hover");
@@ -152,6 +153,8 @@ function InnerSetupSearchList(searchword, listData)
     var tbody = document.createElement("tbody");
     tbody.setAttribute("id", "poke-list-body");
 
+    
+    var temp = document.createDocumentFragment();
     for (const data of listData)
     {
       const text = data[1];
@@ -193,9 +196,9 @@ function InnerSetupSearchList(searchword, listData)
         }
       }
       tr.appendChild(tdPoke);
-      tbody.appendChild(tr);
+      temp.appendChild(tr);
     }
-
+    tbody.appendChild(temp);
     table.appendChild(tbody);
   }
   parent.appendChild(table);
@@ -204,7 +207,7 @@ function InnerSetupSearchList(searchword, listData)
 function SetupTable()
 {
   // クリーン    
-  var parent = document.getElementById("main-content-area");
+  var parent = document.getElementById("pokelist");
   while (parent.lastChild)
   {
     parent.removeChild(parent.lastChild);
@@ -289,6 +292,7 @@ function getPokeIconElement(poke)
   var img = document.createElement("div");
   img.setAttribute("class", "icon-" + poke.iconName);
   img.setAttribute("style", "display: inline-block;");
+  img.setAttribute("loading", "lazy");
   img.setAttribute("id", "pm-" + poke.name);
   link.appendChild(img);
   return link;
@@ -344,7 +348,8 @@ function UpdateAbailablePokemons()
 
 function UpdateSpeedList()
 {
-  var parent = document.getElementById("main-content-area");
+  //var parent = document.getElementById("main-content-area");
+  var parent = document.getElementById("pokelist");
   
   var table = document.createElement("table");
   table.setAttribute("class", "table table-hover");
@@ -430,8 +435,23 @@ function UpdateSpeedList()
   parent.appendChild(table);
 }
 
+function TableLoader(isLoading)
+{
+  if (isLoading)
+  {
+    document.getElementById("pokelist").style.display ="none";
+    document.getElementById("loader").style.display ="block";
+  }
+  else
+  {
+    document.getElementById("pokelist").style.display ="block";
+    document.getElementById("loader").style.display ="none";
+  }
+}
+
 function UpdateTable()
 {
+  TableLoader(true);
   SetupTable();
   if (listType == "available")
   {
@@ -441,6 +461,9 @@ function UpdateTable()
   {
     UpdateSpeedList();
   }
+  $(document).ready(function () {
+    TableLoader(false);
+  });
 }
 
 function OnChangeRegulation(obj)

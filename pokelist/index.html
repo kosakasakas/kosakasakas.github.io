@@ -83,8 +83,8 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item navbar-text">
                 <select class="form-select form-select-sm navbar-text" onchange="OnChangeRegulation(this)">
-                    <option value="E">レギュレーションE</option>
-                    <option selected value="TEAL">キタカミ図鑑</option>
+                    <option selected value="E">レギュレーションE</option>
+                    <option value="TEAL">キタカミ図鑑</option>
                     <option value="INDIGO">ゼロの秘宝 【後編】 藍の円盤 新規内定</option>
                     <option value="D">レギュレーションD</option>
                     <option value="C">レギュレーションC</option>
@@ -113,31 +113,40 @@
       </nav>
       <!-- メインコンテンツ -->
       <div class="container" id="main-content-area">
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Pokémon</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td scope="col">
-                <img src="https://drive.google.com/uc?export=download&id=1miVh1HmNg6vs2wRxeL5_7l73IvXpMFhb" class="img-fluid">
-                <img src="https://drive.google.com/uc?export=download&id=1YRBZEmVRJ193-4r09850f9NsImQ9eevG" class="img-fluid">
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+        <div id= "loader">
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+        <div id = "pokelist">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Pokémon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td scope="col">
+                  <img src="https://drive.google.com/uc?export=download&id=1miVh1HmNg6vs2wRxeL5_7l73IvXpMFhb" class="img-fluid">
+                  <img src="https://drive.google.com/uc?export=download&id=1YRBZEmVRJ193-4r09850f9NsImQ9eevG" class="img-fluid">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
     
