@@ -207,11 +207,9 @@ function InnerSetupSearchList(searchword, listData)
 function SetupTable()
 {
   // クリーン    
-  var parent = document.getElementById("pokelist");
-  while (parent.lastChild)
-  {
-    parent.removeChild(parent.lastChild);
-  }
+  var oldNode = document.getElementById("pokelist");
+  var pokelisNode = oldNode.cloneNode(false);
+  oldNode.parentNode.replaceChild(pokelisNode, oldNode);
 
   if (listType == "available")
   {
@@ -268,7 +266,7 @@ function SetupTable()
       table.appendChild(thead);
       table.appendChild(tbody);
     }
-    parent.appendChild(table);
+    pokelisNode.appendChild(table);
   }
   else if (listType == "speed")
   {
