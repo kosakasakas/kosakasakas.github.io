@@ -127,6 +127,8 @@ function InnerSetupSearchList(searchword, listData)
 
   //var parent = document.getElementById("main-content-area");
   var parent = document.getElementById("pokelist");
+  
+  var tmp = document.createDocumentFragment();
 
   var table = document.createElement("table");
   table.setAttribute("class", "table table-hover");
@@ -153,8 +155,6 @@ function InnerSetupSearchList(searchword, listData)
     var tbody = document.createElement("tbody");
     tbody.setAttribute("id", "poke-list-body");
 
-    
-    var temp = document.createDocumentFragment();
     for (const data of listData)
     {
       const text = data[1];
@@ -196,12 +196,12 @@ function InnerSetupSearchList(searchword, listData)
         }
       }
       tr.appendChild(tdPoke);
-      temp.appendChild(tr);
+      tbody.appendChild(tr);
     }
-    tbody.appendChild(temp);
     table.appendChild(tbody);
   }
-  parent.appendChild(table);
+  tmp.appendChild(table);
+  parent.appendChild(tmp);
 }
 
 function SetupTable()
@@ -352,6 +352,8 @@ function UpdateSpeedList()
   var parent = document.getElementById("pokelist");
   
   var table = document.createElement("table");
+  table.setAttribute("content-visibility", "auto");
+  table.setAttribute("contain-intrinsic-size", "500px");
   table.setAttribute("class", "table table-hover");
   {
     var thead = document.createElement("thead");
@@ -506,6 +508,21 @@ function OnClickShowAbilityList()
   listType = "ability";
   UpdateTable();
   Hilight();
+}
+
+var displayTest = true;
+function OnClickDisplayTest()
+{
+  if (displayTest)
+  {
+    document.getElementById("pokelist").style.display ="none";
+    displayTest = false;
+  }
+  else
+  {
+    document.getElementById("pokelist").style.display ="block";
+    displayTest = true;
+  }
 }
 
 function Hilight()
