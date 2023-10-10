@@ -510,21 +510,6 @@ function OnClickShowAbilityList()
   Hilight();
 }
 
-var displayTest = true;
-function OnClickDisplayTest()
-{
-  if (displayTest)
-  {
-    document.getElementById("pokelist").style.display ="none";
-    displayTest = false;
-  }
-  else
-  {
-    document.getElementById("pokelist").style.display ="block";
-    displayTest = true;
-  }
-}
-
 function Hilight()
 {
   var searchIDPrefix ="";
