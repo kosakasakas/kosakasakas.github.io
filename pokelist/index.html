@@ -100,41 +100,45 @@
                     <option value="MOVE_ATTACK">わざリスト（物理特殊）</option>
                     <option value="MOVE_STATUS">わざリスト（変化）</option>
                   </select>
-                  <input class="form-control" placeholder="ポケモン名で検索" id="poke-search" onchange="OnSearch()">
                 </div>
               </li>
               <li class="nav-item navbar-text">
-                <div class="dropdown">
+                  <input class="form-control" placeholder="ポケモン名で検索" id="poke-search" onchange="OnSearch()">
+              </li>
+              <li class="nav-item navbar-text">
+                <div class="dropdown col-md-6">
                   <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                    オプション
+                    リスト表示オプション
                   </button>
                   <form class="dropdown-menu p-4">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="CheckboxOptionEvo" checked onchange="OnChangeOptionEvo(this);">
+                      <label class="form-check-label" for="CheckboxOptionEvo">最終進化のみ</label>
+                    </div>
+                    <li class="list-inline-item">
                       <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="CheckboxOptionEvo" checked onchange="OnChangeOptionEvo(this);">
-                        <label class="form-check-label" for="CheckboxOptionEvo">最終進化のみ</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="CheckboxOptionChoice" checked onchange="OnChangeOptionEvo(this);">
+                        <label class="form-check-label" for="CheckboxOptionChoice">こだわりアイテム（種族値で範囲指定）</label>
                       </div>
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="CheckboxOptionChoice" checked onchange="OnChangeOptionEvo(this);">
-                            <label class="form-check-label" for="CheckboxOptionChoice">こだわりアイテム</label>
-                          </div>
-                        </li>
-                        <li class="list-inline-item">
-                          <label class="">種族値 min</label>
-                        </li>
-                        <li class="list-inline-item">
-                          <input type="number" name="min" id="min-box" placeholder="80" value="" min="0">
-                        </li>
-                        <li class="list-inline-item">
-                          <label class="">~ max</label>
-                        </li>
-                        <li class="list-inline-item">
-                          <input type="number" name="max" id="max-box" placeholder="110" value="" max="200">
-                        </li>
-                      </ul>
-                      <p>
-                      <div id="slider"></div>
+                    </li>
+                    <div class="row g-2 align-items-center">
+                      <div class="col-auto">
+                        <lable for="choiceMin" class="col-form-label">min</label>
+                      </div>
+                      <div class="col-auto">
+                        <input class="form-control form-control-sm" type="number" name="min" id="min-box" placeholder="80" value="" min="0" aria-labelledby="choiceMin">
+                      </div>
+                    </div>
+                    <div class="row g-2 align-items-center">
+                      <div class="col-auto">
+                        <lable for="choiceMax" class="col-form-label">max</label>
+                      </div>
+                      <div class="col-auto">
+                        <input class="form-control form-control-sm" type="number" name="max" id="max-box" placeholder="110" value="" max="200" aria-labelledby="choiceMin">
+                      </div>
+                    </div>
+                    <p>
+                    <div id="slider"></div>
                   </form>
                 </div>
               </li>
