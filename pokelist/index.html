@@ -45,6 +45,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.css">
 
     <!-- Fontawesame -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
@@ -82,7 +83,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item navbar-text">
-                <select class="form-select form-select-sm navbar-text" onchange="OnChangeRegulation(this)">
+                <div class="input-group mb-3">
+                  <select class="form-select" id="SelectorRegulation" onchange="OnChangeRegulation(this);" >
                     <option selected value="E">レギュレーションE</option>
                     <option value="TEAL">キタカミ図鑑</option>
                     <option value="INDIGO">ゼロの秘宝 【後編】 藍の円盤 新規内定</option>
@@ -90,24 +92,53 @@
                     <option value="C">レギュレーションC</option>
                     <option value="B">レギュレーションB</option>
                     <option value="A">レギュレーションA</option>
-                </select>
+                  </select>
+                  <select class="form-select" id="SelectorList" onchange="OnChangeList(this);" >
+                    <option selected value="AVAILABLE">使用可能リスト</option>
+                    <option value="SPEED">すばやさリスト</option>
+                    <option value="ABILITY">とくせいリスト</option>
+                    <option value="MOVE_ATTACK">わざリスト（物理特殊）</option>
+                    <option value="MOVE_STATUS">わざリスト（変化）</option>
+                  </select>
+                  <input class="form-control" placeholder="ポケモン名で検索" id="poke-search" onchange="OnSearch()">
+                </div>
               </li>
               <li class="nav-item navbar-text">
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                  <label class="btn btn-outline-primary" for="btnradio1" onclick="OnClickShowAvailableList();">使用可能</label>
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btnradio2" onclick="OnClickShowSpeedList();">すばやさ</label>
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btnradio3" onclick="OnClickShowAbilityList();">とくせい</label>
-                  <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                  <label class="btn btn-outline-primary" for="btnradio4" onclick="OnClickShowMoveList();">わざ</label>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    オプション
+                  </button>
+                  <form class="dropdown-menu p-4">
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="CheckboxOptionEvo" checked onchange="OnChangeOptionEvo(this);">
+                        <label class="form-check-label" for="CheckboxOptionEvo">最終進化のみ</label>
+                      </div>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="CheckboxOptionChoice" checked onchange="OnChangeOptionEvo(this);">
+                            <label class="form-check-label" for="CheckboxOptionChoice">こだわりアイテム</label>
+                          </div>
+                        </li>
+                        <li class="list-inline-item">
+                          <label class="">種族値 min</label>
+                        </li>
+                        <li class="list-inline-item">
+                          <input type="number" name="min" id="min-box" placeholder="80" value="" min="0">
+                        </li>
+                        <li class="list-inline-item">
+                          <label class="">~ max</label>
+                        </li>
+                        <li class="list-inline-item">
+                          <input type="number" name="max" id="max-box" placeholder="110" value="" max="200">
+                        </li>
+                      </ul>
+                      <p>
+                      <div id="slider"></div>
+                  </form>
                 </div>
               </li>
             </ul>
-            <div class="d-flex">
-              <input class="form-control" placeholder="ポケモン名で検索" id="poke-search" onchange="OnSearch()">
-            </div>
           </div>
         </div>
       </nav>
@@ -162,7 +193,7 @@
 	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 	  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
     <script src="/pokelist/ga_bridge.js"></script>
     <script src="/pokelist/script.js"></script>
   </body>
