@@ -4,8 +4,8 @@ var speed;
 var ability2poke;
 var move2poke;
 var movestatus2poke;
-var regulation = "E";
-var regulationText = "レギュレーションE";
+var regulation = "TRICK";
+var regulationText = "トリックマジック";
 var listID;
 var listText;
 var searchIDPrefix;
@@ -188,6 +188,7 @@ function getRegulationIndex()
   : (regulation == "A") ? 3
   : (regulation == "INDIGO") ? 5
   : (regulation == "TEAL") ? 6
+  : (regulation == "TRICK") ? 8
   : 7;
   return regID;
 }
@@ -296,6 +297,10 @@ function InnerSetupAvailable(searchword)
   {
     table.classList.add("indigo");
   }
+  else if (regulation == "TRICK")
+  {
+    table.classList.add("trickmagick");
+  }
   {
     var thead = document.createElement("thead");
     {
@@ -402,14 +407,7 @@ function CheckAvailable(dexID)
 {
   const d = dex[dexID];
   if (!d) return false;
-  const regID = (regulation == "E") ? 10
-              : (regulation == "D") ? 3
-              : (regulation == "C") ? 4
-              : (regulation == "B") ? 5
-              : (regulation == "A") ? 6
-              : (regulation == "INDIGO") ? 8
-              : (regulation == "TEAL") ? 9
-              : 3;
+  const regID = getRegulationIndex() + 3;
   return (d[regID] == "X") ? false : true;
 }
 

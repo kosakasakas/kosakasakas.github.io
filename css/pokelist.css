@@ -11,6 +11,10 @@
   background-color: #00b3b3;
   color: #ffffff;
 }
+.trickmagick {
+  background-color: #612d9c;
+  color: #ffffff;
+}
 .searched {
   background-color: #eeff00;
 	animation: flash 1s linear infinite;
