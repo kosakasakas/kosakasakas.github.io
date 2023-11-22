@@ -4,8 +4,8 @@ var speed;
 var ability2poke;
 var move2poke;
 var movestatus2poke;
-var regulation = "TRICK";
-var regulationText = "トリックマジック";
+var regulation = "DRAGON";
+var regulationText = "竜王戦予選";
 var listID;
 var listText;
 var searchIDPrefix;
@@ -189,6 +189,7 @@ function getRegulationIndex()
   : (regulation == "INDIGO") ? 5
   : (regulation == "TEAL") ? 6
   : (regulation == "TRICK") ? 8
+  : (regulation == "DRAGON") ? 9
   : 7;
   return regID;
 }
