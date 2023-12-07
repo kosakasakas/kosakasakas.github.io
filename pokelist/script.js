@@ -5,7 +5,7 @@ var ability2poke;
 var move2poke;
 var movestatus2poke;
 var regulation = "DRAGON";
-var regulationText = "竜王戦予選";
+var regulationText = "ポケモン竜王戦2024挑戦者決定戦";
 var listID;
 var listText;
 var searchIDPrefix;
