@@ -5,7 +5,7 @@ var ability2poke;
 var move2poke;
 var movestatus2poke;
 var regulation = "INDIGO";
-var regulationText = "ゼロの秘宝 【後編】 藍の円盤 新規内定";
+var regulationText = "ブルーベリー図鑑";
 var listID;
 var listText;
 var searchIDPrefix;
@@ -186,7 +186,7 @@ function getRegulationIndex()
   : (regulation == "C") ? 1
   : (regulation == "B") ? 2
   : (regulation == "A") ? 3
-  : (regulation == "INDIGO") ? 5
+  : (regulation == "INDIGO") ? 10
   : (regulation == "TEAL") ? 6
   : (regulation == "TRICK") ? 8
   : (regulation == "DRAGON") ? 9
