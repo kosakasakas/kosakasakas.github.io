@@ -4,8 +4,8 @@ var speed;
 var ability2poke;
 var move2poke;
 var movestatus2poke;
-var regulation = "INDIGO";
-var regulationText = "ブルーベリー図鑑";
+var regulation = "F";
+var regulationText = "レギュレーションF";
 var listID;
 var listText;
 var searchIDPrefix;
@@ -17,12 +17,12 @@ var choiceMaxVal;
 
 document.getElementById("main-display-area").style.display ="none";
 
-readCSVData('/pokelist/db/def_pokemon.csv', OnParsePokemonData, OnGaDataFailed);
-readCSVData('/pokelist/db/def_dex_paldea.csv', OnParseDexData, OnGaDataFailed);
-readCSVData('/pokelist/db/list_speed.csv', OnParseSpeedData, OnGaDataFailed);
-readCSVData('/pokelist/db/list_ability2poke.csv', OnParseAbility2PokeData, OnGaDataFailed);
-readCSVData('/pokelist/db/list_move2poke.csv', OnParseMove2PokeData, OnGaDataFailed);
-readCSVData('/pokelist/db/list_movestatus2poke.csv', OnParseMoveStatus2PokeData, OnGaDataFailed);
+readCSVData('/pokelist/db/ダメージ計算 - def_pokemon.csv', OnParsePokemonData, OnGaDataFailed);
+readCSVData('/pokelist/db/ダメージ計算 - def_dex_paldea.csv', OnParseDexData, OnGaDataFailed);
+readCSVData('/pokelist/db/ダメージ計算 - list_speed.csv', OnParseSpeedData, OnGaDataFailed);
+readCSVData('/pokelist/db/ダメージ計算 - list_ability2poke.csv', OnParseAbility2PokeData, OnGaDataFailed);
+readCSVData('/pokelist/db/ダメージ計算 - list_move2poke.csv', OnParseMove2PokeData, OnGaDataFailed);
+readCSVData('/pokelist/db/ダメージ計算 - list_movestatus2poke.csv', OnParseMoveStatus2PokeData, OnGaDataFailed);
 
 //google.script.run.withSuccessHandler(OnParsePokemonData).withFailureHandler(OnGaDataFailed).getPokemonData();
 //google.script.run.withSuccessHandler(OnParseDexData).withFailureHandler(OnGaDataFailed).getDexData();
@@ -181,7 +181,7 @@ function OnGaDataFailed()
 
 function getRegulationIndex()
 {
-  const regID = (regulation == "E") ? 7
+  const regID = (regulation == "F") ? 11
   : (regulation == "D") ? 0
   : (regulation == "C") ? 1
   : (regulation == "B") ? 2
@@ -190,7 +190,8 @@ function getRegulationIndex()
   : (regulation == "TEAL") ? 6
   : (regulation == "TRICK") ? 8
   : (regulation == "DRAGON") ? 9
-  : 7;
+  : (regulation == "E") ? 7
+  : 11;
   return regID;
 }
 
