@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TT4ZRKRLZ2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TT4ZRKRLZ2');
+</script>
+<!-- End Google Analytics -->
+
+  <!-- Google Adsense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5645188269753703"
+  crossorigin="anonymous"></script>
+
+  
+  <title>そらとぶタイムアタックを自動化してBPを稼ごう | sakas blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="はじめにポケットモンスター スカーレット・バイオレットのDLC【ゼロの秘宝 後編 藍の円盤】で追加されたミニゲーム「そらとぶタイムアタック」の初級を自動化し、BPを無限に生み出すためのプログラムとその解説です.   先駆者として、しゅみるさん@PokeSyumiruの実装がありますが、本プログラムはそれらの飛行ルートを参考にしつつも画像認識によるタイミング制御を入れることでTA成功確率を98.8%">
+<meta property="og:type" content="article">
+<meta property="og:title" content="そらとぶタイムアタックを自動化してBPを稼ごう">
+<meta property="og:url" content="https://www.kosakasakas.com/2023/12/25/flyingTA/index.html">
+<meta property="og:site_name" content="sakas blog">
+<meta property="og:description" content="はじめにポケットモンスター スカーレット・バイオレットのDLC【ゼロの秘宝 後編 藍の円盤】で追加されたミニゲーム「そらとぶタイムアタック」の初級を自動化し、BPを無限に生み出すためのプログラムとその解説です.   先駆者として、しゅみるさん@PokeSyumiruの実装がありますが、本プログラムはそれらの飛行ルートを参考にしつつも画像認識によるタイミング制御を入れることでTA成功確率を98.8%">
+<meta property="og:locale">
+<meta property="og:image" content="https://www.kosakasakas.com/2023/12/25/flyingTA/result.png">
+<meta property="article:published_time" content="2023-12-25T08:46:46.000Z">
+<meta property="article:modified_time" content="2023-12-25T12:19:06.776Z">
+<meta property="article:author" content="kosakasakas">
+<meta property="article:tag" content="ポケモン">
+<meta property="article:tag" content="自動化">
+<meta property="article:tag" content="ポケモンSV">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.kosakasakas.com/2023/12/25/flyingTA/result.png">
+<meta name="twitter:creator" content="@sakas_poke">
+  
+    <link rel="alternate" href="/atom.xml" title="sakas blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">sakas blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/pokelist">ポケリス</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Suche"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Suche"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://www.kosakasakas.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-flyingTA" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/12/25/flyingTA/" class="article-date">
+  <time class="dt-published" datetime="2023-12-25T08:46:46.000Z" itemprop="datePublished">2023-12-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/">ポケモン</a>►<a class="article-category-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a>►<a class="article-category-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/%E8%87%AA%E5%8B%95%E5%8C%96/">自動化</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+<div class="article-gallery">
+  <div class="article-gallery-photos">
+    
+      <a class="article-gallery-img fancybox" href="/2023/12/25/flyingTA/result.png" rel="gallery_clqkod5tl00001gjy8zo7bkyl">
+        <img src="/2023/12/25/flyingTA/result.png" itemprop="image">
+      </a>
+    
+  </div>
+</div>
+
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      そらとぶタイムアタックを自動化してBPを稼ごう
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="はじめに"><a href="#はじめに" class="headerlink" title="はじめに"></a>はじめに</h1><p>ポケットモンスター スカーレット・バイオレットのDLC【ゼロの秘宝 後編 藍の円盤】で追加されたミニゲーム「そらとぶタイムアタック」の初級を自動化し、BPを無限に生み出すためのプログラムとその解説です.  </p>
+<p>先駆者として、<a target="_blank" rel="noopener" href="https://twitter.com/PokeSyumiru">しゅみるさん@PokeSyumiru</a>の実装がありますが、本プログラムはそれらの飛行ルートを参考にしつつも画像認識によるタイミング制御を入れることでTA成功確率を<code>98.8%</code>まで高めたものになっています.  </p>
+<span id="more"></span>
+
+<p>数日間連続で安定動作したことを確認したので公開します.<br>参考までに<code>57万BP</code>をほぼノンストップで稼ぎました.  </p>
+<h1 id="必要なもの"><a href="#必要なもの" class="headerlink" title="必要なもの"></a>必要なもの</h1><ul>
+<li>マイクロコントローラー<ul>
+<li>arduino, atmega32u4など</li>
+</ul>
+</li>
+<li>キャプチャボード<ul>
+<li>1万以下の安物でOK</li>
+</ul>
+</li>
+<li>PC<ul>
+<li>たぶんwindows?macは未検証</li>
+</ul>
+</li>
+</ul>
+<h1 id="動作方法"><a href="#動作方法" class="headerlink" title="動作方法"></a>動作方法</h1><h3 id="1-Poke-Controller-Modifiedのセットアップ"><a href="#1-Poke-Controller-Modifiedのセットアップ" class="headerlink" title="1.Poke-Controller-Modifiedのセットアップ"></a>1.Poke-Controller-Modifiedのセットアップ</h3><p>本プログラムの動作にはPoke-Controller-Modified( <a target="_blank" rel="noopener" href="https://github.com/Moi-poke/Poke-Controller-Modified">https://github.com/Moi-poke/Poke-Controller-Modified</a> )を必要とします.<br>↑こちらのセットアップを一読の上で実行できるようにしてください.<br>筆者はFPS30、ShowSize640x360で実行しています.  </p>
+<h3 id="2-リソースのダウンロード"><a href="#2-リソースのダウンロード" class="headerlink" title="2.リソースのダウンロード"></a>2.リソースのダウンロード</h3><p>そらとぶタイムアタックに必要な画像リソースとコマンドコードはすでにgithubに上がっています.<br><a target="_blank" rel="noopener" href="https://github.com/kosakasakas/PokeConSKS">https://github.com/kosakasakas/PokeConSKS</a><br>こちらを丸ごとダウンロードするか、gitとしてpullするなどしてください.  </p>
+<h3 id="3-リソースの配置"><a href="#3-リソースの配置" class="headerlink" title="3.リソースの配置"></a>3.リソースの配置</h3><p>ダウンロードしたリソースをPoke-Controller-Modified内に以下のように配置します.  </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Poke-Controller-Modified/</span><br><span class="line">  └─ SerialController/</span><br><span class="line">    └─ Commands/</span><br><span class="line">      └─ PythonCommands/</span><br><span class="line">        └─ ImageProcessingOnly/</span><br><span class="line">          └─SKSCommands.py    #ダウンロードしたリソース</span><br><span class="line">    └─ Template/SKS/          #ダウンロードしたリソース</span><br></pre></td></tr></table></figure>
+<p>直接ファイルを置いてしまって問題ないですが、シンボリックリンクを張るようにすると構造をいじらなくて済むので便利です.<br>シンボリックリンクのやり方はWindowsの場合は以下を参考にしてください.<br><a target="_blank" rel="noopener" href="http://kosakasakas.com/2023/12/25/winsymlink/">http://kosakasakas.com/2023/12/25/winsymlink/</a></p>
+<h3 id="4-実行"><a href="#4-実行" class="headerlink" title="4.実行"></a>4.実行</h3><p>配置が終わったらPoke-Controllerを起動し、<code>SKSSV_そらとぶTA_初級</code>コマンドを実行するだけです.<br>以下のように受付前にいる状態で起動してください.  </p>
+<img src="/2023/12/25/flyingTA/reception.png" class="" title="受付前待機">
+
+<h1 id="実装簡易解説"><a href="#実装簡易解説" class="headerlink" title="実装簡易解説"></a>実装簡易解説</h1><p>プログラムで気になりそうな部分だけ掻い摘んで解説します. </p>
+<h3 id="テスト実行"><a href="#テスト実行" class="headerlink" title="テスト実行"></a>テスト実行</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def Test(self):</span><br><span class="line">    if self.OpenMenu():</span><br><span class="line">        self.press(Button.X, wait=1.0)</span><br><span class="line">        print(&#x27;=========================&#x27;)</span><br><span class="line">        print(&#x27;準備完了&#x27;)</span><br><span class="line">        print(&#x27;=========================&#x27;)</span><br><span class="line">    return True</span><br></pre></td></tr></table></figure>
+<p>これはswitchのコントローラーをプログラムが得るための動作確認みたいなもんです.<br>一度メニューを開いて開けるかどうかをテストしてます.  </p>
+<h3 id="最後の旋回"><a href="#最後の旋回" class="headerlink" title="最後の旋回"></a>最後の旋回</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 旋回して無理やりゴールする</span><br><span class="line">self.press(Direction(Stick.LEFT, 0), duration=1.6, wait=0.1)</span><br><span class="line"># ゴールポスト手前で旋回してしまった場合の対策としてもっかいゴール目指して曲がる</span><br><span class="line">self.press(Direction(Stick.LEFT, 180), duration=3.2, wait=0.1)</span><br></pre></td></tr></table></figure>
+<p>本プログラムは開始時刻をある程度画像認識で同期していますが、完全にはタイミングが取れないのでときどきズレます.<br>ズレが大きい場合にゴールポスト手前で曲がりきって逆走を始めることがあるので、旋回して戻ってくる実装でなんとかゴールしようとしています.  </p>
+<h1 id="結果-精度"><a href="#結果-精度" class="headerlink" title="結果&#x2F;精度"></a>結果&#x2F;精度</h1><p>以下が500回試行した際のログです.494&#x2F;500回クリアできているので98.8%の成功率としています.</p>
+<img src="/2023/12/25/flyingTA/log.png" class="" title="ログ">
+<p>ラップタイムは一周87~89sといったところです.<br>1時間400BPは安定して稼ぐことができるでしょう.</p>
+<h1 id="さいごに"><a href="#さいごに" class="headerlink" title="さいごに"></a>さいごに</h1><p>位置取り&#x2F;走行ルートなどにまだ研究の余地があるかと思いますが現状安定しているので公開しました. </p>
+<p>改良点などインプットがある方いましたらご連絡お待ちしております.<br><a target="_blank" rel="noopener" href="https://twitter.com/sakas_poke">X:@sakas_poke</a>にお気軽にDMください.  </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://www.kosakasakas.com/2023/12/25/flyingTA/" data-id="clqkod5tl00001gjy8zo7bkyl" data-title="そらとぶタイムアタックを自動化してBPを稼ごう" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/" rel="tag">ポケモン</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3SV/" rel="tag">ポケモンSV</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%87%AA%E5%8B%95%E5%8C%96/" rel="tag">自動化</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/12/25/winsymlink/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Windowsでシンボリックリンクを張る</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Kategorien</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/WEB/">WEB</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/%E3%83%8D%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96/">ネイティブ</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/">ポケモン</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%AB%E3%83%BC%E3%83%89/">カード</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/%E3%82%B2%E3%83%BC%E3%83%A0/%E8%87%AA%E5%8B%95%E5%8C%96/">自動化</a></li></ul></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AR/" rel="tag">AR</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/GAS/" rel="tag">GAS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Google-Search-Console/" rel="tag">Google Search Console</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Heroku/" rel="tag">Heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hugo/" rel="tag">Hugo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tips/" rel="tag">Tips</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gulp/" rel="tag">gulp</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" rel="tag">インターネット大会</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" rel="tag">デッキ構築</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/" rel="tag">ポケモン</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3SV/" rel="tag">ポケモンSV</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" rel="tag">レンダリング</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" rel="tag">内定リスト</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%A3%E7%9B%BE/" rel="tag">剣盾</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" rel="tag">画像圧縮</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%87%AA%E5%8B%95%E5%8C%96/" rel="tag">自動化</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AR/" style="font-size: 16.67px;">AR</a> <a href="/tags/GAS/" style="font-size: 16.67px;">GAS</a> <a href="/tags/Google-Search-Console/" style="font-size: 10px;">Google Search Console</a> <a href="/tags/Heroku/" style="font-size: 16.67px;">Heroku</a> <a href="/tags/Hexo/" style="font-size: 16.67px;">Hexo</a> <a href="/tags/Hugo/" style="font-size: 13.33px;">Hugo</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Tips/" style="font-size: 10px;">Tips</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/Windows/" style="font-size: 10px;">Windows</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/gulp/" style="font-size: 10px;">gulp</a> <a href="/tags/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E5%A4%A7%E4%BC%9A/" style="font-size: 10px;">インターネット大会</a> <a href="/tags/%E3%83%87%E3%83%83%E3%82%AD%E6%A7%8B%E7%AF%89/" style="font-size: 10px;">デッキ構築</a> <a href="/tags/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3/" style="font-size: 10px;">ポケモン</a> <a href="/tags/%E3%83%9D%E3%82%B1%E3%83%A2%E3%83%B3SV/" style="font-size: 10px;">ポケモンSV</a> <a href="/tags/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0/" style="font-size: 20px;">レンダリング</a> <a href="/tags/%E5%86%85%E5%AE%9A%E3%83%AA%E3%82%B9%E3%83%88/" style="font-size: 10px;">内定リスト</a> <a href="/tags/%E5%89%A3%E7%9B%BE/" style="font-size: 13.33px;">剣盾</a> <a href="/tags/%E7%94%BB%E5%83%8F%E5%9C%A7%E7%B8%AE/" style="font-size: 13.33px;">画像圧縮</a> <a href="/tags/%E8%87%AA%E5%8B%95%E5%8C%96/" style="font-size: 10px;">自動化</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/12/">December 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">December 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">May 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/12/25/flyingTA/">そらとぶタイムアタックを自動化してBPを稼ごう</a>
+          </li>
+        
+          <li>
+            <a href="/2023/12/25/winsymlink/">Windowsでシンボリックリンクを張る</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/02/gas-tips-1/">GoogleAppScript(GAS)でspreadsheetに書き込むデータをソートする</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/02/gas-tips/">GoogleAppScript(GAS)で数字をテキストとしてspreadsheetに書き込む</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/25/gascsv/">GASのスプレットシート読み込みをjavascriptで置き換えたい</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 kosakasakas<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/pokelist" class="mobile-nav-link">ポケリス</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

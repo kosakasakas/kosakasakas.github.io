@@ -9,6 +9,28 @@
 
 
     <url>
+        <loc>https://www.kosakasakas.com/2023/12/25/flyingTA/</loc>
+        <lastmod>2023-12-25T12:19:06.776Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+        <image:image>
+
+            <image:loc>https://www.kosakasakas.com/2023/12/25/flyingTA/result.png</image:loc>
+
+        </image:image>
+
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/2023/12/25/winsymlink/</loc>
+        <lastmod>2023-12-25T08:48:25.594Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://www.kosakasakas.com/2023/10/02/gas-tips-1/</loc>
         <lastmod>2023-10-02T09:55:38.292Z</lastmod>
         <changefreq>weekly</changefreq>

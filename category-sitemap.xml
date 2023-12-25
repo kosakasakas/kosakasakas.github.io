@@ -9,14 +9,35 @@
 
 
     <url>
-        <loc>https://www.kosakasakas.com/categories/%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0/WEB/</loc>
-        <lastmod>2023-10-02T09:55:38.292Z</lastmod>
+        <loc>https://www.kosakasakas.com/categories/%25E3%2583%259D%25E3%2582%25B1%25E3%2583%25A2%25E3%2583%25B3/%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0/%25E8%2587%25AA%25E5%258B%2595%25E5%258C%2596/</loc>
+        <lastmod>2023-12-25T12:19:06.776Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/categories/%25E3%2583%259D%25E3%2582%25B1%25E3%2583%25A2%25E3%2583%25B3/%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0/</loc>
+        <lastmod>2023-12-25T12:19:06.776Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/categories/%25E3%2583%259D%25E3%2582%25B1%25E3%2583%25A2%25E3%2583%25B3/</loc>
+        <lastmod>2023-12-25T12:19:06.776Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://www.kosakasakas.com/categories/%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0/</loc>
+        <lastmod>2023-12-25T08:48:25.594Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://www.kosakasakas.com/categories/%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0/WEB/</loc>
         <lastmod>2023-10-02T09:55:38.292Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -25,20 +46,6 @@
     <url>
         <loc>https://www.kosakasakas.com/categories/%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0/%25E3%2583%258D%25E3%2582%25A4%25E3%2583%2586%25E3%2582%25A3%25E3%2583%2596/</loc>
         <lastmod>2023-09-21T14:15:18.371Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kosakasakas.com/categories/%25E3%2583%259D%25E3%2582%25B1%25E3%2583%25A2%25E3%2583%25B3/%25E3%2582%25B2%25E3%2583%25BC%25E3%2583%25A0/</loc>
-        <lastmod>2023-09-21T14:06:25.827Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://www.kosakasakas.com/categories/%25E3%2583%259D%25E3%2582%25B1%25E3%2583%25A2%25E3%2583%25B3/</loc>
-        <lastmod>2023-09-21T14:06:25.827Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
