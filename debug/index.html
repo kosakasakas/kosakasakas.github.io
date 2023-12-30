@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<meta charset="utf-8">
+<body>
+</header></header>
+
+<button class="export" type="button" onclick="onExport();">Export</button>
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"></script>
+<script src="/js/script.js"></script>
+<script type="text/javascript">
+    this.__createBinding = function(o, m, k) {
+        o[k] = m[k];
+    };
+    var calc = exports = {};
+    function require() { return exports };
+</script>
+<script type="text/javascript" src="../calc/calc/util.js?8fa0c7ff"></script>
+<script type="text/javascript" src="../calc/calc/stats.js?9220179f"></script>
+<script type="text/javascript" src="../calc/calc/data/species.js?0cd957b7"></script>
+<script type="text/javascript" src="../calc/js/data/sets/gen9.js?b9128c73"></script>
+<script type="text/javascript" src="../calc/js/data/sets/gen8.js?af41d2ff"></script>
+<script type="text/javascript" src="../calc/js/data/sets/gen7.js?d7423673"></script>
+<script type="text/javascript" src="../calc/js/data/sets/gen6.js?1099cb79"></script>
+<script type="text/javascript" src="../calc/js/data/sets/gen5.js?c358fb3c"></script>
+<script type="text/javascript" src="../calc/js/data/sets/gen4.js?07e8af6c"></script>
+<script type="text/javascript" src="../calc/js/data/sets/gen3.js?81f2f3c1"></script>
+<script type="text/javascript" src="../calc/js/data/sets/gen2.js?7be9c1fd"></script>
+<script type="text/javascript" src="../calc/js/data/sets/gen1.js?f8f0052c"></script>
+<script type="text/javascript" src="../calc/calc/data/types.js?6b065b89"></script>
+<script type="text/javascript" src="../calc/calc/data/natures.js?04f00dc5"></script>
+<script type="text/javascript" src="../calc/calc/data/abilities.js?3e9fb55e"></script>
+<script type="text/javascript" src="../calc/calc/data/moves.js?55b8eb13"></script>
+<script type="text/javascript" src="../calc/calc/data/items.js?81a1fe7e"></script>
+<script type="text/javascript" src="../calc/calc/data/index.js?083d2bc9"></script>
+<script type="text/javascript" src="../calc/calc/move.js?01e033ea"></script>
+<script type="text/javascript" src="../calc/calc/pokemon.js?e0fe71b6"></script>
+<script type="text/javascript" src="../calc/calc/field.js?2c7f95da"></script>
+<script type="text/javascript" src="../calc/calc/items.js?3cbea98f"></script>
+<script type="text/javascript" src="../calc/calc/mechanics/util.js?340148be"></script>
+<script type="text/javascript" src="../calc/calc/mechanics/gen789.js?86681209"></script>
+<script type="text/javascript" src="../calc/calc/mechanics/gen56.js?c5b0789a"></script>
+<script type="text/javascript" src="../calc/calc/mechanics/gen4.js?ab7837a9"></script>
+<script type="text/javascript" src="../calc/calc/mechanics/gen3.js?5064940a"></script>
+<script type="text/javascript" src="../calc/calc/mechanics/gen12.js?9c9fcd6e"></script>
+<script type="text/javascript" src="../calc/calc/calc.js?cd072314"></script>
+<script type="text/javascript" src="../calc/calc/desc.js?2eaa97cb"></script>
+<script type="text/javascript" src="../calc/calc/result.js?d5c7552b"></script>
+<script type="text/javascript" src="../calc/calc/adaptable.js?afeb3759"></script>
+<script type="text/javascript" src="../calc/calc/index.js?2377cbc8"></script>
+<script type="text/javascript" src="../calc/js/shared_controls.js?7cbdc1d7"></script>
+<script type="text/javascript" src="../calc/js/index_randoms_controls.js?8efdf1b2"></script>
+<script type="text/javascript" src="../calc/js/moveset_import.js?b09106ef"></script>
+<script type="text/javascript" src="/db/poke/trans_setdex.js"></script>
+<script src="/js/ga_bridge.js"></script>
+<script type="text/javascript">
+  var trans_pokedex;
+  readCSVData('/db/poke/ダメージ計算 - trans_pokedex.csv', OnParseTransPokedexData, OnGaDataFailed);
+  function OnParseTransPokedexData(data){
+    trans_pokedex = data;
+  }
+  function OnGaDataFailed(){
+    alert("GAの読み込みに失敗しました.");
+  }
+  function exportJson(object, filename) {
+      const json = JSON.stringify(object, null, 2);
+      const blob = new Blob([json], {type: "application/json"});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+  }
+  function onExport() {
+    pokedex = calc.SPECIES[9];
+    moves = calc.MOVES[9];
+    typeChart = calc.TYPE_CHART[9];
+    items = calc.ITEMS[9];
+    abilities = calc.ABILITIES[9];
+    setdex = SETDEX[9];
+
+    var pokedexNew = {};
+    var setdexNew = {};
+
+    var pokeNames = Object.keys(pokedex);
+    for (var i = 0,n = pokeNames.length; i < n; ++i)
+    {
+      const key = pokeNames[i];
+      var obj = pokedex[key];
+      const name_jp = trans_pokedex[i][2];
+      if (name_jp != "")
+      {
+        obj["name_jp"] = name_jp;
+        pokedexNew[key] = obj;
+      }
+
+      var sets = setdex[key];
+      if (sets)
+      {
+        var setsNew = {};
+        const setNames = Object.keys(sets);
+        for (var j=0, m=setNames.length; j<m; ++j)
+        {
+          const name = setNames[j];
+          if (!trans_setdex[name])
+          {
+            continue;
+          }
+          if (trans_setdex[name] == "")
+          {
+            continue;
+          }
+          var obj = sets[name];
+          obj["name_jp"] = trans_setdex[name];
+          setsNew[name] = obj;
+        }
+      }
+      setdexNew[key] = setsNew;
+    }
+
+    //exportJson(setdexNew, "setdex.json");
+    exportJson(moves, "moves.json");
+    exportJson(items, "items.json");
+    exportJson(abilities, "abilities.json");
+    exportJson(typeChart, "typeChart.json");
+  }
+</script>
+</body>
+</html>

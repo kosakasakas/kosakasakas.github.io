@@ -168,30 +168,37 @@
             </span>
             <div class="info-group top">
                 <div>
-                    <label>Type</label>
+                    <!--<label>Type</label>-->
+                    <label>タイプ</label>
                     <select aria-label="type1" class="type1 terrain-trigger calc-trigger"></select>
                     <select aria-label="type2" class="type2 terrain-trigger calc-trigger"></select>
                     <small class="right">(<a class="analysis links-lighten" target="_blank" href="">Smogon&nbsp;analysis</a>)</small>
                 </div>
                 <div class="gen-specific g9">
-                    <label>Tera Type</label>
+                    <!--<label>Tera Type</label>-->
+                    <label>テラスタル</label>
                     <select class="teraType terrain-trigger calc-trigger"></select>
                     <input type="checkbox" title= "Has this Pok&eacute;mon terastalized?" class="teraToggle terrain-trigger calc-trigger">
                 </div>
                 <div class="hide">
-                    <label>Forme</label>
+                    <!--<label>Forme</label>-->
+                    <label>フォーム</label>
                     <select class="forme calc-trigger"></select>
                 </div>
                 <div class="hide">
-                    <label>Gender</label>
-                    <select class="gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
+                    <!--<label>Gender</label>-->
+                    <label>性別</label>
+                    <!--<select class="gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>-->
+                    <select class="gender calc-trigger"><option></option><option selected="selected">オス</option><option>メス</option></select>
                 </div>
                 <div>
-                    <label for="levelL1">Level</label>
+                    <!--<label for="levelL1">Level</label>-->
+                    <label for="levelL1">レベル</label>
                     <input class="level calc-trigger" id="levelL1" value="100" />
                 </div>
                 <div class="hide">
-                    <label for="weightL1">Weight (kg)</label>
+                    <!--<label for="weightL1">Weight (kg)</label>-->
+                    <label for="weightL1">重さ(kg)</label>
                     <input class="weight calc-trigger" id="weightL1" value="10.0" />
                 </div>
             </div>
@@ -231,7 +238,7 @@
                         </tr>
                         <tr class="at">
                             <th scope="row">
-                                <label>Attack</label>
+                                <label>こうげき</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -267,7 +274,7 @@
                         </tr>
                         <tr class="df">
                             <th scope="row">
-                                <label>Defense</label>
+                                <label>ぼうぎょ</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -303,7 +310,7 @@
                         </tr>
                         <tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
                             <th scope="row">
-                                <label>Sp. Atk</label>
+                                <label>とくこう</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -339,7 +346,7 @@
                         </tr>
                         <tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
                             <th scope="row">
-                                <label>Sp. Def</label>
+                                <label>とくぼう</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -405,7 +412,7 @@
                         </tr>
                         <tr class="sp">
                             <th scope="row">
-                                <label>Speed</label>
+                                <label>すばやさ</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -446,9 +453,9 @@
             </div>
             <div class="info-group info-selectors">
                 <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                    <label for="natureL1">Nature</label>
+                    <label for="natureL1">性格</label>
                     <select class="nature calc-trigger" id="natureL1">
-                        <option value="Adamant">Adamant (+Atk, -SpA)</option>
+                        <!--<option value="Adamant">Adamant (+Atk, -SpA)</option>
                         <option value="Bashful">Bashful</option>
                         <option value="Bold">Bold (+Def, -Atk)</option>
                         <option value="Brave">Brave (+Atk, -Spe)</option>
@@ -472,11 +479,37 @@
                         <option value="Relaxed">Relaxed (+Def, -Spe)</option>
                         <option value="Sassy">Sassy (+SpD, -Spe)</option>
                         <option value="Serious">Serious</option>
-                        <option value="Timid">Timid (+Spe, -Atk)</option>
+                        <option value="Timid">Timid (+Spe, -Atk)</option>-->
+                        
+                        <option value="Adamant">いじっぱり (+A, -C)</option>
+                        <option value="Bashful">てれや</option>
+                        <option value="Bold">ずぶとい (+B, -A)</option>
+                        <option value="Brave">ゆうかん (+A, -S)</option>
+                        <option value="Calm">おだやか (+D, -A)</option>
+                        <option value="Careful">しんちょう (+D, -C)</option>
+                        <option value="Docile">すなお</option>
+                        <option value="Gentle">おとなしい (+D, -B)</option>
+                        <option value="Hardy" selected="selected">がんばりや</option>
+                        <option value="Hasty">せっかち (+S, -B)</option>
+                        <option value="Impish">わんぱく (+B, -C)</option>
+                        <option value="Jolly">ようき (+S, -C)</option>
+                        <option value="Lax">のうてんき (+B, -D)</option>
+                        <option value="Lonely">さみしがり (+A, -B)</option>
+                        <option value="Mild">おっとり (+C, -B)</option>
+                        <option value="Modest">ひかえめ (+C, -A)</option>
+                        <option value="Naive">むじゃき (+S, -D)</option>
+                        <option value="Naughty">やんちゃ (+A, -D)</option>
+                        <option value="Quiet">れいせい (+C, -S)</option>
+                        <option value="Quirky">きまぐれ</option>
+                        <option value="Rash">うっかりや (+C, -D)</option>
+                        <option value="Relaxed">のんき (+B, -S)</option>
+                        <option value="Sassy">なまいき (+D, -S)</option>
+                        <option value="Serious">まじめ</option>
+                        <option value="Timid">おくびょう (+S, -A)</option>
                     </select>
                 </div>
                 <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                    <label for="abilityL1">Ability</label>
+                    <label for="abilityL1">特性</label>
                     <select class="ability terrain-trigger calc-trigger" id="abilityL1"></select>
                     <input hidden type="checkbox" title= "Is this ability active?" class="abilityToggle calc-trigger">
                     <select hidden aria-label="Allies fainted" class="alliesFainted calc-trigger">
@@ -498,19 +531,27 @@
                     </select>
                 </div>
                 <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
-                    <label for="itemL1">Item</label>
+                    <label for="itemL1">道具</label>
                     <select class="item terrain-trigger calc-trigger" id="itemL1"></select>
                 </div>
                 <div>
-                    <label for="statusL1">Status</label>
+                    <label for="statusL1">状態</label>
                     <select class="status calc-trigger" id="statusL1">
-                        <option value="Healthy">Healthy</option>
+                        <!--<option value="Healthy">Healthy</option>
                         <option value="Poisoned">Poisoned</option>
                         <option value="Badly Poisoned">Badly Poisoned</option>
                         <option value="Burned">Burned</option>
                         <option value="Paralyzed">Paralyzed</option>
                         <option value="Asleep">Asleep</option>
-                        <option value="Frozen">Frozen</option>
+                        <option value="Frozen">Frozen</option>-->
+                        
+                        <option value="Healthy">----</option>
+                        <option value="Poisoned">どく</option>
+                        <option value="Badly Poisoned">もうどく</option>
+                        <option value="Burned">やけど</option>
+                        <option value="Paralyzed">まひ</option>
+                        <option value="Asleep">ねむり</option>
+                        <option value="Frozen">こおり</option>
                     </select>
                     <select aria-label="Toxic counter" class="toxic-counter calc-trigger hide">
                         <option value="1">1/16</option>
@@ -540,7 +581,7 @@
                 <br />
             </div>
             <div class="info-group">
-                <label for="currentHpL1">Current HP</label>
+                <label for="currentHpL1">現状のHP</label>
                 <input class="current-hp calc-trigger" id="currentHpL1" value="341" />/<span class="max-hp">341</span> (
                 <input class="percent-hp calc-trigger" value="100" />%)
                 <input class="visually-hidden max calc-trigger btn-input" type="checkbox" id="maxL" />
@@ -557,8 +598,8 @@
                 <input class="move-bp calc-trigger" value="50" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
-                    <option value="Physical">Physical</option>
-                    <option value="Special">Special</option>
+                    <option value="Physical">物理</option>
+                    <option value="Special">特殊</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL1" />
                 <label class="btn crit-btn" for="critL1" title="Force this attack to be a critical hit?">Crit</label>
@@ -593,8 +634,8 @@
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
-                    <option value="Physical">Physical</option>
-                    <option value="Special">Special</option>
+                    <option value="Physical">物理</option>
+                    <option value="Special">特殊</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL2" />
                 <label class="btn crit-btn" for="critL2" title="Force this attack to be a critical hit?">Crit</label>
@@ -629,8 +670,8 @@
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
-                    <option value="Physical">Physical</option>
-                    <option value="Special">Special</option>
+                    <option value="Physical">物理</option>
+                    <option value="Special">特殊</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL3" />
                 <label class="btn crit-btn" for="critL3" title="Force this attack to be a critical hit?">Crit</label>
@@ -665,8 +706,8 @@
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
-                    <option value="Physical">Physical</option>
-                    <option value="Special">Special</option>
+                    <option value="Physical">物理</option>
+                    <option value="Special">特殊</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critL4" />
                 <label class="btn crit-btn" for="critL4" title="Force this attack to be a critical hit?">Crit</label>
@@ -1067,30 +1108,31 @@
             </span>
             <div class="info-group top">
                 <div>
-                    <label>Type</label>
+                    <label>タイプ</label>
                     <select aria-label="Type 1" class="type1 terrain-trigger calc-trigger"></select>
                     <select aria-label="Type 2" class="type2 terrain-trigger calc-trigger"></select>
                     <small class="right">(<a class="analysis links-lighten" target="_blank" href="">Smogon&nbsp;analysis</a>)</small>
                 </div>
                 <div class="gen-specific g9">
-                    <label>Tera Type</label>
+                    <label>テラスタル</label>
                     <select class="teraType terrain-trigger calc-trigger"></select>
                     <input type="checkbox" title= "Has this Pok&eacute;mon terastalized?" class="teraToggle terrain-trigger calc-trigger">
                 </div>
                 <div class="hide">
-                    <label>Forme</label>
+                    <label>フォーム</label>
                     <select class="forme calc-trigger"></select>
                 </div>
                 <div class="hide">
-                    <label>Gender</label>
-                    <select class="gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>
+                    <label>性別</label>
+                    <!--<select class="gender calc-trigger"><option></option><option selected="selected">Male</option><option>Female</option></select>-->
+                    <select class="gender calc-trigger"><option></option><option selected="selected">オス</option><option>メス</option></select>
                 </div>
                 <div>
-                    <label for="levelR1">Level</label>
+                    <label for="levelR1">レベル</label>
                     <input class="level calc-trigger" id="levelR1" value="100" />
                 </div>
                 <div class="hide">
-                    <label for="weightR1">Weight (kg)</label>
+                    <label for="weightR1">重さ(kg)</label>
                     <input class="weight calc-trigger" id="weightR1" value="10.0" />
                 </div>
             </div>
@@ -1130,7 +1172,7 @@
                         </tr>
                         <tr class="at">
                             <th scope="row">
-                                <label>Attack</label>
+                                <label>こうげき</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -1166,7 +1208,7 @@
                         </tr>
                         <tr class="df">
                             <th scope="row">
-                                <label>Defense</label>
+                                <label>ぼうぎょ</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -1202,7 +1244,7 @@
                         </tr>
                         <tr class="sa gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
                             <th scope="row">
-                                <label>Sp. Atk</label>
+                                <label>とくこう</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -1238,7 +1280,7 @@
                         </tr>
                         <tr class="sd gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
                             <th scope="row">
-                                <label>Sp. Def</label>
+                                <label>とくぼう</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -1304,7 +1346,7 @@
                         </tr>
                         <tr class="sp">
                             <th scope="row">
-                                <label>Speed</label>
+                                <label>すばやさ</label>
                             </th>
                             <td>
                                 <input class="base calc-trigger" value="100" />
@@ -1345,9 +1387,9 @@
             </div>
             <div class="info-group info-selectors">
                 <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                    <label for="natureR1">Nature</label>
+                    <label for="natureR1">性格</label>
                     <select class="nature calc-trigger" id="natureR1">
-                        <option value="Adamant">Adamant (+Atk, -SpA)</option>
+                        <!--<option value="Adamant">Adamant (+Atk, -SpA)</option>
                         <option value="Bashful">Bashful</option>
                         <option value="Bold">Bold (+Def, -Atk)</option>
                         <option value="Brave">Brave (+Atk, -Spe)</option>
@@ -1371,11 +1413,37 @@
                         <option value="Relaxed">Relaxed (+Def, -Spe)</option>
                         <option value="Sassy">Sassy (+SpD, -Spe)</option>
                         <option value="Serious">Serious</option>
-                        <option value="Timid">Timid (+Spe, -Atk)</option>
+                        <option value="Timid">Timid (+Spe, -Atk)</option>-->
+                        
+                        <option value="Adamant">いじっぱり (+A, -C)</option>
+                        <option value="Bashful">てれや</option>
+                        <option value="Bold">ずぶとい (+B, -A)</option>
+                        <option value="Brave">ゆうかん (+A, -S)</option>
+                        <option value="Calm">おだやか (+D, -A)</option>
+                        <option value="Careful">しんちょう (+D, -C)</option>
+                        <option value="Docile">すなお</option>
+                        <option value="Gentle">おとなしい (+D, -B)</option>
+                        <option value="Hardy" selected="selected">がんばりや</option>
+                        <option value="Hasty">せっかち (+S, -B)</option>
+                        <option value="Impish">わんぱく (+B, -C)</option>
+                        <option value="Jolly">ようき (+S, -C)</option>
+                        <option value="Lax">のうてんき (+B, -D)</option>
+                        <option value="Lonely">さみしがり (+A, -B)</option>
+                        <option value="Mild">おっとり (+C, -B)</option>
+                        <option value="Modest">ひかえめ (+C, -A)</option>
+                        <option value="Naive">むじゃき (+S, -D)</option>
+                        <option value="Naughty">やんちゃ (+A, -D)</option>
+                        <option value="Quiet">れいせい (+C, -S)</option>
+                        <option value="Quirky">きまぐれ</option>
+                        <option value="Rash">うっかりや (+C, -D)</option>
+                        <option value="Relaxed">のんき (+B, -S)</option>
+                        <option value="Sassy">なまいき (+D, -S)</option>
+                        <option value="Serious">まじめ</option>
+                        <option value="Timid">おくびょう (+S, -A)</option>
                     </select>
                 </div>
                 <div class="gen-specific g3 g4 g5 g6 g7 g8 g9">
-                    <label for="abilityR1">Ability</label>
+                    <label for="abilityR1">特性</label>
                     <select class="ability terrain-trigger calc-trigger" id="abilityR1"></select>
                     <input hidden type="checkbox" title= "Is this ability active?" class="abilityToggle calc-trigger">
                         <select hidden aria-label="Allies fainted" class="alliesFainted calc-trigger">
@@ -1397,19 +1465,27 @@
                         </select>
                 </div>
                 <div class="gen-specific g2 g3 g4 g5 g6 g7 g8 g9">
-                    <label for="itemR1">Item</label>
+                    <label for="itemR1">道具</label>
                     <select class="item terrain-trigger calc-trigger" id="itemR1"></select>
                 </div>
                 <div>
-                    <label for="statusR1">Status</label>
+                    <label for="statusR1">状態</label>
                     <select class="status calc-trigger" id="statusR1">
-                        <option value="Healthy">Healthy</option>
+                        <!--<option value="Healthy">Healthy</option>
                         <option value="Poisoned">Poisoned</option>
                         <option value="Badly Poisoned">Badly Poisoned</option>
                         <option value="Burned">Burned</option>
                         <option value="Paralyzed">Paralyzed</option>
                         <option value="Asleep">Asleep</option>
-                        <option value="Frozen">Frozen</option>
+                        <option value="Frozen">Frozen</option>-->
+                        
+                        <option value="Healthy">----</option>
+                        <option value="Poisoned">どく</option>
+                        <option value="Badly Poisoned">もうどく</option>
+                        <option value="Burned">やけど</option>
+                        <option value="Paralyzed">まひ</option>
+                        <option value="Asleep">ねむり</option>
+                        <option value="Frozen">こおり</option>
                     </select>
                     <select aria-label="Toxic counter" class="toxic-counter calc-trigger hide">
                         <option value="1">1/16</option>
@@ -1439,7 +1515,7 @@
                 <br />
             </div>
             <div class="info-group">
-                <label for="currentHpR1">Current HP</label>
+                <label for="currentHpR1">現状のHP</label>
                 <input class="current-hp calc-trigger" id="currentHpR1" value="341" />/<span class="max-hp">341</span> (
                 <input class="percent-hp calc-trigger" value="100" />%)
                 <input class="visually-hidden max calc-trigger btn-input" type="checkbox" id="maxR" />
@@ -1454,8 +1530,8 @@
                 <input class="move-bp calc-trigger" value="50" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
-                    <option value="Physical">Physical</option>
-                    <option value="Special">Special</option>
+                    <option value="Physical">物理</option>
+                    <option value="Special">特殊</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR1" />
                 <label class="btn crit-btn" for="critR1" title="Force this attack to be a critical hit?">Crit</label>
@@ -1490,8 +1566,8 @@
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
-                    <option value="Physical">Physical</option>
-                    <option value="Special">Special</option>
+                    <option value="Physical">物理</option>
+                    <option value="Special">特殊</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR2" />
                 <label class="btn crit-btn" for="critR2" title="Force this attack to be a critical hit?">Crit</label>
@@ -1526,8 +1602,8 @@
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
-                    <option value="Physical">Physical</option>
-                    <option value="Special">Special</option>
+                    <option value="Physical">物理</option>
+                    <option value="Special">特殊</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR3" />
                 <label class="btn crit-btn" for="critR3" title="Force this attack to be a critical hit?">Crit</label>
@@ -1562,8 +1638,8 @@
                 <input class="move-bp calc-trigger" value="0" />
                 <select class="move-type calc-trigger"></select>
                 <select class="move-cat calc-trigger gen-specific g4 g5 g6 g7 g8 g9">
-                    <option value="Physical">Physical</option>
-                    <option value="Special">Special</option>
+                    <option value="Physical">物理</option>
+                    <option value="Special">特殊</option>
                 </select>
                 <input aria-describedby="criticalHitInstruction" class="move-crit calc-trigger visually-hidden" type="checkbox" id="critR4" />
                 <label class="btn crit-btn" for="critR4" title="Force this attack to be a critical hit?">Crit</label>
@@ -1594,7 +1670,9 @@
                 </select>
             </div>
         </fieldset>
+        
     </div>
+<button class="export" type="button" onclick="onExport();">Export</button>
     <script type="text/javascript">
         var linkExtension = '.html';
     </script>
@@ -1641,9 +1719,23 @@
     <script type="text/javascript" src="./calc/result.js?d5c7552b"></script>
     <script type="text/javascript" src="./calc/adaptable.js?afeb3759"></script>
     <script type="text/javascript" src="./calc/index.js?2377cbc8"></script>
+    <script type="text/javascript" src="/db/poke/setdex.js"></script>
+    <script type="text/javascript" src="/db/poke/pokedex.js"></script>
+    <script type="text/javascript" src="/db/poke/trans_moves.js"></script>
+    <script type="text/javascript" src="/db/poke/trans_abilities.js"></script>
+    <script type="text/javascript" src="/db/poke/trans_items.js"></script>
+    <script type="text/javascript" src="/db/poke/trans_types.js"></script>
     <script type="text/javascript" src="./js/shared_controls.js?7cbdc1d7"></script>
     <script type="text/javascript" src="./js/index_randoms_controls.js?8efdf1b2"></script>
     <script type="text/javascript" src="./js/moveset_import.js?b09106ef"></script>
+    
+    <script type="text/javascript">
+    function onExport() {
+        pokedex = calc.SPECIES[9];
+        moves = calc.MOVES[9];
+        alert(moves[1]);
+    }
+    </script>
 </div>
 
 <div class="credits">Created by Honko, maintained by Austin and Kris

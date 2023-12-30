@@ -1214,14 +1214,14 @@ $(".gen").change(function () {
 			params.sort();
 			var path = window.location.pathname + '?' + params;
 			window.history.pushState({}, document.title, path);
-			gtag('config', 'UA-26211653-3', {'page_path': path});
+			/* gtag('config', 'UA-26211653-3', {'page_path': path}); */
 		}
 	}
 	genWasChanged = true;
 	/* eslint-enable */
 	// declaring these variables with var here makes z moves not work; TODO
-	pokedex = calc.SPECIES[gen];
-	setdex = SETDEX[gen];
+	//pokedex = calc.SPECIES[gen];
+	//setdex = SETDEX[gen];
 	randdex = RANDDEX[gen];
 	typeChart = calc.TYPE_CHART[gen];
 	moves = calc.MOVES[gen];
@@ -1232,15 +1232,20 @@ $(".gen").change(function () {
 	loadDefaultLists();
 	$(".gen-specific.g" + gen).show();
 	$(".gen-specific").not(".g" + gen).hide();
-	var typeOptions = getSelectOptions(Object.keys(typeChart));
+	//var typeOptions = getSelectOptions(Object.keys(typeChart));
+	var typeOptions = getSelectOptionsWithOtherLanguages(trans_types, Object.keys(typeChart));
 	$("select.type1, select.move-type").find("option").remove().end().append(typeOptions);
-	$("select.teraType").find("option").remove().end().append(getSelectOptions(Object.keys(typeChart).slice(1)));
+	//$("select.teraType").find("option").remove().end().append(getSelectOptions(Object.keys(typeChart).slice(1)));
+	$("select.teraType").find("option").remove().end().append(getSelectOptionsWithOtherLanguages(trans_types,Object.keys(typeChart).slice(1)));
 	$("select.type2").find("option").remove().end().append("<option value=\"\">(none)</option>" + typeOptions);
-	var moveOptions = getSelectOptions(Object.keys(moves), true);
+	//var moveOptions = getSelectOptions(Object.keys(moves), true);
+	var moveOptions = getSelectOptionsWithOtherLanguages(trans_moves, Object.keys(moves), true);
 	$("select.move-selector").find("option").remove().end().append(moveOptions);
-	var abilityOptions = getSelectOptions(abilities, true);
+	//var abilityOptions = getSelectOptions(abilities, true);
+	var abilityOptions = getSelectOptionsWithOtherLanguages(trans_abilities, abilities, true);
 	$("select.ability").find("option").remove().end().append("<option value=\"\">(other)</option>" + abilityOptions);
-	var itemOptions = getSelectOptions(items, true);
+	//var itemOptions = getSelectOptions(items, true);
+	var itemOptions = getSelectOptionsWithOtherLanguages(trans_items, items, true);
 	$("select.item").find("option").remove().end().append("<option value=\"\">(none)</option>" + itemOptions);
 
 	$(".set-selector").val(getFirstValidSetOption().id);
@@ -1316,9 +1321,11 @@ function getSetOptions(sets) {
 	var setOptions = [];
 	for (var i = 0; i < pokeNames.length; i++) {
 		var pokeName = pokeNames[i];
+		const name_jp = pokedex[pokeName].name_jp;
 		setOptions.push({
 			pokemon: pokeName,
-			text: pokeName
+			text: pokeName,
+			text_jp: name_jp
 		});
 		if ($("#randoms").prop("checked")) {
 			if (pokeName in randdex) {
@@ -1334,13 +1341,16 @@ function getSetOptions(sets) {
 				var setNames = Object.keys(setdex[pokeName]);
 				for (var j = 0; j < setNames.length; j++) {
 					var setName = setNames[j];
+					const setName_jp = setdex[pokeName][setName].name_jp;
 					setOptions.push({
 						pokemon: pokeName,
 						set: setName,
 						text: pokeName + " (" + setName + ")",
 						id: pokeName + " (" + setName + ")",
 						isCustom: setdex[pokeName][setName].isCustomSet,
-						nickname: setdex[pokeName][setName].nickname || ""
+						nickname: setdex[pokeName][setName].nickname || "",
+						text_jp: name_jp + " (" + setName_jp + ")",
+						set_jp: setName_jp,
 					});
 				}
 			}
@@ -1348,7 +1358,9 @@ function getSetOptions(sets) {
 				pokemon: pokeName,
 				set: "Blank Set",
 				text: pokeName + " (Blank Set)",
-				id: pokeName + " (Blank Set)"
+				id: pokeName + " (Blank Set)",
+				text_jp: name_jp + " (空セット)",
+				set_jp: "空セット"
 			});
 		}
 	}
@@ -1362,6 +1374,16 @@ function getSelectOptions(arr, sort, defaultOption) {
 	var r = '';
 	for (var i = 0; i < arr.length; i++) {
 		r += '<option value="' + arr[i] + '" ' + (defaultOption === i ? 'selected' : '') + '>' + arr[i] + '</option>';
+	}
+	return r;
+}
+function getSelectOptionsWithOtherLanguages(trans, arr, sort, defaultOption) {
+	if (sort) {
+		arr.sort();
+	}
+	var r = '';
+	for (var i = 0; i < arr.length; i++) {
+		r += '<option value="' + arr[i] + '" ' + (defaultOption === i ? 'selected' : '') + '>' + trans[arr[i]] + '</option>';
 	}
 	return r;
 }
@@ -1469,9 +1491,10 @@ function loadDefaultLists() {
 			if ($("#randoms").prop("checked")) {
 				return object.pokemon;
 			} else {
-				return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set) : ("<b>" + object.text + "</b>");
+				return object.set ? ("&nbsp;&nbsp;&nbsp;" + object.set_jp) : ("<b>" + object.text_jp + "</b>");
 			}
 		},
+		formatSelection: function(object) { return object.text_jp },
 		query: function (query) {
 			var pageSize = 30;
 			var results = [];
@@ -1479,8 +1502,11 @@ function loadDefaultLists() {
 			for (var i = 0; i < options.length; i++) {
 				var option = options[i];
 				var pokeName = option.pokemon.toUpperCase();
+				//if (!query.term || query.term.toUpperCase().split(" ").every(function (term) {
+				//	return pokeName.indexOf(term) === 0 || pokeName.indexOf("-" + term) >= 0 || pokeName.indexOf(" " + term) >= 0;
+				//})) {
 				if (!query.term || query.term.toUpperCase().split(" ").every(function (term) {
-					return pokeName.indexOf(term) === 0 || pokeName.indexOf("-" + term) >= 0 || pokeName.indexOf(" " + term) >= 0;
+					return option.text_jp.indexOf(term) === 0 || option.text_jp.indexOf("-" + term) >= 0 || option.text_jp.indexOf(" " + term) >= 0;
 				})) {
 					if ($("#randoms").prop("checked")) {
 						if (option.id) results.push(option);

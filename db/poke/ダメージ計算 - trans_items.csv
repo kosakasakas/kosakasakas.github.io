@@ -1,0 +1,2483 @@
+ID,英語,日本語
+0,None,なし
+1,Master Ball,マスターボール
+2,Ultra Ball,ハイパーボール
+3,Great Ball,スーパーボール
+4,Poké Ball,モンスターボール
+5,Safari Ball,サファリボール
+6,Net Ball,ネットボール
+7,Dive Ball,ダイブボール
+8,Nest Ball,ネストボール
+9,Repeat Ball,リピートボール
+10,Timer Ball,タイマーボール
+11,Luxury Ball,ゴージャスボール
+12,Premier Ball,プレミアボール
+13,Dusk Ball,ダークボール
+14,Heal Ball,ヒールボール
+15,Quick Ball,クイックボール
+16,Cherish Ball,プレシャスボール
+17,Potion,キズぐすり
+18,Antidote,どくけし
+19,Burn Heal,やけどなおし
+20,Ice Heal,こおりなおし
+21,Awakening,ねむけざまし
+22,Paralyze Heal,まひなおし
+23,Full Restore,かいふくのくすり
+24,Max Potion,まんたんのくすり
+25,Hyper Potion,すごいキズぐすり
+26,Super Potion,いいキズぐすり
+27,Full Heal,なんでもなおし
+28,Revive,げんきのかけら
+29,Max Revive,げんきのかたまり
+30,Fresh Water,おいしいみず
+31,Soda Pop,サイコソーダ
+32,Lemonade,ミックスオレ
+33,Moomoo Milk,モーモーミルク
+34,Energy Powder,ちからのこな
+35,Energy Root,ちからのねっこ
+36,Heal Powder,ばんのうごな
+37,Revival Herb,ふっかつそう
+38,Ether,ピーピーエイド
+39,Max Ether,ピーピーリカバー
+40,Elixir,ピーピーエイダー
+41,Max Elixir,ピーピーマックス
+42,Lava Cookie,フエンせんべい
+43,Berry Juice,きのみジュース
+44,Sacred Ash,せいなるはい
+45,HP Up,マックスアップ
+46,Protein,タウリン
+47,Iron,ブロムヘキシン
+48,Carbos,インドメタシン
+49,Calcium,リゾチウム
+50,Rare Candy,ふしぎなアメ
+51,PP Up,ポイントアップ
+52,Zinc,キトサン
+53,PP Max,ポイントマックス
+54,Old Gateau,もりのヨウカン
+55,Guard Spec.,エフェクトガード
+56,Dire Hit,クリティカット
+57,X Attack,プラスパワー
+58,X Defense,ディフェンダー
+59,X Speed,スピーダー
+60,X Accuracy,ヨクアタール
+61,X Sp. Atk,スペシャルアップ
+62,X Sp. Def,スペシャルガード
+63,Poké Doll,ピッピにんぎょう
+64,Fluffy Tail,エネコのシッポ
+65,Blue Flute,あおいビードロ
+66,Yellow Flute,きいろビードロ
+67,Red Flute,あかいビードロ
+68,Black Flute,くろいビードロ
+69,White Flute,しろいビードロ
+70,Shoal Salt,あさせのしお
+71,Shoal Shell,あさせのかいがら
+72,Red Shard,あかいかけら
+73,Blue Shard,あおいかけら
+74,Yellow Shard,きいろいかけら
+75,Green Shard,みどりのかけら
+76,Super Repel,シルバースプレー
+77,Max Repel,ゴールドスプレー
+78,Escape Rope,あなぬけのヒモ
+79,Repel,むしよけスプレー
+80,Sun Stone,たいようのいし
+81,Moon Stone,つきのいし
+82,Fire Stone,ほのおのいし
+83,Thunder Stone,かみなりのいし
+84,Water Stone,みずのいし
+85,Leaf Stone,リーフのいし
+86,Tiny Mushroom,ちいさなキノコ
+87,Big Mushroom,おおきなキノコ
+88,Pearl,しんじゅ
+89,Big Pearl,おおきなしんじゅ
+90,Stardust,ほしのすな
+91,Star Piece,ほしのかけら
+92,Nugget,きんのたま
+93,Heart Scale,ハートのウロコ
+94,Honey,あまいミツ
+95,Growth Mulch,すくすくこやし
+96,Damp Mulch,じめじめこやし
+97,Stable Mulch,ながながこやし
+98,Gooey Mulch,ねばねばこやし
+99,Root Fossil,ねっこのカセキ
+100,Claw Fossil,ツメのカセキ
+101,Helix Fossil,かいのカセキ
+102,Dome Fossil,こうらのカセキ
+103,Old Amber,ひみつのコハク
+104,Armor Fossil,たてのカセキ
+105,Skull Fossil,ずがいのカセキ
+106,Rare Bone,きちょうなホネ
+107,Shiny Stone,ひかりのいし
+108,Dusk Stone,やみのいし
+109,Dawn Stone,めざめいし
+110,Oval Stone,まんまるいし
+111,Odd Keystone,かなめいし
+112,Griseous Orb,はっきんだま
+113,Tea,おちゃ
+114,???,？？？
+115,Autograph,マチスのサイン
+116,Douse Drive,アクアカセット
+117,Shock Drive,イナズマカセット
+118,Burn Drive,ブレイズカセット
+119,Chill Drive,フリーズカセット
+120,???,？？？
+121,Pokémon Box Link,ポケモンボックス
+122,Medicine Pocket,かいふくポケット
+123,TM Case,わざマシンケース
+124,Candy Jar,アメボトル
+125,Power-Up Pocket,きょうかポケット
+126,Clothing Trunk,おきがえトランク
+127,Catching Pocket,ほかくポケット
+128,Battle Pocket,バトルポケット
+129,???,？？？
+130,???,？？？
+131,???,？？？
+132,???,？？？
+133,???,？？？
+134,Sweet Heart,ハートスイーツ
+135,Adamant Orb,こんごうだま
+136,Lustrous Orb,しらたま
+137,Greet Mail,はじめてメール
+138,Favored Mail,だいすきメール
+139,RSVP Mail,おさそいメール
+140,Thanks Mail,かんしゃメール
+141,Inquiry Mail,しつもんメール
+142,Like Mail,おすすめメール
+143,Reply Mail,おかえしメール
+144,Bridge Mail S,ブリッジメールＳ
+145,Bridge Mail D,ブリッジメールＨ
+146,Bridge Mail T,ブリッジメールＣ
+147,Bridge Mail V,ブリッジメールＶ
+148,Bridge Mail M,ブリッジメールＷ
+149,Cheri Berry,クラボのみ
+150,Chesto Berry,カゴのみ
+151,Pecha Berry,モモンのみ
+152,Rawst Berry,チーゴのみ
+153,Aspear Berry,ナナシのみ
+154,Leppa Berry,ヒメリのみ
+155,Oran Berry,オレンのみ
+156,Persim Berry,キーのみ
+157,Lum Berry,ラムのみ
+158,Sitrus Berry,オボンのみ
+159,Figy Berry,フィラのみ
+160,Wiki Berry,ウイのみ
+161,Mago Berry,マゴのみ
+162,Aguav Berry,バンジのみ
+163,Iapapa Berry,イアのみ
+164,Razz Berry,ズリのみ
+165,Bluk Berry,ブリーのみ
+166,Nanab Berry,ナナのみ
+167,Wepear Berry,セシナのみ
+168,Pinap Berry,パイルのみ
+169,Pomeg Berry,ザロクのみ
+170,Kelpsy Berry,ネコブのみ
+171,Qualot Berry,タポルのみ
+172,Hondew Berry,ロメのみ
+173,Grepa Berry,ウブのみ
+174,Tamato Berry,マトマのみ
+175,Cornn Berry,モコシのみ
+176,Magost Berry,ゴスのみ
+177,Rabuta Berry,ラブタのみ
+178,Nomel Berry,ノメルのみ
+179,Spelon Berry,ノワキのみ
+180,Pamtre Berry,シーヤのみ
+181,Watmel Berry,カイスのみ
+182,Durin Berry,ドリのみ
+183,Belue Berry,ベリブのみ
+184,Occa Berry,オッカのみ
+185,Passho Berry,イトケのみ
+186,Wacan Berry,ソクノのみ
+187,Rindo Berry,リンドのみ
+188,Yache Berry,ヤチェのみ
+189,Chople Berry,ヨプのみ
+190,Kebia Berry,ビアーのみ
+191,Shuca Berry,シュカのみ
+192,Coba Berry,バコウのみ
+193,Payapa Berry,ウタンのみ
+194,Tanga Berry,タンガのみ
+195,Charti Berry,ヨロギのみ
+196,Kasib Berry,カシブのみ
+197,Haban Berry,ハバンのみ
+198,Colbur Berry,ナモのみ
+199,Babiri Berry,リリバのみ
+200,Chilan Berry,ホズのみ
+201,Liechi Berry,チイラのみ
+202,Ganlon Berry,リュガのみ
+203,Salac Berry,カムラのみ
+204,Petaya Berry,ヤタピのみ
+205,Apicot Berry,ズアのみ
+206,Lansat Berry,サンのみ
+207,Starf Berry,スターのみ
+208,Enigma Berry,ナゾのみ
+209,Micle Berry,ミクルのみ
+210,Custap Berry,イバンのみ
+211,Jaboca Berry,ジャポのみ
+212,Rowap Berry,レンブのみ
+213,Bright Powder,ひかりのこな
+214,White Herb,しろいハーブ
+215,Macho Brace,きょうせいギプス
+216,Exp. Share,がくしゅうそうち
+217,Quick Claw,せんせいのツメ
+218,Soothe Bell,やすらぎのすず
+219,Mental Herb,メンタルハーブ
+220,Choice Band,こだわりハチマキ
+221,King’s Rock,おうじゃのしるし
+222,Silver Powder,ぎんのこな
+223,Amulet Coin,おまもりこばん
+224,Cleanse Tag,きよめのおふだ
+225,Soul Dew,こころのしずく
+226,Deep Sea Tooth,しんかいのキバ
+227,Deep Sea Scale,しんかいのウロコ
+228,Smoke Ball,けむりだま
+229,Everstone,かわらずのいし
+230,Focus Band,きあいのハチマキ
+231,Lucky Egg,しあわせタマゴ
+232,Scope Lens,ピントレンズ
+233,Metal Coat,メタルコート
+234,Leftovers,たべのこし
+235,Dragon Scale,りゅうのウロコ
+236,Light Ball,でんきだま
+237,Soft Sand,やわらかいすな
+238,Hard Stone,かたいいし
+239,Miracle Seed,きせきのタネ
+240,Black Glasses,くろいメガネ
+241,Black Belt,くろおび
+242,Magnet,じしゃく
+243,Mystic Water,しんぴのしずく
+244,Sharp Beak,するどいくちばし
+245,Poison Barb,どくバリ
+246,Never-Melt Ice,とけないこおり
+247,Spell Tag,のろいのおふだ
+248,Twisted Spoon,まがったスプーン
+249,Charcoal,もくたん
+250,Dragon Fang,りゅうのキバ
+251,Silk Scarf,シルクのスカーフ
+252,Upgrade,アップグレード
+253,Shell Bell,かいがらのすず
+254,Sea Incense,うしおのおこう
+255,Lax Incense,のんきのおこう
+256,Lucky Punch,ラッキーパンチ
+257,Metal Powder,メタルパウダー
+258,Thick Club,ふといホネ
+259,Leek,ながねぎ
+260,Red Scarf,あかいバンダナ
+261,Blue Scarf,あおいバンダナ
+262,Pink Scarf,ピンクのバンダナ
+263,Green Scarf,みどりのバンダナ
+264,Yellow Scarf,きいろのバンダナ
+265,Wide Lens,こうかくレンズ
+266,Muscle Band,ちからのハチマキ
+267,Wise Glasses,ものしりメガネ
+268,Expert Belt,たつじんのおび
+269,Light Clay,ひかりのねんど
+270,Life Orb,いのちのたま
+271,Power Herb,パワフルハーブ
+272,Toxic Orb,どくどくだま
+273,Flame Orb,かえんだま
+274,Quick Powder,スピードパウダー
+275,Focus Sash,きあいのタスキ
+276,Zoom Lens,フォーカスレンズ
+277,Metronome,メトロノーム
+278,Iron Ball,くろいてっきゅう
+279,Lagging Tail,こうこうのしっぽ
+280,Destiny Knot,あかいいと
+281,Black Sludge,くろいヘドロ
+282,Icy Rock,つめたいいわ
+283,Smooth Rock,さらさらいわ
+284,Heat Rock,あついいわ
+285,Damp Rock,しめったいわ
+286,Grip Claw,ねばりのかぎづめ
+287,Choice Scarf,こだわりスカーフ
+288,Sticky Barb,くっつきバリ
+289,Power Bracer,パワーリスト
+290,Power Belt,パワーベルト
+291,Power Lens,パワーレンズ
+292,Power Band,パワーバンド
+293,Power Anklet,パワーアンクル
+294,Power Weight,パワーウエイト
+295,Shed Shell,きれいなぬけがら
+296,Big Root,おおきなねっこ
+297,Choice Specs,こだわりメガネ
+298,Flame Plate,ひのたまプレート
+299,Splash Plate,しずくプレート
+300,Zap Plate,いかずちプレート
+301,Meadow Plate,みどりのプレート
+302,Icicle Plate,つららのプレート
+303,Fist Plate,こぶしのプレート
+304,Toxic Plate,もうどくプレート
+305,Earth Plate,だいちのプレート
+306,Sky Plate,あおぞらプレート
+307,Mind Plate,ふしぎのプレート
+308,Insect Plate,たまむしプレート
+309,Stone Plate,がんせきプレート
+310,Spooky Plate,もののけプレート
+311,Draco Plate,りゅうのプレート
+312,Dread Plate,こわもてプレート
+313,Iron Plate,こうてつプレート
+314,Odd Incense,あやしいおこう
+315,Rock Incense,がんせきおこう
+316,Full Incense,まんぷくおこう
+317,Wave Incense,さざなみのおこう
+318,Rose Incense,おはなのおこう
+319,Luck Incense,こううんのおこう
+320,Pure Incense,きよめのおこう
+321,Protector,プロテクター
+322,Electirizer,エレキブースター
+323,Magmarizer,マグマブースター
+324,Dubious Disc,あやしいパッチ
+325,Reaper Cloth,れいかいのぬの
+326,Razor Claw,するどいツメ
+327,Razor Fang,するどいキバ
+328,TM01,わざマシン０１
+329,TM02,わざマシン０２
+330,TM03,わざマシン０３
+331,TM04,わざマシン０４
+332,TM05,わざマシン０５
+333,TM06,わざマシン０６
+334,TM07,わざマシン０７
+335,TM08,わざマシン０８
+336,TM09,わざマシン０９
+337,TM10,わざマシン１０
+338,TM11,わざマシン１１
+339,TM12,わざマシン１２
+340,TM13,わざマシン１３
+341,TM14,わざマシン１４
+342,TM15,わざマシン１５
+343,TM16,わざマシン１６
+344,TM17,わざマシン１７
+345,TM18,わざマシン１８
+346,TM19,わざマシン１９
+347,TM20,わざマシン２０
+348,TM21,わざマシン２１
+349,TM22,わざマシン２２
+350,TM23,わざマシン２３
+351,TM24,わざマシン２４
+352,TM25,わざマシン２５
+353,TM26,わざマシン２６
+354,TM27,わざマシン２７
+355,TM28,わざマシン２８
+356,TM29,わざマシン２９
+357,TM30,わざマシン３０
+358,TM31,わざマシン３１
+359,TM32,わざマシン３２
+360,TM33,わざマシン３３
+361,TM34,わざマシン３４
+362,TM35,わざマシン３５
+363,TM36,わざマシン３６
+364,TM37,わざマシン３７
+365,TM38,わざマシン３８
+366,TM39,わざマシン３９
+367,TM40,わざマシン４０
+368,TM41,わざマシン４１
+369,TM42,わざマシン４２
+370,TM43,わざマシン４３
+371,TM44,わざマシン４４
+372,TM45,わざマシン４５
+373,TM46,わざマシン４６
+374,TM47,わざマシン４７
+375,TM48,わざマシン４８
+376,TM49,わざマシン４９
+377,TM50,わざマシン５０
+378,TM51,わざマシン５１
+379,TM52,わざマシン５２
+380,TM53,わざマシン５３
+381,TM54,わざマシン５４
+382,TM55,わざマシン５５
+383,TM56,わざマシン５６
+384,TM57,わざマシン５７
+385,TM58,わざマシン５８
+386,TM59,わざマシン５９
+387,TM60,わざマシン６０
+388,TM61,わざマシン６１
+389,TM62,わざマシン６２
+390,TM63,わざマシン６３
+391,TM64,わざマシン６４
+392,TM65,わざマシン６５
+393,TM66,わざマシン６６
+394,TM67,わざマシン６７
+395,TM68,わざマシン６８
+396,TM69,わざマシン６９
+397,TM70,わざマシン７０
+398,TM71,わざマシン７１
+399,TM72,わざマシン７２
+400,TM73,わざマシン７３
+401,TM74,わざマシン７４
+402,TM75,わざマシン７５
+403,TM76,わざマシン７６
+404,TM77,わざマシン７７
+405,TM78,わざマシン７８
+406,TM79,わざマシン７９
+407,TM80,わざマシン８０
+408,TM81,わざマシン８１
+409,TM82,わざマシン８２
+410,TM83,わざマシン８３
+411,TM84,わざマシン８４
+412,TM85,わざマシン８５
+413,TM86,わざマシン８６
+414,TM87,わざマシン８７
+415,TM88,わざマシン８８
+416,TM89,わざマシン８９
+417,TM90,わざマシン９０
+418,TM91,わざマシン９１
+419,TM92,わざマシン９２
+420,HM01,ひでんマシン０１
+421,HM02,ひでんマシン０２
+422,HM03,ひでんマシン０３
+423,HM04,ひでんマシン０４
+424,HM05,ひでんマシン０５
+425,HM06,ひでんマシン０６
+426,???,？？？
+427,???,？？？
+428,Explorer Kit,たんけんセット
+429,Loot Sack,たからぶくろ
+430,Rule Book,ルールブック
+431,Poké Radar,ポケトレ
+432,Point Card,ポイントカード
+433,Guidebook,ぼうけんノート
+434,Sticker Case,シールいれ
+435,Fashion Case,アクセサリーいれ
+436,Sticker Bag,シールぶくろ
+437,Pal Pad,ともだちてちょう
+438,Works Key,はつでんしょキー
+439,Old Charm,こだいのおまもり
+440,Galactic Key,ギンガだんのカギ
+441,Red Chain,あかいくさり
+442,Town Map,タウンマップ
+443,Vs. Seeker,バトルサーチャー
+444,Coin Case,コインケース
+445,Old Rod,ボロのつりざお
+446,Good Rod,いいつりざお
+447,Super Rod,すごいつりざお
+448,Sprayduck,コダックじょうろ
+449,Poffin Case,ポフィンケース
+450,Bike,じてんしゃ
+451,Suite Key,ルームキー
+452,Oak’s Letter,オーキドのてがみ
+453,Lunar Feather,みかづきのはね
+454,Member Card,メンバーズカード
+455,Azure Flute,てんかいのふえ
+456,S.S. Ticket,ふねのチケット
+457,Contest Pass,コンテストパス
+458,Magma Stone,かざんのおきいし
+459,Parcel,おとどけもの
+460,Coupon 1,ひきかえけん１
+461,Coupon 2,ひきかえけん２
+462,Coupon 3,ひきかえけん３
+463,Storage Key,そうこのカギ
+464,Secret Medicine,ひでんのくすり
+465,Vs. Recorder,バトルレコーダー
+466,Gracidea,グラシデアのはな
+467,Secret Key,ひみつのカギ
+468,Apricorn Box,ぼんぐりケース
+469,Unown Report,アンノーンノート
+470,Berry Pots,きのみプランター
+471,Dowsing Machine,ダウジングマシン
+472,Blue Card,ブルーカード
+473,Slowpoke Tail,おいしいシッポ
+474,Clear Bell,とうめいなスズ
+475,Card Key,カードキー
+476,Basement Key,ちかのかぎ
+477,Squirt Bottle,ゼニガメじょうろ
+478,Red Scale,あかいウロコ
+479,Lost Item,おとしもの
+480,Pass,リニアパス
+481,Machine Part,きかいのぶひん
+482,Silver Feather,ぎんいろのはね
+483,Rainbow Feather,にじいろのはね
+484,Mystery Egg,ふしぎなタマゴ
+485,Red Apricorn,あかぼんぐり
+486,Blue Apricorn,あおぼんぐり
+487,Yellow Apricorn,きぼんぐり
+488,Green Apricorn,みどぼんぐり
+489,Pink Apricorn,ももぼんぐり
+490,White Apricorn,しろぼんぐり
+491,Black Apricorn,くろぼんぐり
+492,Fast Ball,スピードボール
+493,Level Ball,レベルボール
+494,Lure Ball,ルアーボール
+495,Heavy Ball,ヘビーボール
+496,Love Ball,ラブラブボール
+497,Friend Ball,フレンドボール
+498,Moon Ball,ムーンボール
+499,Sport Ball,コンペボール
+500,Park Ball,パークボール
+501,Photo Album,フォトアルバム
+502,GB Sounds,ＧＢプレイヤー
+503,Tidal Bell,うみなりのスズ
+504,Rage Candy Bar,いかりまんじゅう
+505,Data Card 01,データカード０１
+506,Data Card 02,データカード０２
+507,Data Card 03,データカード０３
+508,Data Card 04,データカード０４
+509,Data Card 05,データカード０５
+510,Data Card 06,データカード０６
+511,Data Card 07,データカード０７
+512,Data Card 08,データカード０８
+513,Data Card 09,データカード０９
+514,Data Card 10,データカード１０
+515,Data Card 11,データカード１１
+516,Data Card 12,データカード１２
+517,Data Card 13,データカード１３
+518,Data Card 14,データカード１４
+519,Data Card 15,データカード１５
+520,Data Card 16,データカード１６
+521,Data Card 17,データカード１７
+522,Data Card 18,データカード１８
+523,Data Card 19,データカード１９
+524,Data Card 20,データカード２０
+525,Data Card 21,データカード２１
+526,Data Card 22,データカード２２
+527,Data Card 23,データカード２３
+528,Data Card 24,データカード２４
+529,Data Card 25,データカード２５
+530,Data Card 26,データカード２６
+531,Data Card 27,データカード２７
+532,Jade Orb,もえぎいろのたま
+533,Lock Capsule,ロックカプセル
+534,Red Orb,べにいろのたま
+535,Blue Orb,あいいろのたま
+536,Enigma Stone,なぞのすいしょう
+537,Prism Scale,きれいなウロコ
+538,Eviolite,しんかのきせき
+539,Float Stone,かるいし
+540,Rocky Helmet,ゴツゴツメット
+541,Air Balloon,ふうせん
+542,Red Card,レッドカード
+543,Ring Target,ねらいのまと
+544,Binding Band,しめつけバンド
+545,Absorb Bulb,きゅうこん
+546,Cell Battery,じゅうでんち
+547,Eject Button,だっしゅつボタン
+548,Fire Gem,ほのおのジュエル
+549,Water Gem,みずのジュエル
+550,Electric Gem,でんきのジュエル
+551,Grass Gem,くさのジュエル
+552,Ice Gem,こおりのジュエル
+553,Fighting Gem,かくとうジュエル
+554,Poison Gem,どくのジュエル
+555,Ground Gem,じめんのジュエル
+556,Flying Gem,ひこうのジュエル
+557,Psychic Gem,エスパージュエル
+558,Bug Gem,むしのジュエル
+559,Rock Gem,いわのジュエル
+560,Ghost Gem,ゴーストジュエル
+561,Dragon Gem,ドラゴンジュエル
+562,Dark Gem,あくのジュエル
+563,Steel Gem,はがねのジュエル
+564,Normal Gem,ノーマルジュエル
+565,Health Feather,たいりょくのハネ
+566,Muscle Feather,きんりょくのハネ
+567,Resist Feather,ていこうのハネ
+568,Genius Feather,ちりょくのハネ
+569,Clever Feather,せいしんのハネ
+570,Swift Feather,しゅんぱつのハネ
+571,Pretty Feather,きれいなハネ
+572,Cover Fossil,ふたのカセキ
+573,Plume Fossil,はねのカセキ
+574,Liberty Pass,リバティチケット
+575,Pass Orb,デルダマ
+576,Dream Ball,ドリームボール
+577,Poké Toy,ポケじゃらし
+578,Prop Case,グッズケース
+579,Dragon Skull,ドラゴンのホネ
+580,Balm Mushroom,かおるキノコ
+581,Big Nugget,でかいきんのたま
+582,Pearl String,おだんごしんじゅ
+583,Comet Shard,すいせいのかけら
+584,Relic Copper,こだいのどうか
+585,Relic Silver,こだいのぎんか
+586,Relic Gold,こだいのきんか
+587,Relic Vase,こだいのツボ
+588,Relic Band,こだいのうでわ
+589,Relic Statue,こだいのせきぞう
+590,Relic Crown,こだいのおうかん
+591,Casteliacone,ヒウンアイス
+592,Dire Hit 2,クリティカット２
+593,X Speed 2,スピーダー２
+594,X Sp. Atk 2,ＳＰアップ２
+595,X Sp. Def 2,ＳＰガード２
+596,X Defense 2,ディフェンダー２
+597,X Attack 2,プラスパワー２
+598,X Accuracy 2,ヨクアタール２
+599,X Speed 3,スピーダー３
+600,X Sp. Atk 3,ＳＰアップ３
+601,X Sp. Def 3,ＳＰガード３
+602,X Defense 3,ディフェンダー３
+603,X Attack 3,プラスパワー３
+604,X Accuracy 3,ヨクアタール３
+605,X Speed 6,スピーダー６
+606,X Sp. Atk 6,ＳＰアップ６
+607,X Sp. Def 6,ＳＰガード６
+608,X Defense 6,ディフェンダー６
+609,X Attack 6,プラスパワー６
+610,X Accuracy 6,ヨクアタール６
+611,Ability Urge,スキルコール
+612,Item Drop,アイテムドロップ
+613,Item Urge,アイテムコール
+614,Reset Urge,フラットコール
+615,Dire Hit 3,クリティカット３
+616,Light Stone,ライトストーン
+617,Dark Stone,ダークストーン
+618,TM93,わざマシン９３
+619,TM94,わざマシン９４
+620,TM95,わざマシン９５
+621,Xtransceiver,ライブキャスター
+622,???,ゴッドストーン
+623,Gram 1,はいたつぶつ１
+624,Gram 2,はいたつぶつ２
+625,Gram 3,はいたつぶつ３
+626,Xtransceiver,ライブキャスター
+627,Medal Box,メダルボックス
+628,DNA Splicers,いでんしのくさび
+629,DNA Splicers,いでんしのくさび
+630,Permit,きょかしょう
+631,Oval Charm,まるいおまもり
+632,Shiny Charm,ひかるおまもり
+633,Plasma Card,プラズマカード
+634,Grubby Hanky,よごれたハンカチ
+635,Colress Machine,アクロママシーン
+636,Dropped Item,わすれもの
+637,Dropped Item,わすれもの
+638,Reveal Glass,うつしかがみ
+639,Weakness Policy,じゃくてんほけん
+640,Assault Vest,とつげきチョッキ
+641,Holo Caster,ホロキャスター
+642,Prof’s Letter,はかせのてがみ
+643,Roller Skates,ローラースケート
+644,Pixie Plate,せいれいプレート
+645,Ability Capsule,とくせいカプセル
+646,Whipped Dream,ホイップポップ
+647,Sachet,においぶくろ
+648,Luminous Moss,ひかりごけ
+649,Snowball,ゆきだま
+650,Safety Goggles,ぼうじんゴーグル
+651,Poké Flute,ポケモンのふえ
+652,Rich Mulch,たわわこやし
+653,Surprise Mulch,びっくりこやし
+654,Boost Mulch,ぐんぐんこやし
+655,Amaze Mulch,とんでもこやし
+656,Gengarite,ゲンガナイト
+657,Gardevoirite,サーナイトナイト
+658,Ampharosite,デンリュウナイト
+659,Venusaurite,フシギバナイト
+660,Charizardite X,リザードナイトＸ
+661,Blastoisinite,カメックスナイト
+662,Mewtwonite X,ミュウツナイトＸ
+663,Mewtwonite Y,ミュウツナイトＹ
+664,Blazikenite,バシャーモナイト
+665,Medichamite,チャーレムナイト
+666,Houndoominite,ヘルガナイト
+667,Aggronite,ボスゴドラナイト
+668,Banettite,ジュペッタナイト
+669,Tyranitarite,バンギラスナイト
+670,Scizorite,ハッサムナイト
+671,Pinsirite,カイロスナイト
+672,Aerodactylite,プテラナイト
+673,Lucarionite,ルカリオナイト
+674,Abomasite,ユキノオナイト
+675,Kangaskhanite,ガルーラナイト
+676,Gyaradosite,ギャラドスナイト
+677,Absolite,アブソルナイト
+678,Charizardite Y,リザードナイトＹ
+679,Alakazite,フーディナイト
+680,Heracronite,ヘラクロスナイト
+681,Mawilite,クチートナイト
+682,Manectite,ライボルトナイト
+683,Garchompite,ガブリアスナイト
+684,Latiasite,ラティアスナイト
+685,Latiosite,ラティオスナイト
+686,Roseli Berry,ロゼルのみ
+687,Kee Berry,アッキのみ
+688,Maranga Berry,タラプのみ
+689,Sprinklotad,ハスボーじょうろ
+690,TM96,わざマシン９６
+691,TM97,わざマシン９７
+692,TM98,わざマシン９８
+693,TM99,わざマシン９９
+694,TM100,わざマシン１００
+695,Power Plant Pass,はつでんしょパス
+696,Mega Ring,メガリング
+697,Intriguing Stone,すごそうないし
+698,Common Stone,ありふれたいし
+699,Discount Coupon,バーゲンチケット
+700,Elevator Key,エレベータのキー
+701,TMV Pass,ＴＭＶパス
+702,Honor of Kalos,カロスエンブレム
+703,Adventure Guide,たんけんこころえ
+704,Strange Souvenir,ふしぎなおきもの
+705,Lens Case,レンズケース
+706,Makeup Bag,コスメポーチ
+707,Travel Trunk,いしょうトランク
+708,Lumiose Galette,ミアレガレット
+709,Shalour Sable,シャラサブレ
+710,Jaw Fossil,アゴのカセキ
+711,Sail Fossil,ヒレのカセキ
+712,Looker Ticket,ハンサムチケット
+713,Bike,じてんしゃ
+714,Holo Caster,ホロキャスター
+715,Fairy Gem,ようせいジュエル
+716,Mega Charm,メガチャーム
+717,Mega Glove,メガグローブ
+718,Mach Bike,マッハじてんしゃ
+719,Acro Bike,ダートじてんしゃ
+720,Wailmer Pail,ホエルコじょうろ
+721,Devon Parts,デボンのにもつ
+722,Soot Sack,はいぶくろ
+723,Basement Key,ちかのカギ
+724,Pokéblock Kit,ポロックキット
+725,Letter,ダイゴへのてがみ
+726,Eon Ticket,むげんのチケット
+727,Scanner,たんちき
+728,Go-Goggles,ゴーゴーゴーグル
+729,Meteorite,いんせき
+730,Key to Room 1,１ごうしつのカギ
+731,Key to Room 2,２ごうしつのカギ
+732,Key to Room 4,４ごうしつのカギ
+733,Key to Room 6,６ごうしつのカギ
+734,Storage Key,そうこのカギ
+735,Devon Scope,デボンスコープ
+736,S.S. Ticket,ふねのチケット
+737,HM07,ひでんマシン０７
+738,Devon Scuba Gear,デボンボンベ
+739,Contest Costume,ライブスーツ
+740,Contest Costume,ライブドレス
+741,Magma Suit,マグマスーツ
+742,Aqua Suit,アクアスーツ
+743,Pair of Tickets,ペアチケット
+744,Mega Bracelet,メガバングル
+745,Mega Pendant,メガペンダント
+746,Mega Glasses,メガメガネ
+747,Mega Anchor,メガイカリ
+748,Mega Stickpin,メガラペルピン
+749,Mega Tiara,メガティアラ
+750,Mega Anklet,メガアンクレット
+751,Meteorite,いんせき
+752,Swampertite,ラグラージナイト
+753,Sceptilite,ジュカインナイト
+754,Sablenite,ヤミラミナイト
+755,Altarianite,チルタリスナイト
+756,Galladite,エルレイドナイト
+757,Audinite,タブンネナイト
+758,Metagrossite,メタグロスナイト
+759,Sharpedonite,サメハダナイト
+760,Slowbronite,ヤドランナイト
+761,Steelixite,ハガネールナイト
+762,Pidgeotite,ピジョットナイト
+763,Glalitite,オニゴーリナイト
+764,Diancite,ディアンシナイト
+765,Prison Bottle,いましめのツボ
+766,Mega Cuff,メガブレス
+767,Cameruptite,バクーダナイト
+768,Lopunnite,ミミロップナイト
+769,Salamencite,ボーマンダナイト
+770,Beedrillite,スピアナイト
+771,Meteorite,いんせき
+772,Meteorite,いんせき
+773,Key Stone,キーストーン
+774,Meteorite Shard,いんせきのかけら
+775,Eon Flute,むげんのふえ
+776,Normalium Z,ノーマルＺ
+777,Firium Z,ホノオＺ
+778,Waterium Z,ミズＺ
+779,Electrium Z,デンキＺ
+780,Grassium Z,クサＺ
+781,Icium Z,コオリＺ
+782,Fightinium Z,カクトウＺ
+783,Poisonium Z,ドクＺ
+784,Groundium Z,ジメンＺ
+785,Flyinium Z,ヒコウＺ
+786,Psychium Z,エスパーＺ
+787,Buginium Z,ムシＺ
+788,Rockium Z,イワＺ
+789,Ghostium Z,ゴーストＺ
+790,Dragonium Z,ドラゴンＺ
+791,Darkinium Z,アクＺ
+792,Steelium Z,ハガネＺ
+793,Fairium Z,フェアリーＺ
+794,Pikanium Z,ピカチュウＺ
+795,Bottle Cap,ぎんのおうかん
+796,Gold Bottle Cap,きんのおうかん
+797,Z-Ring,Ｚリング
+798,Decidium Z,ジュナイパーＺ
+799,Incinium Z,ガオガエンＺ
+800,Primarium Z,アシレーヌＺ
+801,Tapunium Z,カプＺ
+802,Marshadium Z,マーシャドーＺ
+803,Aloraichium Z,アロライＺ
+804,Snorlium Z,カビゴンＺ
+805,Eevium Z,イーブイＺ
+806,Mewnium Z,ミュウＺ
+807,Normalium Z,ノーマルＺ
+808,Firium Z,ホノオＺ
+809,Waterium Z,ミズＺ
+810,Electrium Z,デンキＺ
+811,Grassium Z,クサＺ
+812,Icium Z,コオリＺ
+813,Fightinium Z,カクトウＺ
+814,Poisonium Z,ドクＺ
+815,Groundium Z,ジメンＺ
+816,Flyinium Z,ヒコウＺ
+817,Psychium Z,エスパーＺ
+818,Buginium Z,ムシＺ
+819,Rockium Z,イワＺ
+820,Ghostium Z,ゴーストＺ
+821,Dragonium Z,ドラゴンＺ
+822,Darkinium Z,アクＺ
+823,Steelium Z,ハガネＺ
+824,Fairium Z,フェアリーＺ
+825,Pikanium Z,ピカチュウＺ
+826,Decidium Z,ジュナイパーＺ
+827,Incinium Z,ガオガエンＺ
+828,Primarium Z,アシレーヌＺ
+829,Tapunium Z,カプＺ
+830,Marshadium Z,マーシャドーＺ
+831,Aloraichium Z,アロライＺ
+832,Snorlium Z,カビゴンＺ
+833,Eevium Z,イーブイＺ
+834,Mewnium Z,ミュウＺ
+835,Pikashunium Z,サトピカＺ
+836,Pikashunium Z,サトピカＺ
+837,???,？？？
+838,???,？？？
+839,???,？？？
+840,???,？？？
+841,Forage Bag,ざいりょうぶくろ
+842,Fishing Rod,つりざお
+843,Professor’s Mask,はかせのふくめん
+844,Festival Ticket,フェスチケット
+845,Sparkling Stone,かがやくいし
+846,Adrenaline Orb,ビビリだま
+847,Zygarde Cube,ジガルデキューブ
+848,???,？？？
+849,Ice Stone,こおりのいし
+850,Ride Pager,ライドギア
+851,Beast Ball,ウルトラボール
+852,Big Malasada,おおきいマラサダ
+853,Red Nectar,くれないのミツ
+854,Yellow Nectar,やまぶきのミツ
+855,Pink Nectar,うすもものミツ
+856,Purple Nectar,むらさきのミツ
+857,Sun Flute,たいようのふえ
+858,Moon Flute,つきのふえ
+859,???,？？？
+860,Enigmatic Card,あやしいカード
+861,Silver Razz Berry,ぎんのズリのみ
+862,Golden Razz Berry,きんのズリのみ
+863,Silver Nanab Berry,ぎんのナナのみ
+864,Golden Nanab Berry,きんのナナのみ
+865,Silver Pinap Berry,ぎんのパイルのみ
+866,Golden Pinap Berry,きんのパイルのみ
+867,???,？？？
+868,???,？？？
+869,???,？？？
+870,???,？？？
+871,???,？？？
+872,Secret Key,ひみつのカギ
+873,S.S. Ticket,ふねのチケット
+874,Silph Scope,シルフスコープ
+875,Parcel,おとどけもの
+876,Card Key,カードキー
+877,Gold Teeth,きんのいれば
+878,Lift Key,エレベータのカギ
+879,Terrain Extender,グランドコート
+880,Protective Pads,ぼうごパット
+881,Electric Seed,エレキシード
+882,Psychic Seed,サイコシード
+883,Misty Seed,ミストシード
+884,Grassy Seed,グラスシード
+885,Stretchy Spring,のびたバネ
+886,Chalky Stone,チョークいし
+887,Marble,ビーだま
+888,Lone Earring,かたっぽピアス
+889,Beach Glass,うみべのガラス
+890,Gold Leaf,きんのはっぱ
+891,Silver Leaf,ぎんのはっぱ
+892,Polished Mud Ball,ピカピカだんご
+893,Tropical Shell,なんごくかいがら
+894,Leaf Letter,このはのおてがみ
+895,Leaf Letter,このはのおてがみ
+896,Small Bouquet,ちいさなはなたば
+897,???,？？？
+898,???,？？？
+899,???,？？？
+900,Lure,むしよせコロン
+901,Super Lure,シルバーコロン
+902,Max Lure,ゴールドコロン
+903,Pewter Crunchies,ニビあられ
+904,Fighting Memory,ファイトメモリ
+905,Flying Memory,フライングメモリ
+906,Poison Memory,ポイズンメモリ
+907,Ground Memory,グラウンドメモリ
+908,Rock Memory,ロックメモリ
+909,Bug Memory,バグメモリ
+910,Ghost Memory,ゴーストメモリ
+911,Steel Memory,スチールメモリ
+912,Fire Memory,ファイヤーメモリ
+913,Water Memory,ウオーターメモリ
+914,Grass Memory,グラスメモリ
+915,Electric Memory,エレクトロメモリ
+916,Psychic Memory,サイキックメモリ
+917,Ice Memory,アイスメモリ
+918,Dragon Memory,ドラゴンメモリ
+919,Dark Memory,ダークメモリ
+920,Fairy Memory,フェアリーメモリ
+921,Solganium Z,ソルガレオＺ
+922,Lunalium Z,ルナアーラＺ
+923,Ultranecrozium Z,ウルトラネクロＺ
+924,Mimikium Z,ミミッキュＺ
+925,Lycanium Z,ルガルガンＺ
+926,Kommonium Z,ジャラランガＺ
+927,Solganium Z,ソルガレオＺ
+928,Lunalium Z,ルナアーラＺ
+929,Ultranecrozium Z,ウルトラネクロＺ
+930,Mimikium Z,ミミッキュＺ
+931,Lycanium Z,ルガルガンＺ
+932,Kommonium Z,ジャラランガＺ
+933,Z-Power Ring,Ｚパワーリング
+934,Pink Petal,ももいろはなびら
+935,Orange Petal,だいだいはなびら
+936,Blue Petal,あおのはなびら
+937,Red Petal,あかのはなびら
+938,Green Petal,みどりのはなびら
+939,Yellow Petal,きいろのはなびら
+940,Purple Petal,むらさきはなびら
+941,Rainbow Flower,にじいろのはな
+942,Surge Badge,だいだいバッジ
+943,N-Solarizer,ネクロプラスソル
+944,N-Lunarizer,ネクロプラスルナ
+945,N-Solarizer,ネクロプラスソル
+946,N-Lunarizer,ネクロプラスルナ
+947,Ilima’s Normalium Z,イリマノーマルＺ
+948,Left Poké Ball,のこされたボール
+949,Roto Hatch,タマゴふかポン
+950,Roto Bargain,やすうりポン
+951,Roto Prize Money,おこづかいポン
+952,Roto Exp. Points,けいけんポン
+953,Roto Friendship,なつきポン
+954,Roto Encounter,みっけポン
+955,Roto Stealth,かくれポン
+956,Roto HP Restore,ＨＰかいふくポン
+957,Roto PP Restore,ＰＰかいふくポン
+958,Roto Boost,おうえんポン
+959,Roto Catch,つかまえポン
+960,Health Candy,げんきのアメ
+961,Mighty Candy,ちからのアメ
+962,Tough Candy,まもりのアメ
+963,Smart Candy,ちしきのアメ
+964,Courage Candy,こころのアメ
+965,Quick Candy,はやさのアメ
+966,Health Candy L,げんきのアメＬ
+967,Mighty Candy L,ちからのアメＬ
+968,Tough Candy L,まもりのアメＬ
+969,Smart Candy L,ちしきのアメＬ
+970,Courage Candy L,こころのアメＬ
+971,Quick Candy L,はやさのアメＬ
+972,Health Candy XL,げんきのアメＸＬ
+973,Mighty Candy XL,ちからのアメＸＬ
+974,Tough Candy XL,まもりのアメＸＬ
+975,Smart Candy XL,ちしきのアメＸＬ
+976,Courage Candy XL,こころのアメＸＬ
+977,Quick Candy XL,はやさのアメＸＬ
+978,Bulbasaur Candy,フシギダネのアメ
+979,Charmander Candy,ヒトカゲのアメ
+980,Squirtle Candy,ゼニガメのアメ
+981,Caterpie Candy,キャタピーのアメ
+982,Weedle Candy,ビードルのアメ
+983,Pidgey Candy,ポッポのアメ
+984,Rattata Candy,コラッタのアメ
+985,Spearow Candy,オニスズメのアメ
+986,Ekans Candy,アーボのアメ
+987,Pikachu Candy,ピカチュウのアメ
+988,Sandshrew Candy,サンドのアメ
+989,Nidoran♀ Candy,ニドラン♀のアメ
+990,Nidoran♂ Candy,ニドラン♂のアメ
+991,Clefairy Candy,ピッピのアメ
+992,Vulpix Candy,ロコンのアメ
+993,Jigglypuff Candy,プリンのアメ
+994,Zubat Candy,ズバットのアメ
+995,Oddish Candy,ナゾノクサのアメ
+996,Paras Candy,パラスのアメ
+997,Venonat Candy,コンパンのアメ
+998,Diglett Candy,ディグダのアメ
+999,Meowth Candy,ニャースのアメ
+1000,Psyduck Candy,コダックのアメ
+1001,Mankey Candy,マンキーのアメ
+1002,Growlithe Candy,ガーディのアメ
+1003,Poliwag Candy,ニョロモのアメ
+1004,Abra Candy,ケーシィのアメ
+1005,Machop Candy,ワンリキーのアメ
+1006,Bellsprout Candy,マダツボミのアメ
+1007,Tentacool Candy,メノクラゲのアメ
+1008,Geodude Candy,イシツブテのアメ
+1009,Ponyta Candy,ポニータのアメ
+1010,Slowpoke Candy,ヤドンのアメ
+1011,Magnemite Candy,コイルのアメ
+1012,Farfetch’d Candy,カモネギのアメ
+1013,Doduo Candy,ドードーのアメ
+1014,Seel Candy,パウワウのアメ
+1015,Grimer Candy,ベトベターのアメ
+1016,Shellder Candy,シェルダーのアメ
+1017,Gastly Candy,ゴースのアメ
+1018,Onix Candy,イワークのアメ
+1019,Drowzee Candy,スリープのアメ
+1020,Krabby Candy,クラブのアメ
+1021,Voltorb Candy,ビリリダマのアメ
+1022,Exeggcute Candy,タマタマのアメ
+1023,Cubone Candy,カラカラのアメ
+1024,Hitmonlee Candy,サワムラーのアメ
+1025,Hitmonchan Candy,エビワラーのアメ
+1026,Lickitung Candy,ベロリンガのアメ
+1027,Koffing Candy,ドガースのアメ
+1028,Rhyhorn Candy,サイホーンのアメ
+1029,Chansey Candy,ラッキーのアメ
+1030,Tangela Candy,モンジャラのアメ
+1031,Kangaskhan Candy,ガルーラのアメ
+1032,Horsea Candy,タッツーのアメ
+1033,Goldeen Candy,トサキントのアメ
+1034,Staryu Candy,ヒトデマンのアメ
+1035,Mr. Mime Candy,バリヤードのアメ
+1036,Scyther Candy,ストライクのアメ
+1037,Jynx Candy,ルージュラのアメ
+1038,Electabuzz Candy,エレブーのアメ
+1039,Pinsir Candy,カイロスのアメ
+1040,Tauros Candy,ケンタロスのアメ
+1041,Magikarp Candy,コイキングのアメ
+1042,Lapras Candy,ラプラスのアメ
+1043,Ditto Candy,メタモンのアメ
+1044,Eevee Candy,イーブイのアメ
+1045,Porygon Candy,ポリゴンのアメ
+1046,Omanyte Candy,オムナイトのアメ
+1047,Kabuto Candy,カブトのアメ
+1048,Aerodactyl Candy,プテラのアメ
+1049,Snorlax Candy,カビゴンのアメ
+1050,Articuno Candy,フリーザーのアメ
+1051,Zapdos Candy,サンダーのアメ
+1052,Moltres Candy,ファイヤーのアメ
+1053,Dratini Candy,ミニリュウのアメ
+1054,Mewtwo Candy,ミュウツーのアメ
+1055,Mew Candy,ミュウのアメ
+1056,Meltan Candy,メルタンのアメ
+1057,Magmar Candy,ブーバーのアメ
+1058,???,？？？
+1059,???,？？？
+1060,???,？？？
+1061,???,？？？
+1062,???,？？？
+1063,???,？？？
+1064,???,？？？
+1065,???,？？？
+1066,???,？？？
+1067,???,？？？
+1068,???,？？？
+1069,???,？？？
+1070,???,？？？
+1071,???,？？？
+1072,???,？？？
+1073,???,？？？
+1074,Endorsement,すいせんじょう
+1075,Pokémon Box Link,ポケモンボックス
+1076,Wishing Star,ねがいぼし
+1077,Dynamax Band,ダイマックスＢ
+1078,???,？？？
+1079,???,？？？
+1080,Fishing Rod,つりざお
+1081,Rotom Bike,ロトムじてんしゃ
+1082,???,？？？
+1083,???,？？？
+1084,Sausages,あらびきヴルスト
+1085,Bob’s Food Tin,ボブのかんづめ
+1086,Bach’s Food Tin,バックのかんづめ
+1087,Tin of Beans,マメかん
+1088,Bread,しょくパン
+1089,Pasta,パスタ
+1090,Mixed Mushrooms,キノコパック
+1091,Smoke-Poke Tail,しっぽのくんせい
+1092,Large Leek,ふといながねぎ
+1093,Fancy Apple,とくせんリンゴ
+1094,Brittle Bones,かぼそいホネ
+1095,Pack of Potatoes,ポテトパック
+1096,Pungent Root,みずべのハーブ
+1097,Salad Mix,やさいパック
+1098,Fried Food,フライもりあわせ
+1099,Boiled Egg,ゆでタマゴ
+1100,Camping Gear,キャンプセット
+1101,???,？？？
+1102,???,？？？
+1103,Rusted Sword,くちたけん
+1104,Rusted Shield,くちたたて
+1105,Fossilized Bird,カセキのトリ
+1106,Fossilized Fish,カセキのサカナ
+1107,Fossilized Drake,カセキのリュウ
+1108,Fossilized Dino,カセキのクビナガ
+1109,Strawberry Sweet,いちごアメざいく
+1110,Love Sweet,ハートアメざいく
+1111,Berry Sweet,ベリーアメざいく
+1112,Clover Sweet,よつばアメざいく
+1113,Flower Sweet,おはなアメざいく
+1114,Star Sweet,スターアメざいく
+1115,Ribbon Sweet,リボンアメざいく
+1116,Sweet Apple,あまーいりんご
+1117,Tart Apple,すっぱいりんご
+1118,Throat Spray,のどスプレー
+1119,Eject Pack,だっしゅつパック
+1120,Heavy-Duty Boots,あつぞこブーツ
+1121,Blunder Policy,からぶりほけん
+1122,Room Service,ルームサービス
+1123,Utility Umbrella,ばんのうがさ
+1124,Exp. Candy XS,けいけんアメＸＳ
+1125,Exp. Candy S,けいけんアメＳ
+1126,Exp. Candy M,けいけんアメＭ
+1127,Exp. Candy L,けいけんアメＬ
+1128,Exp. Candy XL,けいけんアメＸＬ
+1129,Dynamax Candy,ダイマックスアメ
+1130,TR00,わざレコード００
+1131,TR01,わざレコード０１
+1132,TR02,わざレコード０２
+1133,TR03,わざレコード０３
+1134,TR04,わざレコード０４
+1135,TR05,わざレコード０５
+1136,TR06,わざレコード０６
+1137,TR07,わざレコード０７
+1138,TR08,わざレコード０８
+1139,TR09,わざレコード０９
+1140,TR10,わざレコード１０
+1141,TR11,わざレコード１１
+1142,TR12,わざレコード１２
+1143,TR13,わざレコード１３
+1144,TR14,わざレコード１４
+1145,TR15,わざレコード１５
+1146,TR16,わざレコード１６
+1147,TR17,わざレコード１７
+1148,TR18,わざレコード１８
+1149,TR19,わざレコード１９
+1150,TR20,わざレコード２０
+1151,TR21,わざレコード２１
+1152,TR22,わざレコード２２
+1153,TR23,わざレコード２３
+1154,TR24,わざレコード２４
+1155,TR25,わざレコード２５
+1156,TR26,わざレコード２６
+1157,TR27,わざレコード２７
+1158,TR28,わざレコード２８
+1159,TR29,わざレコード２９
+1160,TR30,わざレコード３０
+1161,TR31,わざレコード３１
+1162,TR32,わざレコード３２
+1163,TR33,わざレコード３３
+1164,TR34,わざレコード３４
+1165,TR35,わざレコード３５
+1166,TR36,わざレコード３６
+1167,TR37,わざレコード３７
+1168,TR38,わざレコード３８
+1169,TR39,わざレコード３９
+1170,TR40,わざレコード４０
+1171,TR41,わざレコード４１
+1172,TR42,わざレコード４２
+1173,TR43,わざレコード４３
+1174,TR44,わざレコード４４
+1175,TR45,わざレコード４５
+1176,TR46,わざレコード４６
+1177,TR47,わざレコード４７
+1178,TR48,わざレコード４８
+1179,TR49,わざレコード４９
+1180,TR50,わざレコード５０
+1181,TR51,わざレコード５１
+1182,TR52,わざレコード５２
+1183,TR53,わざレコード５３
+1184,TR54,わざレコード５４
+1185,TR55,わざレコード５５
+1186,TR56,わざレコード５６
+1187,TR57,わざレコード５７
+1188,TR58,わざレコード５８
+1189,TR59,わざレコード５９
+1190,TR60,わざレコード６０
+1191,TR61,わざレコード６１
+1192,TR62,わざレコード６２
+1193,TR63,わざレコード６３
+1194,TR64,わざレコード６４
+1195,TR65,わざレコード６５
+1196,TR66,わざレコード６６
+1197,TR67,わざレコード６７
+1198,TR68,わざレコード６８
+1199,TR69,わざレコード６９
+1200,TR70,わざレコード７０
+1201,TR71,わざレコード７１
+1202,TR72,わざレコード７２
+1203,TR73,わざレコード７３
+1204,TR74,わざレコード７４
+1205,TR75,わざレコード７５
+1206,TR76,わざレコード７６
+1207,TR77,わざレコード７７
+1208,TR78,わざレコード７８
+1209,TR79,わざレコード７９
+1210,TR80,わざレコード８０
+1211,TR81,わざレコード８１
+1212,TR82,わざレコード８２
+1213,TR83,わざレコード８３
+1214,TR84,わざレコード８４
+1215,TR85,わざレコード８５
+1216,TR86,わざレコード８６
+1217,TR87,わざレコード８７
+1218,TR88,わざレコード８８
+1219,TR89,わざレコード８９
+1220,TR90,わざレコード９０
+1221,TR91,わざレコード９１
+1222,TR92,わざレコード９２
+1223,TR93,わざレコード９３
+1224,TR94,わざレコード９４
+1225,TR95,わざレコード９５
+1226,TR96,わざレコード９６
+1227,TR97,わざレコード９７
+1228,TR98,わざレコード９８
+1229,TR99,わざレコード９９
+1230,TM00,わざマシン００
+1231,Lonely Mint,さみしがりミント
+1232,Adamant Mint,いじっぱりミント
+1233,Naughty Mint,やんちゃミント
+1234,Brave Mint,ゆうかんミント
+1235,Bold Mint,ずぶといミント
+1236,Impish Mint,わんぱくミント
+1237,Lax Mint,のうてんきミント
+1238,Relaxed Mint,のんきミント
+1239,Modest Mint,ひかえめミント
+1240,Mild Mint,おっとりミント
+1241,Rash Mint,うっかりやミント
+1242,Quiet Mint,れいせいミント
+1243,Calm Mint,おだやかミント
+1244,Gentle Mint,おとなしいミント
+1245,Careful Mint,しんちょうミント
+1246,Sassy Mint,なまいきミント
+1247,Timid Mint,おくびょうミント
+1248,Hasty Mint,せっかちミント
+1249,Jolly Mint,ようきミント
+1250,Naive Mint,むじゃきミント
+1251,Serious Mint,まじめミント
+1252,Wishing Piece,ねがいのかたまり
+1253,Cracked Pot,われたポット
+1254,Chipped Pot,かけたポット
+1255,Hi-tech Earbuds,すごいみみせん
+1256,Fruit Bunch,フサパック
+1257,Moomoo Cheese,モーモーチーズ
+1258,Spice Mix,スパイスセット
+1259,Fresh Cream,しんせんクリーム
+1260,Packaged Curry,レトルトカレー
+1261,Coconut Milk,ヤシのミルク
+1262,Instant Noodles,レトルトめん
+1263,Precooked Burger,レトルトバーグ
+1264,Gigantamix,キョダイパウダー
+1265,Wishing Chip,ねがいのかけら
+1266,Rotom Bike,ロトムじてんしゃ
+1267,Catching Charm,ゆれないおまもり
+1268,???,？？？
+1269,Old Letter,ふるびたてがみ
+1270,Band Autograph,バンドのサイン
+1271,Sonia’s Book,ソニアのほん
+1272,???,？？？
+1273,???,？？？
+1274,???,？？？
+1275,???,？？？
+1276,???,？？？
+1277,???,？？？
+1278,Rotom Catalog,ロトムのカタログ
+1279,★And458,★And458
+1280,★And15,★And15
+1281,★And337,★And337
+1282,★And603,★And603
+1283,★And390,★And390
+1284,★Sgr6879,★Sgr6879
+1285,★Sgr6859,★Sgr6859
+1286,★Sgr6913,★Sgr6913
+1287,★Sgr7348,★Sgr7348
+1288,★Sgr7121,★Sgr7121
+1289,★Sgr6746,★Sgr6746
+1290,★Sgr7194,★Sgr7194
+1291,★Sgr7337,★Sgr7337
+1292,★Sgr7343,★Sgr7343
+1293,★Sgr6812,★Sgr6812
+1294,★Sgr7116,★Sgr7116
+1295,★Sgr7264,★Sgr7264
+1296,★Sgr7597,★Sgr7597
+1297,★Del7882,★Del7882
+1298,★Del7906,★Del7906
+1299,★Del7852,★Del7852
+1300,★Psc596,★Psc596
+1301,★Psc361,★Psc361
+1302,★Psc510,★Psc510
+1303,★Psc437,★Psc437
+1304,★Psc8773,★Psc8773
+1305,★Lep1865,★Lep1865
+1306,★Lep1829,★Lep1829
+1307,★Boo5340,★Boo5340
+1308,★Boo5506,★Boo5506
+1309,★Boo5435,★Boo5435
+1310,★Boo5602,★Boo5602
+1311,★Boo5733,★Boo5733
+1312,★Boo5235,★Boo5235
+1313,★Boo5351,★Boo5351
+1314,★Hya3748,★Hya3748
+1315,★Hya3903,★Hya3903
+1316,★Hya3418,★Hya3418
+1317,★Hya3482,★Hya3482
+1318,★Hya3845,★Hya3845
+1319,★Eri1084,★Eri1084
+1320,★Eri472,★Eri472
+1321,★Eri1666,★Eri1666
+1322,★Eri897,★Eri897
+1323,★Eri1231,★Eri1231
+1324,★Eri874,★Eri874
+1325,★Eri1298,★Eri1298
+1326,★Eri1325,★Eri1325
+1327,★Eri984,★Eri984
+1328,★Eri1464,★Eri1464
+1329,★Eri1393,★Eri1393
+1330,★Eri850,★Eri850
+1331,★Tau1409,★Tau1409
+1332,★Tau1457,★Tau1457
+1333,★Tau1165,★Tau1165
+1334,★Tau1791,★Tau1791
+1335,★Tau1910,★Tau1910
+1336,★Tau1346,★Tau1346
+1337,★Tau1373,★Tau1373
+1338,★Tau1412,★Tau1412
+1339,★CMa2491,★CMa2491
+1340,★CMa2693,★CMa2693
+1341,★CMa2294,★CMa2294
+1342,★CMa2827,★CMa2827
+1343,★CMa2282,★CMa2282
+1344,★CMa2618,★CMa2618
+1345,★CMa2657,★CMa2657
+1346,★CMa2646,★CMa2646
+1347,★UMa4905,★UMa4905
+1348,★UMa4301,★UMa4301
+1349,★UMa5191,★UMa5191
+1350,★UMa5054,★UMa5054
+1351,★UMa4295,★UMa4295
+1352,★UMa4660,★UMa4660
+1353,★UMa4554,★UMa4554
+1354,★UMa4069,★UMa4069
+1355,★UMa3569,★UMa3569
+1356,★UMa3323,★UMa3323
+1357,★UMa4033,★UMa4033
+1358,★UMa4377,★UMa4377
+1359,★UMa4375,★UMa4375
+1360,★UMa4518,★UMa4518
+1361,★UMa3594,★UMa3594
+1362,★Vir5056,★Vir5056
+1363,★Vir4825,★Vir4825
+1364,★Vir4932,★Vir4932
+1365,★Vir4540,★Vir4540
+1366,★Vir4689,★Vir4689
+1367,★Vir5338,★Vir5338
+1368,★Vir4910,★Vir4910
+1369,★Vir5315,★Vir5315
+1370,★Vir5359,★Vir5359
+1371,★Vir5409,★Vir5409
+1372,★Vir5107,★Vir5107
+1373,★Ari617,★Ari617
+1374,★Ari553,★Ari553
+1375,★Ari546,★Ari546
+1376,★Ari951,★Ari951
+1377,★Ori1713,★Ori1713
+1378,★Ori2061,★Ori2061
+1379,★Ori1790,★Ori1790
+1380,★Ori1903,★Ori1903
+1381,★Ori1948,★Ori1948
+1382,★Ori2004,★Ori2004
+1383,★Ori1852,★Ori1852
+1384,★Ori1879,★Ori1879
+1385,★Ori1899,★Ori1899
+1386,★Ori1543,★Ori1543
+1387,★Cas21,★Cas21
+1388,★Cas168,★Cas168
+1389,★Cas403,★Cas403
+1390,★Cas153,★Cas153
+1391,★Cas542,★Cas542
+1392,★Cas219,★Cas219
+1393,★Cas265,★Cas265
+1394,★Cnc3572,★Cnc3572
+1395,★Cnc3208,★Cnc3208
+1396,★Cnc3461,★Cnc3461
+1397,★Cnc3449,★Cnc3449
+1398,★Cnc3429,★Cnc3429
+1399,★Cnc3627,★Cnc3627
+1400,★Cnc3268,★Cnc3268
+1401,★Cnc3249,★Cnc3249
+1402,★Com4968,★Com4968
+1403,★Crv4757,★Crv4757
+1404,★Crv4623,★Crv4623
+1405,★Crv4662,★Crv4662
+1406,★Crv4786,★Crv4786
+1407,★Aur1708,★Aur1708
+1408,★Aur2088,★Aur2088
+1409,★Aur1605,★Aur1605
+1410,★Aur2095,★Aur2095
+1411,★Aur1577,★Aur1577
+1412,★Aur1641,★Aur1641
+1413,★Aur1612,★Aur1612
+1414,★Pav7790,★Pav7790
+1415,★Cet911,★Cet911
+1416,★Cet681,★Cet681
+1417,★Cet188,★Cet188
+1418,★Cet539,★Cet539
+1419,★Cet804,★Cet804
+1420,★Cep8974,★Cep8974
+1421,★Cep8162,★Cep8162
+1422,★Cep8238,★Cep8238
+1423,★Cep8417,★Cep8417
+1424,★Cen5267,★Cen5267
+1425,★Cen5288,★Cen5288
+1426,★Cen551,★Cen551
+1427,★Cen5459,★Cen5459
+1428,★Cen5460,★Cen5460
+1429,★CMi2943,★CMi2943
+1430,★CMi2845,★CMi2845
+1431,★Equ8131,★Equ8131
+1432,★Vul7405,★Vul7405
+1433,★UMi424,★UMi424
+1434,★UMi5563,★UMi5563
+1435,★UMi5735,★UMi5735
+1436,★UMi6789,★UMi6789
+1437,★Crt4287,★Crt4287
+1438,★Lyr7001,★Lyr7001
+1439,★Lyr7178,★Lyr7178
+1440,★Lyr7106,★Lyr7106
+1441,★Lyr7298,★Lyr7298
+1442,★Ara6585,★Ara6585
+1443,★Sco6134,★Sco6134
+1444,★Sco6527,★Sco6527
+1445,★Sco6553,★Sco6553
+1446,★Sco5953,★Sco5953
+1447,★Sco5984,★Sco5984
+1448,★Sco6508,★Sco6508
+1449,★Sco6084,★Sco6084
+1450,★Sco5944,★Sco5944
+1451,★Sco6630,★Sco6630
+1452,★Sco6027,★Sco6027
+1453,★Sco6247,★Sco6247
+1454,★Sco6252,★Sco6252
+1455,★Sco5928,★Sco5928
+1456,★Sco6241,★Sco6241
+1457,★Sco6165,★Sco6165
+1458,★Tri544,★Tri544
+1459,★Leo3982,★Leo3982
+1460,★Leo4534,★Leo4534
+1461,★Leo4357,★Leo4357
+1462,★Leo4057,★Leo4057
+1463,★Leo4359,★Leo4359
+1464,★Leo4031,★Leo4031
+1465,★Leo3852,★Leo3852
+1466,★Leo3905,★Leo3905
+1467,★Leo3773,★Leo3773
+1468,★Gru8425,★Gru8425
+1469,★Gru8636,★Gru8636
+1470,★Gru8353,★Gru8353
+1471,★Lib5685,★Lib5685
+1472,★Lib5531,★Lib5531
+1473,★Lib5787,★Lib5787
+1474,★Lib5603,★Lib5603
+1475,★Pup3165,★Pup3165
+1476,★Pup3185,★Pup3185
+1477,★Pup3045,★Pup3045
+1478,★Cyg7924,★Cyg7924
+1479,★Cyg7417,★Cyg7417
+1480,★Cyg7796,★Cyg7796
+1481,★Cyg8301,★Cyg8301
+1482,★Cyg7949,★Cyg7949
+1483,★Cyg7528,★Cyg7528
+1484,★Oct7228,★Oct7228
+1485,★Col1956,★Col1956
+1486,★Col2040,★Col2040
+1487,★Col2177,★Col2177
+1488,★Gem2990,★Gem2990
+1489,★Gem2891,★Gem2891
+1490,★Gem2421,★Gem2421
+1491,★Gem2473,★Gem2473
+1492,★Gem2216,★Gem2216
+1493,★Gem2777,★Gem2777
+1494,★Gem2650,★Gem2650
+1495,★Gem2286,★Gem2286
+1496,★Gem2484,★Gem2484
+1497,★Gem2930,★Gem2930
+1498,★Peg8775,★Peg8775
+1499,★Peg8781,★Peg8781
+1500,★Peg39,★Peg39
+1501,★Peg8308,★Peg8308
+1502,★Peg8650,★Peg8650
+1503,★Peg8634,★Peg8634
+1504,★Peg8684,★Peg8684
+1505,★Peg8450,★Peg8450
+1506,★Peg8880,★Peg8880
+1507,★Peg8905,★Peg8905
+1508,★Oph6556,★Oph6556
+1509,★Oph6378,★Oph6378
+1510,★Oph6603,★Oph6603
+1511,★Oph6149,★Oph6149
+1512,★Oph6056,★Oph6056
+1513,★Oph6075,★Oph6075
+1514,★Ser5854,★Ser5854
+1515,★Ser7141,★Ser7141
+1516,★Ser5879,★Ser5879
+1517,★Her6406,★Her6406
+1518,★Her6148,★Her6148
+1519,★Her6410,★Her6410
+1520,★Her6526,★Her6526
+1521,★Her6117,★Her6117
+1522,★Her6008,★Her6008
+1523,★Per936,★Per936
+1524,★Per1017,★Per1017
+1525,★Per1131,★Per1131
+1526,★Per1228,★Per1228
+1527,★Per834,★Per834
+1528,★Per941,★Per941
+1529,★Phe99,★Phe99
+1530,★Phe338,★Phe338
+1531,★Vel3634,★Vel3634
+1532,★Vel3485,★Vel3485
+1533,★Vel3734,★Vel3734
+1534,★Aqr8232,★Aqr8232
+1535,★Aqr8414,★Aqr8414
+1536,★Aqr8709,★Aqr8709
+1537,★Aqr8518,★Aqr8518
+1538,★Aqr7950,★Aqr7950
+1539,★Aqr8499,★Aqr8499
+1540,★Aqr8610,★Aqr8610
+1541,★Aqr8264,★Aqr8264
+1542,★Cru4853,★Cru4853
+1543,★Cru4730,★Cru4730
+1544,★Cru4763,★Cru4763
+1545,★Cru4700,★Cru4700
+1546,★Cru4656,★Cru4656
+1547,★PsA8728,★PsA8728
+1548,★TrA6217,★TrA6217
+1549,★Cap7776,★Cap7776
+1550,★Cap7754,★Cap7754
+1551,★Cap8278,★Cap8278
+1552,★Cap8322,★Cap8322
+1553,★Cap7773,★Cap7773
+1554,★Sge7479,★Sge7479
+1555,★Car2326,★Car2326
+1556,★Car3685,★Car3685
+1557,★Car3307,★Car3307
+1558,★Car3699,★Car3699
+1559,★Dra5744,★Dra5744
+1560,★Dra5291,★Dra5291
+1561,★Dra6705,★Dra6705
+1562,★Dra6536,★Dra6536
+1563,★Dra7310,★Dra7310
+1564,★Dra6688,★Dra6688
+1565,★Dra4434,★Dra4434
+1566,★Dra6370,★Dra6370
+1567,★Dra7462,★Dra7462
+1568,★Dra6396,★Dra6396
+1569,★Dra6132,★Dra6132
+1570,★Dra6636,★Dra6636
+1571,★CVn4915,★CVn4915
+1572,★CVn4785,★CVn4785
+1573,★CVn4846,★CVn4846
+1574,★Aql7595,★Aql7595
+1575,★Aql7557,★Aql7557
+1576,★Aql7525,★Aql7525
+1577,★Aql7602,★Aql7602
+1578,★Aql7235,★Aql7235
+1579,Max Honey,ダイミツ
+1580,Max Mushrooms,ダイキノコ
+1581,Galarica Twig,ガラナツのえだ
+1582,Galarica Cuff,ガラナツブレス
+1583,Style Card,おしゃれカード
+1584,Armor Pass,ヨロイパス
+1585,Rotom Bike,ロトムじてんしゃ
+1586,Rotom Bike,ロトムじてんしゃ
+1587,Exp. Charm,けいけんおまもり
+1588,Armorite Ore,ヨロイこうせき
+1589,Mark Charm,あかしのおまもり
+1590,Reins of Unity,キズナのタヅナ
+1591,Reins of Unity,キズナのタヅナ
+1592,Galarica Wreath,ガラナツリース
+1593,Legendary Clue 1,でんせつのメモ１
+1594,Legendary Clue 2,でんせつのメモ２
+1595,Legendary Clue 3,でんせつのメモ３
+1596,Legendary Clue?,でんせつのメモ？
+1597,Crown Pass,カンムリパス
+1598,Wooden Crown,きぼりのかんむり
+1599,Radiant Petal,かがやくはなびら
+1600,White Mane Hair,しろいたてがみ
+1601,Black Mane Hair,くろいたてがみ
+1602,Iceroot Carrot,つめたいにんじん
+1603,Shaderoot Carrot,くろいにんじん
+1604,Dynite Ore,マックスこうせき
+1605,Carrot Seeds,にんじんのタネ
+1606,Ability Patch,とくせいパッチ
+1607,Reins of Unity,キズナのタヅナ
+1608,Time Balm,ときのシズメダマ
+1609,Space Balm,そらのシズメダマ
+1610,Mysterious Balm,しずめだま
+1611,Linking Cord,つながりのヒモ
+1612,Hometown Muffin,ふるさとマフィン
+1613,Apricorn,ぼんぐりのみ
+1614,Jubilife Muffin,コトブキマフィン
+1615,Aux Powerguard,ビルドアッパー
+1616,Dire Hit,クリティカッター
+1617,Choice Dumpling,こだわりちまき
+1618,Twice-Spiced Radish,にばいづけ
+1619,Swap Snack,あべこべやき
+1620,Caster Fern,まるいはっぱ
+1621,Seed of Mastery,たくみのえまき
+1622,Poké Ball,モンスターボール
+1623,???,ススキのおとしもの
+1624,Eternal Ice,こだいのこおり
+1625,Uxie’s Claw,ユクシーのつめ
+1626,Azelf’s Fang,アグノムのきば
+1627,Mesprit’s Plume,エムリットのはね
+1628,Tumblestone,たまいし
+1629,Celestica Flute,カミナギのふえ
+1630,Remedy,カンポーやく
+1631,Fine Remedy,いいカンポーやく
+1632,Dazzling Honey,きらきらミツ
+1633,Hearty Grains,いきいきイナホ
+1634,Plump Beans,ころころマメ
+1635,Springy Mushroom,もちもちキノコ
+1636,Crunchy Salt,ごりごりミネラル
+1637,Wood,もくざい
+1638,King’s Leaf,キングリーフ
+1639,Marsh Balm,シズメダマ２
+1640,Poké Ball,モンスターボール
+1641,Great Ball,スーパーボール
+1642,Ultra Ball,ハイパーボール
+1643,Feather Ball,クラフトレシピ４１
+1644,Pokéshi Doll,ポケモンこけし
+1645,???,クラフトレシピ０６
+1646,Smoke Bomb,クラフトレシピ０７
+1647,Scatter Bang,ばりばりだま
+1648,Sticky Glob,ねばりだま
+1649,Star Piece,クラフトレシピ１０
+1650,Mushroom Cake,クラフトレシピ１１
+1651,Bugwort,むらさきハーブ
+1652,Honey Cake,クラフトレシピ１２
+1653,Grain Cake,クラフトレシピ１３
+1654,Bean Cake,クラフトレシピ１４
+1655,Salt Cake,クラフトレシピ１５
+1656,Potion,クラフトレシピ１６
+1657,Super Potion,クラフトレシピ１７
+1658,Hyper Potion,クラフトレシピ１８
+1659,Max Potion,クラフトレシピ１９
+1660,Full Restore,クラフトレシピ２０
+1661,Remedy,クラフトレシピ２１
+1662,Fine Remedy,クラフトレシピ２２
+1663,Superb Remedy,クラフトレシピ２３
+1664,Old Gateau,クラフトレシピ２４
+1665,Jubilife Muffin,クラフトレシピ２５
+1666,Full Heal,クラフトレシピ２６
+1667,Revive,クラフトレシピ２７
+1668,Max Revive,クラフトレシピ２８
+1669,Max Ether,クラフトレシピ２９
+1670,Max Elixir,クラフトレシピ３０
+1671,Stealth Spray,クラフトレシピ３１
+1672,???,？？？
+1673,Aux Power,クラフトレシピ３３
+1674,Aux Guard,クラフトレシピ３４
+1675,Dire Hit,クラフトレシピ３５
+1676,Aux Evasion,クラフトレシピ３６
+1677,Aux Powerguard,クラフトレシピ３７
+1678,Forest Balm,しずめダマ
+1679,Iron Chunk,てつのかけら
+1680,???,？？？
+1681,Black Tumblestone,くろいろたまいし
+1682,Sky Tumblestone,そらいろたまいし
+1683,???,？？？
+1684,Ball of Mud,どろだんご
+1685,???,？？？
+1686,Pop Pod,バリバリモズク
+1687,Sootfoot Root,ケムリイモ
+1688,Spoiled Apricorn,むしくいぼんぐり
+1689,Snowball,ゆきだま
+1690,Sticky Glob,ねばりだま
+1691,Black Augurite,くろのきせき
+1692,Peat Block,ピートブロック
+1693,Stealth Spray,むしよけスプレー
+1694,Medicinal Leek,クスリソウ
+1695,Vivichoke,ゲンキツボミ
+1696,Pep-Up Plant,ピーピーグサ
+1697,???,？？？
+1698,???,？？？
+1699,Tempting Charm B,ふしぎなおまもり２（仮）
+1700,Tempting Charm P,ふしぎなおまもり３（仮）
+1701,Swordcap,ツルギマイタケ
+1702,Iron Barktongue,テッペキクラゲ
+1703,Doppel Bonnets,カゲブンシメジ（仮）
+1704,Direshroom,キュウショウロ（仮）
+1705,Sand Radish,すなはまダイコン
+1706,Tempting Charm T,ふしぎなおまもり４（仮）
+1707,Tempting Charm Y,ふしぎなおまもり５（仮）
+1708,Candy Truffle,スイートトリュフ
+1709,Cake-Lure Base,よせだまのもと
+1710,Poké Ball,モンスターボール
+1711,Great Ball,スーパーボール
+1712,Ultra Ball,ハイパーボール
+1713,Feather Ball,フェザーボール
+1714,???,アーチボール
+1715,???,とくしゅボール
+1716,Scatter Bang,ビビリだま
+1717,Smoke Bomb,けむりだま
+1718,???,？？？
+1719,???,？？？
+1720,Pokéshi Doll,ポケモンこけし
+1721,Volcano Balm,かざんのシズメダマ
+1722,Mountain Balm,やまのシズメダマ
+1723,Snow Balm,ゆきのシズメダマ
+1724,Honey Cake,ミツよせだま
+1725,Grain Cake,イナホよせだま
+1726,Bean Cake,マメよせだま
+1727,Mushroom Cake,キノコよせだま
+1728,Salt Cake,ミネラルよせだま
+1729,Swap Snack,クラフトレシピ３８
+1730,Choice Dumpling,クラフトレシピ３９
+1731,Twice-Spiced Radish,クラフトレシピ４０
+1732,Survival Charm R,あんぜんおまもり１
+1733,Survival Charm B,あんぜんおまもり２
+1734,Survival Charm P,あんぜんおまもり３
+1735,Survival Charm T,あんぜんおまもり４
+1736,Survival Charm Y,あんぜんおまもり５
+1737,Torn Journal,やぶれたにっき
+1738,Warding Charm R,けんこうおまもり１
+1739,Warding Charm B,けんこうおまもり２
+1740,Warding Charm P,けんこうおまもり３
+1741,Warding Charm T,けんこうおまもり４
+1742,Warding Charm Y,けんこうおまもり５
+1743,Wall Fragment,せきばんのかけら
+1744,Basculegion Food,イダイトウだんご
+1745,Old Journal,ふるいにっき
+1746,Wing Ball,ウイングボール
+1747,Jet Ball,ジェットボール
+1748,Heavy Ball,ヘビーボール
+1749,Leaden Ball,メガトンボール
+1750,Gigaton Ball,ギガトンボール
+1751,Wing Ball,ウイングボール
+1752,Jet Ball,クラフトレシピ４２
+1753,Heavy Ball,クラフトレシピ４３
+1754,Hopo Berry,ポフのみ
+1755,Superb Remedy,すごいカンポーやく
+1756,Aux Power,アタックアップ
+1757,Aux Guard,ディフェンスアップ
+1758,Aux Evasion,ヨクアタラーヌ
+1759,Grit Dust,ガンバリのすな
+1760,Grit Gravel,ガンバリのじゃり
+1761,Grit Pebble,ガンバリのいし
+1762,Grit Rock,ガンバリのいわ
+1763,Secret Medicine,ガンバリセット
+1764,Tempting Charm R,ふしぎなおまもり
+1765,Lost Satchel,だれかのポーチ
+1766,Lost Satchel,だれかのポーチ
+1767,Lost Satchel,だれかのポーチ
+1768,Lost Satchel,だれかのポーチ
+1769,Lost Satchel,だれかのポーチ
+1770,???,スマートフォン
+1771,Origin Ball,オリジンボール
+1772,???,だれかのきんちゃく
+1773,???,タマカゴ
+1774,???,だんいんしょう
+1775,???,くさりのはへん
+1776,Origin Ore,オリジンこうせき
+1777,Adamant Crystal,だいこんごうだま
+1778,Lustrous Globe,だいしらたま
+1779,Griseous Core,だいはっきんだま
+1780,Blank Plate,まっさらプレート
+1781,???,？？？
+1782,Crafting Kit,クラフトキット
+1783,Leaden Ball,クラフトレシピ４４
+1784,Gigaton Ball,クラフトレシピ４５
+1785,Strange Ball,ストレンジボール
+1786,Pokédex,ポケモンずかん
+1787,Old Verse 1,ふるいポエム１
+1788,Old Verse 2,ふるいポエム２
+1789,Old Verse 3,ふるいポエム３
+1790,Old Verse 4,ふるいポエム４
+1791,???,アルセウスフォン
+1792,Old Verse 5,ふるいポエム５
+1793,Old Verse 6,ふるいポエム６
+1794,Old Verse 7,ふるいポエム７
+1795,Old Verse 8,ふるいポエム８
+1796,Old Verse 9,ふるいポエム９
+1797,Old Verse 10,ふるいポエム１０
+1798,Old Verse 11,ふるいポエム１１
+1799,Old Verse 12,ふるいポエム１２
+1800,Old Verse 13,ふるいポエム１３
+1801,Old Verse 14,ふるいポエム１４
+1802,Old Verse 15,ふるいポエム１５
+1803,Old Verse 16,ふるいポエム１６
+1804,Old Verse 17,ふるいポエム１７
+1805,Old Verse 18,ふるいポエム１８
+1806,Old Verse 19,ふるいポエム１９
+1807,Old Verse 20,ふるいポエム２０
+1808,Mysterious Shard S,なぞのかけらＳ
+1809,Mysterious Shard L,なぞのかけらＬ
+1810,Digger Drill,あなほりドリル
+1811,Kanto Slate,カントーのせきばん
+1812,Johto Slate,ジョウトのせきばん
+1813,Soul Slate,こころのせきばん
+1814,Rainbow Slate,にじのせきばん
+1815,Squall Slate,あらしのせきばん
+1816,Oceanic Slate,たいかいのせきばん
+1817,Tectonic Slate,たいりくのせきばん
+1818,Stratospheric Slate,てんくうのせきばん
+1819,Genome Slate,いでんしのせきばん
+1820,Discovery Slate,みちびきのせきばん
+1821,Distortion Slate,やぶれたせきばん
+1822,DS Sounds,ＤＳプレイヤー
+1823,,
+1824,,
+1825,,
+1826,,
+1827,,
+1828,Legend Plate,レジェンドプレート
+1829,Rotom Phone,スマホロトム
+1830,Sandwich,サンドウィッチ
+1831,Koraidon’s Poké Ball,コライドンのボール
+1832,Miraidon’s Poké Ball,ミライドンのボール
+1833,Tera Orb,テラスタルオーブ
+1834,Scarlet Book,スカーレットブック
+1835,Violet Book,バイオレットブック
+1836,Kofu’s Wallet,ハイダイのサイフ
+1837,,
+1838,,
+1839,,
+1840,,
+1841,,
+1842,Tiny Bamboo Shoot,ちいさなタケノコ
+1843,Big Bamboo Shoot,おおきなタケノコ
+1844,,
+1845,,
+1846,,
+1847,,
+1848,,
+1849,,
+1850,,
+1851,,
+1852,,
+1853,,
+1854,,
+1855,,
+1856,,
+1857,Scroll of Darkness,あくのかけじく
+1858,Scroll of Waters,みずのかけじく
+1859,,
+1860,,
+1861,Malicious Armor,ノロイノヨロイ
+1862,Normal Tera Shard,テラピースノーマル
+1863,Fire Tera Shard,テラピースほのお
+1864,Water Tera Shard,テラピースみず
+1865,Electric Tera Shard,テラピースでんき
+1866,Grass Tera Shard,テラピースくさ
+1867,Ice Tera Shard,テラピースこおり
+1868,Fighting Tera Shard,テラピースかくとう
+1869,Poison Tera Shard,テラピースどく
+1870,Ground Tera Shard,テラピースじめん
+1871,Flying Tera Shard,テラピースひこう
+1872,Psychic Tera Shard,テラピースエスパー
+1873,Bug Tera Shard,テラピースむし
+1874,Rock Tera Shard,テラピースいわ
+1875,Ghost Tera Shard,テラピースゴースト
+1876,Dragon Tera Shard,テラピースドラゴン
+1877,Dark Tera Shard,テラピースあく
+1878,Steel Tera Shard,テラピースはがね
+1879,Fairy Tera Shard,テラピースフェアリー
+1880,Booster Energy,ブーストエナジー
+1881,Ability Shield,とくせいガード
+1882,Clear Amulet,クリアチャーム
+1883,Mirror Herb,ものまねハーブ
+1884,Punching Glove,パンチグローブ
+1885,Covert Cloak,おんみつマント
+1886,Loaded Dice,いかさまダイス
+1887,,
+1888,Baguette,バゲット
+1889,Mayonnaise,マヨネーズ
+1890,Ketchup,ケチャップ
+1891,Mustard,マスタード
+1892,Butter,バター
+1893,Peanut Butter,ピーナッツバター
+1894,Chili Sauce,チリソース
+1895,Salt,ソルト
+1896,Pepper,ペッパー
+1897,Yogurt,ヨーグルト
+1898,Whipped Cream,ホイップクリーム
+1899,Cream Cheese,クリームチーズ
+1900,Jam,ベリージャム
+1901,Marmalade,マーマレード
+1902,Olive Oil,オリーブオイル
+1903,Vinegar,ビネガー
+1904,Sweet Herba Mystica,ひでん：あまスパイス
+1905,Salty Herba Mystica,ひでん：しおスパイス
+1906,Sour Herba Mystica,ひでん：すぱスパイス
+1907,Bitter Herba Mystica,ひでん：にがスパイス
+1908,Spicy Herba Mystica,ひでん：からスパイス
+1909,Lettuce,レタス
+1910,Tomato,トマトスライス
+1911,Cherry Tomatoes,カットミニトマト
+1912,Cucumber,キュウリスライス
+1913,Pickle,ピクルススライス
+1914,Onion,たまねぎスライス
+1915,Red Onion,アーリーレッド
+1916,Green Bell Pepper,ピーマンスライス
+1917,Red Bell Pepper,あかパプリカスライス
+1918,Yellow Bell Pepper,きパプリカスライス
+1919,Avocado,アボカド
+1920,Bacon,やきベーコン
+1921,Ham,ハムスライス
+1922,Prosciutto,なまハム
+1923,Chorizo,やきチョリソー
+1924,Herbed Sausage,ハーブソーセージ
+1925,Hamburger,ハンバーグ
+1926,Klawf Stick,ガケガニスティック
+1927,Smoked Fillet,スモークきりみ
+1928,Fried Fillet,きりみフライ
+1929,Egg,スライスエッグ
+1930,Potato Tortilla,トルティージャ
+1931,Tofu,トーフ
+1932,Rice,ライス
+1933,Noodles,ヌードル
+1934,Potato Salad,ポテトサラダ
+1935,Cheese,スライスチーズ
+1936,Banana,バナナスライス
+1937,Strawberry,いちごスライス
+1938,Apple,わぎりリンゴ
+1939,Kiwi,わぎりキウイ
+1940,Pineapple,カットパイン
+1941,Jalapeño,ハラペーニョ
+1942,Horseradish,ホースラディッシュ
+1943,Curry Powder,カレーパウダー
+1944,Wasabi,ワサビソース
+1945,Watercress,クレソン
+1946,Basil,バジル
+1947,,
+1948,,
+1949,,
+1950,,
+1951,,
+1952,,
+1953,,
+1954,,
+1955,,
+1956,Venonat Fang,コンパンのキバ
+1957,Diglett Dirt,ディグダのつち
+1958,Meowth Fur,ニャースのけ
+1959,Psyduck Down,コダックのうもう
+1960,Mankey Fur,マンキーのけ
+1961,Growlithe Fur,ガーディのけ
+1962,Slowpoke Claw,ヤドンのツメ
+1963,Magnemite Screw,コイルのねじ
+1964,Grimer Toxin,ベトベターのどくそ
+1965,Shellder Pearl,シェルダーのしんじゅ
+1966,Gastly Gas,ゴースのガス
+1967,Drowzee Fur,スリープのけ
+1968,Voltorb Sparks,ビリリダマのでんき
+1969,Scyther Claw,ストライクのツメ
+1970,Tauros Hair,ケンタロスのけ
+1971,Magikarp Scales,コイキングのウロコ
+1972,Ditto Goo,メタモンのべたべた
+1973,Eevee Fur,イーブイのけ
+1974,Dratini Scales,ミニリュウのウロコ
+1975,Pichu Fur,ピチューのけ
+1976,Igglybuff Fluff,ププリンのけ
+1977,Mareep Wool,メリープのけだま
+1978,Hoppip Leaf,ハネッコのはっぱ
+1979,Sunkern Leaf,ヒマナッツのはっぱ
+1980,Murkrow Bauble,ヤミカラスのおたから
+1981,Misdreavus Tears,ムウマのなみだ
+1982,Girafarig Fur,キリンリキのけ
+1983,Pineco Husk,クヌギダマのから
+1984,Dunsparce Scales,ノコッチのウロコ
+1985,Qwilfish Spines,ハリーセンのトゲ
+1986,Heracross Claw,ヘラクロスのツメ
+1987,Sneasel Claw,ニューラのツメ
+1988,Teddiursa Claw,ヒメグマのツメ
+1989,Delibird Parcel,デリバードのにもつ
+1990,Houndour Fang,デルビルのキバ
+1991,Phanpy Nail,ゴマゾウのツメ
+1992,Stantler Hair,オドシシのけ
+1993,Larvitar Claw,ヨーギラスのツメ
+1994,Wingull Feather,キャモメのはね
+1995,Ralts Dust,ラルトスのおとしもの
+1996,Surskit Syrup,アメタマのミツ
+1997,Shroomish Spores,キノココのほうし
+1998,Slakoth Fur,ナマケロのけ
+1999,Makuhita Sweat,マクノシタのあせ
+2000,Azurill Fur,ルリリのけ
+2001,Sableye Gem,ヤミラミのほうせき
+2002,Meditite Sweat,アサナンのあせ
+2003,Gulpin Mucus,ゴクリンのねんえき
+2004,Numel Lava,ドンメルのようがん
+2005,Torkoal Coal,コータスのせきたん
+2006,Spoink Pearl,バネブーのしんじゅ
+2007,Cacnea Needle,サボネアのトゲ
+2008,Swablu Fluff,チルットのはね
+2009,Zangoose Claw,ザングースのツメ
+2010,Seviper Fang,ハブネークのキバ
+2011,Barboach Slime,ドジョッチのねんえき
+2012,Shuppet Scrap,カゲボウズのきれはし
+2013,Tropius Leaf,トロピウスのはっぱ
+2014,Snorunt Fur,ユキワラシのけ
+2015,Luvdisc Scales,ラブカスのウロコ
+2016,Bagon Scales,タツベイのウロコ
+2017,Starly Feather,ムックルのはね
+2018,Kricketot Shell,コロボーシのぬけがら
+2019,Shinx Fang,コリンクのキバ
+2020,Combee Honey,ミツハニーのミツ
+2021,Pachirisu Fur,パチリスのけ
+2022,Buizel Fur,ブイゼルのけ
+2023,Shellos Mucus,カラナクシのねんえき
+2024,Drifloon Gas,フワンテのガス
+2025,Stunky Fur,スカンプーのけ
+2026,Bronzor Fragment,ドーミラーのかけら
+2027,Bonsly Tears,ウソハチのなみだ
+2028,Happiny Dust,ピンプクのおとしもの
+2029,Spiritomb Fragment,ミカルゲのかけら
+2030,Gible Scales,フカマルのウロコ
+2031,Riolu Fur,リオルのけ
+2032,Hippopotas Sand,ヒポポタスのすな
+2033,Croagunk Poison,グレッグルのどくそ
+2034,Finneon Scales,ケイコウオのウロコ
+2035,Snover Berries,ユキカブリのみ
+2036,Rotom Sparks,ロトムのでんき
+2037,Petilil Leaf,チュリネのはっぱ
+2038,Basculin Fang,バスラオのキバ
+2039,Sandile Claw,メグロコのツメ
+2040,Zorua Fur,ゾロアのけ
+2041,Gothita Eyelash,ゴチムのまつげ
+2042,Deerling Hair,シキジカのけ
+2043,Foongus Spores,タマゲタケのほうし
+2044,Alomomola Mucus,ママンボウのねんえき
+2045,Tynamo Slime,シビシラスのねんえき
+2046,Axew Scales,キバゴのウロコ
+2047,Cubchoo Fur,クマシュンのけ
+2048,Cryogonal Ice,フリージオのこおり
+2049,Pawniard Blade,コマタナのやいば
+2050,Rufflet Feather,ワシボンのはね
+2051,Deino Scales,モノズのウロコ
+2052,Larvesta Fuzz,メラルバのけ
+2053,Fletchling Feather,ヤヤコマのはね
+2054,Scatterbug Powder,コフキムシのこな
+2055,Litleo Tuft,シシコのたてがみ
+2056,Flabébé Pollen,フラベベのかふん
+2057,Skiddo Leaf,メェークルのはっぱ
+2058,Skrelp Kelp,クズモーのもくず
+2059,Clauncher Claw,ウデッポウのハサミ
+2060,Hawlucha Down,ルチャブルのうもう
+2061,Dedenne Fur,デデンネのけ
+2062,Goomy Goo,ヌメラのねんえき
+2063,Klefki Key,クレッフィのかぎ
+2064,Bergmite Ice,カチコールのこおり
+2065,Noibat Fur,オンバットのけ
+2066,Yungoos Fur,ヤングースのけ
+2067,Crabrawler Shell,マケンカニのから
+2068,Oricorio Feather,オドリドリのはね
+2069,Rockruff Rock,イワンコのいわ
+2070,Mareanie Spike,ヒドイデのトゲ
+2071,Mudbray Mud,ドロバンコのどろ
+2072,Fomantis Leaf,カリキリのはっぱ
+2073,Salandit Gas,ヤトウモリのガス
+2074,Bounsweet Sweat,アマカジのあせ
+2075,Oranguru Fur,ヤレユータンのけ
+2076,Passimian Fur,ナゲツケサルのけ
+2077,Sandygast Sand,スナバァのすな
+2078,Komala Claw,ネッコアラのツメ
+2079,Mimikyu Scrap,ミミッキュのきれはし
+2080,Bruxish Tooth,ハギギシリのは
+2081,Chewtle Claw,カムカメのツメ
+2082,Skwovet Fur,ホシガリスのけ
+2083,Arrokuda Scales,サシカマスのウロコ
+2084,Rookidee Feather,ココガラのはね
+2085,Toxel Sparks,エレズンのでんき
+2086,Falinks Sweat,タイレーツのあせ
+2087,Cufant Tarnish,ゾウドウのさび
+2088,Rolycoly Coal,タンドンのせきたん
+2089,Silicobra Sand,スナヘビのすな
+2090,Indeedee Fur,イエッサンのけ
+2091,Pincurchin Spines,バチンウニのはり
+2092,Snom Thread,ユキハミのいと
+2093,Impidimp Hair,ベロバーのけ
+2094,Applin Juice,カジッチュのかじゅう
+2095,Sinistea Chip,ヤバチャのかけら
+2096,Hatenna Dust,ミブリムのおとしもの
+2097,Stonjourner Stone,イシヘンジンのいわ
+2098,Eiscue Down,コオリッポのうもう
+2099,Dreepy Powder,ドラメシヤのこな
+2100,,
+2101,,
+2102,,
+2103,Lechonk Hair,グルトンのけ
+2104,Tarountula Thread,タマンチュラのいと
+2105,Nymble Claw,マメバッタのツメ
+2106,Rellor Mud,シガロコのどろ
+2107,Greavard Wax,ボチのろう
+2108,Flittle Down,ヒラヒナのうもう
+2109,Wiglett Sand,ウミディグダのすな
+2110,Dondozo Whisker,ヘイラッシャのヒゲ
+2111,Veluza Fillet,ミガルーサのきりみ
+2112,Finizen Mucus,ナミイルカのねんえき
+2113,Smoliv Oil,ミニーブのオイル
+2114,Capsakid Seed,カプサイジのたね
+2115,Tadbulb Mucus,ズピカのねんえき
+2116,Varoom Fume,ブロロンのガス
+2117,Orthworm Tarnish,ミミズズのさび
+2118,Tandemaus Fur,ワッカネズミのけ
+2119,Cetoddle Grease,アルクジラのあぶら
+2120,Frigibax Scales,セビエのウロコ
+2121,Tatsugiri Scales,シャリタツのウロコ
+2122,Cyclizar Scales,モトトカゲのウロコ
+2123,Pawmi Fur,パモのけ
+2124,,
+2125,,
+2126,Wattrel Feather,カイデンのはね
+2127,Bombirdier Feather,オトシドリのはね
+2128,Squawkabilly Feather,イキリンコのはね
+2129,Flamigo Down,カラミンゴのうもう
+2130,Klawf Claw,ガケガニのハサミ
+2131,Nacli Salt,コジオのしお
+2132,Glimmet Crystal,キラーメのけっしょう
+2133,Shroodle Ink,シルシュルーのインク
+2134,Fidough Fur,パピモッチのけ
+2135,Maschiff Fang,オラチフのキバ
+2136,Bramblin Twig,アノクサのえだ
+2137,Gimmighoul Coin,コレクレーのコイン
+2138,,
+2139,,
+2140,,
+2141,,
+2142,,
+2143,,
+2144,,
+2145,,
+2146,,
+2147,,
+2148,,
+2149,,
+2150,,
+2151,,
+2152,,
+2153,,
+2154,,
+2155,,
+2156,Tinkatink Hair,カヌチャンのけ
+2157,Charcadet Soot,カルボウのすす
+2158,Toedscool Flaps,ノノクラゲのヒラヒラ
+2159,Wooper Slime,ウパーのねんえき
+2160,TM100,わざマシン１００
+2161,TM101,わざマシン１０１
+2162,TM102,わざマシン１０２
+2163,TM103,わざマシン１０３
+2164,TM104,わざマシン１０４
+2165,TM105,わざマシン１０５
+2166,TM106,わざマシン１０６
+2167,TM107,わざマシン１０７
+2168,TM108,わざマシン１０８
+2169,TM109,わざマシン１０９
+2170,TM110,わざマシン１１０
+2171,TM111,わざマシン１１１
+2172,TM112,わざマシン１１２
+2173,TM113,わざマシン１１３
+2174,TM114,わざマシン１１４
+2175,TM115,わざマシン１１５
+2176,TM116,わざマシン１１６
+2177,TM117,わざマシン１１７
+2178,TM118,わざマシン１１８
+2179,TM119,わざマシン１１９
+2180,TM120,わざマシン１２０
+2181,TM121,わざマシン１２１
+2182,TM122,わざマシン１２２
+2183,TM123,わざマシン１２３
+2184,TM124,わざマシン１２４
+2185,TM125,わざマシン１２５
+2186,TM126,わざマシン１２６
+2187,TM127,わざマシン１２７
+2188,TM128,わざマシン１２８
+2189,TM129,わざマシン１２９
+2190,TM130,わざマシン１３０
+2191,TM131,わざマシン１３１
+2192,TM132,わざマシン１３２
+2193,TM133,わざマシン１３３
+2194,TM134,わざマシン１３４
+2195,TM135,わざマシン１３５
+2196,TM136,わざマシン１３６
+2197,TM137,わざマシン１３７
+2198,TM138,わざマシン１３８
+2199,TM139,わざマシン１３９
+2200,TM140,わざマシン１４０
+2201,TM141,わざマシン１４１
+2202,TM142,わざマシン１４２
+2203,TM143,わざマシン１４３
+2204,TM144,わざマシン１４４
+2205,TM145,わざマシン１４５
+2206,TM146,わざマシン１４６
+2207,TM147,わざマシン１４７
+2208,TM148,わざマシン１４８
+2209,TM149,わざマシン１４９
+2210,TM150,わざマシン１５０
+2211,TM151,わざマシン１５１
+2212,TM152,わざマシン１５２
+2213,TM153,わざマシン１５３
+2214,TM154,わざマシン１５４
+2215,TM155,わざマシン１５５
+2216,TM156,わざマシン１５６
+2217,TM157,わざマシン１５７
+2218,TM158,わざマシン１５８
+2219,TM159,わざマシン１５９
+2220,TM160,わざマシン１６０
+2221,TM161,わざマシン１６１
+2222,TM162,わざマシン１６２
+2223,TM163,わざマシン１６３
+2224,TM164,わざマシン１６４
+2225,TM165,わざマシン１６５
+2226,TM166,わざマシン１６６
+2227,TM167,わざマシン１６７
+2228,TM168,わざマシン１６８
+2229,TM169,わざマシン１６９
+2230,TM170,わざマシン１７０
+2231,TM171,わざマシン１７１
+2232,TM172,わざマシン１７２
+2233,TM173,わざマシン１７３
+2234,TM174,わざマシン１７４
+2235,TM175,わざマシン１７５
+2236,TM176,わざマシン１７６
+2237,TM177,わざマシン１７７
+2238,TM178,わざマシン１７８
+2239,TM179,わざマシン１７９
+2240,TM180,わざマシン１８０
+2241,TM181,わざマシン１８１
+2242,TM182,わざマシン１８２
+2243,TM183,わざマシン１８３
+2244,TM184,わざマシン１８４
+2245,TM185,わざマシン１８５
+2246,TM186,わざマシン１８６
+2247,TM187,わざマシン１８７
+2248,TM188,わざマシン１８８
+2249,TM189,わざマシン１８９
+2250,TM190,わざマシン１９０
+2251,TM191,わざマシン１９１
+2252,TM192,わざマシン１９２
+2253,TM193,わざマシン１９３
+2254,TM194,わざマシン１９４
+2255,TM195,わざマシン１９５
+2256,TM196,わざマシン１９６
+2257,TM197,わざマシン１９７
+2258,TM198,わざマシン１９８
+2259,TM199,わざマシン１９９
+2260,TM200,わざマシン２００
+2261,TM201,わざマシン２０１
+2262,TM202,わざマシン２０２
+2263,TM203,わざマシン２０３
+2264,TM204,わざマシン２０４
+2265,TM205,わざマシン２０５
+2266,TM206,わざマシン２０６
+2267,TM207,わざマシン２０７
+2268,TM208,わざマシン２０８
+2269,TM209,わざマシン２０９
+2270,TM210,わざマシン２１０
+2271,TM211,わざマシン２１１
+2272,TM212,わざマシン２１２
+2273,TM213,わざマシン２１３
+2274,TM214,わざマシン２１４
+2275,TM215,わざマシン２１５
+2276,TM216,わざマシン２１６
+2277,TM217,わざマシン２１７
+2278,TM218,わざマシン２１８
+2279,TM219,わざマシン２１９
+2280,TM220,わざマシン２２０
+2281,TM221,わざマシン２２１
+2282,TM222,わざマシン２２２
+2283,TM223,わざマシン２２３
+2284,TM224,わざマシン２２４
+2285,TM225,わざマシン２２５
+2286,TM226,わざマシン２２６
+2287,TM227,わざマシン２２７
+2288,TM228,わざマシン２２８
+2289,TM229,わざマシン２２９
+2290,,
+2291,,
+2292,,
+2293,,
+2294,,
+2295,,
+2296,,
+2297,,
+2298,,
+2299,,
+2300,,
+2301,,
+2302,,
+2303,,
+2304,,
+2305,,
+2306,,
+2307,,
+2308,,
+2309,,
+2310,,
+2311,Picnic Set,ピクニックセット
+2312,,
+2313,Academy Bottle,スクールボトル
+2314,Academy Bottle,スクールボトル
+2315,Polka-Dot Bottle,みずたまボトル
+2316,Striped Bottle,ストライプボトル
+2317,Diamond Bottle,ダイヤボトル
+2318,Academy Cup,スクールカップ
+2319,Academy Cup,スクールカップ
+2320,Striped Cup,たてストライプカップ
+2321,Polka-Dot Cup,みずたまカップ
+2322,Flower Pattern Cup,フラワーカップ
+2323,Academy Tablecloth,スクールクロス
+2324,Academy Tablecloth,スクールクロス
+2325,Whimsical Tablecloth,ファンシークロス
+2326,Leafy Tablecloth,ネイチャークロス
+2327,Spooky Tablecloth,うらめしクロス
+2328,,
+2329,Academy Ball,スクールボール
+2330,Academy Ball,スクールボール
+2331,Marill Ball,マリルボール
+2332,Yarn Ball,けいとボール
+2333,Cyber Ball,ゲーミングボール
+2334,Gold Pick,ゴールドピック
+2335,Silver Pick,シルバーピック
+2336,Red-Flag Pick,あかいはたピック
+2337,Blue-Flag Pick,あおいはたピック
+2338,Pika-Pika Pick,ピカピカピック
+2339,Winking Pika Pick,パチピカピック
+2340,Vee-Vee Pick,ブイブイピック
+2341,Smiling Vee Pick,ニコブイピック
+2342,Blue Poké Ball Pick,あおボールピック
+2343,,
+2344,Auspicious Armor,イワイノヨロイ
+2345,Leader’s Crest,かしらのしるし
+2346,,
+2347,,
+2348,Pink Bottle,ピンクボトル
+2349,Blue Bottle,ブルーボトル
+2350,Yellow Bottle,イエローボトル
+2351,Steel Bottle (R),Rステンレスボトル
+2352,Steel Bottle (Y),Yステンレスボトル
+2353,Steel Bottle (B),Bステンレスボトル
+2354,Silver Bottle,シルバーチタンボトル
+2355,Barred Cup,よこストライプカップ
+2356,Diamond Pattern Cup,ダイヤカップ
+2357,Fire Pattern Cup,ファイヤーカップ
+2358,Pink Cup,ピンクカップ
+2359,Blue Cup,ブルーカップ
+2360,Yellow Cup,イエローカップ
+2361,Pikachu Cup,ピカチュウカップ
+2362,Eevee Cup,イーブイカップ
+2363,Slowpoke Cup,ヤドンカップ
+2364,Silver Cup,シルバーチタンカップ
+2365,Exercise Ball,バランスボール
+2366,Plaid Tablecloth (Y),きいろチェッククロス
+2367,Plaid Tablecloth (B),あおチェッククロス
+2368,Plaid Tablecloth (R),あかチェッククロス
+2369,B&W Grass Tablecloth,くさむらモノクロス
+2370,Battle Tablecloth,しょうぶクロス
+2371,Monstrous Tablecloth,かいじゅうクロス
+2372,Striped Tablecloth,ストライプクロス
+2373,Diamond Tablecloth,ダイヤクロス
+2374,Polka-Dot Tablecloth,みずたまクロス
+2375,Lilac Tablecloth,パープルクロス
+2376,Mint Tablecloth,ミントクロス
+2377,Peach Tablecloth,ベージュクロス
+2378,Yellow Tablecloth,イエロークロス
+2379,Blue Tablecloth,ブルークロス
+2380,Pink Tablecloth,ピンククロス
+2381,Gold Bottle,ゴールドチタンボトル
+2382,Bronze Bottle,ブロンズチタンボトル
+2383,Gold Cup,ゴールドチタンカップ
+2384,Bronze Cup,ブロンズチタンカップ
+2385,Green Poké Ball Pick,みどりボールピック
+2386,Red Poké Ball Pick,あかボールピック
+2387,Party Sparkler Pick,おいわいはなびピック
+2388,Heroic Sword Pick,ゆうしゃのけんピック
+2389,Magical Star Pick,マジカルスターピック
+2390,Magical Heart Pick,マジカルハートピック
+2391,Parasol Pick,パラソルピック
+2392,Blue-Sky Flower Pick,あおぞらおはなピック
+2393,Sunset Flower Pick,ゆうやけおはなピック
+2394,Sunrise Flower Pick,あさやけおはなピック
+2395,Blue Dish,ブループレート
+2396,Green Dish,グリーンプレート
+2397,Orange Dish,オレンジプレート
+2398,Red Dish,レッドプレート
+2399,White Dish,ホワイトプレート
+2400,Yellow Dish,イエロープレート
+2401,Fairy Feather,ようせいのハネ
+2402,Syrupy Apple,みついりりんご
+2403,Unremarkable Teacup,ボンサクのちゃわん
+2404,Masterpiece Teacup,ケッサクのちゃわん
+2405,Teal Mask,みどりのめん
+2406,Cornerstone Mask,いしずえのめん
+2407,Wellspring Mask,いどのめん
+2408,Hearthflame Mask,かまどのめん
+2409,Teal Style Card,おしゃれカードみどり
+2410,Crystal Cluster,けっしょうのかけら
+2411,Health Mochi,たいりょくのもち
+2412,Muscle Mochi,きんりょくのもち
+2413,Resist Mochi,ていこうのもち
+2414,Genius Mochi,ちりょくのもち
+2415,Clever Mochi,せいしんのもち
+2416,Swift Mochi,しゅんぱつのもち
+2417,Simple Chairs,シンプルチェア
+2418,Academy Chairs,スクールチェア
+2419,Academy Chairs,スクールチェア
+2420,Whimsical Chairs,ファンシーチェア
+2421,Leafy Chairs,ネイチャーチェア
+2422,Spooky Chairs,うらめしチェア
+2423,Plaid Chairs (Y),きいろチェックチェア
+2424,Plaid Chairs (B),あおチェックチェア
+2425,Plaid Chairs (R),あかチェックチェア
+2426,B&W Grass Chairs,くさむらチェア
+2427,Battle Chairs,しょうぶチェア
+2428,Monstrous Chairs,かいじゅうチェア
+2429,Striped Chairs,ストライプチェア
+2430,Diamond Chairs,ダイヤチェア
+2431,Polka-Dot Chairs,みずたまチェア
+2432,Lilac Chairs,パープルチェア
+2433,Mint Chairs,ミントチェア
+2434,Peach Chairs,ベージュチェア
+2435,Yellow Chairs,イエローチェア
+2436,Blue Chairs,ブルーチェア
+2437,Pink Chairs,ピンクチェア
+2438,Ekans Fang,アーボのキバ
+2439,Sandshrew Claw,サンドのツメ
+2440,Cleffa Fur,ピィのけ
+2441,Vulpix Fur,ロコンのけ
+2442,Poliwag Slime,ニョロモのねんえき
+2443,Bellsprout Vine,マダツボミのツル
+2444,Geodude Fragment,イシツブテのかけら
+2445,Koffing Gas,ドガースのガス
+2446,Munchlax Fang,ゴンベのキバ
+2447,Sentret Fur,オタチのけ
+2448,Hoothoot Feather,ホーホーのはね
+2449,Spinarak Thread,イトマルのいと
+2450,Aipom Hair,エイパムのけ
+2451,Yanma Spike,ヤンヤンマのトゲ
+2452,Gligar Fang,グライガーのキバ
+2453,Slugma Lava,マグマッグのようがん
+2454,Swinub Hair,ウリムーのけ
+2455,Poochyena Fang,ポチエナのキバ
+2456,Lotad Leaf,ハスボーのはっぱ
+2457,Seedot Stem,タネボーのえだ
+2458,Nosepass Fragment,ノズパスのかけら
+2459,Volbeat Fluid,バルビートのしる
+2460,Illumise Fluid,イルミーゼのしる
+2461,Corphish Shell,ヘイガニのから
+2462,Feebas Scales,ヒンバスのうろこ
+2463,Duskull Fragment,ヨマワルのかけら
+2464,Chingling Fragment,リーシャンのかけら
+2465,Timburr Sweat,ドッコラーのあせ
+2466,Sewaddle Leaf,クルミルのはっぱ
+2467,Ducklett Feather,コアルヒーのはね
+2468,Litwick Soot,ヒトモシのすす
+2469,Mienfoo Claw,コジョフーのツメ
+2470,Vullaby Feather,バルチャイのはね
+2471,Carbink Jewel,メレシーのほうせき
+2472,Phantump Twig,ボクレーのえだ
+2473,Grubbin Thread,アゴジムシのいと
+2474,Cutiefly Powder,アブリーのこな
+2475,Jangmo-o Scales,ジャラコのウロコ
+2476,Cramorant Down,ウッウのうもう
+2477,Morpeko Snack,モルペコのたね
+2478,Poltchageist Powder,チャデスのこな
+2479,Fresh-Start Mochi,まっさらもち
+2480,Roto-Stick,ロトりぼう
+2481,Glimmering Charm,きらめくおまもり
