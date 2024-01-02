@@ -93,8 +93,8 @@ function performCalculations() {
 	}
 	bestResult.prop("checked", true);
 	bestResult.change();
-	$("#resultHeaderL").text(p1.name + "'s Moves (select one to show detailed results)");
-	$("#resultHeaderR").text(p2.name + "'s Moves (select one to show detailed results)");
+	$("#resultHeaderL").text(trans_pokedex[p1.name] + trans_text["'s Moves (select one to show detailed results)"]);
+	$("#resultHeaderR").text(trans_pokedex[p2.name] + trans_text["'s Moves (select one to show detailed results)"]);
 }
 
 $(".result-move").change(function () {

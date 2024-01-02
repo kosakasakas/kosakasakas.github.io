@@ -185,7 +185,7 @@ function getKOChance(gen, attacker, defender, move, field, damage, err) {
     if (move.timesUsedWithMetronome === undefined)
         move.timesUsedWithMetronome = 1;
     if (damage[0] >= defender.maxHP() && move.timesUsed === 1 && move.timesUsedWithMetronome === 1) {
-        return { chance: 1, n: 1, text: 'guaranteed OHKO' };
+        return { chance: 1, n: 1, text: trans_text['guaranteed OHKO'] };
     }
     var hazards = getHazards(gen, defender, field.defenderSide);
     var eot = getEndOfTurn(gen, attacker, defender, move, field);
@@ -200,13 +200,13 @@ function getKOChance(gen, attacker, defender, move, field, damage, err) {
     if ((move.timesUsed === 1 && move.timesUsedWithMetronome === 1) || move.isZ) {
         var chance = computeKOChance(damage, defender.curHP() - hazards.damage, 0, 1, 1, defender.maxHP(), toxicCounter);
         if (chance === 1) {
-            return { chance: chance, n: 1, text: "guaranteed OHKO".concat(hazardsText) };
+            return { chance: chance, n: 1, text: trans_text["guaranteed OHKO"].concat(hazardsText) };
         }
         else if (chance > 0) {
             return {
                 chance: chance,
                 n: 1,
-                text: qualifier + Math.round(chance * 1000) / 10 + "% chance to OHKO".concat(hazardsText)
+                text: qualifier + Math.round(chance * 1000) / 10 + trans_text["% chance to OHKO"].concat(hazardsText)
             };
         }
         if (damage.length === 256) {
@@ -215,24 +215,24 @@ function getKOChance(gen, attacker, defender, move, field, damage, err) {
         for (var i = 2; i <= 4; i++) {
             var chance_1 = computeKOChance(damage, defender.curHP() - hazards.damage, eot.damage, i, 1, defender.maxHP(), toxicCounter);
             if (chance_1 === 1) {
-                return { chance: chance_1, n: i, text: "".concat(qualifier || 'guaranteed ').concat(i, "HKO").concat(afterText) };
+                return { chance: chance_1, n: i, text: "".concat(qualifier || trans_text['guaranteed ']).concat(i, trans_text["HKO"]).concat(afterText) };
             }
             else if (chance_1 > 0) {
                 return {
                     chance: chance_1,
                     n: i,
-                    text: qualifier + Math.round(chance_1 * 1000) / 10 + "% chance to ".concat(i, "HKO").concat(afterText)
+                    text: qualifier + Math.round(chance_1 * 1000) / 10 + trans_text["% chance to "].concat(i, trans_text["HKO"]).concat(afterText)
                 };
             }
         }
         for (var i = 5; i <= 9; i++) {
             if (predictTotal(damage[0], eot.damage, i, 1, toxicCounter, defender.maxHP()) >=
                 defender.curHP() - hazards.damage) {
-                return { chance: 1, n: i, text: "".concat(qualifier || 'guaranteed ').concat(i, "HKO").concat(afterText) };
+                return { chance: 1, n: i, text: "".concat(qualifier || trans_text['guaranteed ']).concat(i, trans_text["HKO"]).concat(afterText) };
             }
             else if (predictTotal(damage[damage.length - 1], eot.damage, i, 1, toxicCounter, defender.maxHP()) >=
                 defender.curHP() - hazards.damage) {
-                return { n: i, text: qualifier + "possible ".concat(i, "HKO").concat(afterText) };
+                return { n: i, text: qualifier + "possible ".concat(i, trans_text["HKO"]).concat(afterText) };
             }
         }
     }
@@ -242,7 +242,7 @@ function getKOChance(gen, attacker, defender, move, field, damage, err) {
             return {
                 chance: chance,
                 n: move.timesUsed,
-                text: "".concat(qualifier || 'guaranteed ', "KO in ").concat(move.timesUsed, " turns").concat(afterText)
+                text: "".concat(qualifier || trans_text['guaranteed '], trans_text["KO in "]).concat(move.timesUsed, trans_text[" turns"]).concat(afterText)
             };
         }
         else if (chance > 0) {
@@ -251,7 +251,7 @@ function getKOChance(gen, attacker, defender, move, field, damage, err) {
                 n: move.timesUsed,
                 text: qualifier +
                     Math.round(chance * 1000) / 10 +
-                    "% chance to ".concat(move.timesUsed, "HKO").concat(afterText)
+                    "% chance to ".concat(move.timesUsed, trans_text["HKO"]).concat(afterText)
             };
         }
         if (predictTotal(damage[0], eot.damage, 1, move.timesUsed, toxicCounter, defender.maxHP()) >=
@@ -259,17 +259,17 @@ function getKOChance(gen, attacker, defender, move, field, damage, err) {
             return {
                 chance: 1,
                 n: move.timesUsed,
-                text: "".concat(qualifier || 'guaranteed ', "KO in ").concat(move.timesUsed, " turns").concat(afterText)
+                text: "".concat(qualifier || trans_text['guaranteed '], trans_text["KO in "]).concat(move.timesUsed, trans_text[" turns"]).concat(afterText)
             };
         }
         else if (predictTotal(damage[damage.length - 1], eot.damage, 1, move.timesUsed, toxicCounter, defender.maxHP()) >=
             defender.curHP() - hazards.damage) {
             return {
                 n: move.timesUsed,
-                text: qualifier + "possible KO in ".concat(move.timesUsed, " turns").concat(afterText)
+                text: qualifier + trans_text["possible KO in "].concat(move.timesUsed, trans_text[" turns"]).concat(afterText)
             };
         }
-        return { n: move.timesUsed, text: qualifier + 'not a KO' };
+        return { n: move.timesUsed, text: qualifier + trans_text['not a KO'] };
     }
     return { chance: 0, n: 0, text: '' };
 }
@@ -701,7 +701,7 @@ function buildDescription(description, attacker, defender) {
     if (description.isSwordOfRuin) {
         output += 'Sword of Ruin ';
     }
-    output += description.attackerName + ' ';
+    output += trans_pokedex[description.attackerName] + ' ';
     if (description.isHelpingHand) {
         output += 'Helping Hand ';
     }
@@ -717,7 +717,7 @@ function buildDescription(description, attacker, defender) {
     if (description.isSwitching) {
         output += 'switching boosted ';
     }
-    output += description.moveName + ' ';
+    output += trans_moves[description.moveName] + ' ';
     if (description.moveBP && description.moveType) {
         output += '(' + description.moveBP + ' BP ' + description.moveType + ') ';
     }
@@ -760,7 +760,7 @@ function buildDescription(description, attacker, defender) {
     if (description.defenderTera) {
         output += "Tera ".concat(description.defenderTera, " ");
     }
-    output += description.defenderName;
+    output += trans_pokedex[description.defenderName];
     if (description.weather && description.terrain) {
     }
     else if (description.weather) {
