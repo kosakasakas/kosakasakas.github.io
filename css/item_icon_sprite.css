@@ -1,0 +1,2910 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-item_0000 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0001 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0002 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0003 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0004 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0005 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0006 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0007 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0008 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0009 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0010 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0011 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0012 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0013 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0014 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0015 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0016 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0017 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0018 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0019 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0020 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0021 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0022 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0023 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0024 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0025 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0026 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0027 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0028 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0029 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0030 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0031 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0032 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0033 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0034 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0035 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0036 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0037 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0038 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0039 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0040 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0041 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0045 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0046 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0047 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0048 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0049 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0050 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0051 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0052 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0053 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0055 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0056 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0057 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0058 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0059 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0060 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0061 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0062 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0063 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0076 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0077 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0078 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0079 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0080 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0081 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0082 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0083 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0084 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0085 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0086 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0087 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0088 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0089 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0090 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0091 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0092 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0094 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0106 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0107 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0108 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0109 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0110 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0111 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0112 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0135 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0136 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0149 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0150 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0151 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0152 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0153 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0154 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0155 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0156 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0157 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0158 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0159 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0160 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0161 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0162 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0163 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0164 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0165 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0166 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0167 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0168 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0169 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0170 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0171 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0172 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0173 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0174 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0175 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0176 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0177 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0178 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0179 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0180 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0181 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0182 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0183 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0184 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0185 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0186 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0187 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0188 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0189 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0190 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0191 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0192 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0193 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0194 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0195 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0196 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0197 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0198 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0199 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0200 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0201 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0202 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0203 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0204 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0205 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0206 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0207 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0208 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0209 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0210 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0211 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0212 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0213 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0214 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0216 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0217 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0218 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0219 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0220 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0221 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0222 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0223 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0224 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0228 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0229 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0230 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0231 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0232 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0233 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0234 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0236 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0237 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0238 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0239 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0240 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0241 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0242 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0243 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0244 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0245 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0246 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0247 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0248 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0249 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0250 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0251 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0253 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0254 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0255 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0265 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0266 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0267 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0268 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0269 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0270 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0271 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0272 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0273 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0275 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0276 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0277 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0278 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0279 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0280 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0281 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0282 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0283 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0284 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0285 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0286 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0287 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0288 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0289 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0290 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0291 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0292 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0293 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0294 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0295 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0296 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0297 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0298 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0299 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0300 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0301 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0302 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0303 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0304 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0305 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0306 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0307 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0308 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0309 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0310 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0311 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0312 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0313 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0314 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0315 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0316 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0317 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0318 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0319 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0320 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0326 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0328 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0329 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0330 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0331 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0332 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0335 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0336 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0337 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0338 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0339 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0340 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0341 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0342 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0344 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0347 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0358 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0363 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0371 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0466 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0485 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0486 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0487 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0488 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0489 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0490 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0491 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0492 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0493 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0494 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0495 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0496 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0497 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0498 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0499 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0500 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0538 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0539 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0540 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0541 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0542 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0543 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0544 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0545 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0546 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0547 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0564 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0565 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0566 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0567 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0568 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0569 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0570 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0571 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0576 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0580 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0581 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0582 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0583 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0631 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0632 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0638 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0639 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0640 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0644 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0645 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0648 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0649 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0650 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0686 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0687 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0688 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0703 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0708 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0709 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0765 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0795 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0796 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0846 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0849 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0851 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0853 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0854 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0855 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0856 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0879 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0880 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0881 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0882 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0883 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_0884 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1103 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1104 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1116 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1117 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1118 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1119 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1120 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1121 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1122 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1123 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1124 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1125 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1126 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1127 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1128 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1231 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1235 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1239 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1243 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1247 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1251 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1253 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1254 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1267 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1278 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1582 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1587 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1589 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1590 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1592 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1606 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1691 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1692 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1777 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1778 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1779 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1780 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1785 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1828 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1829 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1830 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1833 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1834 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1835 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1836 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1842 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1843 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1857 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1858 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1859 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1860 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1861 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1862 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1863 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1864 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1865 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1866 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1867 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1868 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1869 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1870 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1871 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1872 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1873 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1874 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1875 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1876 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1877 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1878 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1879 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1880 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1881 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1882 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1883 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1884 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1885 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1886 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1888 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1889 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1890 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1891 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1892 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1893 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1894 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1895 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1896 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1897 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1898 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1899 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1900 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1901 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1902 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1903 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1904 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1905 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1906 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1907 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1908 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1909 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1910 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1911 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1912 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1913 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1914 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1915 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1916 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1917 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -400px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1918 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px 0px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1919 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -20px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1920 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -40px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1921 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -60px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1922 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -80px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1923 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -100px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1924 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -120px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1925 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -140px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1926 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -160px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1927 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -180px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1928 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -200px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1929 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -220px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1930 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -240px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1931 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -260px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1932 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -280px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1933 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -300px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1934 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -320px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1935 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -340px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1936 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -360px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1937 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -380px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1938 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -420px -400px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1939 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: 0px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1940 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -20px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1941 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -40px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1942 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -60px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1943 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -80px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1944 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -100px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1945 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -120px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1946 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -140px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_1956 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -160px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2311 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -180px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2344 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -200px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2345 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -220px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2401 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -240px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2402 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -260px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2403 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -280px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2404 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -300px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2406 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -320px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2407 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -340px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2408 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -360px -420px;
+  width: 18px;
+  height: 18px;
+}
+.icon-item_2482 {
+  background-image: url(/css/images/item_icon_sprite.png);
+  background-position: -380px -420px;
+  width: 18px;
+  height: 18px;
+}

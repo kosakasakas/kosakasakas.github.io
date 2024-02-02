@@ -1,0 +1,282 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-BeadsOfRuin {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: 0px 0px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Bug_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -24px 0px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Dark_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: 0px -24px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Dragon_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -24px -24px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Electric_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -48px 0px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Fairy_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -48px -24px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Fighting_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: 0px -48px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Fire_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -24px -48px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Flying_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -48px -48px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Ghost_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -72px 0px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Grass_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -72px -24px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Ground_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -72px -48px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Ice_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -24px -72px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Normal_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -72px -72px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Poison_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -96px 0px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Psychic_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -96px -24px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Rock_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -96px -48px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Steel_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -96px -72px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Stellar_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: 0px -96px;
+  width: 22px;
+  height: 22px;
+}
+.icon-SwordOfRuin {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -24px -96px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TabletsOfRuin {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -48px -96px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Bug {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -72px -96px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Dark {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -96px -96px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Dragon {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -120px 0px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Electric {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -120px -24px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Fairy {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -120px -48px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Fighting {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -120px -72px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Fire {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -120px -96px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Flying {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: 0px -120px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Ghost {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -24px -120px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Grass {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -48px -120px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Ground {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -72px -120px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Ice {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -96px -120px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Normal {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -120px -120px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Poison {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -144px 0px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Psychic {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -144px -24px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Rock {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -144px -48px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Steel {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -144px -72px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Stellar {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -144px -96px;
+  width: 22px;
+  height: 22px;
+}
+.icon-TeraGem_Water {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -144px -120px;
+  width: 22px;
+  height: 22px;
+}
+.icon-VesselOfRuin {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: 0px -144px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Water_icon_SV {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -24px -144px;
+  width: 22px;
+  height: 22px;
+}
+.icon-hand sign icon 3 {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: 0px -72px;
+  width: 22px;
+  height: 22px;
+}
+.icon-leaf {
+  background-image: url(/css/images/meta_icon_sprite.png);
+  background-position: -48px -72px;
+  width: 22px;
+  height: 22px;
+}
