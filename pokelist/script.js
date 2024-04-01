@@ -192,6 +192,7 @@ function getRegulationIndex()
   : (regulation == "DRAGON") ? 9
   : (regulation == "E") ? 7
   : (regulation == "G") ? 12
+  : (regulation == "G_LEGEND") ? 13
   : 11;
   return regID;
 }
