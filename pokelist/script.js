@@ -4,8 +4,8 @@ var speed;
 var ability2poke;
 var move2poke;
 var movestatus2poke;
-var regulation = "H";
-var regulationText = "レギュレーションH";
+var regulation = "STAR";
+var regulationText = "スター団チャレンジ";
 var listID;
 var listText;
 var searchIDPrefix;
@@ -194,6 +194,7 @@ function getRegulationIndex()
   : (regulation == "G") ? 12
   : (regulation == "G_LEGEND") ? 13
   : (regulation == "H") ? 14
+  : (regulation == "STAR") ? 15
   : 11;
   return regID;
 }
