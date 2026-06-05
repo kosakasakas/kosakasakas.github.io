@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT4ZRKRLZ2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TT4ZRKRLZ2');
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5645188269753703"
+      crossorigin="anonymous"></script>
+    <!-- End Google Adsense -->
+
+    <title>ポケリスSV by @sakas_poke</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ポケモンのルール毎の使用可能リストと能力リストです">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ポケリスSV by @sakas_poke">
+    <meta property="og:url" content="https://www.kosakasakas.com/pokelist/index.html">
+    <meta property="og:site_name" content="ポケリスSV">
+    <meta property="og:description" content="ポケモンのルール毎の使用可能リストと能力リストです">
+    <meta property="og:locale">
+    <meta property="og:image" content="https://www.kosakasakas.com/pokelist/image.jpg">
+    <meta property="article:published_time" content="2023-09-25T13:45:44.000Z">
+    <meta property="article:modified_time" content="2023-09-25T15:08:29.754Z">
+    <meta property="article:author" content="kosakasakas">
+    <meta property="article:tag" content="ポケモン">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.kosakasakas.com/pokelist/image.jpg">
+    <meta name="twitter:creator" content="@sakas_poke">
+    <link rel="alternate" href="/atom.xml" title="sakas blog" type="application/atom+xml">
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.css">
+
+    <!-- Fontawesame -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    
+    <!-- Style -->
+    <!--<?!= HtmlService.createHtmlOutputFromFile('css').getContent(); ?>-->
+    <link rel="stylesheet" href="/css/tailwind-bootstrap-bridge.css">
+    <link rel="stylesheet" href="/css/pokelist.css">
+    <link rel="stylesheet" href="/css/poke_icon_sprite.css">
+    <base target="_top">
+  </head>
+  <body>
+
+    <!-- ローディング表示 -->
+    <div id="loading-area">
+      <div class="spinner-border m-5" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    
+    <!-- データリスト
+    <datalist id="pokenames"></datalist> -->
+
+    <!-- メイン表示 -->
+    <div id="main-display-area">
+      <!-- ナビゲーション -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="navbar-brand">
+            リスポケ
+            <a class="bi bi-house-door" href="/"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item navbar-text">
+                <div class="input-group">
+                  <select class="form-select" id="SelectorRegulation" onchange="OnChangeRegulation(this);" >
+                    <option selected value="M-A">M-A</option>
+                  </select>
+                  <select class="form-select" id="SelectorList" onchange="OnChangeList(this);" >
+                    <option selected value="AVAILABLE">使用可能リスト</option>
+                    <option value="SPEED">すばやさリスト</option>
+                    <option value="ABILITY">とくせいリスト</option>
+                    <option value="MOVE_ATTACK">わざリスト（物理特殊）</option>
+                    <option value="MOVE_STATUS">わざリスト（変化）</option>
+                  </select>
+                </div>
+              </li>
+              <li class="nav-item navbar-text">
+                <div class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    リスト表示オプション
+                  </button>
+                  <form class="dropdown-menu p-2">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="CheckboxOptionEvo" checked onchange="OnChangeOptionEvo(this);">
+                      <label class="form-check-label" for="CheckboxOptionEvo">最終進化のみ</label>
+                    </div>
+                    <li class="list-inline-item">
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="CheckboxOptionChoice" checked onchange="OnChangeOptionEvo(this);">
+                        <label class="form-check-label" for="CheckboxOptionChoice">こだわりアイテム（種族値で範囲指定）</label>
+                      </div>
+                    </li>
+                    <div class="row g-2 align-items-center">
+                      <div class="col-auto">
+                        <lable for="choiceMin" class="col-form-label">min</label>
+                      </div>
+                      <div class="col-auto">
+                        <input class="form-control form-control-sm" type="number" name="min" id="min-box" placeholder="80" value="" min="0" aria-labelledby="choiceMin">
+                      </div>
+                    </div>
+                    <div class="row g-2 align-items-center">
+                      <div class="col-auto">
+                        <lable for="choiceMax" class="col-form-label">max</label>
+                      </div>
+                      <div class="col-auto">
+                        <input class="form-control form-control-sm" type="number" name="max" id="max-box" placeholder="110" value="" max="200" aria-labelledby="choiceMin">
+                      </div>
+                    </div>
+                    <p>
+                    <div id="slider"></div>
+                  </form>
+                </div>
+              </li>
+              <li class="nav-item navbar-text d-flex align-items-center">
+                <a class="btn btn-outline-primary btn-sm" href="/pokelist/damage-calc.html">ダメージ計算</a>
+              </li>
+              <li class="nav-item navbar-text d-flex align-items-center ms-2">
+                <a class="btn btn-outline-secondary btn-sm" href="/pokelist/speed-adjust.html">素早さ調整</a>
+              </li>
+              <li class="nav-item navbar-text d-flex align-items-center ms-2">
+                <a class="btn btn-outline-secondary btn-sm" href="/pokelist/pokedex.html">図鑑ツール</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <input class="form-control me-2" placeholder="ポケモン名で検索" id="poke-search" onchange="OnSearch()">
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- メインコンテンツ -->
+      <div class="container" id="main-content-area">
+        <div id= "loader">
+          <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+        </div>
+        <div id = "pokelist">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Pokémon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td scope="col">
+                  <img src="https://drive.google.com/uc?export=download&id=1miVh1HmNg6vs2wRxeL5_7l73IvXpMFhb" class="img-fluid">
+                  <img src="https://drive.google.com/uc?export=download&id=1YRBZEmVRJ193-4r09850f9NsImQ9eevG" class="img-fluid">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <!-- トップへ戻るボタン -->
+    <div id="page_top"><a href="#"></a></div>
+
+    <!-- Java Script -->
+    <!--<?!= HtmlService.createHtmlOutputFromFile('script').getContent(); ?>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+    <script src="/pokelist/script-tailwind-nav-shim.js"></script>
+    <script src="/pokelist/ga_bridge.js"></script>
+    <script src="/pokelist/script.js"></script>
+  </body>
+</html>

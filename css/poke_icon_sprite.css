@@ -1,0 +1,6924 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-Pokémon-Icon_001 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -804px;
+  width: 20px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_002 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_003 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -112px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_004 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -476px -803px;
+  width: 21px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_005 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -693px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_006 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -140px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_007 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -178px -825px;
+  width: 21px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_008 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -104px -665px;
+  width: 24px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_009 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -504px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_010 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -762px -845px;
+  width: 14px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_011 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -46px;
+  width: 12px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_012 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -186px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_013 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -226px -866px;
+  width: 16px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_014 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -865px;
+  width: 13px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_015 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -165px -639px;
+  width: 25px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_016 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -467px -845px;
+  width: 18px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_017 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -23px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_018 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px 0px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_019 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px 0px;
+  width: 20px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_019a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -324px -747px;
+  width: 21px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_020 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -560px;
+  width: 25px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_020a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -330px -639px;
+  width: 25px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_021 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -547px -845px;
+  width: 19px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_022 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -245px -305px;
+  width: 30px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_023 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -777px;
+  width: 18px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_024 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -129px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_025 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -46px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_026 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -168px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_026a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -157px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_027 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -46px -825px;
+  width: 20px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_027a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -680px -803px;
+  width: 21px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_028 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -392px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_028a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -391px -389px;
+  width: 25px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_029 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -745px;
+  width: 18px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_030 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -115px;
+  width: 19px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_031 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -232px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_032 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -447px;
+  width: 18px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_033 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -139px;
+  width: 19px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_034 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -164px -140px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_035 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -766px;
+  width: 18px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_036 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -340px -333px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_037 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -322px -803px;
+  width: 20px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_037a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -648px -691px;
+  width: 22px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_038 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px 0px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_038a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -265px -389px;
+  width: 30px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_039 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -469px;
+  width: 18px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_040 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -54px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_041 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -69px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_042 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px 0px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_043 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -550px;
+  width: 17px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_044 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -672px -691px;
+  width: 22px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_045 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px 0px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_046 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -485px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_047 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -84px -747px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_048 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -625px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_049 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -420px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_050 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -778px -845px;
+  width: 15px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_050a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -425px;
+  width: 15px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_051 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -185px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_051a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -639px;
+  width: 23px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_052 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -347px -747px;
+  width: 21px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_052a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -370px -747px;
+  width: 21px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_052b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -393px -747px;
+  width: 21px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_053 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -260px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_053a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -130px -665px;
+  width: 24px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_054 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px 0px;
+  width: 18px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_055 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -28px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_056 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -206px -196px;
+  width: 28px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_057 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -476px;
+  width: 28px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_058 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -407px;
+  width: 21px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_058a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -82px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_059 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -288px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_059a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -110px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_060 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -504px -825px;
+  width: 20px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_061 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -287px -775px;
+  width: 22px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_062 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -140px;
+  width: 34px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_063 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -668px;
+  width: 23px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_064 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -329px -389px;
+  width: 29px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_065 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -28px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_066 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -697px;
+  width: 16px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_067 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -503px -611px;
+  width: 26px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_068 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -196px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_069 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -526px -825px;
+  width: 20px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_070 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -509px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_071 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -28px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_072 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px -665px;
+  width: 24px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_073 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -216px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_074 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -556px -775px;
+  width: 24px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_074a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -582px -775px;
+  width: 24px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_075 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -531px -611px;
+  width: 26px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_075a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -511px -501px;
+  width: 29px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_076 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -28px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_076a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -213px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_077 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -26px -665px;
+  width: 24px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_077a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -616px;
+  width: 24px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_078 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -246px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_078a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -56px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_079 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -416px -747px;
+  width: 21px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_079a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -534px -557px;
+  width: 26px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_080 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -56px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_080a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -241px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_081 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -608px -775px;
+  width: 23px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_082 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -84px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_083 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -559px -611px;
+  width: 26px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_083a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -45px -84px;
+  width: 42px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_084 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -703px -803px;
+  width: 21px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_085 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px 0px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_086 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -192px -639px;
+  width: 25px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_087 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_088 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -726px -803px;
+  width: 21px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_088a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -749px -803px;
+  width: 21px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_089 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -448px;
+  width: 26px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_089a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -475px;
+  width: 26px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_090 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -84px -845px;
+  width: 19px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_091 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -224px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_092 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -473px -691px;
+  width: 23px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_093 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -112px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_094 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -269px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_095 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -138px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_096 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -182px -665px;
+  width: 24px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_097 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -140px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_098 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -220px -557px;
+  width: 28px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_099 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -168px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_100 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -829px -845px;
+  width: 14px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_1000 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -127px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1001 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -276px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1002 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px -28px;
+  width: 40px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1003 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -108px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1004 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -557px;
+  width: 28px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_1005 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -297px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1006 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -785px;
+  width: 12px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1007 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -396px -361px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1007a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -84px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1008 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1008a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -136px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1009 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -252px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_100a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -696px -691px;
+  width: 22px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_101 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -845px;
+  width: 16px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_1010 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -163px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1011 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -370px;
+  width: 15px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1012 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -308px;
+  width: 32px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_1013 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -653px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1014 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -112px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1015 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -335px;
+  width: 14px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1016 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -22px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1017 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -44px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1017a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -66px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1017b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -88px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1017c {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -202px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1018 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -166px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1019 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -787px;
+  width: 13px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_101a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -344px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_102 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -573px -665px;
+  width: 24px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_1020 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -325px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1021 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -398px;
+  width: 15px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1022 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -306px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1023 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -465px -445px;
+  width: 13px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1024 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -194px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1024a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -39px -222px;
+  width: 39px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_1024b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -222px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_1025 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -372px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_103 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -164px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_103a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -155px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_104 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -614px -803px;
+  width: 20px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_105 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -280px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_105a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -532px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_106 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -502px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_107 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -486px -473px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_108 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -625px -665px;
+  width: 23px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_109 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px 0px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_110 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -336px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_110a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -353px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_111 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -665px;
+  width: 24px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_112 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -196px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_113 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -645px;
+  width: 19px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_114 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -105px -845px;
+  width: 19px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_115 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -366px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_116 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -487px -845px;
+  width: 18px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_117 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -342px -665px;
+  width: 24px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_118 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -468px -665px;
+  width: 24px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_119 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -162px -168px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_120 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -150px -866px;
+  width: 17px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_121 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -28px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_122 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -396px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_122a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -56px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_123 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -56px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_124 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -249px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_125 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -84px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_126 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -400px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_127 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -168px;
+  width: 34px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_128 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -308px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_128a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -428px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_128b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -84px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_128c {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -56px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_129 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -614px;
+  width: 22px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_130 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -112px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_131 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -560px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_132 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -825px;
+  width: 16px;
+  height: 13px;
+}
+.icon-Pokémon-Icon_133 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -17px -866px;
+  width: 17px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_134 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -196px;
+  width: 34px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_135 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -588px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_136 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -381px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_137 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -126px -845px;
+  width: 19px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_138 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -370px;
+  width: 18px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_139 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -224px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_140 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -843px -825px;
+  width: 16px;
+  height: 13px;
+}
+.icon-Pokémon-Icon_141 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -112px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_142 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -140px;
+  width: 39px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_143 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -140px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_144 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -168px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_144a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -110px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_145 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -84px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_145a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -140px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_146 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -426px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_146a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -456px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_147 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -68px -825px;
+  width: 20px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_148 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -108px -747px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_149 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -131px -112px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_150 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -132px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_151 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -504px;
+  width: 23px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_152 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -188px;
+  width: 15px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_153 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -575px;
+  width: 20px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_154 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -192px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_155 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -90px -825px;
+  width: 20px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_156 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -368px -665px;
+  width: 23px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_157 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -531px;
+  width: 23px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_157a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -426px;
+  width: 15px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_158 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -390px;
+  width: 18px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_159 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -666px;
+  width: 21px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_160 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -112px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_161 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -454px;
+  width: 15px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_162 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -498px -691px;
+  width: 23px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_163 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -189px;
+  width: 17px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_164 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -191px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_165 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -126px -889px;
+  width: 16px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_166 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -181px;
+  width: 19px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_167 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -728px -825px;
+  width: 18px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_168 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -357px -639px;
+  width: 25px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_169 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px -56px;
+  width: 40px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_170 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -311px -775px;
+  width: 22px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_171 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -42px -196px;
+  width: 39px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_172 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -209px;
+  width: 15px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_173 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -726px -845px;
+  width: 16px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_174 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -445px;
+  width: 15px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_175 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -144px -889px;
+  width: 16px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_176 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -557px;
+  width: 17px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_177 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -36px -866px;
+  width: 17px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_178 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -230px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_179 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -533px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_180 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -431px;
+  width: 21px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_181 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -175px;
+  width: 20px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_182 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px 0px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_183 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -457px -775px;
+  width: 23px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_184 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -409px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_185 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -28px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_186 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -258px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_187 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -557px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_188 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -362px -845px;
+  width: 19px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_189 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -132px -747px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_190 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -494px -665px;
+  width: 24px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_191 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -885px;
+  width: 13px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_192 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -204px;
+  width: 19px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_193 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -423px -557px;
+  width: 28px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_194 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -252px -845px;
+  width: 20px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_194a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -504px;
+  width: 27px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_195 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -336px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_196 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -140px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_197 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -196px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_198 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -227px;
+  width: 19px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_199 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -183px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_199a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -154px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_200 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -889px;
+  width: 16px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_201 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -106px;
+  width: 10px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_202 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -176px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_203 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -195px -691px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_204 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -571px;
+  width: 17px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_205 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -650px -665px;
+  width: 23px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_206 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -437px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_207 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -665px;
+  width: 24px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_208 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -168px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_209 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -92px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_210 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -219px -691px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_211 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -94px -557px;
+  width: 29px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_211a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -301px -501px;
+  width: 28px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_212 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -220px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_213 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -456px -473px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_214 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -364px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_215 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -580px;
+  width: 17px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_215a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -248px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_216 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -719px;
+  width: 16px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_217 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px 0px;
+  width: 21px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_218 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -603px;
+  width: 17px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_219 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -455px;
+  width: 21px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_220 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -755px -775px;
+  width: 18px;
+  height: 13px;
+}
+.icon-Pokémon-Icon_221 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -228px -747px;
+  width: 22px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_222 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -115px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_222a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -138px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_223 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -651px -845px;
+  width: 17px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_224 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -484px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_225 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -250px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_226 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -83px -196px;
+  width: 45px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_227 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -224px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_228 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -667px;
+  width: 19px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_229 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -600px;
+  width: 20px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_230 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -56px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_231 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -415px -825px;
+  width: 20px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_232 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -125px -557px;
+  width: 29px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_233 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -512px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_234 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -133px -84px;
+  width: 21px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_235 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -343px -691px;
+  width: 24px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_236 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -402px;
+  width: 13px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_237 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -140px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_238 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -314px;
+  width: 14px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_239 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -161px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_240 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -741px;
+  width: 16px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_241 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px 0px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_242 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -540px -529px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_243 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -252px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_244 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -392px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_245 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_246 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px 0px;
+  width: 15px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_247 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -18px -889px;
+  width: 16px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_248 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -465px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_249 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -31px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_250 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -493px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_251 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -627px;
+  width: 14px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_252 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -439px -747px;
+  width: 21px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_253 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -356px -611px;
+  width: 28px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_254 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -28px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_255 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -707px;
+  width: 13px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_256 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -558px;
+  width: 23px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_257 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px 0px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_258 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -147px -845px;
+  width: 19px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_259 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -23px;
+  width: 20px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_260 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -56px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_261 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -772px -803px;
+  width: 21px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_262 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -520px -639px;
+  width: 25px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_263 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -224px -825px;
+  width: 22px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_263a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -248px -825px;
+  width: 22px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_264 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -581px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_264a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -605px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_265 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -507px -845px;
+  width: 18px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_266 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -795px -803px;
+  width: 21px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_267 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -639px;
+  width: 25px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_268 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -825px;
+  width: 21px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_269 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -339px -557px;
+  width: 26px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_270 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -671px -825px;
+  width: 17px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_271 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -219px;
+  width: 19px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_272 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -252px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_273 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -570px;
+  width: 15px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_274 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -260px;
+  width: 16px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_275 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -239px -27px;
+  width: 36px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_276 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -591px -825px;
+  width: 18px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_277 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -187px -775px;
+  width: 23px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_278 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -562px -557px;
+  width: 26px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_279 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -168px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_280 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -647px;
+  width: 14px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_281 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -703px;
+  width: 18px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_282 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -286px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_283 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -212px -775px;
+  width: 23px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_284 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -81px -639px;
+  width: 26px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_285 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -611px -825px;
+  width: 18px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_286 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -585px;
+  width: 23px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_287 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -480px -557px;
+  width: 25px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_288 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -416px -611px;
+  width: 27px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_289 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -331px -501px;
+  width: 28px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_290 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -684px -775px;
+  width: 23px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_291 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -62px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_292 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -28px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_293 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -670px -845px;
+  width: 17px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_294 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -25px;
+  width: 21px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_295 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -196px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_296 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px 0px;
+  width: 18px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_297 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -52px -665px;
+  width: 24px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_298 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -230px;
+  width: 15px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_299 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -55px -866px;
+  width: 17px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_300 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -344px -803px;
+  width: 20px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_301 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -252px -747px;
+  width: 22px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_302 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -168px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_303 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -28px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_304 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -845px -845px;
+  width: 16px;
+  height: 12px;
+}
+.icon-Pokémon-Icon_305 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -775px;
+  width: 23px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_306 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -56px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_307 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -211px;
+  width: 17px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_308 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -127px;
+  width: 17px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_309 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -570px -825px;
+  width: 19px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_310 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -84px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_311 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -36px -889px;
+  width: 16px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_312 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -54px -889px;
+  width: 16px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_313 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -366px -803px;
+  width: 20px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_314 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -689px;
+  width: 19px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_315 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -384px -639px;
+  width: 25px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_316 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -169px -866px;
+  width: 17px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_317 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -112px -825px;
+  width: 20px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_318 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -845px;
+  width: 19px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_319 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -280px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_320 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -177px -305px;
+  width: 33px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_321 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px -84px;
+  width: 40px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_322 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -168px -845px;
+  width: 19px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_323 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -445px -611px;
+  width: 27px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_324 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -93px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_325 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -336px;
+  width: 14px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_326 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -237px -775px;
+  width: 23px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_327 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -841px;
+  width: 15px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_328 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -21px -845px;
+  width: 19px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_329 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -262px -665px;
+  width: 25px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_330 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -84px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_331 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -532px -775px;
+  width: 22px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_332 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -211px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_333 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -568px -845px;
+  width: 19px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_334 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -196px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_335 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -243px -691px;
+  width: 23px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_336 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -393px -665px;
+  width: 23px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_337 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -75px;
+  width: 18px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_338 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -308px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_339 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -732px -775px;
+  width: 21px;
+  height: 13px;
+}
+.icon-Pokémon-Icon_340 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -141px -305px;
+  width: 34px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_341 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -499px -803px;
+  width: 21px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_342 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -196px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_343 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -299px;
+  width: 16px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_344 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -336px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_345 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -491px;
+  width: 18px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_346 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -27px -639px;
+  width: 25px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_347 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -629px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_348 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -112px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_349 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -626px;
+  width: 17px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_350 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -224px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_351 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -548px;
+  width: 13px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_352 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -388px -803px;
+  width: 20px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_353 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -251px;
+  width: 15px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_354 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -335px -775px;
+  width: 22px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_355 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -23px;
+  width: 18px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_356 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -521px;
+  width: 26px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_357 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -224px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_358 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -261px -222px;
+  width: 15px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_359 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -364px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_360 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -411px -639px;
+  width: 25px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_361 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -272px;
+  width: 15px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_362 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -140px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_363 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -589px -845px;
+  width: 19px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_364 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -395px -557px;
+  width: 26px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_365 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -37px -249px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_366 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -42px -845px;
+  width: 19px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_367 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -54px -639px;
+  width: 25px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_368 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -492px -639px;
+  width: 26px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_369 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -297px -389px;
+  width: 30px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_370 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -147px;
+  width: 12px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_371 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -22px;
+  width: 15px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_372 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -46px;
+  width: 20px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_373 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -199px -84px;
+  width: 37px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_374 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -383px -845px;
+  width: 19px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_375 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -474px -611px;
+  width: 27px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_376 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -108px 0px;
+  width: 46px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_377 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -124px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_378 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -84px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_379 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -252px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_380 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -239px -55px;
+  width: 36px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_381 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -41px -140px;
+  width: 39px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_382 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px 0px;
+  width: 56px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_383 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -74px -249px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_384 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -547px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_385 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -653px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_386 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -587px -611px;
+  width: 26px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_386a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -155px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_386b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -109px -639px;
+  width: 26px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_386c {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -75px;
+  width: 25px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_387 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -250px;
+  width: 18px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_388 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -276px -747px;
+  width: 22px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_389 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -448px;
+  width: 28px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_390 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -243px;
+  width: 19px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_391 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px 0px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_392 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -575px;
+  width: 26px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_393 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -728px;
+  width: 13px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_394 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -92px;
+  width: 17px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_395 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -612px;
+  width: 23px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_396 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -189px -845px;
+  width: 19px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_397 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -25px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_398 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px 0px;
+  width: 23px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_399 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -437px -825px;
+  width: 20px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_400 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px -747px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_401 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -116px;
+  width: 17px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_402 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -75px;
+  width: 20px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_403 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -369px -691px;
+  width: 24px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_404 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px -557px;
+  width: 30px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_405 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -186px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_406 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -66px;
+  width: 12px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_407 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -276px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_408 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -522px -803px;
+  width: 21px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_409 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -219px -639px;
+  width: 25px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_410 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -410px -803px;
+  width: 20px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_411 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -137px -639px;
+  width: 26px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_412 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -140px;
+  width: 17px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_412a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -695px;
+  width: 15px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_412b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -285px;
+  width: 16px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_413 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -50px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_414 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -289px -665px;
+  width: 25px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_415 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -546px -665px;
+  width: 25px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_416 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -224px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_417 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -75px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_418 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -184px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_419 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -547px -639px;
+  width: 25px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_420 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -410px;
+  width: 18px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_421 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -239px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_422 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -233px;
+  width: 17px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_423 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -611px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_424 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -360px -389px;
+  width: 29px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_425 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -322px;
+  width: 15px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_426 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -392px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_427 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -274px;
+  width: 18px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_428 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -168px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_429 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -267px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_430 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -615px -611px;
+  width: 26px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_431 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -246px -639px;
+  width: 26px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_432 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -523px -691px;
+  width: 23px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_433 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -262px -775px;
+  width: 23px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_434 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -367px -557px;
+  width: 26px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_435 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -361px -501px;
+  width: 28px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_436 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -129px;
+  width: 13px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_437 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -111px -249px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_438 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -770px;
+  width: 12px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_439 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -44px;
+  width: 14px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_440 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -485px;
+  width: 14px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_441 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -294px -277px;
+  width: 20px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_442 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -196px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_443 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -63px -845px;
+  width: 19px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_444 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -548px -691px;
+  width: 23px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_445 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -217px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_446 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -506px;
+  width: 14px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_447 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -430px;
+  width: 18px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_448 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -681px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_449 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -599px -665px;
+  width: 24px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_450 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -217px -277px;
+  width: 36px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_451 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -208px -665px;
+  width: 24px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_452 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -58px 0px;
+  width: 48px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_453 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -188px -866px;
+  width: 17px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_454 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -280px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_455 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -240px -611px;
+  width: 27px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_456 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -134px -825px;
+  width: 20px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_457 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -100px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_458 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -274px -845px;
+  width: 20px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_459 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -207px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_460 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -280px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_461 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -198px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_462 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -252px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_463 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -26px -611px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_464 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -82px -140px;
+  width: 39px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_465 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -84px;
+  width: 43px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_466 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -248px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_467 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -308px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_468 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -88px -112px;
+  width: 41px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_469 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -188px -557px;
+  width: 30px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_470 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -224px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_471 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_472 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -195px -222px;
+  width: 31px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_473 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -112px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_474 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -220px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_475 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -242px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_476 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -78px -665px;
+  width: 24px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_477 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -33px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_478 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -295px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_479 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -252px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_479a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_479b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -310px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_479c {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -66px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_479d {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -308px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_479e {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -52px -611px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_480 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -336px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_481 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -148px -249px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_482 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -341px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_483 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -420px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_483a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -267px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_484 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -99px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_484a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -295px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_485 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -56px;
+  width: 45px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_486 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -108px -27px;
+  width: 44px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_487 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -280px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_487a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -372px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_488 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -78px -611px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_489 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -507px -775px;
+  width: 23px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_490 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -677px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_491 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -403px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_492 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -631px -845px;
+  width: 18px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_492a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -479px;
+  width: 21px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_493 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -280px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_494 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -264px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_495 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -296px -845px;
+  width: 20px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_496 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -701px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_497 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -386px -611px;
+  width: 28px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_498 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -450px;
+  width: 18px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_499 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -573px -691px;
+  width: 23px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_500 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -391px -501px;
+  width: 28px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_501 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -162px -889px;
+  width: 16px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_502 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px 0px;
+  width: 19px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_503 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -385px -336px;
+  width: 31px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_503a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -304px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_504 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px -825px;
+  width: 20px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_505 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -95px -775px;
+  width: 20px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_506 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -470px;
+  width: 18px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_507 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -503px;
+  width: 21px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_508 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -434px -445px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_509 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -527px;
+  width: 21px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_510 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -448px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_511 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -69px;
+  width: 20px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_512 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -102px;
+  width: 25px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_513 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -432px -803px;
+  width: 20px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_514 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -274px -639px;
+  width: 26px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_515 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -462px -747px;
+  width: 21px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_516 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -395px -691px;
+  width: 24px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_517 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -795px -845px;
+  width: 15px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_518 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px 0px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_519 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -744px -845px;
+  width: 16px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_520 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -711px;
+  width: 19px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_521 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -104px -611px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_522 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -164px;
+  width: 17px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_523 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -269px -611px;
+  width: 27px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_524 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -203px;
+  width: 11px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_525 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -421px -691px;
+  width: 24px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_526 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -364px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_527 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -548px -825px;
+  width: 20px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_528 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -185px -249px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_529 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -201px -825px;
+  width: 21px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_530 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -222px -249px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_531 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -476px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_532 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -520px -665px;
+  width: 24px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_533 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -594px -583px;
+  width: 27px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_534 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px 0px;
+  width: 41px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_535 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -298px -866px;
+  width: 14px;
+  height: 13px;
+}
+.icon-Pokémon-Icon_536 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -490px;
+  width: 18px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_537 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px 0px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_538 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -199px -112px;
+  width: 37px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_539 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -56px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_540 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -589px;
+  width: 15px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_541 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -459px -825px;
+  width: 20px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_542 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -67px;
+  width: 14px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_543 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -748px -825px;
+  width: 18px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_544 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -272px -825px;
+  width: 22px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_545 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -84px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_546 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -709px -775px;
+  width: 21px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_547 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -28px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_548 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -86px;
+  width: 12px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_549 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -278px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_549a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -286px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_550 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px 0px;
+  width: 28px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_550a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -298px -611px;
+  width: 27px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_550b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -130px -611px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_551 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -296px -825px;
+  width: 22px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_552 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -574px -639px;
+  width: 25px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_553 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -252px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_554 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -690px -825px;
+  width: 17px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_554a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -709px -825px;
+  width: 17px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_555 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -308px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_555a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px -611px;
+  width: 26px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_555b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -332px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_555c {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px 0px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_556 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -504px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_557 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -404px -845px;
+  width: 19px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_558 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -132px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_559 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -792px;
+  width: 15px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_560 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -306px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_561 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -112px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_562 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -320px -825px;
+  width: 22px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_562a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -344px -825px;
+  width: 22px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_563 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -56px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_564 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -633px -775px;
+  width: 23px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_565 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_566 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -481px -825px;
+  width: 21px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_567 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -600px -532px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_568 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -23px -825px;
+  width: 21px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_569 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -239px -83px;
+  width: 36px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_570 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -244px -866px;
+  width: 16px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_570a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -323px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_571 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -32px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_571a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -308px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_572 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -359px -775px;
+  width: 22px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_573 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -84px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_574 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -667px;
+  width: 14px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_575 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -725px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_576 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -140px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_577 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -812px -845px;
+  width: 15px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_578 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -72px -889px;
+  width: 16px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_579 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -108px -55px;
+  width: 44px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_580 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -90px -889px;
+  width: 16px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_581 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -277px -305px;
+  width: 30px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_582 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -185px;
+  width: 12px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_583 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -866px;
+  width: 15px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_584 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -112px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_585 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -298px;
+  width: 18px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_586 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -120px -691px;
+  width: 23px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_587 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -82px -168px;
+  width: 38px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_588 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -166px;
+  width: 12px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_589 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -168px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_590 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -846px;
+  width: 14px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_591 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -28px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_592 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -733px;
+  width: 19px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_593 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_594 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -164px;
+  width: 13px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_595 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -392px -825px;
+  width: 21px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_596 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -224px;
+  width: 34px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_597 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -810px;
+  width: 15px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_598 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -89px -84px;
+  width: 42px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_599 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -368px -825px;
+  width: 22px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_600 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -281px -557px;
+  width: 27px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_601 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -112px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_602 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -330px -866px;
+  width: 14px;
+  height: 11px;
+}
+.icon-Pokémon-Icon_603 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -545px -803px;
+  width: 21px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_604 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -309px -305px;
+  width: 30px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_605 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -749px;
+  width: 13px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_606 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -323px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_607 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -26px;
+  width: 13px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_608 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -210px -845px;
+  width: 19px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_609 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -280px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_610 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -513px;
+  width: 18px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_611 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -601px -639px;
+  width: 25px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_612 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -308px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_613 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -687px;
+  width: 14px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_614 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -277px;
+  width: 34px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_615 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -196px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_616 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -631px -825px;
+  width: 18px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_617 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -64px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_618 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -30px -557px;
+  width: 30px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_618a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -228px -222px;
+  width: 31px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_619 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -21px;
+  width: 18px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_620 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -140px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_621 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -96px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_622 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -510px;
+  width: 18px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_623 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -56px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_624 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -358px;
+  width: 14px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_625 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -334px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_626 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -239px -111px;
+  width: 36px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_627 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -649px;
+  width: 17px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_628 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -336px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_628a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -330px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_629 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -383px -775px;
+  width: 22px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_630 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -314px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_631 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -199px -140px;
+  width: 37px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_632 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -80px -222px;
+  width: 39px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_633 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -763px;
+  width: 16px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_634 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -302px -639px;
+  width: 26px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_635 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -122px -168px;
+  width: 38px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_636 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -636px -803px;
+  width: 20px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_637 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -128px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_638 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -352px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_639 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_640 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -374px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_641 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -27px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_641a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -140px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_642 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -364px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_642a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -168px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_643 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -140px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_644 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -336px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_645 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -364px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_645a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -224px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_646 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -123px -140px;
+  width: 39px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_646a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -168px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_646b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -165px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_647 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -168px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_647a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -34px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_648 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -90px;
+  width: 14px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_648a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -720px;
+  width: 15px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_649 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -360px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_650 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -188px;
+  width: 17px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_651 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -551px;
+  width: 21px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_652 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -184px -611px;
+  width: 26px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_653 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -592px;
+  width: 17px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_654 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -117px -775px;
+  width: 20px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_655 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -327px -611px;
+  width: 27px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_656 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -42px;
+  width: 18px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_657 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -268px -691px;
+  width: 23px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_658 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -62px -557px;
+  width: 30px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_658a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -420px;
+  width: 30px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_658b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -392px;
+  width: 30px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_659 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -154px;
+  width: 16px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_660 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -196px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_661 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -651px -825px;
+  width: 18px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_662 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -749px -747px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_663 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -196px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_664 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -113px;
+  width: 14px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_665 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -262px -866px;
+  width: 16px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_666 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -530px;
+  width: 26px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_667 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -230px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_668 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -231px -389px;
+  width: 32px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_669 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -465px;
+  width: 15px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_670 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -351px;
+  width: 19px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_671 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -54px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_672 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -74px -866px;
+  width: 17px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_673 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -293px -691px;
+  width: 23px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_674 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -293px;
+  width: 15px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_675 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -196px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_676 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -252px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_677 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -180px -889px;
+  width: 16px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_678 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -84px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_678a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -112px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_679 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -101px;
+  width: 18px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_680 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -252px;
+  width: 31px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_681 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -388px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_681a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -280px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_682 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -828px;
+  width: 15px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_683 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -342px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_684 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -689px -845px;
+  width: 17px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_685 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -81px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_686 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -535px;
+  width: 18px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_687 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -362px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_688 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -619px;
+  width: 16px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_689 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -160px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_690 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -46px;
+  width: 18px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_691 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -192px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_692 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -675px -665px;
+  width: 24px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_693 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -199px 0px;
+  width: 38px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_694 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -527px -845px;
+  width: 18px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_695 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -416px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_696 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -318px -845px;
+  width: 20px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_697 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -198px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_698 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -778px;
+  width: 17px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_699 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -308px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_700 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -108px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_701 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -224px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_702 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -224px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_703 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -314px -866px;
+  width: 14px;
+  height: 13px;
+}
+.icon-Pokémon-Icon_704 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px -222px;
+  width: 12px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_705 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -346px;
+  width: 15px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_705a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -396px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_706 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -392px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_706a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -709px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_707 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -231px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_708 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -628px -639px;
+  width: 25px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_709 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -264px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_710 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -613px;
+  width: 17px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_711 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -297px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_712 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -93px -866px;
+  width: 17px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_713 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -239px -195px;
+  width: 37px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_713a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -196px;
+  width: 40px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_714 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -253px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_715 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -239px -139px;
+  width: 36px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_716 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -390px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_717 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -392px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_718 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -418px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_718a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -135px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_718b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -224px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_719 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -444px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_720 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -568px -803px;
+  width: 21px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_720a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -28px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_721 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -140px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_722 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -112px -866px;
+  width: 17px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_723 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -212px;
+  width: 17px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_724 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -737px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_724a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -482px;
+  width: 15px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_725 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -655px -639px;
+  width: 25px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_726 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -145px -691px;
+  width: 23px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_727 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -252px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_728 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -255px;
+  width: 17px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_729 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -170px -691px;
+  width: 23px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_730 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -420px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_731 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -236px;
+  width: 17px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_732 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -375px;
+  width: 19px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_733 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -598px -691px;
+  width: 23px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_734 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -453px -557px;
+  width: 25px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_735 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -101px;
+  width: 20px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_736 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -806px -825px;
+  width: 17px;
+  height: 13px;
+}
+.icon-Pokémon-Icon_737 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -63px;
+  width: 18px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_738 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -256px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_739 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -92px;
+  width: 20px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_740 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -280px;
+  width: 32px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_741 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -634px;
+  width: 17px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_741a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -454px -803px;
+  width: 20px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_741b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -322px;
+  width: 18px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_741c {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -594px;
+  width: 17px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_742 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -755px;
+  width: 19px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_743 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -448px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_744 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -399px;
+  width: 19px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_745 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -288px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_745a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -472px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_745b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -162px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_746 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -775px -775px;
+  width: 18px;
+  height: 13px;
+}
+.icon-Pokémon-Icon_746a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -56px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_747 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -139px -775px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_748 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -330px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_749 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -50px;
+  width: 21px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_750 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -280px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_751 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -380px;
+  width: 14px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_752 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -105px -305px;
+  width: 34px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_753 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -527px;
+  width: 14px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_754 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -446px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_755 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -901px 0px;
+  width: 13px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_756 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -420px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_757 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -231px -845px;
+  width: 19px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_758 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -336px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_759 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -655px;
+  width: 17px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_760 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -474px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_761 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -108px -889px;
+  width: 16px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_762 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -728px;
+  width: 18px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_763 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -500px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_764 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -168px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_765 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -112px;
+  width: 42px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_766 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -84px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_767 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -658px -775px;
+  width: 24px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_768 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -308px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_769 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -318px -691px;
+  width: 23px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_770 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -196px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_771 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -234px -665px;
+  width: 26px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_772 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -189px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_773 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -370px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_774 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -530px;
+  width: 18px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_774a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -676px;
+  width: 17px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_775 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -276px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_776 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -320px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_777 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -448px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_778 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_779 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -299px -803px;
+  width: 21px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_780 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -239px 0px;
+  width: 38px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_781 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -502px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_782 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -125px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_783 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -440px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_784 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -543px -476px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_785 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -529px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_786 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -398px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_787 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -528px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_788 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -426px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_789 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -418px -665px;
+  width: 23px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_790 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -591px -803px;
+  width: 21px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_791 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -68px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_792 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -29px -529px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_793 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -224px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_794 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -556px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_795 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -501px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_796 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -58px -529px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_797 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -30px -501px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_798 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -363px -361px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_799 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -199px -28px;
+  width: 38px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_800 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -352px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_800a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -384px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_800b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -60px -501px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_800c {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -102px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_801 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -454px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_802 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -530px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_803 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -27px;
+  width: 23px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_804 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -216px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_805 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -87px -529px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_806 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -224px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_807 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -389px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_808 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -207px -866px;
+  width: 17px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_809 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -47px -56px;
+  width: 45px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_810 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -25px;
+  width: 19px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_811 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -584px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_812 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -90px -501px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_813 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -259px -249px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_814 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -462px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_815 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -84px;
+  width: 13px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_816 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px 0px;
+  width: 22px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_817 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -612px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_818 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -423px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_819 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -300px -747px;
+  width: 22px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_820 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -243px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_821 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -610px -845px;
+  width: 19px;
+  height: 16px;
+}
+.icon-Pokémon-Icon_822 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -407px -775px;
+  width: 22px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_823 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -336px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_824 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -775px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_825 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -438px -639px;
+  width: 25px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_826 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -364px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_827 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -447px -691px;
+  width: 24px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_828 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -116px -529px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_829 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -131px -866px;
+  width: 17px;
+  height: 18px;
+}
+.icon-Pokémon-Icon_830 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -392px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_831 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -658px -803px;
+  width: 20px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_832 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -252px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_833 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -310px;
+  width: 16px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_834 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -168px;
+  width: 39px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_835 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -163px -775px;
+  width: 22px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_836 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -136px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_837 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -340px -845px;
+  width: 20px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_838 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -640px;
+  width: 22px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_839 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -484px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_840 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -608px;
+  width: 15px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_841 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -364px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_842 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -392px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_843 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -112px;
+  width: 18px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_844 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -180px -277px;
+  width: 35px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_845 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -558px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_846 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -507px -557px;
+  width: 25px;
+  height: 15px;
+}
+.icon-Pokémon-Icon_847 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -130px -196px;
+  width: 36px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_848 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -69px;
+  width: 18px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_849 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -19px -775px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_849a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -451px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_850 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -734px;
+  width: 21px;
+  height: 10px;
+}
+.icon-Pokémon-Icon_851 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -170px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_852 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -425px -845px;
+  width: 19px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_853 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -280px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_854 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -768px -825px;
+  width: 17px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_855 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -270px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_856 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -50px;
+  width: 19px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_857 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -180px -747px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_858 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -586px;
+  width: 21px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_859 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -277px;
+  width: 17px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_860 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -150px;
+  width: 22px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_861 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -252px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_862 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -280px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_863 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -640px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_864 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -308px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_865 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -482px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_866 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -297px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_867 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -239px -167px;
+  width: 36px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_868 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -280px -866px;
+  width: 16px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_869 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -506px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_870 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -212px -305px;
+  width: 31px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_871 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -446px -845px;
+  width: 19px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_872 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -787px -825px;
+  width: 17px;
+  height: 14px;
+}
+.icon-Pokémon-Icon_873 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -416px -417px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_874 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -336px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_875 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -479px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_875a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -813px;
+  width: 12px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_876 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -528px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_876a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -324px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_877 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -672px;
+  width: 17px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_878 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -465px -639px;
+  width: 25px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_879 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -482px -420px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_880 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px 0px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_881 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -510px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_882 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -351px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_883 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -120px -501px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_884 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -691px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_885 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -431px -775px;
+  width: 24px;
+  height: 17px;
+}
+.icon-Pokémon-Icon_886 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -212px -611px;
+  width: 26px;
+  height: 24px;
+}
+.icon-Pokémon-Icon_887 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -33px -389px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_888 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -28px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_888a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -378px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_889 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -405px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_889a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -66px -389px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_890 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -99px -389px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_890a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -132px -389px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_891 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -346px;
+  width: 18px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_892 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -364px;
+  width: 26px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_893 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -41px -168px;
+  width: 39px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_894 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -58px -28px;
+  width: 47px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_895 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -150px -501px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_896 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -308px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_897 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -180px -501px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_898 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -420px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_898a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -538px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_898b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -566px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_899 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -363px;
+  width: 14px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_900 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -24px -691px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_901 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -432px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_901a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -336px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_902 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -210px -501px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_902a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -240px -501px;
+  width: 28px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_903 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -94px -56px;
+  width: 12px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_904 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -459px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_905 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -507px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_905a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -486px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_906 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -550px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_907 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -510px;
+  width: 15px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_908 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -572px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_909 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -535px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_910 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -48px -691px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_911 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -28px;
+  width: 52px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_912 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -351px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_913 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -563px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_914 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -591px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_915 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -443px -665px;
+  width: 23px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_916 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -165px -389px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_916a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -513px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_917 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -72px -691px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_918 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -204px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_919 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -733px -27px;
+  width: 22px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_920 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -391px;
+  width: 14px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_921 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -594px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_922 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -616px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_923 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -594px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_924 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -222px;
+  width: 37px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_925 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -36px -277px;
+  width: 34px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_925a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -72px -277px;
+  width: 34px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_926 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -25px;
+  width: 28px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_927 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -473px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_928 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -753px;
+  width: 18px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_929 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -538px;
+  width: 15px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_930 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -238px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_931 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -622px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_931a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -650px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_931b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -678px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_931c {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -757px -706px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_932 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -204px -747px;
+  width: 22px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_933 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -316px -252px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_934 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -96px -691px;
+  width: 22px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_935 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -887px 0px;
+  width: 12px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_936 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -804px -566px;
+  width: 15px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_937 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -747px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_938 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -619px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_939 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -364px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_940 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -21px -747px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_941 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -145px -529px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_942 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -161px -222px;
+  width: 32px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_943 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -198px -389px;
+  width: 31px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_944 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -623px -691px;
+  width: 23px;
+  height: 21px;
+}
+.icon-Pokémon-Icon_945 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -31px -473px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_946 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -270px -501px;
+  width: 29px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_947 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -174px -529px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_948 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -887px -28px;
+  width: 12px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_949 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -540px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_950 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -121px -222px;
+  width: 38px;
+  height: 22px;
+}
+.icon-Pokémon-Icon_951 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -42px -747px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_952 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -392px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_953 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -255px -277px;
+  width: 37px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_954 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -647px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_955 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -54px;
+  width: 23px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_956 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -638px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_957 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -56px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_958 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -62px -473px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_959 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -203px -529px;
+  width: 27px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_960 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -38px -775px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_961 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -420px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_962 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -133px;
+  width: 13px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_963 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: 0px -305px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_964 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -35px -305px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_964a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -847px -419px;
+  width: 14px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_965 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -627px -50px;
+  width: 28px;
+  height: 23px;
+}
+.icon-Pokémon-Icon_966 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -199px -168px;
+  width: 37px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_967 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -448px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_968 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -660px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_969 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -310px -557px;
+  width: 27px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_970 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -108px -277px;
+  width: 34px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_971 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -682px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_972 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -450px -84px;
+  width: 30px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_973 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -916px -136px;
+  width: 11px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_974 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -250px -557px;
+  width: 29px;
+  height: 19px;
+}
+.icon-Pokémon-Icon_975 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -199px -56px;
+  width: 38px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_976 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -279px -112px;
+  width: 35px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_977 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -44px -112px;
+  width: 42px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_978 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -421px -501px;
+  width: 28px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_978a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -451px -501px;
+  width: 28px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_978b {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -481px -501px;
+  width: 28px;
+  height: 25px;
+}
+.icon-Pokémon-Icon_979 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -448px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_980 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -168px -196px;
+  width: 36px;
+  height: 20px;
+}
+.icon-Pokémon-Icon_981 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -867px -161px;
+  width: 13px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_982 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -683px -476px;
+  width: 23px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_983 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -781px -379px;
+  width: 18px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_984 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -156px -112px;
+  width: 40px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_985 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -272px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_986 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -93px -473px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_987 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -124px -473px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_988 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -63px -747px;
+  width: 19px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_989 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -57px -775px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_990 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -144px -277px;
+  width: 34px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_991 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -567px -583px;
+  width: 25px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_992 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -70px -305px;
+  width: 33px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_993 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -306px -333px;
+  width: 32px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_994 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -155px -473px;
+  width: 29px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_995 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -657px -476px;
+  width: 24px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_996 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -825px -675px;
+  width: 16px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_997 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -76px -775px;
+  width: 17px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_998 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -704px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_999 {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -726px -719px;
+  width: 20px;
+  height: 26px;
+}
+.icon-Pokémon-Icon_999a {
+  background-image: url(/css/images/poke_icon_sprite.png);
+  background-position: -708px -81px;
+  width: 23px;
+  height: 25px;
+}

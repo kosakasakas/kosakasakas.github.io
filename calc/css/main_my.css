@@ -1,0 +1,183 @@
+
+.visually-hidden:focus + .btn, /* Add visual indication when focusing on visually hidden elements */
+.btn:hover {
+    z-index: 10;
+    border-color: #777777;
+    background: #e3e3e3;
+}
+.visually-hidden:checked + .btn {
+    font-weight: bold;
+    color: #111111;
+    background: #f5f5f5;
+}
+.visually-hidden[type="radio"]:checked + .btn {
+    cursor: default;
+}
+
+/* Hide element visually, but not from screen readers. See http://adrianroselli.com/2017/05/under-engineered-custom-radio-buttons-and-checkboxen.html */
+.visually-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    white-space: nowrap; /* https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe */
+}
+
+.visually-hidden:disabled + .btn {
+    color: #999999;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.locked-move:checked + .btn {
+    background: #ffff99;
+}
+
+.genSelection, .notationSelection, .modeSelection {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+
+
+/* header */
+
+
+.move-result-group {
+    min-width: 50em;
+    margin: 1em 0 11.5em;
+}
+.move-result-subgroup {
+    float: left;
+    width: 50%;
+}
+.move-result-group .btn {
+    margin-right: 1em;
+}
+.main-result-group {
+    margin: 2em 0 1em;
+}
+.result-move-header {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+/* pokemon info */
+.poke-info label {
+    display: inline-block;
+    width: 6em;
+}
+.top label, .info-selectors label {
+    display: inline-block;
+    width: 5em;
+}
+.poke-info input:not([type]), .poke-info input[type="text"], .poke-info span {
+    display: inline-block;
+    width: 2.5em;
+}
+.poke-info input[type="number"] {
+    display: inline-block;
+    width: 3em;
+}
+.info-group {
+    margin: 1em 0;
+}
+.set-selector {
+    width: 100%;
+}
+.info-selectors select {
+    width: 12em;
+}
+select.toxic-counter {
+    width: 5.5em;
+}
+.move-selector, .move-bp, .move-type, .move-cat, .move-hits {
+    font-size: 0.9em;
+}
+.move-selector {
+    width: 11.5em;
+}
+.poke-info input.move-bp {
+    width: 2em;
+}
+.move-type {
+    width: 5.5em;
+}
+.move-cat {
+    width: 6em;
+}
+.move-hits {
+    width: 4.5em;
+}
+.poke-info .crit-btn {
+    font-size: 0.8em;
+    width: 2.5em;
+    height: 1em;
+    padding: 3px 3px;
+    margin: 0px 1px;
+}
+.poke-info .z-btn {
+    font-size: 0.8em;
+    width: 1.5em;
+    height: 1em;
+    padding: 3px 3px;
+    margin-right: 1px;
+}
+.poke-info .max-btn {
+	font-size: 0.8em;
+	width: 2.5em;
+	height: 1em;
+	padding: 3px 3px;
+}
+.poke-info .stellar-btn {
+   font-size: 0.8em;
+   width: 3.5em;
+   height: 1em;
+   padding: 3px 3px;
+}
+
+
+/* field info */
+.field-info .btn {
+    font-size: 0.8em;
+}
+table.field {
+    width: 100%;
+}
+
+[hidden], .hide {
+    display: none;
+}
+
+/* select2 overrides */
+.select2-container .select2-choice > .select2-chosen {
+    width: 100%;
+}
+
+.select2-chosen {
+	word-wrap: break-word;
+	text-overflow: inherit;
+	white-space: normal !important;
+}
+
+.small-select.select2-container .select2-choice {
+    font-size: 0.9em;
+    height: 18px;
+    line-height: 18px;
+}
+.small-select.select2-container .select2-choice .select2-arrow b {
+    background-position: 0 -4px;
+}
+.small-select.select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: -18px -4px;
+}
+
+label.damage-tex {
+    white-space: pre-line;
+    font-size: 0.7em;
+}

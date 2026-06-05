@@ -1,0 +1,373 @@
+body.pokedex-page {
+  background: #fffdf8;
+}
+
+body.pokedex-browser-page {
+  background:
+    radial-gradient(circle at top left, rgba(255, 214, 138, 0.26), transparent 34%),
+    radial-gradient(circle at top right, rgba(255, 178, 102, 0.18), transparent 28%),
+    linear-gradient(180deg, #fffaf2 0%, #fffdf8 38%, #fff7ec 100%);
+}
+
+body.pokedex-browser-page .panel-card {
+  border: 1px solid #eadbc9;
+  box-shadow: 0 16px 40px rgba(105, 73, 33, 0.08);
+}
+
+.dex-quicklinks .btn.active {
+  background: #7f5b33;
+  border-color: #7f5b33;
+  color: #fff;
+}
+
+.pokedex-detail-shell .ad-slot {
+  border: 1px dashed #d8c6af;
+  border-radius: 0.9rem;
+  background: linear-gradient(180deg, #fffdfa 0%, #fff6eb 100%);
+  color: #9c7a5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+}
+
+.ad-stack {
+  display: grid;
+  gap: 0.7rem;
+  justify-items: center;
+}
+
+.ad-rail {
+  width: 160px;
+  min-height: 600px;
+}
+
+.ad-mobile-grid {
+  display: grid;
+  gap: 0.65rem;
+  justify-items: center;
+}
+
+.ad-mobile-banner {
+  width: 320px;
+  min-height: 100px;
+}
+
+.dex-browser-shell {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.dex-search-group .form-control {
+  border-right: 0;
+}
+
+.dex-search-group .btn {
+  border-color: #d8c7b0;
+}
+
+.dex-result-count {
+  font-size: 0.8rem;
+  padding: 0.45rem 0.7rem;
+}
+
+.dex-tabs .nav-link {
+  border-radius: 0.7rem 0.7rem 0 0;
+  border: 1px solid #d8c7b0;
+  border-bottom: 0;
+  background: linear-gradient(180deg, #f7ebdc 0%, #efe1ce 100%);
+  color: #7a5d3d;
+  margin-right: 0.2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.dex-tabs .nav-link.active {
+  background: linear-gradient(180deg, #8f6639 0%, #775328 100%);
+  color: #fff;
+  border-color: #6c4c28;
+  transform: translateY(1px);
+}
+
+.dex-results {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.dex-result-card {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0.8rem;
+  align-items: center;
+  border: 1px solid #eadbc9;
+  background: #fff;
+  border-radius: 0.9rem;
+  padding: 0.8rem;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.dex-result-card:hover {
+  transform: translateY(-1px);
+  border-color: #d7b58a;
+  box-shadow: 0 12px 28px rgba(105, 73, 33, 0.1);
+}
+
+.dex-result-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+}
+
+.dex-result-icon {
+  width: 64px;
+  height: 48px;
+}
+
+.dex-move-icon-box,
+.dex-ability-icon,
+.dex-item-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7efe4;
+  color: #8a6237;
+  font-weight: 700;
+}
+
+.dex-move-type-icon,
+.dex-type-icon {
+  width: 28px;
+  height: 20px;
+}
+
+.move-category-icon {
+  width: 32px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.dex-result-content {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.dex-result-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.dex-result-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.dex-meta-pills .badge {
+  font-weight: 600;
+}
+
+.dex-result-snippet {
+  color: #6d5a45;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.dex-result-note {
+  color: #8f6f46;
+  font-size: 0.75rem;
+}
+
+.dex-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.dex-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.dex-empty-state {
+  border-style: dashed;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.dex-empty-icon {
+  font-size: 2rem;
+  line-height: 1;
+  color: #b89163;
+  margin-bottom: 0.4rem;
+}
+
+.dex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.45rem;
+}
+
+.dex-card {
+  border: 1px solid #e8dac6;
+  background: #fff;
+  border-radius: 0.55rem;
+  padding: 0.4rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.dex-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  border: 0;
+  background: transparent;
+  width: 100%;
+}
+
+.dex-icon-wrap .ps-pokemon-icon {
+  width: 48px;
+  height: 36px;
+}
+
+.dex-name {
+  text-align: center;
+  font-size: 0.76rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dex-meta {
+  text-align: center;
+  font-size: 0.7rem;
+  color: #775f3d;
+}
+
+.dex-actions {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.dex-actions .btn {
+  --bs-btn-padding-y: 0.18rem;
+  --bs-btn-padding-x: 0.35rem;
+  --bs-btn-font-size: 0.7rem;
+}
+
+.dex-highlight {
+  box-shadow: 0 0 0 2px #d4a253;
+}
+
+.dex-detail-head {
+  display: flex;
+  gap: 0.55rem;
+  align-items: center;
+}
+
+.dex-detail-icon {
+  width: 66px;
+  height: 48px;
+}
+
+.dex-detail-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.dex-detail-meta {
+  font-size: 0.78rem;
+  color: #745f42;
+}
+
+.dex-type-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+
+.dex-stats-grid {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.dex-actual-grid {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.dex-actual-row {
+  display: grid;
+  grid-template-columns: 58px repeat(4, minmax(0, 1fr));
+  gap: 0.3rem;
+  align-items: center;
+  border-bottom: 1px dashed #e5d7c4;
+  padding: 0.16rem 0;
+  font-size: 0.82rem;
+}
+
+.dex-actual-head {
+  font-size: 0.72rem;
+  color: #7e6648;
+  font-weight: 700;
+}
+
+.dex-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #e5d7c4;
+  padding: 0.14rem 0;
+}
+
+.dex-move-search {
+  width: 160px;
+}
+
+.dex-move-grid {
+  display: grid;
+  gap: 0.24rem;
+}
+
+.dex-move-row {
+  display: grid;
+  grid-template-columns: 28px 34px 1fr auto;
+  align-items: center;
+  gap: 0.34rem;
+  border: 1px solid #eadbc9;
+  border-radius: 0.44rem;
+  padding: 0.18rem 0.3rem;
+}
+
+@media (max-width: 767.98px) {
+  .dex-quicklinks {
+    width: 100%;
+  }
+
+  .dex-grid {
+    grid-template-columns: repeat(auto-fill, minmax(102px, 1fr));
+  }
+
+  .dex-result-card {
+    grid-template-columns: 60px 1fr;
+    padding: 0.7rem;
+  }
+
+  .dex-icon-wrap .ps-pokemon-icon {
+    width: 42px;
+    height: 31px;
+  }
+
+  .dex-result-icon {
+    width: 54px;
+    height: 40px;
+  }
+}
